@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Name=Globaltoken Core
+Comment=Connect to the Globaltoken P2P Network
+Comment[de]=Verbinde mit dem Globaltoken peer-to-peer Netzwerk
+Comment[fr]=Globaltoken, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Globaltoken, eşten eşe kriptografik sanal para birimi
+Exec=globaltoken-qt %u
+Terminal=false
+Type=Application
+Icon=bitcoin128
+MimeType=x-scheme-handler/globaltoken;
+Categories=Office;Finance;
+StartupWMClass=Globaltoken-qt

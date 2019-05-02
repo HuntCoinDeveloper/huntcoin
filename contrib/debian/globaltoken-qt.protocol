@@ -1,0 +1,11 @@
+[Protocol]
+exec=globaltoken-qt '%u'
+protocol=globaltoken
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

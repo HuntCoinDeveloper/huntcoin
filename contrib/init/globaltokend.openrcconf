@@ -1,0 +1,33 @@
+# /etc/conf.d/globaltokend: config file for /etc/init.d/globaltokend
+
+# Config file location
+#GLOBALTOKEND_CONFIGFILE="/etc/globaltoken/globaltoken.conf"
+
+# What directory to write pidfile to?  (created and owned by $GLOBALTOKEND_USER)
+#GLOBALTOKEND_PIDDIR="/var/run/globaltokend"
+
+# What filename to give the pidfile
+#GLOBALTOKEND_PIDFILE="${GLOBALTOKEND_PIDDIR}/globaltokend.pid"
+
+# Where to write globaltokend data (be mindful that the blockchain is large)
+#GLOBALTOKEND_DATADIR="/var/lib/globaltokend"
+
+# User and group to own globaltokend process
+#GLOBALTOKEND_USER="globaltoken"
+#GLOBALTOKEND_GROUP="globaltoken"
+
+# Path to globaltokend executable
+#GLOBALTOKEND_BIN="/usr/bin/globaltokend"
+
+# Nice value to run globaltokend under
+#GLOBALTOKEND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#GLOBALTOKEND_OPTS=""
+
+# The timeout in seconds OpenRC will wait for globaltokend to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+GLOBALTOKEND_SIGTERM_TIMEOUT=60
