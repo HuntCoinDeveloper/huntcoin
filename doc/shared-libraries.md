@@ -44,6 +44,6 @@ The interface is defined in the C header `bitcoinconsensus.h` located in  `src/s
 
 ### Example Implementations
 - [NBitcoin](https://github.com/NicolasDorier/NBitcoin/blob/master/NBitcoin/Script.cs#L814) (.NET Bindings)
-- [node-libbitcoinconsensus](https://github.com/bitpay/node-libbitcoinconsensus) (Node.js Bindings)
-- [java-libbitcoinconsensus](https://github.com/dexX7/java-libbitcoinconsensus) (Java Bindings)
+- [node-libhuntcoinconsensus](https://github.com/bitpay/node-libhuntcoinconsensus) (Node.js Bindings)
+- [java-libhuntcoinconsensus](https://github.com/dexX7/java-libhuntcoinconsensus) (Java Bindings)
 - [bitcoinconsensus-php](https://github.com/Bit-Wasp/bitcoinconsensus-php) (PHP Bindings)

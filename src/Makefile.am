@@ -1,4 +1,5 @@
 # Copyright (c) 2013-2016 The Bitcoin Core developers
+# Copyright (c) 2019 The Huntcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -18,30 +19,30 @@ else
 LIBUNIVALUE = $(UNIVALUE_LIBS)
 endif
 
-BITCOIN_INCLUDES=-I$(builddir) $(BDB_CPPFLAGS) $(BOOST_CPPFLAGS) $(LEVELDB_CPPFLAGS) $(CRYPTO_CFLAGS) $(SSL_CFLAGS)
+HUNTCOIN_INCLUDES=-I$(builddir) $(BDB_CPPFLAGS) $(BOOST_CPPFLAGS) $(LEVELDB_CPPFLAGS) $(CRYPTO_CFLAGS) $(SSL_CFLAGS)
 
-BITCOIN_INCLUDES += -I$(srcdir)/secp256k1/include
-BITCOIN_INCLUDES += $(UNIVALUE_CFLAGS)
+HUNTCOIN_INCLUDES += -I$(srcdir)/secp256k1/include
+HUNTCOIN_INCLUDES += $(UNIVALUE_CFLAGS)
 
-LIBBITCOIN_SERVER=libbitcoin_server.a
-LIBBITCOIN_COMMON=libbitcoin_common.a
-LIBBITCOIN_CONSENSUS=libbitcoin_consensus.a
-LIBBITCOIN_CLI=libbitcoin_cli.a
-LIBBITCOIN_UTIL=libbitcoin_util.a
-LIBBITCOIN_CRYPTO=crypto/libbitcoin_crypto.a
-LIBBITCOIN_ALGOS=crypto/algos/libglobaltoken_algos.a
-LIBBITCOIN_GLOBALTOKEN_HARDFORK=globaltoken/libglobaltoken_hardfork.a
-LIBBITCOINQT=qt/libbitcoinqt.a
+LIBHUNTCOIN_SERVER=libhuntcoin_server.a
+LIBHUNTCOIN_COMMON=libhuntcoin_common.a
+LIBHUNTCOIN_CONSENSUS=libhuntcoin_consensus.a
+LIBHUNTCOIN_CLI=libhuntcoin_cli.a
+LIBHUNTCOIN_UTIL=libhuntcoin_util.a
+LIBHUNTCOIN_CRYPTO=crypto/libhuntcoin_crypto.a
+LIBHUNTCOIN_ALGOS=crypto/algos/libhuntcoin_algos.a
+LIBHUNTCOIN_HUNTCOIN_HARDFORK=huntcoin/libhuntcoin_hardfork.a
+LIBHUNTCOINQT=qt/libhuntcoinqt.a
 LIBSECP256K1=secp256k1/libsecp256k1.la
 
 if ENABLE_ZMQ
-LIBBITCOIN_ZMQ=libbitcoin_zmq.a
+LIBHUNTCOIN_ZMQ=libhuntcoin_zmq.a
 endif
-if BUILD_BITCOIN_LIBS
-LIBBITCOINCONSENSUS=libbitcoinconsensus.la
+if BUILD_HUNTCOIN_LIBS
+LIBHUNTCOINCONSENSUS=libhuntcoinconsensus.la
 endif
 if ENABLE_WALLET
-LIBBITCOIN_WALLET=libbitcoin_wallet.a
+LIBHUNTCOIN_WALLET=libhuntcoin_wallet.a
 endif
 
 $(LIBSECP256K1): $(wildcard secp256k1/src/*) $(wildcard secp256k1/include/*)
@@ -50,35 +51,35 @@ $(LIBSECP256K1): $(wildcard secp256k1/src/*) $(wildcard secp256k1/include/*)
 # Make is not made aware of per-object dependencies to avoid limiting building parallelization
 # But to build the less dependent modules first, we manually select their order here:
 EXTRA_LIBRARIES += \
-  $(LIBBITCOIN_CRYPTO) \
-  $(LIBBITCOIN_ALGOS) \
-  $(LIBBITCOIN_UTIL) \
-  $(LIBBITCOIN_COMMON) \
-  $(LIBBITCOIN_CONSENSUS) \
-  $(LIBBITCOIN_GLOBALTOKEN_HARDFORK) \
-  $(LIBBITCOIN_SERVER) \
-  $(LIBBITCOIN_CLI) \
-  $(LIBBITCOIN_WALLET) \
-  $(LIBBITCOIN_ZMQ)
+  $(LIBHUNTCOIN_CRYPTO) \
+  $(LIBHUNTCOIN_ALGOS) \
+  $(LIBHUNTCOIN_UTIL) \
+  $(LIBHUNTCOIN_COMMON) \
+  $(LIBHUNTCOIN_CONSENSUS) \
+  $(LIBHUNTCOIN_HUNTCOIN_HARDFORK) \
+  $(LIBHUNTCOIN_SERVER) \
+  $(LIBHUNTCOIN_CLI) \
+  $(LIBHUNTCOIN_WALLET) \
+  $(LIBHUNTCOIN_ZMQ)
 
-lib_LTLIBRARIES = $(LIBBITCOINCONSENSUS)
+lib_LTLIBRARIES = $(LIBHUNTCOINCONSENSUS)
 
 bin_PROGRAMS =
 noinst_PROGRAMS =
 TESTS =
 BENCHMARKS =
 
-if BUILD_BITCOIND
-  bin_PROGRAMS += globaltokend
+if BUILD_HUNTCOIND
+  bin_PROGRAMS += huntcoind
 endif
 
-if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += globaltoken-cli globaltoken-tx
+if BUILD_HUNTCOIN_UTILS
+  bin_PROGRAMS += huntcoin-cli huntcoin-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
-# globaltoken core #
-BITCOIN_CORE_H = \
+# huntcoin core #
+HUNTCOIN_CORE_H = \
   addrdb.h \
   activemasternode.h \
   addrman.h \
@@ -201,12 +202,12 @@ obj/build.h: FORCE
 	@$(MKDIR_P) $(builddir)/obj
 	@$(top_srcdir)/share/genbuild.sh "$(abs_top_builddir)/src/obj/build.h" \
 	  "$(abs_top_srcdir)"
-libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
+libhuntcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between globaltokend and globaltoken-qt
-libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS) $(SCRYPT_FLAGS)
-libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libbitcoin_server_a_SOURCES = \
+# server: shared between huntcoind and huntcoin-qt
+libhuntcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(HUNTCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS) $(SCRYPT_FLAGS)
+libhuntcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libhuntcoin_server_a_SOURCES = \
   activemasternode.cpp \
   addrdb.cpp \
   addrman.cpp \
@@ -257,23 +258,23 @@ libbitcoin_server_a_SOURCES = \
   validation.cpp \
   validationinterface.cpp \
   versionbits.cpp \
-  $(BITCOIN_CORE_H)
+  $(HUNTCOIN_CORE_H)
 
 if ENABLE_ZMQ
-libbitcoin_zmq_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(ZMQ_CFLAGS)
-libbitcoin_zmq_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libbitcoin_zmq_a_SOURCES = \
+libhuntcoin_zmq_a_CPPFLAGS = $(HUNTCOIN_INCLUDES) $(ZMQ_CFLAGS)
+libhuntcoin_zmq_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libhuntcoin_zmq_a_SOURCES = \
   zmq/zmqabstractnotifier.cpp \
   zmq/zmqnotificationinterface.cpp \
   zmq/zmqpublishnotifier.cpp
 endif
 
 
-# wallet: shared between globaltokend and globaltoken-qt, but only linked
+# wallet: shared between huntcoind and huntcoin-qt, but only linked
 # when wallet enabled
-libbitcoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libbitcoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libbitcoin_wallet_a_SOURCES = \
+libhuntcoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(HUNTCOIN_INCLUDES)
+libhuntcoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libhuntcoin_wallet_a_SOURCES = \
   wallet/crypter.cpp \
   wallet/db.cpp \
   wallet/feebumper.cpp \
@@ -284,12 +285,12 @@ libbitcoin_wallet_a_SOURCES = \
   wallet/wallet.cpp \
   wallet/walletdb.cpp \
   wallet/walletutil.cpp \
-  $(BITCOIN_CORE_H)
+  $(HUNTCOIN_CORE_H)
 
 # crypto primitives library
-crypto_libbitcoin_crypto_a_CPPFLAGS = $(AM_CPPFLAGS)
-crypto_libbitcoin_crypto_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-crypto_libbitcoin_crypto_a_SOURCES = \
+crypto_libhuntcoin_crypto_a_CPPFLAGS = $(AM_CPPFLAGS)
+crypto_libhuntcoin_crypto_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+crypto_libhuntcoin_crypto_a_SOURCES = \
   crypto/aes.cpp \
   crypto/aes.h \
   crypto/chacha20.h \
@@ -309,15 +310,15 @@ crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/sha512.h
 
 if USE_ASM
-crypto_libbitcoin_crypto_a_SOURCES += crypto/sha256_sse4.cpp
+crypto_libhuntcoin_crypto_a_SOURCES += crypto/sha256_sse4.cpp
 endif
 
 # crypto algos library
-crypto_algos_libglobaltoken_algos_a_CPPFLAGS = $(AM_CPPFLAGS) $(SCRYPT_FLAGS)
-crypto_algos_libglobaltoken_algos_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS) $(YESCRYPT_COMPILE_FLAGS)
-crypto_algos_libglobaltoken_algos_a_CFLAGS = $(NEOSCRYPT_FLAGS) $(YESCRYPT_COMPILE_FLAGS)
-crypto_algos_libglobaltoken_algos_a_CCASFLAGS = $(NEOSCRYPT_FLAGS)
-crypto_algos_libglobaltoken_algos_a_SOURCES = \
+crypto_algos_libhuntcoin_algos_a_CPPFLAGS = $(AM_CPPFLAGS) $(SCRYPT_FLAGS)
+crypto_algos_libhuntcoin_algos_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS) $(YESCRYPT_COMPILE_FLAGS)
+crypto_algos_libhuntcoin_algos_a_CFLAGS = $(NEOSCRYPT_FLAGS) $(YESCRYPT_COMPILE_FLAGS)
+crypto_algos_libhuntcoin_algos_a_CCASFLAGS = $(NEOSCRYPT_FLAGS)
+crypto_algos_libhuntcoin_algos_a_SOURCES = \
   crypto/algos/hashlib/blake.c \
   crypto/algos/hashlib/bmw.c \
   crypto/algos/hashlib/cubehash.c \
@@ -384,13 +385,13 @@ crypto_algos_libglobaltoken_algos_a_SOURCES = \
   crypto/algos/yescrypt/yescryptcommon.c
 
 if USE_ASM
-crypto_algos_libglobaltoken_algos_a_SOURCES += crypto/algos/neoscrypt/neoscrypt_asm.S
+crypto_algos_libhuntcoin_algos_a_SOURCES += crypto/algos/neoscrypt/neoscrypt_asm.S
 endif
 
 # consensus: shared between all executables that validate any consensus rules.
-libbitcoin_consensus_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libbitcoin_consensus_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libbitcoin_consensus_a_SOURCES = \
+libhuntcoin_consensus_a_CPPFLAGS = $(AM_CPPFLAGS) $(HUNTCOIN_INCLUDES)
+libhuntcoin_consensus_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libhuntcoin_consensus_a_SOURCES = \
   amount.h \
   arith_uint256.cpp \
   arith_uint256.h \
@@ -413,7 +414,7 @@ libbitcoin_consensus_a_SOURCES = \
   primitives/transaction.h \
   pubkey.cpp \
   pubkey.h \
-  script/bitcoinconsensus.cpp \
+  script/huntcoinconsensus.cpp \
   script/interpreter.cpp \
   script/interpreter.h \
   script/script.cpp \
@@ -429,20 +430,20 @@ libbitcoin_consensus_a_SOURCES = \
   version.h
   
 # hardfork library
-globaltoken_libglobaltoken_hardfork_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-globaltoken_libglobaltoken_hardfork_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-globaltoken_libglobaltoken_hardfork_a_SOURCES = \
-  globaltoken/hardfork.cpp \
-  globaltoken/hardfork.h \
+huntcoin_libhuntcoin_hardfork_a_CPPFLAGS = $(AM_CPPFLAGS) $(HUNTCOIN_INCLUDES)
+huntcoin_libhuntcoin_hardfork_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+huntcoin_libhuntcoin_hardfork_a_SOURCES = \
+  huntcoin/hardfork.cpp \
+  huntcoin/hardfork.h \
   arith_uint256.cpp \
   arith_uint256.h \
   uint256.cpp \
   uint256.h
 
-# common: shared between globaltokend, and globaltoken-qt and non-server tools
-libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libbitcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libbitcoin_common_a_SOURCES = \
+# common: shared between huntcoind, and huntcoin-qt and non-server tools
+libhuntcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(HUNTCOIN_INCLUDES)
+libhuntcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libhuntcoin_common_a_SOURCES = \
   auxpow.cpp \
   base58.cpp \
   bech32.cpp \
@@ -462,14 +463,14 @@ libbitcoin_common_a_SOURCES = \
   script/sign.cpp \
   script/standard.cpp \
   warnings.cpp \
-  $(BITCOIN_CORE_H)
+  $(HUNTCOIN_CORE_H)
 
 # util: shared between all executables.
 # This library *must* be included to make sure that the glibc
 # backward-compatibility objects and their sanity checks are linked.
-libbitcoin_util_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libbitcoin_util_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libbitcoin_util_a_SOURCES = \
+libhuntcoin_util_a_CPPFLAGS = $(AM_CPPFLAGS) $(HUNTCOIN_INCLUDES)
+libhuntcoin_util_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libhuntcoin_util_a_SOURCES = \
   support/lockedpool.cpp \
   chainparamsbase.cpp \
   clientversion.cpp \
@@ -487,109 +488,109 @@ libbitcoin_util_a_SOURCES = \
   utilmoneystr.cpp \
   utilstrencodings.cpp \
   utiltime.cpp \
-  $(BITCOIN_CORE_H)
+  $(HUNTCOIN_CORE_H)
 
 if GLIBC_BACK_COMPAT
-libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
+libhuntcoin_util_a_SOURCES += compat/glibc_compat.cpp
 endif
 
-# cli: shared between globaltoken-cli and globaltoken-qt
-libbitcoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libbitcoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libbitcoin_cli_a_SOURCES = \
+# cli: shared between huntcoin-cli and huntcoin-qt
+libhuntcoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(HUNTCOIN_INCLUDES)
+libhuntcoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libhuntcoin_cli_a_SOURCES = \
   rpc/client.cpp \
-  $(BITCOIN_CORE_H)
+  $(HUNTCOIN_CORE_H)
 
-nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
+nodist_libhuntcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
-# globaltokend binary #
-globaltokend_SOURCES = bitcoind.cpp
-globaltokend_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-globaltokend_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-globaltokend_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) $(YESCRYPT_LDFLAGS)
+# huntcoind binary #
+huntcoind_SOURCES = huntcoind.cpp
+huntcoind_CPPFLAGS = $(AM_CPPFLAGS) $(HUNTCOIN_INCLUDES)
+huntcoind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+huntcoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) $(YESCRYPT_LDFLAGS)
 
 if TARGET_WINDOWS
-globaltokend_SOURCES += bitcoind-res.rc
+huntcoind_SOURCES += huntcoind-res.rc
 endif
 
-globaltokend_LDADD = \
-  $(LIBBITCOIN_SERVER) \
-  $(LIBBITCOIN_WALLET) \
-  $(LIBBITCOIN_COMMON) \
+huntcoind_LDADD = \
+  $(LIBHUNTCOIN_SERVER) \
+  $(LIBHUNTCOIN_WALLET) \
+  $(LIBHUNTCOIN_COMMON) \
   $(LIBUNIVALUE) \
-  $(LIBBITCOIN_UTIL) \
-  $(LIBBITCOIN_ZMQ) \
-  $(LIBBITCOIN_CONSENSUS) \
-  $(LIBBITCOIN_GLOBALTOKEN_HARDFORK) \
-  $(LIBBITCOIN_CRYPTO) \
-  $(LIBBITCOIN_ALGOS) \
+  $(LIBHUNTCOIN_UTIL) \
+  $(LIBHUNTCOIN_ZMQ) \
+  $(LIBHUNTCOIN_CONSENSUS) \
+  $(LIBHUNTCOIN_HUNTCOIN_HARDFORK) \
+  $(LIBHUNTCOIN_CRYPTO) \
+  $(LIBHUNTCOIN_ALGOS) \
   $(LIBLEVELDB) \
   $(LIBLEVELDB_SSE42) \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-globaltokend_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS) $(LIBEQUIHASH_LIBS)
+huntcoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS) $(LIBEQUIHASH_LIBS)
 
-# globaltoken-cli binary #
-globaltoken_cli_SOURCES = bitcoin-cli.cpp
-globaltoken_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-globaltoken_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-globaltoken_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# huntcoin-cli binary #
+huntcoin_cli_SOURCES = huntcoin-cli.cpp
+huntcoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(HUNTCOIN_INCLUDES) $(EVENT_CFLAGS)
+huntcoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+huntcoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-globaltoken_cli_SOURCES += bitcoin-cli-res.rc
+huntcoin_cli_SOURCES += huntcoin-cli-res.rc
 endif
 
-globaltoken_cli_LDADD = \
-  $(LIBBITCOIN_CLI) \
+huntcoin_cli_LDADD = \
+  $(LIBHUNTCOIN_CLI) \
   $(LIBUNIVALUE) \
-  $(LIBBITCOIN_UTIL) \
-  $(LIBBITCOIN_CRYPTO) \
-  $(LIBBITCOIN_ALGOS)
+  $(LIBHUNTCOIN_UTIL) \
+  $(LIBHUNTCOIN_CRYPTO) \
+  $(LIBHUNTCOIN_ALGOS)
 
-globaltoken_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS) $(LIBEQUIHASH_LIBS)
+huntcoin_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS) $(LIBEQUIHASH_LIBS)
 #
 
-# globaltoken-tx binary #
-globaltoken_tx_SOURCES = bitcoin-tx.cpp
-globaltoken_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(YESCRYPT_COMPILE_FLAGS)
-globaltoken_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS) $(YESCRYPT_COMPILE_FLAGS)
-globaltoken_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# huntcoin-tx binary #
+huntcoin_tx_SOURCES = huntcoin-tx.cpp
+huntcoin_tx_CPPFLAGS = $(AM_CPPFLAGS) $(HUNTCOIN_INCLUDES) $(YESCRYPT_COMPILE_FLAGS)
+huntcoin_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS) $(YESCRYPT_COMPILE_FLAGS)
+huntcoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-globaltoken_tx_SOURCES += bitcoin-tx-res.rc
+huntcoin_tx_SOURCES += huntcoin-tx-res.rc
 endif
 
-globaltoken_tx_LDADD = \
+huntcoin_tx_LDADD = \
   $(LIBUNIVALUE) \
-  $(LIBBITCOIN_COMMON) \
-  $(LIBBITCOIN_UTIL) \
-  $(LIBBITCOIN_CONSENSUS) \
-  $(LIBBITCOIN_GLOBALTOKEN_HARDFORK) \
-  $(LIBBITCOIN_CRYPTO) \
-  $(LIBBITCOIN_ALGOS) \
+  $(LIBHUNTCOIN_COMMON) \
+  $(LIBHUNTCOIN_UTIL) \
+  $(LIBHUNTCOIN_CONSENSUS) \
+  $(LIBHUNTCOIN_HUNTCOIN_HARDFORK) \
+  $(LIBHUNTCOIN_CRYPTO) \
+  $(LIBHUNTCOIN_ALGOS) \
   $(LIBSECP256K1) \
   $(LIBEQUIHASH_LIBS)
 
-globaltoken_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+huntcoin_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
-# bitcoinconsensus library #
-if BUILD_BITCOIN_LIBS
-include_HEADERS = script/bitcoinconsensus.h
-libbitcoinconsensus_la_SOURCES = $(crypto_libbitcoin_crypto_a_SOURCES) $(crypto_algos_libglobaltoken_algos_a_SOURCES) $(libbitcoin_consensus_a_SOURCES)
+# huntcoinconsensus library #
+if BUILD_HUNTCOIN_LIBS
+include_HEADERS = script/huntcoinconsensus.h
+libhuntcoinconsensus_la_SOURCES = $(crypto_libhuntcoin_crypto_a_SOURCES) $(crypto_algos_libhuntcoin_algos_a_SOURCES) $(libhuntcoin_consensus_a_SOURCES)
 
 if GLIBC_BACK_COMPAT
-  libbitcoinconsensus_la_SOURCES += compat/glibc_compat.cpp
+  libhuntcoinconsensus_la_SOURCES += compat/glibc_compat.cpp
 endif
 
-libbitcoinconsensus_la_LDFLAGS = $(AM_LDFLAGS) -no-undefined $(RELDFLAGS)
-libbitcoinconsensus_la_LIBADD = $(LIBSECP256K1) $(BOOST_LIBS) $(LIBEQUIHASH_LIBS)
-libbitcoinconsensus_la_CPPFLAGS =  $(AM_CPPFLAGS) $(SCRYPT_FLAGS) -I$(builddir)/obj -I$(srcdir)/secp256k1/include -DBUILD_BITCOIN_INTERNAL -DNO_UTIL_LOG
-libbitcoinconsensus_la_CXXFLAGS =  $(AM_CXXFLAGS) $(PIE_FLAGS) $(YESCRYPT_COMPILE_FLAGS)
-libbitcoinconsensus_la_CFLAGS =    $(NEOSCRYPT_FLAGS) $(YESCRYPT_COMPILE_FLAGS)
-libbitcoinconsensus_la_CCASFLAGS = $(NEOSCRYPT_FLAGS)
+libhuntcoinconsensus_la_LDFLAGS = $(AM_LDFLAGS) -no-undefined $(RELDFLAGS)
+libhuntcoinconsensus_la_LIBADD = $(LIBSECP256K1) $(BOOST_LIBS) $(LIBEQUIHASH_LIBS)
+libhuntcoinconsensus_la_CPPFLAGS =  $(AM_CPPFLAGS) $(SCRYPT_FLAGS) -I$(builddir)/obj -I$(srcdir)/secp256k1/include -DBUILD_HUNTCOIN_INTERNAL -DNO_UTIL_LOG
+libhuntcoinconsensus_la_CXXFLAGS =  $(AM_CXXFLAGS) $(PIE_FLAGS) $(YESCRYPT_COMPILE_FLAGS)
+libhuntcoinconsensus_la_CFLAGS =    $(NEOSCRYPT_FLAGS) $(YESCRYPT_COMPILE_FLAGS)
+libhuntcoinconsensus_la_CCASFLAGS = $(NEOSCRYPT_FLAGS)
 
 endif
 #
@@ -610,7 +611,7 @@ CLEANFILES += *.gcda *.gcno
 CLEANFILES += compat/*.gcda compat/*.gcno
 CLEANFILES += consensus/*.gcda consensus/*.gcno
 CLEANFILES += crypto/*.gcda crypto/*.gcno
-CLEANFILES += globaltoken/*.gcda globaltoken/*.gcno
+CLEANFILES += huntcoin/*.gcda huntcoin/*.gcno
 CLEANFILES += policy/*.gcda policy/*.gcno
 CLEANFILES += primitives/*.gcda primitives/*.gcno
 CLEANFILES += script/*.gcda script/*.gcno
@@ -624,12 +625,12 @@ CLEANFILES += obj/build.h
 EXTRA_DIST = $(CTAES_DIST) $(YESCRYPT_DIST)
 
 
-config/bitcoin-config.h: config/stamp-h1
+config/huntcoin-config.h: config/stamp-h1
 	@$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-config/stamp-h1: $(top_srcdir)/$(subdir)/config/bitcoin-config.h.in $(top_builddir)/config.status
+config/stamp-h1: $(top_srcdir)/$(subdir)/config/huntcoin-config.h.in $(top_builddir)/config.status
 	$(AM_V_at)$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-$(top_srcdir)/$(subdir)/config/bitcoin-config.h.in:  $(am__configure_deps)
-	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/bitcoin-config.h.in
+$(top_srcdir)/$(subdir)/config/huntcoin-config.h.in:  $(am__configure_deps)
+	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/huntcoin-config.h.in
 
 clean-local:
 	-$(MAKE) -C secp256k1 clean
