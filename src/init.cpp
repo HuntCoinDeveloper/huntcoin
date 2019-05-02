@@ -53,7 +53,7 @@
 #endif
 
 #include <activemasternode.h>
-#include <gltnotificationinterface.h>
+#include <huntnotificationinterface.h>
 #include <flat-database.h>
 #include <instantx.h>
 #include <masternode-helper.h>
@@ -102,7 +102,7 @@ std::unique_ptr<PeerLogicValidation> peerLogic;
 static CZMQNotificationInterface* pzmqNotificationInterface = nullptr;
 #endif
 
-static CGLTNotificationInterface* pgltNotificationInterface = nullptr;
+static CGLTNotificationInterface* phuntNotificationInterface = nullptr;
 
 #ifdef WIN32
 // Win32 LevelDB doesn't use filedescriptors, and the ones used for
@@ -296,10 +296,10 @@ void Shutdown()
     }
 #endif
 
-    if (pgltNotificationInterface) {
-        UnregisterValidationInterface(pgltNotificationInterface);
-        delete pgltNotificationInterface;
-        pgltNotificationInterface = nullptr;
+    if (phuntNotificationInterface) {
+        UnregisterValidationInterface(phuntNotificationInterface);
+        delete phuntNotificationInterface;
+        phuntNotificationInterface = nullptr;
     }
 
 #ifndef WIN32
@@ -1542,8 +1542,8 @@ bool AppInitMain()
     }
 #endif
 
-    pgltNotificationInterface = new CGLTNotificationInterface(connman);
-    RegisterValidationInterface(pgltNotificationInterface);
+    phuntNotificationInterface = new CGLTNotificationInterface(connman);
+    RegisterValidationInterface(phuntNotificationInterface);
 
     uint64_t nMaxOutboundLimit = 0; //unlimited unless -maxuploadtarget is set
     uint64_t nMaxOutboundTimeframe = MAX_UPLOAD_TIMEFRAME;
@@ -1942,7 +1942,7 @@ bool AppInitMain()
     // force UpdatedBlockTip to initialize nCachedBlockHeight for DS and MN payments
     // but don't call it directly to prevent triggering of other listeners like zmq etc.
     // GetMainSignals().UpdatedBlockTip(chainActive.Tip());
-    pgltNotificationInterface->InitializeCurrentBlockTip();
+    phuntNotificationInterface->InitializeCurrentBlockTip();
     
     // ********************************************************* Step 11d: start globaltoken-helper threads
 

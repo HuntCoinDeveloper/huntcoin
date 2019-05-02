@@ -25,7 +25,7 @@ class CValidationState;
 static const unsigned char pchMergedMiningHeader[] = { 0xfa, 0xbe, 'm', 'm' };
 
 /** Zhash & Equihash default string for personalization  */
-static const std::string DEFAULT_ZHASH_PERSONALIZE    = "GLTZhash";
+static const std::string DEFAULT_ZHASH_PERSONALIZE    = "HUNTZhash";
 static const std::string DEFAULT_EQUIHASH_PERSONALIZE = "ZcashPoW";
 
 /** Operation flags */

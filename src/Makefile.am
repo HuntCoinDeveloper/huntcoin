@@ -109,7 +109,7 @@ HUNTCOIN_CORE_H = \
   cuckoocache.h \
   flat-database.h \
   fs.h \
-  gltnotificationinterface.h \
+  huntnotificationinterface.h \
   httprpc.h \
   httpserver.h \
   indirectmap.h \
@@ -216,7 +216,7 @@ libhuntcoin_server_a_SOURCES = \
   chain.cpp \
   checkpoints.cpp \
   consensus/tx_verify.cpp \
-  gltnotificationinterface.cpp \
+  huntnotificationinterface.cpp \
   httprpc.cpp \
   httpserver.cpp \
   init.cpp \

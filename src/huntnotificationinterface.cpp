@@ -4,29 +4,29 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include <chainparams.h>
-#include <gltnotificationinterface.h>
+#include <huntnotificationinterface.h>
 #include <instantx.h>
 #include <masternodeman.h>
 #include <masternode-payments.h>
 #include <masternode-sync.h>
 
-void CGLTNotificationInterface::InitializeCurrentBlockTip()
+void CHUNTNotificationInterface::InitializeCurrentBlockTip()
 {
     LOCK(cs_main);
     UpdatedBlockTip(chainActive.Tip(), nullptr, IsInitialBlockDownload());
 }
 
-void CGLTNotificationInterface::AcceptedBlockHeader(const CBlockIndex *pindexNew)
+void CHUNTNotificationInterface::AcceptedBlockHeader(const CBlockIndex *pindexNew)
 {
     masternodeSync.AcceptedBlockHeader(pindexNew);
 }
 
-void CGLTNotificationInterface::NotifyHeaderTip(const CBlockIndex *pindexNew, bool fInitialDownload)
+void CHUNTNotificationInterface::NotifyHeaderTip(const CBlockIndex *pindexNew, bool fInitialDownload)
 {
     masternodeSync.NotifyHeaderTip(pindexNew, fInitialDownload, connman);
 }
 
-void CGLTNotificationInterface::UpdatedBlockTip(const CBlockIndex *pindexNew, const CBlockIndex *pindexFork, bool fInitialDownload)
+void CHUNTNotificationInterface::UpdatedBlockTip(const CBlockIndex *pindexNew, const CBlockIndex *pindexFork, bool fInitialDownload)
 {
     if (pindexNew == pindexFork) // blocks were disconnected without any new ones
         return;
@@ -44,12 +44,12 @@ void CGLTNotificationInterface::UpdatedBlockTip(const CBlockIndex *pindexNew, co
     mnpayments.UpdatedBlockTip(pindexNew, connman);
 }
 
-void CGLTNotificationInterface::TransactionAddedToMempool(const CTransactionRef& ptx)
+void CHUNTNotificationInterface::TransactionAddedToMempool(const CTransactionRef& ptx)
 {
     instantsend.SyncTransaction(ptx);
 }
 
-void CGLTNotificationInterface::BlockConnected(const std::shared_ptr<const CBlock>& pblock, const CBlockIndex *pindex, const std::vector<CTransactionRef>& vtxConflicted)
+void CHUNTNotificationInterface::BlockConnected(const std::shared_ptr<const CBlock>& pblock, const CBlockIndex *pindex, const std::vector<CTransactionRef>& vtxConflicted)
 {
     for (const CTransactionRef& ptx : vtxConflicted) {
         instantsend.SyncTransaction(ptx);
@@ -59,7 +59,7 @@ void CGLTNotificationInterface::BlockConnected(const std::shared_ptr<const CBloc
     }
 }
 
-void CGLTNotificationInterface::BlockDisconnected(const std::shared_ptr<const CBlock>& pblock) {
+void CHUNTNotificationInterface::BlockDisconnected(const std::shared_ptr<const CBlock>& pblock) {
     for (const CTransactionRef& ptx : pblock->vtx) {
         instantsend.SyncTransaction(ptx);
     }

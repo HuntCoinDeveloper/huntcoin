@@ -2,16 +2,16 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_GLTNOTIFICATIONINTERFACE_H
-#define BITCOIN_GLTNOTIFICATIONINTERFACE_H
+#ifndef HUNTCOIN_HUNTNOTIFICATIONINTERFACE_H
+#define HUNTCOIN_HUNTNOTIFICATIONINTERFACE_H
 
 #include <validationinterface.h>
 
-class CGLTNotificationInterface : public CValidationInterface
+class CHUNTNotificationInterface : public CValidationInterface
 {
 public:
-    CGLTNotificationInterface(CConnman& connmanIn): connman(connmanIn) {}
-    virtual ~CGLTNotificationInterface() = default;
+    CHUNTNotificationInterface(CConnman& connmanIn): connman(connmanIn) {}
+    virtual ~CHUNTNotificationInterface() = default;
 
     // a small helper to initialize current block height in sub-modules on startup
     void InitializeCurrentBlockTip();
@@ -29,4 +29,4 @@ private:
     CConnman& connman;
 };
 
-#endif // BITCOIN_GLTNOTIFICATIONINTERFACE_H
+#endif // HUNTCOIN_HUNTNOTIFICATIONINTERFACE_H
