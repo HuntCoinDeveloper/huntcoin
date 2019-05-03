@@ -3289,7 +3289,7 @@
     </message>
 	<message>
         <source>Bitcoin Core</source>
-        <translation>Bitcoin-ydin</translation>
+        <translation>Huntcoin-ydin</translation>
     </message>
     <message>
         <source>The %s developers</source>

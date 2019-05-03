@@ -16,7 +16,7 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over /Applications/Bitcoin-Qt (on Mac) or
+installer (on Windows) or just copy over /Applications/Huntcoin-Qt (on Mac) or
 huntcoind/huntcoin-qt (on Linux).
 
 Downgrade warning
@@ -637,7 +637,7 @@ git merge commit are mentioned.
 ### Build system
 
 - #6210 `0e4f2a0` build: disable optional use of gmp in internal secp256k1 build (Wladimir J. van der Laan)
-- #6214 `87406aa` [OSX] revert renaming of Bitcoin-Qt.app and use CFBundleDisplayName (partial revert of #6116) (Jonas Schnelli)
+- #6214 `87406aa` [OSX] revert renaming of Huntcoin-Qt.app and use CFBundleDisplayName (partial revert of #6116) (Jonas Schnelli)
 - #6218 `9d67b10` build/gitian misc updates (Cory Fields)
 - #6269 `d4565b6` gitian: Use the new huntcoin-detached-sigs git repo for OSX signatures (Cory Fields)
 - #6418 `d4a910c` Add autogen.sh to source tarball. (randy-waterhouse)

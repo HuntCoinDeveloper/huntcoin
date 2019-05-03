@@ -17,7 +17,7 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over /Applications/Bitcoin-Qt (on Mac) or
+installer (on Windows) or just copy over /Applications/Huntcoin-Qt (on Mac) or
 huntcoind/huntcoin-qt (on Linux).
 
 Downgrade warning
@@ -404,7 +404,7 @@ git merge commit are mentioned.
 - #6104 `3e2559c` Show an init message while activating best chain
 - #6125 `351f73e` Clean up parsing of bool command line args
 - #5964 `b4c219b` Lightweight task scheduler
-- #6116 `30dc3c1` [OSX] rename Bitcoin-Qt.app to Bitcoin-Core.app
+- #6116 `30dc3c1` [OSX] rename Huntcoin-Qt.app to Huntcoin-Core.app
 - #6168 `b3024f0` contrib/linearize: Support linearization of testnet blocks
 - #6098 `7708fcd` Update Windows resource files (and add one for huntcoin-tx)
 - #6159 `e1412d3` Catch errors on datadir lock and pidfile delete

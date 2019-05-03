@@ -31,7 +31,7 @@ new private keys are properly backed up you should:
 1. Run Bitcoin and let it rewrite the wallet.dat file
 
 2. Run it again, then ask it for a new huntcoin address.
-Bitcoin-Qt: Address Book, then New Address...
+Huntcoin-Qt: Address Book, then New Address...
 huntcoind: run the 'walletpassphrase' RPC command to unlock the wallet,  then run the 'getnewaddress' RPC command.
 
 3. If your encrypted wallet.dat may have been copied or stolen, send  all of your huntcoins to the new huntcoin address.

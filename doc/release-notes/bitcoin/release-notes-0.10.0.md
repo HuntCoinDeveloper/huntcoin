@@ -17,7 +17,7 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over /Applications/Bitcoin-Qt (on Mac) or
+installer (on Windows) or just copy over /Applications/Huntcoin-Qt (on Mac) or
 huntcoind/huntcoin-qt (on Linux).
 
 Downgrading warning
@@ -539,7 +539,7 @@ GUI:
 - `7007402` Implement SI-style (thin space) thoudands separator
 - `91cce17` Use fixed-point arithmetic in amount spinbox
 - `bdba2dd` Remove an obscure option no-one cares about
-- `bd0aa10` Replace the temporary file hack currently used to change Bitcoin-Qt's dock icon (OS X) with a buffer-based solution
+- `bd0aa10` Replace the temporary file hack currently used to change Huntcoin-Qt's dock icon (OS X) with a buffer-based solution
 - `94e1b9e` Re-work overviewpage UI
 - `8bfdc9a` Better looking trayicon
 - `b197bf3` disable tray interactions when client model set to 0

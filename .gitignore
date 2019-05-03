@@ -81,7 +81,7 @@ src/qt/huntcoin-qt.includes
 *.qm
 Makefile
 huntcoin-qt
-Bitcoin-Qt.app
+Huntcoin-Qt.app
 background.tiff*
 
 # Unit-tests

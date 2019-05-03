@@ -15,7 +15,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), uninstall all
 earlier versions of Bitcoin, then run the installer (on Windows) or just copy
-over /Applications/Bitcoin-Qt (on Mac) or huntcoind/huntcoin-qt (on Linux).
+over /Applications/Huntcoin-Qt (on Mac) or huntcoind/huntcoin-qt (on Linux).
 
 If you are upgrading from version 0.7.2 or earlier, the first time you run
 0.9.0 your blockchain files will be re-indexed, which will take anywhere from 
@@ -62,7 +62,7 @@ of minutes on a typical machine).
 Rebranding to Bitcoin Core
 ---------------------------
 
-To reduce confusion between Bitcoin-the-network and Bitcoin-the-software we
+To reduce confusion between Huntcoin-the-network and Huntcoin-the-software we
 have renamed the reference client to Bitcoin Core.
 
 
@@ -85,13 +85,13 @@ Autotools build system
 For 0.9.0 we switched to an autotools-based build system instead of individual
 (q)makefiles.
 
-Using the standard "./autogen.sh; ./configure; make" to build Bitcoin-Qt and
+Using the standard "./autogen.sh; ./configure; make" to build Huntcoin-Qt and
 huntcoind makes it easier for experienced open source developers to contribute 
 to the project.
 
 Be sure to check doc/build-*.md for your platform before building from source.
 
-Bitcoin-cli
+Huntcoin-cli
 -------------
 
 Another change in the 0.9 release is moving away from the huntcoind executable
