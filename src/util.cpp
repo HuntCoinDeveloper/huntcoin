@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2017 The Bitcoin Core developers
 // Copyright (c) 2014-2017 The Dash Core developers
-// Copyright (c) 2017-2018 The Globaltoken Core developers
+// Copyright (c) 2017-2018 The Huntcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -85,12 +85,12 @@
 // Application startup time (used for uptime calculation)
 const int64_t nStartupTime = GetTime();
 
-//Globaltoken only features
+//Huntcoin only features
 bool fMasternodeMode = false;
 bool fLiteMode = false;
 
-const char * const BITCOIN_CONF_FILENAME = "globaltoken.conf";
-const char * const BITCOIN_PID_FILENAME = "globaltokend.pid";
+const char * const BITCOIN_CONF_FILENAME = "huntcoin.conf";
+const char * const BITCOIN_PID_FILENAME = "huntcoind.pid";
 const char * const DEFAULT_DEBUGLOGFILE = "debug.log";
 
 ArgsManager gArgs;
@@ -263,7 +263,7 @@ const CLogCategoryDesc LogCategories[] =
     {BCLog::MNPAYMENTS, "mnpayments"},
     {BCLog::MNSYNC, "mnsync"},
     {BCLog::SPORK, "spork"},
-    {BCLog::GLOBALTOKEN, "globaltoken"},
+    {BCLog::HUNTCOIN, "huntcoin"},
     {BCLog::ALL, "1"},
     {BCLog::ALL, "all"},
 };
@@ -291,7 +291,7 @@ std::string ListLogCategories()
     int outcount = 0;
     for (unsigned int i = 0; i < ARRAYLEN(LogCategories); i++) {
         // Omit the special cases.
-        if (LogCategories[i].flag != BCLog::NONE && LogCategories[i].flag != BCLog::ALL && LogCategories[i].flag != BCLog::GLOBALTOKEN) {
+        if (LogCategories[i].flag != BCLog::NONE && LogCategories[i].flag != BCLog::ALL && LogCategories[i].flag != BCLog::HUNTCOIN) {
             if (outcount != 0) ret += ", ";
             ret += LogCategories[i].category;
             outcount++;
@@ -305,7 +305,7 @@ std::vector<CLogCategoryActive> ListActiveLogCategories()
     std::vector<CLogCategoryActive> ret;
     for (unsigned int i = 0; i < ARRAYLEN(LogCategories); i++) {
         // Omit the special cases.
-        if (LogCategories[i].flag != BCLog::NONE && LogCategories[i].flag != BCLog::ALL && LogCategories[i].flag != BCLog::GLOBALTOKEN) {
+        if (LogCategories[i].flag != BCLog::NONE && LogCategories[i].flag != BCLog::ALL && LogCategories[i].flag != BCLog::HUNTCOIN) {
             CLogCategoryActive catActive;
             catActive.category = LogCategories[i].category;
             catActive.active = LogAcceptCategory(LogCategories[i].flag);
@@ -570,7 +570,7 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(nullptr, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "globaltoken";
+    const char* pszModule = "huntcoin";
 #endif
     if (pex)
         return strprintf(
@@ -589,13 +589,13 @@ void PrintExceptionContinue(const std::exception* pex, const char* pszThread)
 
 fs::path GetDefaultDataDir()
 {
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Globaltoken
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Globaltoken
-    // Mac: ~/Library/Application Support/Globaltoken
-    // Unix: ~/.globaltoken
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Huntcoin
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Huntcoin
+    // Mac: ~/Library/Application Support/Huntcoin
+    // Unix: ~/.huntcoin
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Globaltoken";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Huntcoin";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -605,10 +605,10 @@ fs::path GetDefaultDataDir()
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // Mac
-    return pathRet / "Library/Application Support/Globaltoken";
+    return pathRet / "Library/Application Support/Huntcoin";
 #else
     // Unix
-    return pathRet / ".globaltoken";
+    return pathRet / ".huntcoin";
 #endif
 #endif
 }
@@ -968,15 +968,15 @@ std::string CopyrightHolders(const std::string& strPrefix)
     return strCopyrightHolders;
 }
 
-std::string CopyrightHoldersGLT(const std::string& strPrefix)
+std::string CopyrightHoldersHUNT(const std::string& strPrefix)
 {
-    std::string strCopyrightHoldersGLT = strPrefix + strprintf(_(COPYRIGHT_HOLDERS), _(COPYRIGHT_HOLDERS_SUBSTITUTION_GLT));
+    std::string strCopyrightHoldersHUNT = strPrefix + strprintf(_(COPYRIGHT_HOLDERS), _(COPYRIGHT_HOLDERS_SUBSTITUTION_HUNT));
 
     // Check for untranslated substitution to make sure Bitcoin Core copyright is not removed by accident
-    if (strprintf(COPYRIGHT_HOLDERS, COPYRIGHT_HOLDERS_SUBSTITUTION_GLT).find("Globaltoken Core") == std::string::npos) {
-        strCopyrightHoldersGLT += "\n" + strPrefix + "The Globaltoken Core developers";
+    if (strprintf(COPYRIGHT_HOLDERS, COPYRIGHT_HOLDERS_SUBSTITUTION_HUNT).find("Huntcoin Core") == std::string::npos) {
+        strCopyrightHoldersHUNT += "\n" + strPrefix + "The Huntcoin Core developers";
     }
-    return strCopyrightHoldersGLT;
+    return strCopyrightHoldersHUNT;
 }
 
 // Obtain the application startup time (used for uptime calculation)

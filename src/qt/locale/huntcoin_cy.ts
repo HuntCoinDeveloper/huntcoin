@@ -62,12 +62,12 @@
         <translation>Derbyn cyfeiriadau</translation>
     </message>
     <message>
-        <source>These are your Globaltoken addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Rhain ydi eich cyfeiriadau Globaltoken ar gyfer gyrru taliadau. Gwnewch yn sicr o'r swm a'r cyfeiriad derbyn cyn gyrru arian.</translation>
+        <source>These are your Huntcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Rhain ydi eich cyfeiriadau Huntcoin ar gyfer gyrru taliadau. Gwnewch yn sicr o'r swm a'r cyfeiriad derbyn cyn gyrru arian.</translation>
     </message>
     <message>
-        <source>These are your Globaltoken addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dyma eich cyfeiriadau Globaltoken ar gyfer derbyn taliadau. Argymhellwn ddefnyddio cyfeiriad derbyn newydd ar gyfer bob trafodyn.</translation>
+        <source>These are your Huntcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dyma eich cyfeiriadau Huntcoin ar gyfer derbyn taliadau. Argymhellwn ddefnyddio cyfeiriad derbyn newydd ar gyfer bob trafodyn.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -164,7 +164,7 @@
         <translation>Cadarnhau amgryptio'r waled</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GLOBALTOKENS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HUNTCOINS&lt;/b&gt;!</source>
         <translation>Rhybudd: Os ydych yn amgryptio'r waled ag yn colli'r cyfrinair, byddwch yn &lt;b&gt; COLLI EICH BITCOINS I GYD &lt;b&gt; !</translation>
     </message>
     <message>
@@ -176,8 +176,8 @@
         <translation>Waled Wedi Amgryptio</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your globaltokens from being stolen by malware infecting your computer.</source>
-        <translation>Bydd %1 nawr yn gorffen y broses amgryptio. Cofiwch nad ydy amgryptio eich waled yn llawn amddiffyn eich globaltokens rhag cael eu dwyn gan afiechyd yn heintio eich cyfrifiadur.</translation>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your huntcoins from being stolen by malware infecting your computer.</source>
+        <translation>Bydd %1 nawr yn gorffen y broses amgryptio. Cofiwch nad ydy amgryptio eich waled yn llawn amddiffyn eich huntcoins rhag cael eu dwyn gan afiechyd yn heintio eich cyfrifiadur.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -334,8 +334,8 @@
         <translation>Ailfynegi y blociau ar ddisg...</translation>
     </message>
     <message>
-        <source>Send coins to a Globaltoken address</source>
-        <translation>Anfon arian i gyfeiriad Globaltoken</translation>
+        <source>Send coins to a Huntcoin address</source>
+        <translation>Anfon arian i gyfeiriad Huntcoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -354,8 +354,8 @@
         <translation>&amp;Gwirio neges...</translation>
     </message>
     <message>
-        <source>Globaltoken</source>
-        <translation>Globaltoken</translation>
+        <source>Huntcoin</source>
+        <translation>Huntcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -382,12 +382,12 @@
         <translation>Amgryptio'r allweddi preifat sy'n perthyn i'ch waled</translation>
     </message>
     <message>
-        <source>Sign messages with your Globaltoken addresses to prove you own them</source>
-        <translation>Arwyddo negeseuon gyda eich cyfeiriadau Globaltoken i brofi mae chi sy'n berchen arnynt</translation>
+        <source>Sign messages with your Huntcoin addresses to prove you own them</source>
+        <translation>Arwyddo negeseuon gyda eich cyfeiriadau Huntcoin i brofi mae chi sy'n berchen arnynt</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Globaltoken addresses</source>
-        <translation>Gwirio negeseuon i sicrhau eu bod wedi eu harwyddo gyda cyfeiriadau Globaltoken penodol</translation>
+        <source>Verify messages to ensure they were signed with specified Huntcoin addresses</source>
+        <translation>Gwirio negeseuon i sicrhau eu bod wedi eu harwyddo gyda cyfeiriadau Huntcoin penodol</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -406,8 +406,8 @@
         <translation>Bar offer tabiau</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and globaltoken: URIs)</source>
-        <translation>Gofyn taliadau (creu côd QR a globaltoken: URIs)</translation>
+        <source>Request payments (generates QR codes and huntcoin: URIs)</source>
+        <translation>Gofyn taliadau (creu côd QR a huntcoin: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -418,8 +418,8 @@
         <translation>Dangos rhestr o gyfeiriadau derbyn a labelau wedi eu defnyddio</translation>
     </message>
     <message>
-        <source>Open a globaltoken: URI or payment request</source>
-        <translation>Agor Globaltoken: URI neu ofyn taliad</translation>
+        <source>Open a huntcoin: URI or payment request</source>
+        <translation>Agor Huntcoin: URI neu ofyn taliad</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -524,8 +524,8 @@
         <translation>Mae'r waled &lt;b&gt;wedi'i amgryptio&lt;/b&gt; ac &lt;b&gt;ar glo&lt;/b&gt; ar hyn o bryd</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Globaltoken can no longer continue safely and will quit.</source>
-        <translation>Mae gwall angheuol wedi digwydd. Ni all Globaltoken barhau'n ddiogel ac mae'n cau lawr.</translation>
+        <source>A fatal error occurred. Huntcoin can no longer continue safely and will quit.</source>
+        <translation>Mae gwall angheuol wedi digwydd. Ni all Huntcoin barhau'n ddiogel ac mae'n cau lawr.</translation>
     </message>
 </context>
 <context>
@@ -639,8 +639,8 @@
         <translation>Bitcoin</translation>
     </message>
 	<message>
-        <source>Globaltoken</source>
-        <translation>Globaltoken</translation>
+        <source>Huntcoin</source>
+        <translation>Huntcoin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1046,8 +1046,8 @@
         <translation>Opsiynau:</translation>
     </message>
     <message>
-        <source>Globaltoken Core</source>
-        <translation>Craidd Globaltoken</translation>
+        <source>Huntcoin Core</source>
+        <translation>Craidd Huntcoin</translation>
     </message>
 	<message>
         <source>Bitcoin Core</source>

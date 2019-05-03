@@ -4,8 +4,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef GLOBALTOKEN_MINING_BLOCK_H
-#define GLOBALTOKEN_MINING_BLOCK_H
+#ifndef HUNTCOIN_MINING_BLOCK_H
+#define HUNTCOIN_MINING_BLOCK_H
 
 #include <primitives/block_dependencies.h>
 #include <primitives/transaction.h>
@@ -461,4 +461,4 @@ public:
     }
 };
 
-#endif // GLOBALTOKEN_MINING_BLOCK_H
+#endif // HUNTCOIN_MINING_BLOCK_H

@@ -1,5 +1,5 @@
 // Copyright (c) 2014-2017 The Dash Core developers
-// Copyright (c) 2018 The Globaltoken Core developers
+// Copyright (c) 2018 The Huntcoin Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -131,7 +131,7 @@ int CMasternodePayments::GetMinMasternodePaymentsProto() const {
 
 void CMasternodePayments::ProcessMessage(CNode* pfrom, const std::string& strCommand, CDataStream& vRecv, CConnman& connman)
 {
-    if(fLiteMode) return; // disable all Globaltoken specific functionality
+    if(fLiteMode) return; // disable all Huntcoin specific functionality
 
     if (strCommand == NetMsgType::MASTERNODEPAYMENTSYNC) { //Masternode Payments Request Sync
 
@@ -459,7 +459,7 @@ bool CMasternodeBlockPayees::IsTransactionValid(const CTransaction& txNew) const
         }
     }
 
-    LogPrintf("CMasternodeBlockPayees::IsTransactionValid -- ERROR: Missing required payment, possible payees: '%s', amount: %f GLT\n", strPayeesPossible, (float)nMasternodePayment/COIN);
+    LogPrintf("CMasternodeBlockPayees::IsTransactionValid -- ERROR: Missing required payment, possible payees: '%s', amount: %f HUNT\n", strPayeesPossible, (float)nMasternodePayment/COIN);
     return false;
 }
 

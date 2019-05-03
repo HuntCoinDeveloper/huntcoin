@@ -1,9 +1,9 @@
-// Copyright (c) 2018 The Globaltoken Core developers
+// Copyright (c) 2018 The Huntcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef GLOBALTOKEN_HARDFORK_PARAMS_H
-#define GLOBALTOKEN_HARDFORK_PARAMS_H
+#ifndef HUNTCOIN_HARDFORK_PARAMS_H
+#define HUNTCOIN_HARDFORK_PARAMS_H
 
 #include <arith_uint256.h>
 
@@ -24,4 +24,4 @@ bool IsHardForkActivated(uint32_t blocktime, const Consensus::Params& consensusP
 bool IsHardForkActivated(uint32_t blocktime);
 std::string GetCoinbaseFeeString(int type);
 
-#endif // GLOBALTOKEN_HARDFORK_PARAMS_H
+#endif // HUNTCOIN_HARDFORK_PARAMS_H

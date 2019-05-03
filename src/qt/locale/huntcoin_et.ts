@@ -62,12 +62,12 @@
         <translation>Vastuvõtvad aadressid</translation>
     </message>
     <message>
-        <source>These are your Globaltoken addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Need on sinu Globaltoken aadressid maksete saatmiseks. Ennem müntide saatmist kontrolli alati summat ja makse saaja aadressi.</translation>
+        <source>These are your Huntcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Need on sinu Huntcoin aadressid maksete saatmiseks. Ennem müntide saatmist kontrolli alati summat ja makse saaja aadressi.</translation>
     </message>
     <message>
-        <source>These are your Globaltoken addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Need on sinu Globaltoken aadressid sisenevate maksete vastu võtmiseks. Soovitav on iga tehingu tarbeks kasutada uut aadressi.</translation>
+        <source>These are your Huntcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Need on sinu Huntcoin aadressid sisenevate maksete vastu võtmiseks. Soovitav on iga tehingu tarbeks kasutada uut aadressi.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,8 +168,8 @@
         <translation>Kinnita rahakoti krüpteerimine.</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GLOBALTOKENS&lt;/b&gt;!</source>
-        <translation>Hoiatus:Kui sa krüpteerid oma rahakoti ja kaotad salafraasi, siis sa&lt;b&gt;KAOTAD OMA GLOBALTOKENID&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HUNTCOINS&lt;/b&gt;!</source>
+        <translation>Hoiatus:Kui sa krüpteerid oma rahakoti ja kaotad salafraasi, siis sa&lt;b&gt;KAOTAD OMA HUNTCOINID&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -290,8 +290,8 @@
         <translation>Kettal olevate blokkide re-indekseerimine...</translation>
     </message>
     <message>
-        <source>Send coins to a Globaltoken address</source>
-        <translation>Saada münte Globaltokeni aadressile</translation>
+        <source>Send coins to a Huntcoin address</source>
+        <translation>Saada münte Huntcoini aadressile</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -314,8 +314,8 @@
         <translation>&amp;Kontrolli sõnumit...</translation>
     </message>
     <message>
-        <source>Globaltoken</source>
-        <translation>Globaltoken</translation>
+        <source>Huntcoin</source>
+        <translation>Huntcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -342,12 +342,12 @@
         <translation>Krüpteeri oma rahakoti privaatvõtmed</translation>
     </message>
     <message>
-        <source>Sign messages with your Globaltoken addresses to prove you own them</source>
-        <translation>Omandi tõestamiseks allkirjasta sõnumid oma Globaltokeni aadressiga</translation>
+        <source>Sign messages with your Huntcoin addresses to prove you own them</source>
+        <translation>Omandi tõestamiseks allkirjasta sõnumid oma Huntcoini aadressiga</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Globaltoken addresses</source>
-        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud Globaltokeni aadressiga</translation>
+        <source>Verify messages to ensure they were signed with specified Huntcoin addresses</source>
+        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud Huntcoini aadressiga</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -366,20 +366,20 @@
         <translation>Vahelehe tööriistariba</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and globaltoken: URIs)</source>
-        <translation>Loo maksepäring (genereerib QR koodid ja globaltokeni: URId)</translation>
+        <source>Request payments (generates QR codes and huntcoin: URIs)</source>
+        <translation>Loo maksepäring (genereerib QR koodid ja huntcoini: URId)</translation>
     </message>
     <message>
-        <source>Open a globaltoken: URI or payment request</source>
-        <translation>Ava globaltokeni: URI või maksepäring</translation>
+        <source>Open a huntcoin: URI or payment request</source>
+        <translation>Ava huntcoini: URI või maksepäring</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Käsurea valikud</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Globaltoken network</source>
-        <translation><numerusform>%n aktiivne ühendus Globaltokeni võrku</numerusform><numerusform>%n aktiivset ühendust Globaltokeni võrku</numerusform></translation>
+        <source>%n active connection(s) to Huntcoin network</source>
+        <translation><numerusform>%n aktiivne ühendus Huntcoini võrku</numerusform><numerusform>%n aktiivset ühendust Huntcoini võrku</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -626,8 +626,8 @@
         <translation>Muuda saatvat aadressi</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Globaltoken address.</source>
-        <translation>Sisestatud aadress "%1" ei ole korrektne Globaltoken aadress.</translation>
+        <source>The entered address "%1" is not a valid Huntcoin address.</source>
+        <translation>Sisestatud aadress "%1" ei ole korrektne Huntcoin aadress.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -687,8 +687,8 @@
         <translation>Bitcoin</translation>
     </message>
 	<message>
-        <source>Globaltoken</source>
-        <translation>Globaltoken</translation>
+        <source>Huntcoin</source>
+        <translation>Huntcoin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -764,8 +764,8 @@
         <translation>Ekspert</translation>
     </message>
     <message>
-        <source>Automatically open the Globaltoken client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Globaltokeni kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
+        <source>Automatically open the Huntcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Huntcoini kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -863,7 +863,7 @@
         <translation>Vorm</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Globaltoken network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Huntcoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Kuvatav info ei pruugi olla ajakohane. Ühenduse loomisel süngitakse sinu rahakott automaatselt Bitconi võrgustikuga, kuid see toiming on hetkel lõpetamata.</translation>
     </message>
     <message>
@@ -1365,8 +1365,8 @@
         <translation>Maksepäring aegunud.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Globaltoken address</source>
-        <translation>Hoiatus: Ebakorrektne Globaltoken aadress</translation>
+        <source>Warning: Invalid Huntcoin address</source>
+        <translation>Hoiatus: Ebakorrektne Huntcoin aadress</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1449,8 +1449,8 @@
         <translation>&amp;Allkirjastamise teade</translation>
     </message>
     <message>
-        <source>The Globaltoken address to sign the message with</source>
-        <translation>Globaltoken aadress millega sõnum allkirjastada</translation>
+        <source>The Huntcoin address to sign the message with</source>
+        <translation>Huntcoin aadress millega sõnum allkirjastada</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1481,8 +1481,8 @@
         <translation>Kopeeri praegune signatuur vahemällu</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Globaltoken address</source>
-        <translation>Allkirjasta sõnum Globaltokeni aadressi sulle kuulumise tõestamiseks</translation>
+        <source>Sign the message to prove you own this Huntcoin address</source>
+        <translation>Allkirjasta sõnum Huntcoini aadressi sulle kuulumise tõestamiseks</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1501,12 +1501,12 @@
         <translation>&amp;Kinnita Sõnum</translation>
     </message>
     <message>
-        <source>The Globaltoken address the message was signed with</source>
-        <translation>Globaltoken aadress millega sõnum on allkirjastatud</translation>
+        <source>The Huntcoin address the message was signed with</source>
+        <translation>Huntcoin aadress millega sõnum on allkirjastatud</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Globaltoken address</source>
-        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Globaltokeni aadressiga.</translation>
+        <source>Verify the message to ensure it was signed with the specified Huntcoin address</source>
+        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Huntcoini aadressiga.</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1974,8 +1974,8 @@
         <translation>Tööta taustal ning aktsepteeri käsklusi</translation>
     </message>
     <message>
-        <source>Globaltoken Core</source>
-        <translation>Globaltokeni tuumik</translation>
+        <source>Huntcoin Core</source>
+        <translation>Huntcoini tuumik</translation>
     </message>
 	<message>
         <source>Bitcoin Core</source>

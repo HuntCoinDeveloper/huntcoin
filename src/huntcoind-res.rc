@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Globaltoken"
-            VALUE "FileDescription",    "globaltokend (Globaltoken node with a JSON-RPC server)"
+            VALUE "CompanyName",        "Huntcoin"
+            VALUE "FileDescription",    "huntcoind (Huntcoin node with a JSON-RPC server)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "globaltokend"
+            VALUE "InternalName",       "huntcoind"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "globaltokend.exe"
-            VALUE "ProductName",        "globaltokend"
+            VALUE "OriginalFilename",   "huntcoind.exe"
+            VALUE "ProductName",        "huntcoind"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

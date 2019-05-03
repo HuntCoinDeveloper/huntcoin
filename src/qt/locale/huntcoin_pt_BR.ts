@@ -62,11 +62,11 @@
         <translation>Endereços de recebimento</translation>
     </message>
     <message>
-        <source>These are your Globaltoken addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Huntcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Estes são os seus endereços para enviar pagamentos. Sempre cheque a quantia e o endereço do destinatário antes de enviar moedas.</translation>
     </message>
     <message>
-        <source>These are your Globaltoken addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Huntcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Estes são os seus endereços para receber pagamentos. É recomendado usar um novo para cada transação.</translation>
     </message>
     <message>
@@ -172,8 +172,8 @@
         <translation>Confirmar criptografia da carteira</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GLOBALTOKENS&lt;/b&gt;!</source>
-        <translation>Aviso: Se você criptografar sua carteira e perder sua senha, você vai &lt;b&gt;PERDER TODOS OS SEUS GLOBALTOKENS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HUNTCOINS&lt;/b&gt;!</source>
+        <translation>Aviso: Se você criptografar sua carteira e perder sua senha, você vai &lt;b&gt;PERDER TODOS OS SEUS HUNTCOINS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -354,8 +354,8 @@
         <translation>Reindexando blocos no disco...</translation>
     </message>
     <message>
-        <source>Send coins to a Globaltoken address</source>
-        <translation>Enviar moedas para um endereço globaltoken</translation>
+        <source>Send coins to a Huntcoin address</source>
+        <translation>Enviar moedas para um endereço huntcoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -378,8 +378,8 @@
         <translation>&amp;Verificar mensagem...</translation>
     </message>
     <message>
-        <source>Globaltoken</source>
-        <translation>Globaltoken</translation>
+        <source>Huntcoin</source>
+        <translation>Huntcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -406,12 +406,12 @@
         <translation>Criptografar as chaves privadas que pertencem à sua carteira</translation>
     </message>
     <message>
-        <source>Sign messages with your Globaltoken addresses to prove you own them</source>
-        <translation>Assine mensagens com seus endereços Globaltoken para provar que você é dono delas</translation>
+        <source>Sign messages with your Huntcoin addresses to prove you own them</source>
+        <translation>Assine mensagens com seus endereços Huntcoin para provar que você é dono delas</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Globaltoken addresses</source>
-        <translation>Verificar mensagens para se assegurar que elas foram assinadas pelo dono de Endereços Globaltoken específicos</translation>
+        <source>Verify messages to ensure they were signed with specified Huntcoin addresses</source>
+        <translation>Verificar mensagens para se assegurar que elas foram assinadas pelo dono de Endereços Huntcoin específicos</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -430,8 +430,8 @@
         <translation>Barra de ferramentas</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and globaltoken: URIs)</source>
-        <translation>Solicitações de pagamentos (gera códigos QR e globaltoken: URIs)</translation>
+        <source>Request payments (generates QR codes and huntcoin: URIs)</source>
+        <translation>Solicitações de pagamentos (gera códigos QR e huntcoin: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -442,16 +442,16 @@
         <translation>Mostrar a lista de endereços de recebimento usados ​​e rótulos</translation>
     </message>
     <message>
-        <source>Open a globaltoken: URI or payment request</source>
-        <translation>Abrir um globaltoken: URI ou cobrança</translation>
+        <source>Open a huntcoin: URI or payment request</source>
+        <translation>Abrir um huntcoin: URI ou cobrança</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Opções de linha de &amp;comando</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Globaltoken network</source>
-        <translation><numerusform>%n conexão ativa na rede Globaltoken</numerusform><numerusform>%n conexões ativas na rede Globaltoken</numerusform></translation>
+        <source>%n active connection(s) to Huntcoin network</source>
+        <translation><numerusform>%n conexão ativa na rede Huntcoin</numerusform><numerusform>%n conexões ativas na rede Huntcoin</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -494,8 +494,8 @@
         <translation>Atualizado</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Globaltoken command-line options</source>
-        <translation>Mostrar a mensagem de ajuda do %1 para obter uma lista com possíveis opções de linha de comando Globaltoken</translation>
+        <source>Show the %1 help message to get a list with possible Huntcoin command-line options</source>
+        <translation>Mostrar a mensagem de ajuda do %1 para obter uma lista com possíveis opções de linha de comando Huntcoin</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -564,8 +564,8 @@
         <translation>Carteira está &lt;b&gt;criptografada&lt;/b&gt; e atualmente &lt;b&gt;bloqueada&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Globaltoken can no longer continue safely and will quit.</source>
-        <translation>Um erro fatal ocorreu. Globaltoken não pode continuar em segurança e irá fechar.</translation>
+        <source>A fatal error occurred. Huntcoin can no longer continue safely and will quit.</source>
+        <translation>Um erro fatal ocorreu. Huntcoin não pode continuar em segurança e irá fechar.</translation>
     </message>
 </context>
 <context>
@@ -758,7 +758,7 @@
         <translation>Editar endereço de envio</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Globaltoken address.</source>
+        <source>The entered address "%1" is not a valid Huntcoin address.</source>
         <translation>O endereço digitado "%1" não é um endereço válido.</translation>
     </message>
     <message>
@@ -888,8 +888,8 @@ Esta sincronização inicial é muito exigente e pode expor problemas de hardwar
         <translation>Bitcoin</translation>
     </message>
 	<message>
-        <source>Globaltoken</source>
-        <translation>Globaltoken</translation>
+        <source>Huntcoin</source>
+        <translation>Huntcoin</translation>
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
@@ -900,8 +900,8 @@ Esta sincronização inicial é muito exigente e pode expor problemas de hardwar
         <translation>Aproximadamente %1 GB de dados serão armazenados neste diretório.</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Globaltoken block chain.</source>
-        <translation>%1 irá baixar e armazenar uma cópia da blockchain do Globaltoken</translation>
+        <source>%1 will download and store a copy of the Huntcoin block chain.</source>
+        <translation>%1 irá baixar e armazenar uma cópia da blockchain do Huntcoin</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -1086,11 +1086,11 @@ Esta sincronização inicial é muito exigente e pode expor problemas de hardwar
         <translation>Formulário</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the globaltoken network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the huntcoin network, as detailed below.</source>
         <translation>Transações recentes podem não estar visíveis ainda, portanto o seu saldo pode estar incorreto. Esta informação será corrigida assim que sua carteira for sincronizada com a rede, como detalhado abaixo.</translation>
     </message>
     <message>
-        <source>Attempting to spend globaltokens that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend huntcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation>Gastar moedas de transações desconhecidas podem não ser aceitas pela rede.</translation>
     </message>
     <message>
@@ -1264,8 +1264,8 @@ Esta sincronização inicial é muito exigente e pode expor problemas de hardwar
         <translation>Ga&amp;star mudança não confirmada</translation>
     </message>
     <message>
-        <source>Automatically open the Globaltoken client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir as portas do cliente Globaltoken automaticamente no roteador. Isto só funcionará se seu roteador suportar UPnP e esta função estiver habilitada.</translation>
+        <source>Automatically open the Huntcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir as portas do cliente Huntcoin automaticamente no roteador. Isto só funcionará se seu roteador suportar UPnP e esta função estiver habilitada.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1280,8 +1280,8 @@ Esta sincronização inicial é muito exigente e pode expor problemas de hardwar
         <translation>Permitir receber conexões</translation>
     </message>
     <message>
-        <source>Connect to the Globaltoken network through a SOCKS5 proxy.</source>
-        <translation>Conectar na rede Globaltoken através de um proxy SOCKS5.</translation>
+        <source>Connect to the Huntcoin network through a SOCKS5 proxy.</source>
+        <translation>Conectar na rede Huntcoin através de um proxy SOCKS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1316,8 +1316,8 @@ Esta sincronização inicial é muito exigente e pode expor problemas de hardwar
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Globaltoken network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Conecte-se à rede Globaltoken através de um proxy SOCKS5 separado para utilizar serviços ocultos Tor.</translation>
+        <source>Connect to the Huntcoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Conecte-se à rede Huntcoin através de um proxy SOCKS5 separado para utilizar serviços ocultos Tor.</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1353,7 +1353,7 @@ Esta sincronização inicial é muito exigente e pode expor problemas de hardwar
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Escolha a unidade padrão de subdivisão para interface mostrar quando enviar globaltokens.</translation>
+        <translation>Escolha a unidade padrão de subdivisão para interface mostrar quando enviar huntcoins.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1419,8 +1419,8 @@ Esta sincronização inicial é muito exigente e pode expor problemas de hardwar
         <translation>Formulário</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Globaltoken network after a connection is established, but this process has not completed yet.</source>
-        <translation>A informação mostrada pode estar desatualizada. Sua carteira sincroniza automaticamente com a rede Globaltoken depois que a conexão é estabelecida, mas este processo pode não estar completo ainda.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Huntcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>A informação mostrada pode estar desatualizada. Sua carteira sincroniza automaticamente com a rede Huntcoin depois que a conexão é estabelecida, mas este processo pode não estar completo ainda.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1494,8 +1494,8 @@ Esta sincronização inicial é muito exigente e pode expor problemas de hardwar
         <translation>Erro no pedido de pagamento</translation>
     </message>
     <message>
-        <source>Cannot start globaltoken: click-to-pay handler</source>
-        <translation>Não foi possível iniciar globaltoken: manipulador click-to-pay</translation>
+        <source>Cannot start huntcoin: click-to-pay handler</source>
+        <translation>Não foi possível iniciar huntcoin: manipulador click-to-pay</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1510,7 +1510,7 @@ Esta sincronização inicial é muito exigente e pode expor problemas de hardwar
         <translation>Endereço de pagamento %1 inválido</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Globaltoken address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Huntcoin address or malformed URI parameters.</source>
         <translation>URI não pode ser analisado! Isto pode ser causado por um endereço inválido ou parâmetros URI informados incorretamente.</translation>
     </message>
     <message>
@@ -1616,8 +1616,8 @@ Esta sincronização inicial é muito exigente e pode expor problemas de hardwar
         <translation>Quantidade</translation>
     </message>
     <message>
-        <source>Enter a Globaltoken address (e.g. %1)</source>
-        <translation>Informe um endereço Globaltoken (ex: %1)</translation>
+        <source>Enter a Huntcoin address (e.g. %1)</source>
+        <translation>Informe um endereço Huntcoin (ex: %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2059,8 +2059,8 @@ Esta sincronização inicial é muito exigente e pode expor problemas de hardwar
         <translation>&amp;Mensagem</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Globaltoken network.</source>
-        <translation>Uma mensagem opcional que será anexada na cobrança e será mostrada quando ela for aberta. Nota: A mensagem não será enviada com o pagamento pela rede Globaltoken.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Huntcoin network.</source>
+        <translation>Uma mensagem opcional que será anexada na cobrança e será mostrada quando ela for aberta. Nota: A mensagem não será enviada com o pagamento pela rede Huntcoin.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2316,7 +2316,7 @@ Esta sincronização inicial é muito exigente e pode expor problemas de hardwar
         <translation>Ocultar</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for globaltoken transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for huntcoin transactions than the network can process.</source>
         <translation>Pagando apenas a taxa mínima é bom, desde que haja pouco volume de transações. Mas esteja ciente de que isso pode acabar em uma transação nunca confirmanda uma vez que há mais demanda por transações do que a rede pode processar.</translation>
     </message>
     <message>
@@ -2492,7 +2492,7 @@ Esta sincronização inicial é muito exigente e pode expor problemas de hardwar
         <translation><numerusform>Confirmação em %n bloco.</numerusform><numerusform>Confirmação em %n blocos.</numerusform></translation>
     </message>
     <message>
-        <source>Warning: Invalid Globaltoken address</source>
+        <source>Warning: Invalid Huntcoin address</source>
         <translation>Aviso: Endereço inválido</translation>
     </message>
     <message>
@@ -2535,7 +2535,7 @@ Esta sincronização inicial é muito exigente e pode expor problemas de hardwar
         <translation>Este é um pagamento normal.</translation>
     </message>
     <message>
-        <source>The Globaltoken address to send the payment to</source>
+        <source>The Huntcoin address to send the payment to</source>
         <translation>Endereço que enviará o pagamento</translation>
     </message>
     <message>
@@ -2555,8 +2555,8 @@ Esta sincronização inicial é muito exigente e pode expor problemas de hardwar
         <translation>Remover esta entrada</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less globaltokens than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>A taxa será deduzida da quantia que está sendo enviada. O destinatário receberá menos globaltokens do que você colocou no campo de quantidade. Se vários destinatários estão selecionados, a taxa é dividida igualmente.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less huntcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>A taxa será deduzida da quantia que está sendo enviada. O destinatário receberá menos huntcoins do que você colocou no campo de quantidade. Se vários destinatários estão selecionados, a taxa é dividida igualmente.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2583,8 +2583,8 @@ Esta sincronização inicial é muito exigente e pode expor problemas de hardwar
         <translation>Digite um rótulo para este endereço para adicioná-lo no catálogo</translation>
     </message>
     <message>
-        <source>A message that was attached to the globaltoken: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Globaltoken network.</source>
-        <translation>A mensagem que foi anexada ao globaltoken: URI na qual será gravada na transação para sua referência. Nota: Essa mensagem não será gravada publicamente na rede Globaltoken.</translation>
+        <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Huntcoin network.</source>
+        <translation>A mensagem que foi anexada ao huntcoin: URI na qual será gravada na transação para sua referência. Nota: Essa mensagem não será gravada publicamente na rede Huntcoin.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2628,12 +2628,12 @@ Esta sincronização inicial é muito exigente e pode expor problemas de hardwar
         <translation>&amp;Assinar mensagem</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive globaltokens sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Você pode assinar mensagens com seus endereços para provar que você pode receber globaltokens enviados por alguém. Cuidado para não assinar nada vago ou aleatório, pois ataques phishing podem tentar te enganar para assinar coisas para eles como se fosse você. Somente assine termos bem detalhados que você concorde.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive huntcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Você pode assinar mensagens com seus endereços para provar que você pode receber huntcoins enviados por alguém. Cuidado para não assinar nada vago ou aleatório, pois ataques phishing podem tentar te enganar para assinar coisas para eles como se fosse você. Somente assine termos bem detalhados que você concorde.</translation>
     </message>
     <message>
-        <source>The Globaltoken address to sign the message with</source>
-        <translation>O enderesso Globaltoken que assinará a mensagem</translation>
+        <source>The Huntcoin address to sign the message with</source>
+        <translation>O enderesso Huntcoin que assinará a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2664,8 +2664,8 @@ Esta sincronização inicial é muito exigente e pode expor problemas de hardwar
         <translation>Copiar a assinatura para a área de transferência do sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Globaltoken address</source>
-        <translation>Assinar mensagem para provar que você é dono deste endereço Globaltoken</translation>
+        <source>Sign the message to prove you own this Huntcoin address</source>
+        <translation>Assinar mensagem para provar que você é dono deste endereço Huntcoin</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2688,12 +2688,12 @@ Esta sincronização inicial é muito exigente e pode expor problemas de hardwar
         <translation>Coloque o endereço do autor, a mensagem (certifique-se de copiar toda a mensagem, incluindo quebras de linha, espaços, tabulações, etc.) e a assinatura embaixo para verificar a mensagem. Cuidado para não ler mais da assinatura do que está assinado na mensagem, para evitar ser enganado pelo ataque man-in-the-middle. Note que isso somente prova a propriedade de um endereço, e não o remetende de qualquer transação.</translation>
     </message>
     <message>
-        <source>The Globaltoken address the message was signed with</source>
-        <translation>O enderesso Globaltoken que assionou a mesnagem</translation>
+        <source>The Huntcoin address the message was signed with</source>
+        <translation>O enderesso Huntcoin que assionou a mesnagem</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Globaltoken address</source>
-        <translation>Verificar mensagem para se assegurar que ela foi assinada pelo dono de um endereço Globaltoken específico.</translation>
+        <source>Verify the message to ensure it was signed with the specified Huntcoin address</source>
+        <translation>Verificar mensagem para se assegurar que ela foi assinada pelo dono de um endereço Huntcoin específico.</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -3263,8 +3263,8 @@ Esta sincronização inicial é muito exigente e pode expor problemas de hardwar
         <translation>Enviar moedas</translation>
     </message>
     <message>
-        <source>InstantSend doesn't support sending values that high yet. Transactions are currently limited to %1 GLT.</source>
-        <translation>EnvioInstantâneo não suporta o envio de valores tão altos ainda. As transações são limitadas a %1 GLT.</translation>
+        <source>InstantSend doesn't support sending values that high yet. Transactions are currently limited to %1 HUNT.</source>
+        <translation>EnvioInstantâneo não suporta o envio de valores tão altos ainda. As transações são limitadas a %1 HUNT.</translation>
     </message>
     <message>
         <source>Used way too many inputs (&gt;%1) for this InstantSend transaction, fees could be huge.</source>
@@ -3409,8 +3409,8 @@ Esta sincronização inicial é muito exigente e pode expor problemas de hardwar
         <translation>Não foi possível iniciar o servidor HTTP. Veja o log para detaihes.</translation>
     </message>
     <message>
-        <source>Globaltoken Core</source>
-        <translation>Globaltoken Core</translation>
+        <source>Huntcoin Core</source>
+        <translation>Huntcoin Core</translation>
     </message>
 	<message>
         <source>Bitcoin Core</source>
@@ -3853,8 +3853,8 @@ Esta sincronização inicial é muito exigente e pode expor problemas de hardwar
         <translation>Se paytxfee não estiver definida, incluir comissão suficiente para que as transações comecem a ter confirmações em média dentro de N blocos (padrão %u)</translation>
     </message>
     <message>
-        <source>InstantSend doesn't support sending values that high yet. Transactions are currently limited to %1 GLT.</source>
-        <translation>EnvioInstantâneo não suporta o envio de valores tão altos ainda. As transações são limitadas a %1 GLT.</translation>
+        <source>InstantSend doesn't support sending values that high yet. Transactions are currently limited to %1 HUNT.</source>
+        <translation>EnvioInstantâneo não suporta o envio de valores tão altos ainda. As transações são limitadas a %1 HUNT.</translation>
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>

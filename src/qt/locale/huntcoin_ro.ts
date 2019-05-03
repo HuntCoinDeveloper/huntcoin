@@ -62,12 +62,12 @@
         <translation>Adresele de primire</translation>
     </message>
     <message>
-        <source>These are your Globaltoken addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Acestea sunt adresele tale Globaltoken pentru trimiterea plății. Verifică mereu suma și adresa de primire înainte de trimiterea monedelor.</translation>
+        <source>These are your Huntcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Acestea sunt adresele tale Huntcoin pentru trimiterea plății. Verifică mereu suma și adresa de primire înainte de trimiterea monedelor.</translation>
     </message>
     <message>
-        <source>These are your Globaltoken addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Acestea sunt adresele tale Globaltoken pentru primirea plăților. Este recomandată folosirea de noi adrese de primire pentru fiecare tranzacție.</translation>
+        <source>These are your Huntcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Acestea sunt adresele tale Huntcoin pentru primirea plăților. Este recomandată folosirea de noi adrese de primire pentru fiecare tranzacție.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -164,7 +164,7 @@
         <translation>Confirmă criptarea portofelului</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GLOBALTOKENS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HUNTCOINS&lt;/b&gt;!</source>
         <translation>Atenție: Dacă îți criptezi portofelul și uiți parola, îți vei &lt;b&gt; PIERDE TOȚI BITCOINS&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -286,8 +286,8 @@
         <translation>Click pentru a permite, din nou, activitate rețelei.</translation>
     </message>
     <message>
-        <source>Send coins to a Globaltoken address</source>
-        <translation>Trimite monedele către o adresă Globaltoken</translation>
+        <source>Send coins to a Huntcoin address</source>
+        <translation>Trimite monedele către o adresă Huntcoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -310,8 +310,8 @@
         <translation>&amp;Verifică mesajul...</translation>
     </message>
     <message>
-        <source>Globaltoken</source>
-        <translation>Globaltoken</translation>
+        <source>Huntcoin</source>
+        <translation>Huntcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -338,12 +338,12 @@
         <translation>Criptează cheile private care aparțin portofelului tău.</translation>
     </message>
     <message>
-        <source>Sign messages with your Globaltoken addresses to prove you own them</source>
-        <translation>Semnează mesajele cu adresa ta de Globaltoken pentru a face dovada că îți aparțin.</translation>
+        <source>Sign messages with your Huntcoin addresses to prove you own them</source>
+        <translation>Semnează mesajele cu adresa ta de Huntcoin pentru a face dovada că îți aparțin.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Globaltoken addresses</source>
-        <translation>Verifică mesajele cu scopul de a asigura faptul că au fost semnate cu adresa de Globaltoken specificată.</translation>
+        <source>Verify messages to ensure they were signed with specified Huntcoin addresses</source>
+        <translation>Verifică mesajele cu scopul de a asigura faptul că au fost semnate cu adresa de Huntcoin specificată.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -358,8 +358,8 @@
         <translation>&amp;Ajutor</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and globaltoken: URIs)</source>
-        <translation>Cerere plată (generează coduri QR și globaltoken: URIs)</translation>
+        <source>Request payments (generates QR codes and huntcoin: URIs)</source>
+        <translation>Cerere plată (generează coduri QR și huntcoin: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -370,8 +370,8 @@
         <translation>Afișează lista adreselor de primire utilizate și etichetele.</translation>
     </message>
     <message>
-        <source>Open a globaltoken: URI or payment request</source>
-        <translation>Deschide un globaltoken: URI sau cerere de plată</translation>
+        <source>Open a huntcoin: URI or payment request</source>
+        <translation>Deschide un huntcoin: URI sau cerere de plată</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -617,8 +617,8 @@
         <translation>Bitcoin</translation>
     </message>
 	<message>
-        <source>Globaltoken</source>
-        <translation>Globaltoken</translation>
+        <source>Huntcoin</source>
+        <translation>Huntcoin</translation>
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
@@ -648,8 +648,8 @@
         <translation>formular</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the globaltoken network, as detailed below.</source>
-        <translation>Posibil ca tranzacțiile recente să nu fie vizibile, încă, astfel bilanțul portofelului tău poate fi incorect. Aceste informații vor fi corecte o dată ce portofelul tău a încheiat sincronizarea cu rețeaua globaltoken, conform descrierii de mai jos.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the huntcoin network, as detailed below.</source>
+        <translation>Posibil ca tranzacțiile recente să nu fie vizibile, încă, astfel bilanțul portofelului tău poate fi incorect. Aceste informații vor fi corecte o dată ce portofelul tău a încheiat sincronizarea cu rețeaua huntcoin, conform descrierii de mai jos.</translation>
     </message>
     <message>
         <source>Unknown...</source>
@@ -1140,8 +1140,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Globaltoken Core</source>
-        <translation>Globaltoken Core</translation>
+        <source>Huntcoin Core</source>
+        <translation>Huntcoin Core</translation>
     </message>
 	<message>
         <source>Bitcoin Core</source>

@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Choisissez une adresse où envoyer les globaltokens</translation>
+        <translation>Choisissez une adresse où envoyer les huntcoins</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Choisissez une adresse où recevoir les globaltokens</translation>
+        <translation>Choisissez une adresse où recevoir les huntcoins</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -62,12 +62,12 @@
         <translation>Adresses de réception</translation>
     </message>
     <message>
-        <source>These are your Globaltoken addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ceci sont vos addresses Globaltoken pour envoyer vos paiements. Il faut toujours verifier les montants et l'addresse de reception avant de valider la transaction.</translation>
+        <source>These are your Huntcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Ceci sont vos addresses Huntcoin pour envoyer vos paiements. Il faut toujours verifier les montants et l'addresse de reception avant de valider la transaction.</translation>
     </message>
     <message>
-        <source>These are your Globaltoken addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Ceci sont vos addresses Globaltoken pour recevoir vos paiements. Il est recommandé d'utiliser une nouvelle adresse de recepetion pour chaque transaction</translation>
+        <source>These are your Huntcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Ceci sont vos addresses Huntcoin pour recevoir vos paiements. Il est recommandé d'utiliser une nouvelle adresse de recepetion pour chaque transaction</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,7 +172,7 @@
         <translation>Confirmer le chiffrement du porte-monnaie</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GLOBALTOKENS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HUNTCOINS&lt;/b&gt;!</source>
         <translation>Attention : Si vous chiffrez votre portefeuille et que vous perdez votre mot de passe vous &lt;b&gt; PERDREZ TOUS VOS BITCOINS&lt;/b&gt; !</translation>
     </message>
     <message>
@@ -184,7 +184,7 @@
         <translation>Portefeuille chiffré</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your globaltokens from being stolen by malware infecting your computer.</source>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your huntcoins from being stolen by malware infecting your computer.</source>
         <translation>%1 va à présent se fermer pour terminer la procédure de cryptage. N'oubliez pas que le chiffrement de votre porte-monnaie ne peut pas fournir une protection totale contre le vol par des logiciels malveillants qui infecteraient votre ordinateur.</translation>
     </message>
     <message>
@@ -334,8 +334,8 @@
         <translation>Réindexer les blocs sur le disque...</translation>
     </message>
     <message>
-        <source>Send coins to a Globaltoken address</source>
-        <translation>Envoyer des pièces à une adresse Globaltoken</translation>
+        <source>Send coins to a Huntcoin address</source>
+        <translation>Envoyer des pièces à une adresse Huntcoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -358,8 +358,8 @@
         <translation>&amp;Vérification du message</translation>
     </message>
     <message>
-        <source>Globaltoken</source>
-        <translation>Globaltoken</translation>
+        <source>Huntcoin</source>
+        <translation>Huntcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -386,8 +386,8 @@
         <translation>Crypter les clé privées qui appartiennent votre portefeuille</translation>
     </message>
     <message>
-        <source>Sign messages with your Globaltoken addresses to prove you own them</source>
-        <translation>Signer vos messages avec vos adresses Globaltoken pour prouver que vous les détenez</translation>
+        <source>Sign messages with your Huntcoin addresses to prove you own them</source>
+        <translation>Signer vos messages avec vos adresses Huntcoin pour prouver que vous les détenez</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -406,16 +406,16 @@
         <translation>Barre d'outils des onglets</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and globaltoken: URIs)</source>
-        <translation>Demander des paiements (générer QR codes et globaltoken: URIs)</translation>
+        <source>Request payments (generates QR codes and huntcoin: URIs)</source>
+        <translation>Demander des paiements (générer QR codes et huntcoin: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
         <translation>Montrer la liste des adresses d'envois utilisées et les étiquettes</translation>
     </message>
     <message>
-        <source>Open a globaltoken: URI or payment request</source>
-        <translation>Ouvrir un globaltoken: URI ou demande de paiement</translation>
+        <source>Open a huntcoin: URI or payment request</source>
+        <translation>Ouvrir un huntcoin: URI ou demande de paiement</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -686,8 +686,8 @@
         <translation>Éditer l'adresse d'envoi</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Globaltoken address.</source>
-        <translation>L'adresse entrée "%1" n'est pas une adresse Globaltoken valide.</translation>
+        <source>The entered address "%1" is not a valid Huntcoin address.</source>
+        <translation>L'adresse entrée "%1" n'est pas une adresse Huntcoin valide.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -779,8 +779,8 @@
         <translation>Bitcoin</translation>
     </message>
 	<message>
-        <source>Globaltoken</source>
-        <translation>Globaltoken</translation>
+        <source>Huntcoin</source>
+        <translation>Huntcoin</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -864,8 +864,8 @@
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically open the Globaltoken client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Ouvrir le port du client Globaltoken automatiquement sur le routeur. Cela ne fonctionne que si votre routeur supporte l'UPnP et si la fonctionnalité est activée.</translation>
+        <source>Automatically open the Huntcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Ouvrir le port du client Huntcoin automatiquement sur le routeur. Cela ne fonctionne que si votre routeur supporte l'UPnP et si la fonctionnalité est activée.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1064,8 +1064,8 @@
         <translation>Montant</translation>
     </message>
     <message>
-        <source>Enter a Globaltoken address (e.g. %1)</source>
-        <translation>Entrer une adresse Globaltoken (e.g. %1)</translation>
+        <source>Enter a Huntcoin address (e.g. %1)</source>
+        <translation>Entrer une adresse Huntcoin (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1629,8 +1629,8 @@
         <translation>Payer seulement les frais obligatoire de %1</translation>
     </message>
     <message>
-        <source>Warning: Invalid Globaltoken address</source>
-        <translation>Attention: Adresse Globaltoken Invalide</translation>
+        <source>Warning: Invalid Huntcoin address</source>
+        <translation>Attention: Adresse Huntcoin Invalide</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -2218,8 +2218,8 @@
         <translation>Impossible de démarrer le serveur HTTP. Voir le journal de débogage pour plus de détails.</translation>
     </message>
     <message>
-        <source>Globaltoken Core</source>
-        <translation>Globaltoken Core</translation>
+        <source>Huntcoin Core</source>
+        <translation>Huntcoin Core</translation>
     </message>
 	<message>
         <source>Bitcoin Core</source>

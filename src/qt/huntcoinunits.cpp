@@ -1,5 +1,5 @@
 // Copyright (c) 2011-2017 The Bitcoin Core developers
-// Copyright (c) 2017 The Globaltoken Core developers
+// Copyright (c) 2017 The Huntcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -41,9 +41,9 @@ QString BitcoinUnits::longName(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("GLT");
-    case mBTC: return QString("mGLT");
-    case uBTC: return QString::fromUtf8("µGLT (bits)");
+    case BTC: return QString("HUNT");
+    case mBTC: return QString("mHUNT");
+    case uBTC: return QString::fromUtf8("µHUNT (bits)");
     default: return QString("???");
     }
 }
@@ -61,9 +61,9 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("Globaltokens");
-    case mBTC: return QString("Milli-Globaltokens (1 / 1" THIN_SP_UTF8 "000)");
-    case uBTC: return QString("Micro-Globaltokens (bits) (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case BTC: return QString("Huntcoins");
+    case mBTC: return QString("Milli-Huntcoins (1 / 1" THIN_SP_UTF8 "000)");
+    case uBTC: return QString("Micro-Huntcoins (bits) (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     default: return QString("???");
     }
 }

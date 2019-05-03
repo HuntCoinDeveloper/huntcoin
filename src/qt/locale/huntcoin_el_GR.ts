@@ -62,12 +62,12 @@
         <translation>Διευθύνσεις λήψης</translation>
     </message>
     <message>
-        <source>These are your Globaltoken addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Αυτές είναι οι Globaltoken διευθύνσεις σας για να στέλνετε πληρωμές. Να ελέγχετε πάντα το ποσό, καθώς και τη διεύθυνση παραλήπτη πριν στείλετε νομίσματα.</translation>
+        <source>These are your Huntcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Αυτές είναι οι Huntcoin διευθύνσεις σας για να στέλνετε πληρωμές. Να ελέγχετε πάντα το ποσό, καθώς και τη διεύθυνση παραλήπτη πριν στείλετε νομίσματα.</translation>
     </message>
     <message>
-        <source>These are your Globaltoken addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Αυτές είναι οι Globaltoken διευθύνσεις σας για να λαμβάνετε πληρωμές. Προτείνετε να χρησιμοποιείτε μια νέα διεύθυνση παραλήπτη για κάθε συναλλαγή.</translation>
+        <source>These are your Huntcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Αυτές είναι οι Huntcoin διευθύνσεις σας για να λαμβάνετε πληρωμές. Προτείνετε να χρησιμοποιείτε μια νέα διεύθυνση παραλήπτη για κάθε συναλλαγή.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Πορτοφόλι κρυπτογραφήθηκε</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your globaltokens from being stolen by malware infecting your computer.</source>
-        <translation>%1 θα κλείσει τώρα για να τελειώσει η διαδικασία κρυπτογράφησης. Να θυμάστε ότι κρυπρογραφόντας το πορτοφόλι σας δεν μπορείτε να προστατεύσετε πλήρως τα globaltoken σας απο κλοπή μέσω malware που μπορεί να προσβάλει τον υπολογιστή σας.</translation>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your huntcoins from being stolen by malware infecting your computer.</source>
+        <translation>%1 θα κλείσει τώρα για να τελειώσει η διαδικασία κρυπτογράφησης. Να θυμάστε ότι κρυπρογραφόντας το πορτοφόλι σας δεν μπορείτε να προστατεύσετε πλήρως τα huntcoin σας απο κλοπή μέσω malware που μπορεί να προσβάλει τον υπολογιστή σας.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -274,8 +274,8 @@
         <translation>Φόρτωση ευρετηρίου μπλοκ στον σκληρο δισκο...</translation>
     </message>
     <message>
-        <source>Send coins to a Globaltoken address</source>
-        <translation>Στείλε νομίσματα σε μια διεύθυνση globaltoken</translation>
+        <source>Send coins to a Huntcoin address</source>
+        <translation>Στείλε νομίσματα σε μια διεύθυνση huntcoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -298,8 +298,8 @@
         <translation>&amp;Επιβεβαίωση μηνύματος</translation>
     </message>
     <message>
-        <source>Globaltoken</source>
-        <translation>Globaltoken</translation>
+        <source>Huntcoin</source>
+        <translation>Huntcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -326,12 +326,12 @@
         <translation>Κρυπτογραφήστε τα ιδιωτικά κλειδιά που ανήκουν στο πορτοφόλι σας </translation>
     </message>
     <message>
-        <source>Sign messages with your Globaltoken addresses to prove you own them</source>
+        <source>Sign messages with your Huntcoin addresses to prove you own them</source>
         <translation>Υπογράψτε ένα μήνυμα για να βεβαιώσετε πως είστε ο κάτοχος αυτής της διεύθυνσης</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Globaltoken addresses</source>
-        <translation>Υπογράψτε ένα μήνυμα για ν' αποδείξετε πως ανήκει μια συγκεκριμένη διεύθυνση Globaltoken</translation>
+        <source>Verify messages to ensure they were signed with specified Huntcoin addresses</source>
+        <translation>Υπογράψτε ένα μήνυμα για ν' αποδείξετε πως ανήκει μια συγκεκριμένη διεύθυνση Huntcoin</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -350,8 +350,8 @@
         <translation>Εργαλειοθήκη καρτελών</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and globaltoken: URIs)</source>
-        <translation>Αίτηση πληρωμών (δημιουργεί QR codes και διευθύνσεις globaltoken: )</translation>
+        <source>Request payments (generates QR codes and huntcoin: URIs)</source>
+        <translation>Αίτηση πληρωμών (δημιουργεί QR codes και διευθύνσεις huntcoin: )</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -362,8 +362,8 @@
         <translation>Προβολή της λίστας των χρησιμοποιημένων διευθύνσεων και ετικετών λήψεως</translation>
     </message>
     <message>
-        <source>Open a globaltoken: URI or payment request</source>
-        <translation>Άνοιγμα globaltoken: URI αίτησης πληρωμής</translation>
+        <source>Open a huntcoin: URI or payment request</source>
+        <translation>Άνοιγμα huntcoin: URI αίτησης πληρωμής</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -639,8 +639,8 @@
         <translation>Bitcoin</translation>
     </message>
 	<message>
-        <source>Globaltoken</source>
-        <translation>Globaltoken</translation>
+        <source>Huntcoin</source>
+        <translation>Huntcoin</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -768,16 +768,16 @@
         <translation>&amp;Ξόδεμα μη επικυρωμένων ρέστων</translation>
     </message>
     <message>
-        <source>Automatically open the Globaltoken client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Αυτόματο άνοιγμα των θυρών Globaltoken στον δρομολογητή. Λειτουργεί μόνο αν ο δρομολογητής σας υποστηρίζει τη λειτουργία UPnP.</translation>
+        <source>Automatically open the Huntcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Αυτόματο άνοιγμα των θυρών Huntcoin στον δρομολογητή. Λειτουργεί μόνο αν ο δρομολογητής σας υποστηρίζει τη λειτουργία UPnP.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Απόδοση θυρών με χρήστη &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Globaltoken network through a SOCKS5 proxy.</source>
-        <translation>Σύνδεση στο Globaltoken δίκτυο μέσω διαμεσολαβητή SOCKS5 (π.χ. για σύνδεση μέσω Tor)</translation>
+        <source>Connect to the Huntcoin network through a SOCKS5 proxy.</source>
+        <translation>Σύνδεση στο Huntcoin δίκτυο μέσω διαμεσολαβητή SOCKS5 (π.χ. για σύνδεση μέσω Tor)</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -876,8 +876,8 @@
         <translation>Φόρμα</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Globaltoken network after a connection is established, but this process has not completed yet.</source>
-        <translation>Οι πληροφορίες που εμφανίζονται μπορεί να είναι ξεπερασμένες. Το πορτοφόλι σας συγχρονίζεται αυτόματα με το δίκτυο Globaltoken μετά από μια σύνδεση, αλλά αυτή η διαδικασία δεν έχει ακόμη ολοκληρωθεί. </translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Huntcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Οι πληροφορίες που εμφανίζονται μπορεί να είναι ξεπερασμένες. Το πορτοφόλι σας συγχρονίζεται αυτόματα με το δίκτυο Huntcoin μετά από μια σύνδεση, αλλά αυτή η διαδικασία δεν έχει ακόμη ολοκληρωθεί. </translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -965,8 +965,8 @@
         <translation>Ποσό</translation>
     </message>
     <message>
-        <source>Enter a Globaltoken address (e.g. %1)</source>
-        <translation>Εισάγετε μια διεύθυνση Globaltoken (π.χ. %1)</translation>
+        <source>Enter a Huntcoin address (e.g. %1)</source>
+        <translation>Εισάγετε μια διεύθυνση Huntcoin (π.χ. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1409,8 +1409,8 @@
         <translation>Αυτή είναι μια απλή πληρωμή.</translation>
     </message>
     <message>
-        <source>The Globaltoken address to send the payment to</source>
-        <translation>Η διεύθυνση Globaltoken που θα σταλεί η πληρωμή</translation>
+        <source>The Huntcoin address to send the payment to</source>
+        <translation>Η διεύθυνση Huntcoin που θα σταλεί η πληρωμή</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1466,8 +1466,8 @@
         <translation>&amp;Υπογραφή Μηνύματος</translation>
     </message>
     <message>
-        <source>The Globaltoken address to sign the message with</source>
-        <translation>Διεύθυνση Globaltoken που θα σταλεί το μήνυμα</translation>
+        <source>The Huntcoin address to sign the message with</source>
+        <translation>Διεύθυνση Huntcoin που θα σταλεί το μήνυμα</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1498,8 +1498,8 @@
         <translation>Αντέγραφη της επιλεγμενης διεύθυνσης στο πρόχειρο του συστηματος</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Globaltoken address</source>
-        <translation>Υπογράψτε ένα μήνυμα για ν' αποδείξετε πως σας ανήκει μια συγκεκριμένη διεύθυνση Globaltoken</translation>
+        <source>Sign the message to prove you own this Huntcoin address</source>
+        <translation>Υπογράψτε ένα μήνυμα για ν' αποδείξετε πως σας ανήκει μια συγκεκριμένη διεύθυνση Huntcoin</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1518,12 +1518,12 @@
         <translation>&amp;Επιβεβαίωση μηνύματος</translation>
     </message>
     <message>
-        <source>The Globaltoken address the message was signed with</source>
-        <translation>Διεύθυνση Globaltoken η οποία το μήνυμα έχει υπογραφεί</translation>
+        <source>The Huntcoin address the message was signed with</source>
+        <translation>Διεύθυνση Huntcoin η οποία το μήνυμα έχει υπογραφεί</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Globaltoken address</source>
-        <translation>Υπογράψτε ένα μήνυμα για ν' αποδείξετε πως υπογραφθηκε απο μια συγκεκριμένη διεύθυνση Globaltoken</translation>
+        <source>Verify the message to ensure it was signed with the specified Huntcoin address</source>
+        <translation>Υπογράψτε ένα μήνυμα για ν' αποδείξετε πως υπογραφθηκε απο μια συγκεκριμένη διεύθυνση Huntcoin</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1735,8 +1735,8 @@
         <translation>Εκτέλεση στο παρασκήνιο κι αποδοχή εντολών</translation>
     </message>
     <message>
-        <source>Globaltoken Core</source>
-        <translation>Globaltoken Core</translation>
+        <source>Huntcoin Core</source>
+        <translation>Huntcoin Core</translation>
     </message>
 	<message>
         <source>Bitcoin Core</source>

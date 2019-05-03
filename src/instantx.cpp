@@ -1,5 +1,5 @@
 // Copyright (c) 2014-2017 The Dash Core developers
-// Copyright (c) 2018 The Globaltoken Core developers
+// Copyright (c) 2018 The Huntcoin Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -49,7 +49,7 @@ CInstantSend instantsend;
 
 void CInstantSend::ProcessMessage(CNode* pfrom, const std::string& strCommand, CDataStream& vRecv, CConnman& connman)
 {
-    if(fLiteMode) return; // disable all Globaltoken specific functionality
+    if(fLiteMode) return; // disable all Huntcoin specific functionality
     if(!sporkManager.IsSporkActive(SPORK_1_INSTANTSEND_ENABLED)) return;
 
     // NOTE: NetMsgType::TXLOCKREQUEST is handled via ProcessMessage() in net_processing.cpp
@@ -900,7 +900,7 @@ int CInstantSend::GetTransactionLockSignatures(const uint256& txHash)
     return -1;
 }
 
-// Not used in GLT Source Code
+// Not used in HUNT Source Code
 // It was part of the Governance System in DASH, but could be useful in the future.
 int CInstantSend::GetConfirmations(const uint256 &nTXHash)
 {

@@ -6,7 +6,7 @@
 // Copyright (c) 2017-2018 The AmsterdamCoin developers
 // Copyright (c) 2017 The Raven Core developers
 // Copyright (c) 2014-2017 The Mun Core developers
-// Copyright (c) 2018 The Globaltoken Core developers
+// Copyright (c) 2018 The Huntcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -1426,7 +1426,7 @@ inline uint256 NIST5(const T1 pbegin, const T1 pend)
 template<typename T1>
 inline uint256 PawelHash(const T1 pbegin, const T1 pend)
 {
-    /* GLT Pawels Algo. (PawelHash) */
+    /* HUNT Pawels Algo. (PawelHash) */
     
     sph_fugue512_context     ctx_fugue;
     sph_sha512_context       ctx_sha2;
@@ -1529,7 +1529,7 @@ inline uint256 PawelHash(const T1 pbegin, const T1 pend)
 template<typename T1>
 inline uint256 AstralHash(const T1 pbegin, const T1 pend)
 {
-    /* GLT Astrali's Algo. (AstralHash) */
+    /* HUNT Astrali's Algo. (AstralHash) */
     
     sph_luffa512_context     ctx_luffa;
     sph_skein512_context     ctx_skein;
@@ -1604,7 +1604,7 @@ inline uint256 AstralHash(const T1 pbegin, const T1 pend)
 template<typename T1>
 inline uint256 PadiHash(const T1 pbegin, const T1 pend)
 {
-    /* GLT Padis Algo. (PadiHash) */
+    /* HUNT Padis Algo. (PadiHash) */
     
     sph_sha512_context       ctx_sha2;
     sph_jh512_context        ctx_jh;
@@ -1734,7 +1734,7 @@ inline uint256 PadiHash(const T1 pbegin, const T1 pend)
 template<typename T1>
 inline uint256 JeongHash(const T1 pbegin, const T1 pend)
 {
-    /* GLT Jeong's Algo. (JeongHash) */
+    /* HUNT Jeong's Algo. (JeongHash) */
     
     sph_simd512_context      ctx_simd;
     sph_hamsi512_context     ctx_hamsi;

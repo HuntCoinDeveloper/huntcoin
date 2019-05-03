@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2018 The Bitcoin Core developers
 // Copyright (c) 2014-2017 The Dash Core developers
-// Copyright (c) 2017-2018 The Globaltoken Core developers
+// Copyright (c) 2017-2018 The Huntcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -17,7 +17,7 @@
 #include <consensus/tx_verify.h>
 #include <consensus/validation.h>
 #include <cuckoocache.h>
-#include <globaltoken/hardfork.h>
+#include <huntcoin/hardfork.h>
 #include <hash.h>
 #include <init.h>
 #include <policy/fees.h>
@@ -56,7 +56,7 @@
 #include <boost/thread.hpp>
 
 #if defined(NDEBUG)
-# error "Globaltoken cannot be compiled without assertions."
+# error "Huntcoin cannot be compiled without assertions."
 #endif
 
 #define MICRO 0.000001
@@ -244,7 +244,7 @@ CTxMemPool mempool(&feeEstimator);
 /** Constant stuff for coinbase transactions we create: */
 CScript COINBASE_FLAGS;
 
-const std::string strMessageMagic = "Globaltoken Signed Message:\n";
+const std::string strMessageMagic = "Huntcoin Signed Message:\n";
 
 // Internal stuff
 namespace {
@@ -1002,7 +1002,7 @@ static bool AcceptToMemoryPoolWorker(const CChainParams& chainparams, CTxMemPool
         // Remove conflicting transactions from the mempool
         for (const CTxMemPool::txiter it : allConflicting)
         {
-            LogPrint(BCLog::MEMPOOL, "replacing tx %s with %s for %s GLT additional fees, %d delta bytes\n",
+            LogPrint(BCLog::MEMPOOL, "replacing tx %s with %s for %s HUNT additional fees, %d delta bytes\n",
                     it->GetTx().GetHash().ToString(),
                     hash.ToString(),
                     FormatMoney(nModifiedFees - nConflictingFees),
@@ -1764,7 +1764,7 @@ static bool WriteTxIndexDataForBlock(const CBlock& block, CValidationState& stat
 static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck() {
-    RenameThread("globaltoken-scriptch");
+    RenameThread("huntcoin-scriptch");
     scriptcheckqueue.Thread();
 }
 
@@ -2080,7 +2080,7 @@ bool CChainState::ConnectBlock(const CBlock& block, CValidationState& state, CBl
     int64_t nTime3 = GetTimeMicros(); nTimeConnect += nTime3 - nTime2;
     LogPrint(BCLog::BENCH, "      - Connect %u transactions: %.2fms (%.3fms/tx, %.3fms/txin) [%.2fs (%.2fms/blk)]\n", (unsigned)block.vtx.size(), MILLI * (nTime3 - nTime2), MILLI * (nTime3 - nTime2) / block.vtx.size(), nInputs <= 1 ? 0 : MILLI * (nTime3 - nTime2) / (nInputs-1), nTimeConnect * MICRO, nTimeConnect * MILLI / nBlocksTotal);
 
-    // GLOBALTOKEN : MODIFIED TO CHECK MASTERNODE PAYMENTS
+    // HUNTCOIN : MODIFIED TO CHECK MASTERNODE PAYMENTS
 
     // It's possible that we simply don't have enough data and this could fail
     // (i.e. block itself could be a correct one and we need to store it),
@@ -2114,7 +2114,7 @@ bool CChainState::ConnectBlock(const CBlock& block, CValidationState& state, CBl
                                     REJECT_INVALID, "bad-cb-payee");
         }
     }
-    // END GLOBALTOKEN
+    // END HUNTCOIN
 
     if (block.vtx[0]->GetValueOut() > blockReward)
         return state.DoS(100,
@@ -3228,7 +3228,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, const Consensus::P
         if (block.vtx[i]->IsCoinBase())
             return state.DoS(100, false, REJECT_INVALID, "bad-cb-multiple", false, "more than one coinbase");
 
-    // GLOBALTOKEN : CHECK TRANSACTIONS FOR INSTANTSEND
+    // HUNTCOIN : CHECK TRANSACTIONS FOR INSTANTSEND
 
     if(sporkManager.IsSporkActive(SPORK_2_INSTANTSEND_BLOCK_FILTERING)) {
         // We should never accept block which conflicts with completed transaction lock,
@@ -3251,10 +3251,10 @@ bool CheckBlock(const CBlock& block, CValidationState& state, const Consensus::P
             }
         }
     } else {
-        LogPrintf("CheckBlock(GLOBALTOKEN): spork is off, skipping transaction locking checks\n");
+        LogPrintf("CheckBlock(HUNTCOIN): spork is off, skipping transaction locking checks\n");
     }
 
-    // END GLOBALTOKEN
+    // END HUNTCOIN
         
     // Check transactions
     for (const auto& tx : block.vtx)

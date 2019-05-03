@@ -5,7 +5,7 @@
 // Copyright (c) 2016-2017 The Zcash developers
 // Copyright (c) 2018 The Bitcoin Private developers
 // Copyright (c) 2017-2018 The Bitcoin Gold developers
-// Copyright (c) 2017-2018 The Globaltoken Core developers
+// Copyright (c) 2017-2018 The Huntcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -64,7 +64,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "05.12.2016 18.27h UTC plus 1 created Globaltoken";
+    const char* pszTimestamp = "05.12.2016 18.27h UTC plus 1 created Huntcoin";
     const CScript genesisOutputScript = CScript() << ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
@@ -207,9 +207,9 @@ public:
         // This is fine at runtime as we'll fall back to using them as a oneshot if they don't support the
         // service bits we want, but we should get them updated to support all service bits wanted by any
         // release ASAP to avoid it where possible.
-        vSeeds.emplace_back("134.255.221.7"); // Globaltoken base node
-        vSeeds.emplace_back("globaltoken.org"); // GlobalToken base node II
-        vSeeds.emplace_back("explorer.globaltoken.org"); // GlobalToken base node III
+        vSeeds.emplace_back("134.255.221.7"); // Huntcoin base node
+        vSeeds.emplace_back("huntcoin.org"); // GlobalToken base node II
+        vSeeds.emplace_back("explorer.huntcoin.org"); // GlobalToken base node III
         vSeeds.emplace_back("lameserver.de"); // GlobalToken Node by Astrali
         vSeeds.emplace_back("pool.cryptopowered.club"); // GlobalToken Cryptopowered node
         vSeeds.emplace_back("bit2pool.com"); // GlobalToken Bit2Pool node

@@ -39,11 +39,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Izvēlies adresi uz kuru sūtīt globaltokens</translation>
+        <translation>Izvēlies adresi uz kuru sūtīt huntcoins</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Izvēlies adresi ar kuru saņemt globaltokens</translation>
+        <translation>Izvēlies adresi ar kuru saņemt huntcoins</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -202,8 +202,8 @@
         <translation>Bloku reindeksēšana no diska...</translation>
     </message>
     <message>
-        <source>Send coins to a Globaltoken address</source>
-        <translation>Nosūtīt bitkoinus uz Globaltoken adresi</translation>
+        <source>Send coins to a Huntcoin address</source>
+        <translation>Nosūtīt bitkoinus uz Huntcoin adresi</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -226,8 +226,8 @@
         <translation>&amp;Pārbaudīt ziņojumu...</translation>
     </message>
     <message>
-        <source>Globaltoken</source>
-        <translation>Globaltoken</translation>
+        <source>Huntcoin</source>
+        <translation>Huntcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -254,12 +254,12 @@
         <translation>Šifrēt privātās atslēgas kuras pieder tavam maciņam</translation>
     </message>
     <message>
-        <source>Sign messages with your Globaltoken addresses to prove you own them</source>
-        <translation>Parakstīt ziņojumus ar savām Globaltoken adresēm lai pierādītu ka tās pieder tev</translation>
+        <source>Sign messages with your Huntcoin addresses to prove you own them</source>
+        <translation>Parakstīt ziņojumus ar savām Huntcoin adresēm lai pierādītu ka tās pieder tev</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Globaltoken addresses</source>
-        <translation>Pārbaudīt ziņojumus lai pārliecinātos, ka tie tika parakstīti ar norādītajām Globaltoken adresēm</translation>
+        <source>Verify messages to ensure they were signed with specified Huntcoin addresses</source>
+        <translation>Pārbaudīt ziņojumus lai pārliecinātos, ka tie tika parakstīti ar norādītajām Huntcoin adresēm</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -278,12 +278,12 @@
         <translation>Ciļņu rīkjosla</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and globaltoken: URIs)</source>
-        <translation>Pieprasīt maksājumus (izveido QR kodu un globaltoken: URIs)</translation>
+        <source>Request payments (generates QR codes and huntcoin: URIs)</source>
+        <translation>Pieprasīt maksājumus (izveido QR kodu un huntcoin: URIs)</translation>
     </message>
     <message>
-        <source>Open a globaltoken: URI or payment request</source>
-        <translation>Atvērt globaltoken URI vai maksājuma pieprasījumu</translation>
+        <source>Open a huntcoin: URI or payment request</source>
+        <translation>Atvērt huntcoin URI vai maksājuma pieprasījumu</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -469,8 +469,8 @@
         <translation>Bitcoin</translation>
     </message>
 	<message>
-        <source>Globaltoken</source>
-        <translation>Globaltoken</translation>
+        <source>Huntcoin</source>
+        <translation>Huntcoin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -563,15 +563,15 @@
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
-        <translation>Ieslēgt globaltoken &amp;kontroles funkcijas</translation>
+        <translation>Ieslēgt huntcoin &amp;kontroles funkcijas</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
         <translation>&amp;Tērēt neapstiprinātu atlikumu</translation>
     </message>
     <message>
-        <source>Automatically open the Globaltoken client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Uz rūtera automātiski atvērt Globaltoken klienta portu. Tas strādā tikai tad, ja rūteris atbalsta UPnP un tas ir ieslēgts.</translation>
+        <source>Automatically open the Huntcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Uz rūtera automātiski atvērt Huntcoin klienta portu. Tas strādā tikai tad, ja rūteris atbalsta UPnP un tas ir ieslēgts.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -623,7 +623,7 @@
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
-        <translation>Vai rādīt Globaltoken kontroles funkcijas vai nē.</translation>
+        <translation>Vai rādīt Huntcoin kontroles funkcijas vai nē.</translation>
     </message>
     <message>
         <source>&amp;OK</source>
@@ -661,8 +661,8 @@
         <translation>Forma</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Globaltoken network after a connection is established, but this process has not completed yet.</source>
-        <translation>Attēlotā informācija var būt novecojusi. Jūsu maciņš pēc savienojuma izveides automātiski sinhronizējas ar Globaltoken tīklu, taču šis process vēl nav beidzies.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Huntcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Attēlotā informācija var būt novecojusi. Jūsu maciņš pēc savienojuma izveides automātiski sinhronizējas ar Huntcoin tīklu, taču šis process vēl nav beidzies.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -924,7 +924,7 @@
     </message>
     <message>
         <source>Coin Control Features</source>
-        <translation>Globaltoken Kontroles Funkcijas</translation>
+        <translation>Huntcoin Kontroles Funkcijas</translation>
     </message>
     <message>
         <source>Inputs...</source>
@@ -1103,8 +1103,8 @@
         <translation>Kopēt parakstu uz sistēmas starpliktuvi</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Globaltoken address</source>
-        <translation>Parakstīt ziņojumu lai pierādītu, ka esi šīs Globaltoken adreses īpašnieks.</translation>
+        <source>Sign the message to prove you own this Huntcoin address</source>
+        <translation>Parakstīt ziņojumu lai pierādītu, ka esi šīs Huntcoin adreses īpašnieks.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1220,8 +1220,8 @@
         <translation>Darbināt fonā kā servisu un pieņemt komandas</translation>
     </message>
     <message>
-        <source>Globaltoken Core</source>
-        <translation>Globaltoken Core</translation>
+        <source>Huntcoin Core</source>
+        <translation>Huntcoin Core</translation>
     </message>
 	<message>
         <source>Bitcoin Core</source>

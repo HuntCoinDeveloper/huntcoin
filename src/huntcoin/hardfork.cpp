@@ -1,8 +1,8 @@
-// Copyright (c) 2018 The Globaltoken Core developers
+// Copyright (c) 2018 The Huntcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include <globaltoken/hardfork.h>
+#include <huntcoin/hardfork.h>
 
 #include <arith_uint256.h>
 #include <chainparams.h>
@@ -112,7 +112,7 @@ std::string GetCoinbaseFeeString(int type)
         << "Network: " << TestnetParams.NetworkIDString() << "    | Founders-Reward: " << TestnetParams.GetConsensus().nTreasuryAmount << "% of blockreward. | Masternode-Reward: " << TestnetParams.GetConsensus().nMasternodePayeeReward << "% of blockreward. | Your mining Reward: " << (100 - TestnetParams.GetConsensus().nMasternodePayeeReward - TestnetParams.GetConsensus().nTreasuryAmount) << "% of blockreward.\n"
         << "Network: " << RegtestParams.NetworkIDString() << " | Founders-Reward: " << RegtestParams.GetConsensus().nTreasuryAmount << "% of blockreward. | Masternode-Reward: " << RegtestParams.GetConsensus().nMasternodePayeeReward << "% of blockreward. | Your mining Reward: " << (100 - RegtestParams.GetConsensus().nMasternodePayeeReward - RegtestParams.GetConsensus().nTreasuryAmount) << "% of blockreward.\n"
         << "\nThe fees will be deducted automatically from your mined block, if you mine directly in your wallet.\n"
-        << "\nTo agree, you must start the wallet with the -acceptdividedcoinbase argument or add acceptdividedcoinbase=1 to your globaltoken.conf file.\n";
+        << "\nTo agree, you must start the wallet with the -acceptdividedcoinbase argument or add acceptdividedcoinbase=1 to your huntcoin.conf file.\n";
         return strStream.str();
     }
     else if(type == DIVIDEDPAYMENTS_GENERATE_WARNING)
@@ -129,7 +129,7 @@ std::string GetCoinbaseFeeString(int type)
         << "\nAgreement:\n"
         << "You can agree to pay the fees by the following way:\n"
         << "\n- Always start the wallet with the -acceptdividedcoinbase argument\n"
-        << "- Add acceptdividedcoinbase=1 to your globaltoken.conf file and restart the wallet.\n"
+        << "- Add acceptdividedcoinbase=1 to your huntcoin.conf file and restart the wallet.\n"
         << "\nIf you don't agree to pay the fees, you will not be able to mine GlobalTokens and your blocks will be rejected.\n";
         return strStream.str();
     }
@@ -153,7 +153,7 @@ std::string GetCoinbaseFeeString(int type)
         << "\nAgreement:\n\n"
         << "You can agree to pay the fees by the following way:\n"
         << "\n- Always start the wallet with the -acceptdividedcoinbase argument\n"
-        << "- Add acceptdividedcoinbase=1 to your globaltoken.conf file and restart the wallet.\n"
+        << "- Add acceptdividedcoinbase=1 to your huntcoin.conf file and restart the wallet.\n"
         << "\nIf you don't agree to pay the treasury, you will not be able to mine GlobalTokens and your blocks will be rejected.\n";
         return strStream.str();
     }
@@ -171,7 +171,7 @@ std::string GetCoinbaseFeeString(int type)
         << "\nAgreement:\n"
         << "You can agree to pay the fees by the following way:\n"
         << "\n- Always start the wallet with the -acceptdividedcoinbase argument\n"
-        << "- Add acceptdividedcoinbase=1 to your globaltoken.conf file and restart the wallet.\n"
+        << "- Add acceptdividedcoinbase=1 to your huntcoin.conf file and restart the wallet.\n"
         << "\nIf you don't agree to pay fees, you will not be able to mine GlobalTokens and your blocks will be rejected.\n";
         return strStream.str();
     }

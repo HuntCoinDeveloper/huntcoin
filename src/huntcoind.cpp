@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2017 The Bitcoin Core developers
 // Copyright (c) 2014-2017 The Dash Core developers
-// Copyright (c) 2017-2018 The Globaltoken Core developers
+// Copyright (c) 2017-2018 The Huntcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -32,8 +32,8 @@
  *
  * \section intro_sec Introduction
  *
- * This is the developer documentation of the reference client for an experimental new digital currency called Globaltoken (https://www.globaltoken.org/),
- * which enables instant payments to anyone, anywhere in the world. Globaltoken uses peer-to-peer technology to operate
+ * This is the developer documentation of the reference client for an experimental new digital currency called Huntcoin (https://www.huntcoin.org/),
+ * which enables instant payments to anyone, anywhere in the world. Huntcoin uses peer-to-peer technology to operate
  * with no central authority: managing transactions and issuing money are carried out collectively by the network.
  *
  * The software is a community-driven open source project, released under the MIT license.
@@ -65,7 +65,7 @@ bool AppInit(int argc, char* argv[])
     //
     // Parameters
     //
-    // If Qt is used, parameters/globaltoken.conf are parsed in qt/bitcoin.cpp's main()
+    // If Qt is used, parameters/huntcoin.conf are parsed in qt/bitcoin.cpp's main()
     gArgs.ParseParameters(argc, argv);
 
     // Process help and version before taking care about datadir
@@ -80,7 +80,7 @@ bool AppInit(int argc, char* argv[])
         else
         {
             strUsage += "\n" + _("Usage:") + "\n" +
-                  "  globaltokend [options]                     " + strprintf(_("Start %s Daemon"), _(PACKAGE_NAME)) + "\n";
+                  "  huntcoind [options]                     " + strprintf(_("Start %s Daemon"), _(PACKAGE_NAME)) + "\n";
 
             strUsage += "\n" + HelpMessage(HMM_BITCOIND);
         }
@@ -121,12 +121,12 @@ bool AppInit(int argc, char* argv[])
         // Error out when loose non-argument tokens are encountered on command line
         for (int i = 1; i < argc; i++) {
             if (!IsSwitchChar(argv[i][0])) {
-                fprintf(stderr, "Error: Command line contains unexpected token '%s', see globaltokend -h for a list of options.\n", argv[i]);
+                fprintf(stderr, "Error: Command line contains unexpected token '%s', see huntcoind -h for a list of options.\n", argv[i]);
                 return false;
             }
         }
 
-        // -server defaults to true for globaltokend but not for the GUI so do this here
+        // -server defaults to true for huntcoind but not for the GUI so do this here
         gArgs.SoftSetBoolArg("-server", true);
         // Set this early so that parameter interactions go to console
         InitLogging();
@@ -149,7 +149,7 @@ bool AppInit(int argc, char* argv[])
         if (gArgs.GetBoolArg("-daemon", false))
         {
 #if HAVE_DECL_DAEMON
-            fprintf(stdout, "Globaltoken server starting\n");
+            fprintf(stdout, "Huntcoin server starting\n");
 
             // Daemonize
             if (daemon(1, 0)) { // don't chdir (1), do close FDs (0)
@@ -190,7 +190,7 @@ int main(int argc, char* argv[])
 {
     SetupEnvironment();
 
-    // Connect globaltokend signal handlers
+    // Connect huntcoind signal handlers
     noui_connect();
 
     return (AppInit(argc, argv) ? EXIT_SUCCESS : EXIT_FAILURE);

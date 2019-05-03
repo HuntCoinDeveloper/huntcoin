@@ -62,11 +62,11 @@
         <translation>Адреса получения</translation>
     </message>
     <message>
-        <source>These are your Globaltoken addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Huntcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Это ваши биткойн адреса для отправки платежа. Всегда проверяйте сумму и адрес получателя перед отправкой платежа.</translation>
     </message>
     <message>
-        <source>These are your Globaltoken addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Huntcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Это ваши биткойн адреса для получения платежей. Настоятельно рекомендуем использовать новые адреса для получения каждой транзакции.</translation>
     </message>
     <message>
@@ -164,7 +164,7 @@
         <translation>Подтвердите шифрование бумажника</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GLOBALTOKENS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HUNTCOINS&lt;/b&gt;!</source>
         <translation>Внимание: если вы зашифруете ваш кошелек и потеряете ваш пароль, то вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ ВАШИ БИТКОЙНЫ&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -176,7 +176,7 @@
         <translation>Бумажник зашифрован</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your globaltokens from being stolen by malware infecting your computer.</source>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your huntcoins from being stolen by malware infecting your computer.</source>
         <translation>%1 закроется сейчас для завершения процесса шифрования. Запомните что шифрование вашего кошелька не сможет полностью защитить ваши биткойны от кражи при помощи вредоносного ПО, заразившего ваш компьютер.</translation>
     </message>
     <message>
@@ -306,7 +306,7 @@
         <translation>Реиндексация блоков на диске...</translation>
     </message>
     <message>
-        <source>Send coins to a Globaltoken address</source>
+        <source>Send coins to a Huntcoin address</source>
         <translation>Послать средства на биткойн адрес</translation>
     </message>
     <message>
@@ -326,8 +326,8 @@
         <translation>Bitcoin Core</translation>
     </message>
 	<message>
-        <source>Globaltoken</source>
-        <translation>Globaltoken Core</translation>
+        <source>Huntcoin</source>
+        <translation>Huntcoin Core</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -489,8 +489,8 @@
         <translation>Bitcoin Core</translation>
     </message>
 	<message>
-        <source>Globaltoken</source>
-        <translation>Globaltoken Core</translation>
+        <source>Huntcoin</source>
+        <translation>Huntcoin Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -550,8 +550,8 @@
         <translation>Пробросить порт через &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Globaltoken network through a SOCKS5 proxy.</source>
-        <translation>Подключится к сети Globaltoken через SOCKS5 прокси.</translation>
+        <source>Connect to the Huntcoin network through a SOCKS5 proxy.</source>
+        <translation>Подключится к сети Huntcoin через SOCKS5 прокси.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -638,7 +638,7 @@
 <context>
     <name>QObject</name>
     <message>
-        <source>Enter a Globaltoken address (e.g. %1)</source>
+        <source>Enter a Huntcoin address (e.g. %1)</source>
         <translation>Введите биткоин-адрес (напр. %1)</translation>
     </message>
     <message>
@@ -932,8 +932,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Globaltoken Core</source>
-        <translation>Globaltoken Core</translation>
+        <source>Huntcoin Core</source>
+        <translation>Huntcoin Core</translation>
     </message>
 	<message>
         <source>Bitcoin Core</source>

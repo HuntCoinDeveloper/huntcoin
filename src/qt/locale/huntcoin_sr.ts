@@ -138,8 +138,8 @@
         <translation>Промени &amp;лозинку...</translation>
     </message>
     <message>
-        <source>Send coins to a Globaltoken address</source>
-        <translation>Пошаљите новац на globaltoken адресу</translation>
+        <source>Send coins to a Huntcoin address</source>
+        <translation>Пошаљите новац на huntcoin адресу</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>

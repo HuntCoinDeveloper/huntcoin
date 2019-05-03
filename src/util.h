@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2017 The Bitcoin Core developers
 // Copyright (c) 2014-2017 The Dash Core developers
-// Copyright (c) 2017-2018 The Globaltoken Core developers
+// Copyright (c) 2017-2018 The Huntcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -36,8 +36,8 @@
 
 // Uncomment the following line to enable debugging messages
 // or enable on a per file basis prior to inclusion of util.h
-//#define ENABLE_GLOBALTOKEN_DEBUG
-#ifdef ENABLE_GLOBALTOKEN_DEBUG
+//#define ENABLE_HUNTCOIN_DEBUG
+#ifdef ENABLE_HUNTCOIN_DEBUG
 #define DBG( x ) x
 #else
 #define DBG( x ) 
@@ -46,7 +46,7 @@
 // Application startup time (used for uptime calculation)
 int64_t GetStartupTime();
 
-//Globaltoken only features
+//Huntcoin only features
 extern bool fMasternodeMode;
 extern bool fLiteMode;
 
@@ -105,7 +105,7 @@ namespace BCLog {
         MNPAYMENTS  = (1 <<  2),
         MNSYNC      = (1 <<  3),
         SPORK       = (1 <<  4),
-        GLOBALTOKEN = INSTANTSEND | MASTERNODE | MNPAYMENTS | MNSYNC | SPORK,
+        HUNTCOIN = INSTANTSEND | MASTERNODE | MNPAYMENTS | MNSYNC | SPORK,
         NET         = (1 <<  6),
         TOR         = (1 <<  7),
         MEMPOOL     = (1 <<  8),
@@ -351,7 +351,7 @@ void RenameThread(const char* name);
  */
 template <typename Callable> void TraceThread(const char* name,  Callable func)
 {
-    std::string s = strprintf("globaltoken-%s", name);
+    std::string s = strprintf("huntcoin-%s", name);
     RenameThread(s.c_str());
     try
     {
@@ -375,7 +375,7 @@ template <typename Callable> void TraceThread(const char* name,  Callable func)
 }
 
 std::string CopyrightHolders(const std::string& strPrefix);
-std::string CopyrightHoldersGLT(const std::string& strPrefix);
+std::string CopyrightHoldersHUNT(const std::string& strPrefix);
 
 //! Substitute for C++14 std::make_unique.
 template <typename T, typename... Args>

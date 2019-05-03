@@ -392,7 +392,7 @@ enum GetDataMsg
     MSG_WITNESS_BLOCK = MSG_BLOCK | MSG_WITNESS_FLAG, //!< Defined in BIP144
     MSG_WITNESS_TX = MSG_TX | MSG_WITNESS_FLAG,       //!< Defined in BIP144
     MSG_FILTERED_WITNESS_BLOCK = MSG_FILTERED_BLOCK | MSG_WITNESS_FLAG,
-    // Globaltoken message types
+    // Huntcoin message types
     // NOTE: declare non-implmented here, we must keep this enum consistent and backwards compatible
     MSG_TXLOCK_REQUEST = 5,
     MSG_TXLOCK_VOTE = 6,

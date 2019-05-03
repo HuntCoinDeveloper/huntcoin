@@ -62,11 +62,11 @@
         <translation>Получаване на адреси</translation>
     </message>
     <message>
-        <source>These are your Globaltoken addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Huntcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Това са адресите на получателите на плащания. Винаги проверявайте размера на сумата и адреса на получателя, преди да изпратите монети.</translation>
     </message>
     <message>
-        <source>These are your Globaltoken addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Huntcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Това са Вашите Биткойн адреси,благодарение на които ще получавате плащания.Препоръчително е да използвате нови адреси за получаване на всяка транзакция.</translation>
     </message>
     <message>
@@ -168,7 +168,7 @@
         <translation>Потвърдете на шифрирането на портфейла</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GLOBALTOKENS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HUNTCOINS&lt;/b&gt;!</source>
         <translation>ВНИМАНИЕ: Ако шифрирате вашият портфейл и изгубите паролата си, &lt;b&gt;ЩЕ ИЗГУБИТЕ ВСИЧКИТЕ СИ БИТКОИНИ&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -346,7 +346,7 @@
         <translation>Повторно индексиране на блоковете на диска...</translation>
     </message>
     <message>
-        <source>Send coins to a Globaltoken address</source>
+        <source>Send coins to a Huntcoin address</source>
         <translation>Изпращане към Биткоин адрес</translation>
     </message>
     <message>
@@ -370,7 +370,7 @@
         <translation>&amp;Проверка на съобщение...</translation>
     </message>
     <message>
-        <source>Globaltoken</source>
+        <source>Huntcoin</source>
         <translation>Биткоин</translation>
     </message>
     <message>
@@ -398,11 +398,11 @@
         <translation>Шифроване на личните ключове,които принадлежат на портфейла Ви.</translation>
     </message>
     <message>
-        <source>Sign messages with your Globaltoken addresses to prove you own them</source>
+        <source>Sign messages with your Huntcoin addresses to prove you own them</source>
         <translation>Пишете съобщения със своя Биткойн адрес за да докажете,че е ваш.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Globaltoken addresses</source>
+        <source>Verify messages to ensure they were signed with specified Huntcoin addresses</source>
         <translation>Потвърждаване на съобщения  за да се знае,че са написани с дадените Биткойн адреси.</translation>
     </message>
     <message>
@@ -422,7 +422,7 @@
         <translation>Раздели</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and globaltoken: URIs)</source>
+        <source>Request payments (generates QR codes and huntcoin: URIs)</source>
         <translation>Изискване на плащания(генерира QR кодове и биткойн: URIs)</translation>
     </message>
     <message>
@@ -434,7 +434,7 @@
         <translation>Покажи списък с използваните адреси и имена.</translation>
     </message>
     <message>
-        <source>Open a globaltoken: URI or payment request</source>
+        <source>Open a huntcoin: URI or payment request</source>
         <translation>Отворете биткойн: URI  или заявка за плащане</translation>
     </message>
     <message>
@@ -478,7 +478,7 @@
         <translation>Синхронизиран</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Globaltoken command-line options</source>
+        <source>Show the %1 help message to get a list with possible Huntcoin command-line options</source>
         <translation>Покажи %1 помощно съобщение за да получиш лист с възможни Биткойн команди</translation>
     </message>
     <message>
@@ -540,7 +540,7 @@
         <translation>Портфейлът е &lt;b&gt;криптиран&lt;/b&gt; и &lt;b&gt;заключен&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Globaltoken can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. Huntcoin can no longer continue safely and will quit.</source>
         <translation>Възникна фатална грешка. Биткойн не може да продължи безопасно и ще се изключи.</translation>
     </message>
 </context>
@@ -726,7 +726,7 @@
         <translation>Редактиране на адрес за изпращане</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Globaltoken address.</source>
+        <source>The entered address "%1" is not a valid Huntcoin address.</source>
         <translation>"%1" не е валиден Биткоин адрес.</translation>
     </message>
     <message>
@@ -1111,15 +1111,15 @@
         <translation>&amp;Похарчете непотвърденото ресто</translation>
     </message>
     <message>
-        <source>Automatically open the Globaltoken client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматично отваряне на входящия Globaltoken порт. Работи само с рутери поддържащи UPnP.</translation>
+        <source>Automatically open the Huntcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматично отваряне на входящия Huntcoin порт. Работи само с рутери поддържащи UPnP.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Отваряне на входящия порт чрез &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Globaltoken network through a SOCKS5 proxy.</source>
+        <source>Connect to the Huntcoin network through a SOCKS5 proxy.</source>
         <translation>Свързване с Биткойн мрежата чрез SOCKS5  прокси.</translation>
     </message>
     <message>
@@ -1218,7 +1218,7 @@
         <translation>Формуляр</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Globaltoken network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Huntcoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Текущата информация на екрана може да не е актуална. Вашият портфейл ще се синхронизира автоматично с мрежата на Биткоин, щом поне една връзката с нея се установи; този процес все още не е приключил.</translation>
     </message>
     <message>
@@ -1273,7 +1273,7 @@
         <translation>Възникна грешка по време назаявката за плащане</translation>
     </message>
     <message>
-        <source>Cannot start globaltoken: click-to-pay handler</source>
+        <source>Cannot start huntcoin: click-to-pay handler</source>
         <translation>Биткойн не можe да се стартира: click-to-pay handler</translation>
     </message>
     <message>
@@ -1359,7 +1359,7 @@
         <translation>Сума</translation>
     </message>
     <message>
-        <source>Enter a Globaltoken address (e.g. %1)</source>
+        <source>Enter a Huntcoin address (e.g. %1)</source>
         <translation>Въведете Биткойн адрес (например: %1)</translation>
     </message>
     <message>
@@ -1935,7 +1935,7 @@
         <translation>Заявката за плащане е изтекла.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Globaltoken address</source>
+        <source>Warning: Invalid Huntcoin address</source>
         <translation>Внимание: Невалиден Биткойн адрес</translation>
     </message>
     <message>
@@ -2055,7 +2055,7 @@
         <translation>Копиране на текущия подпис</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Globaltoken address</source>
+        <source>Sign the message to prove you own this Huntcoin address</source>
         <translation>Подпишете съобщение като доказателство, че притежавате определен адрес</translation>
     </message>
     <message>
@@ -2071,7 +2071,7 @@
         <translation>&amp;Провери</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Globaltoken address</source>
+        <source>Verify the message to ensure it was signed with the specified Huntcoin address</source>
         <translation>Проверете съобщение, за да сте сигурни че е подписано с определен Биткоин адрес</translation>
     </message>
     <message>
@@ -2546,8 +2546,8 @@
         <translation>Изпращане</translation>
     </message>
     <message>
-        <source>InstantSend doesn't support sending values that high yet. Transactions are currently limited to %1 GLT.</source>
-        <translation>InstantSend не поддържа толкова високи стойности за изпращане все още. Транзакциите в момента са ограничени до %1 GLT.</translation>
+        <source>InstantSend doesn't support sending values that high yet. Transactions are currently limited to %1 HUNT.</source>
+        <translation>InstantSend не поддържа толкова високи стойности за изпращане все още. Транзакциите в момента са ограничени до %1 HUNT.</translation>
     </message>
     <message>
         <source>Used way too many inputs (&gt;%1) for this InstantSend transaction, fees could be huge.</source>
@@ -2612,8 +2612,8 @@
         <translation>Bitcoin Core</translation>
     </message>
     <message>
-        <source>Globaltoken Core</source>
-        <translation>Globaltoken Core</translation>
+        <source>Huntcoin Core</source>
+        <translation>Huntcoin Core</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>
@@ -2820,8 +2820,8 @@
         <translation>Открит е невалиден порт в masternode.conf</translation>
     </message>
     <message>
-        <source>Disable all Globaltoken specific functionality (Masternodes, InstantSend) (0-1, default: %u)</source>
-        <translation>Изключване на всички специфични Globaltoken функции (Masternodes, InstantSend) (0-1, по подразбиране: %u)</translation>
+        <source>Disable all Huntcoin specific functionality (Masternodes, InstantSend) (0-1, default: %u)</source>
+        <translation>Изключване на всички специфични Huntcoin функции (Masternodes, InstantSend) (0-1, по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Enable InstantSend, show confirmations for locked transactions (0-1, default: %u)</source>
@@ -2832,8 +2832,8 @@
         <translation>Изпълнена команда когато транзакцията в  InstantSend портфейла е успешно заключена (%s в cmd е заместен от TxID)</translation>
     </message>
     <message>
-        <source>InstantSend doesn't support sending values that high yet. Transactions are currently limited to %1 GLT.</source>
-        <translation>InstantSend не поддържа толкова високи стойности за изпращане все още. Транзакциите в момента са ограничени до %1 GLT.</translation>
+        <source>InstantSend doesn't support sending values that high yet. Transactions are currently limited to %1 HUNT.</source>
+        <translation>InstantSend не поддържа толкова високи стойности за изпращане все още. Транзакциите в момента са ограничени до %1 HUNT.</translation>
     </message>
     <message>
         <source>InstantSend requires inputs with at least %d confirmations, you might need to wait a few minutes and try again.</source>

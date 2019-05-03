@@ -142,8 +142,8 @@
         <translation>Reindexando bloques en el disco...</translation>
     </message>
     <message>
-        <source>Send coins to a Globaltoken address</source>
-        <translation>Enviar monedas a una dirección Globaltoken</translation>
+        <source>Send coins to a Huntcoin address</source>
+        <translation>Enviar monedas a una dirección Huntcoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -158,8 +158,8 @@
         <translation>Abre la consola de depuración y diágnostico</translation>
     </message>
     <message>
-        <source>Globaltoken</source>
-        <translation>Globaltoken</translation>
+        <source>Huntcoin</source>
+        <translation>Huntcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -186,12 +186,12 @@
         <translation>Encriptar las llaves privadas que pertenecen a tu billetera</translation>
     </message>
     <message>
-        <source>Sign messages with your Globaltoken addresses to prove you own them</source>
-        <translation>Firma mensajes con tus direcciones Globaltoken para probar que eres dueño de ellas</translation>
+        <source>Sign messages with your Huntcoin addresses to prove you own them</source>
+        <translation>Firma mensajes con tus direcciones Huntcoin para probar que eres dueño de ellas</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Globaltoken addresses</source>
-        <translation>Verificar mensajes para asegurar que estaban firmados con direcciones Globaltoken especificas</translation>
+        <source>Verify messages to ensure they were signed with specified Huntcoin addresses</source>
+        <translation>Verificar mensajes para asegurar que estaban firmados con direcciones Huntcoin especificas</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -441,8 +441,8 @@
         <translation>Bitcoin</translation>
     </message>
 	<message>
-        <source>Globaltoken</source>
-        <translation>Globaltoken</translation>
+        <source>Huntcoin</source>
+        <translation>Huntcoin</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -712,8 +712,8 @@
         <translation>Correr en segundo plano como daemon y aceptar comandos</translation>
     </message>
     <message>
-        <source>Globaltoken Core</source>
-        <translation>Globaltoken Core</translation>
+        <source>Huntcoin Core</source>
+        <translation>Huntcoin Core</translation>
     </message>
 	<message>
         <source>Bitcoin Core</source>

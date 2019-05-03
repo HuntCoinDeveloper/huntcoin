@@ -90,8 +90,8 @@
         <translation>&amp;செய்தியை சரிசெய்...</translation>
     </message>
     <message>
-        <source>Globaltoken</source>
-        <translation>Globaltoken</translation>
+        <source>Huntcoin</source>
+        <translation>Huntcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -229,8 +229,8 @@
         <translation>Bitcoin</translation>
     </message>
 	<message>
-        <source>Globaltoken</source>
-        <translation>Globaltoken</translation>
+        <source>Huntcoin</source>
+        <translation>Huntcoin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -712,8 +712,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Globaltoken Core</source>
-        <translation>Globaltoken மையம்</translation>
+        <source>Huntcoin Core</source>
+        <translation>Huntcoin மையம்</translation>
     </message>
 	<message>
         <source>Bitcoin Core</source>

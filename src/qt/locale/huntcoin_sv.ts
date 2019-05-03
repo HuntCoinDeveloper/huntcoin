@@ -62,12 +62,12 @@
         <translation>Mottagaradresser</translation>
     </message>
     <message>
-        <source>These are your Globaltoken addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Detta är dina Globaltoken adresser för att skicka betalningar. Kolla alltid summan och den mottagande adressen innan du skickar Globaltokens.</translation>
+        <source>These are your Huntcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Detta är dina Huntcoin adresser för att skicka betalningar. Kolla alltid summan och den mottagande adressen innan du skickar Huntcoins.</translation>
     </message>
     <message>
-        <source>These are your Globaltoken addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Detta är dina Globaltoken adresser för att ta emot betalningar. Det rekommenderas att använda en ny mottagningsadress för varje transaktion.</translation>
+        <source>These are your Huntcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Detta är dina Huntcoin adresser för att ta emot betalningar. Det rekommenderas att använda en ny mottagningsadress för varje transaktion.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -169,8 +169,8 @@ Var vänlig och försök igen.</translation>
         <translation>Bekräfta kryptering av plånbok</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GLOBALTOKENS&lt;/b&gt;!</source>
-        <translation>VARNING: Om du krypterar din plånbok och glömmer ditt lösenord, kommer du att &lt;b&gt;FÖRLORA ALLA DINA GLOBALTOKEN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HUNTCOINS&lt;/b&gt;!</source>
+        <translation>VARNING: Om du krypterar din plånbok och glömmer ditt lösenord, kommer du att &lt;b&gt;FÖRLORA ALLA DINA HUNTCOIN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -181,7 +181,7 @@ Var vänlig och försök igen.</translation>
         <translation>Plånbok krypterad</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your globaltokens from being stolen by malware infecting your computer.</source>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your huntcoins from being stolen by malware infecting your computer.</source>
         <translation>%1 kommer nu att stänga ner för att färdigställa krypteringen. Tänk på att en krypterad plånbok inte skyddar mot stöld om din dator är infekterad med en keylogger.</translation>
     </message>
     <message>
@@ -339,8 +339,8 @@ Var vänlig och försök igen.</translation>
         <translation>Återindexerar block på disken...</translation>
     </message>
     <message>
-        <source>Send coins to a Globaltoken address</source>
-        <translation>Skicka globaltokens till en Globaltoken-adress</translation>
+        <source>Send coins to a Huntcoin address</source>
+        <translation>Skicka huntcoins till en Huntcoin-adress</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -363,8 +363,8 @@ Var vänlig och försök igen.</translation>
         <translation>&amp;Verifiera meddelande...</translation>
     </message>
     <message>
-        <source>Globaltoken</source>
-        <translation>Globaltoken</translation>
+        <source>Huntcoin</source>
+        <translation>Huntcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -391,12 +391,12 @@ Var vänlig och försök igen.</translation>
         <translation>Kryptera de privata nycklar som tillhör din plånbok</translation>
     </message>
     <message>
-        <source>Sign messages with your Globaltoken addresses to prove you own them</source>
-        <translation>Signera meddelanden med din Globaltoken-adress för att bevisa att du äger dem</translation>
+        <source>Sign messages with your Huntcoin addresses to prove you own them</source>
+        <translation>Signera meddelanden med din Huntcoin-adress för att bevisa att du äger dem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Globaltoken addresses</source>
-        <translation>Verifiera meddelanden för att vara säker på att de var signerade med specificerade Globaltoken-adresser</translation>
+        <source>Verify messages to ensure they were signed with specified Huntcoin addresses</source>
+        <translation>Verifiera meddelanden för att vara säker på att de var signerade med specificerade Huntcoin-adresser</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -415,8 +415,8 @@ Var vänlig och försök igen.</translation>
         <translation>Verktygsfält för tabbar</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and globaltoken: URIs)</source>
-        <translation>Begär betalning (genererar QR-koder och globaltoken-URI)</translation>
+        <source>Request payments (generates QR codes and huntcoin: URIs)</source>
+        <translation>Begär betalning (genererar QR-koder och huntcoin-URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -427,16 +427,16 @@ Var vänlig och försök igen.</translation>
         <translation>Visa listan av använda mottagningsadresser och etiketter</translation>
     </message>
     <message>
-        <source>Open a globaltoken: URI or payment request</source>
-        <translation>Öppna en globaltoken: URI eller betalningsbegäran</translation>
+        <source>Open a huntcoin: URI or payment request</source>
+        <translation>Öppna en huntcoin: URI eller betalningsbegäran</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Kommandoradsalternativ</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Globaltoken network</source>
-        <translation><numerusform>%n aktiva anslutningar till Globaltoken-nätverket.</numerusform><numerusform>%n aktiva anslutningar till Globaltoken-nätverket.</numerusform></translation>
+        <source>%n active connection(s) to Huntcoin network</source>
+        <translation><numerusform>%n aktiva anslutningar till Huntcoin-nätverket.</numerusform><numerusform>%n aktiva anslutningar till Huntcoin-nätverket.</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -479,8 +479,8 @@ Var vänlig och försök igen.</translation>
         <translation>Uppdaterad</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Globaltoken command-line options</source>
-        <translation>Visa %1 hjälpmeddelande för att få en lista med möjliga Globaltoken kommandoradsalternativ.</translation>
+        <source>Show the %1 help message to get a list with possible Huntcoin command-line options</source>
+        <translation>Visa %1 hjälpmeddelande för att få en lista med möjliga Huntcoin kommandoradsalternativ.</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -549,8 +549,8 @@ Var vänlig och försök igen.</translation>
         <translation>Denna plånbok är &lt;b&gt;krypterad&lt;/b&gt; och för närvarande &lt;b&gt;låst&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Globaltoken can no longer continue safely and will quit.</source>
-        <translation>Ett kritiskt fel uppstod. Globaltoken kan inte fortsätta att köra säkert och kommer att avslutas.</translation>
+        <source>A fatal error occurred. Huntcoin can no longer continue safely and will quit.</source>
+        <translation>Ett kritiskt fel uppstod. Huntcoin kan inte fortsätta att köra säkert och kommer att avslutas.</translation>
     </message>
 </context>
 <context>
@@ -743,8 +743,8 @@ Var vänlig och försök igen.</translation>
         <translation>Redigera avsändaradress</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Globaltoken address.</source>
-        <translation>Den angivna adressen "%1" är inte en giltig Globaltoken-adress.</translation>
+        <source>The entered address "%1" is not a valid Huntcoin address.</source>
+        <translation>Den angivna adressen "%1" är inte en giltig Huntcoin-adress.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -868,8 +868,8 @@ Var vänlig och försök igen.</translation>
         <translation>Bitcoin</translation>
     </message>
 	<message>
-        <source>Globaltoken</source>
-        <translation>Globaltoken</translation>
+        <source>Huntcoin</source>
+        <translation>Huntcoin</translation>
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
@@ -880,8 +880,8 @@ Var vänlig och försök igen.</translation>
         <translation>Ungefär %1 GB data kommer att lagras i den här katalogen.</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Globaltoken block chain.</source>
-        <translation>%1 kommer att hämta och lagra en kopia av Globaltoken-blockkedjan.</translation>
+        <source>%1 will download and store a copy of the Huntcoin block chain.</source>
+        <translation>%1 kommer att hämta och lagra en kopia av Huntcoin-blockkedjan.</translation>
     </message>
     <message>
         <source>The wallet will also be stored in this directory.</source>
@@ -911,12 +911,12 @@ Var vänlig och försök igen.</translation>
         <translation>Formulär</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the globaltoken network, as detailed below.</source>
-        <translation>Nyligen gjorda transaktioner visas inte korrekt och därför kan din plånboks saldo visas felaktigt. Denna information kommer att visas korrekt så snart din plånbok har synkroniserat klart med globaltoken nätverket enligt detaljer nedan.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the huntcoin network, as detailed below.</source>
+        <translation>Nyligen gjorda transaktioner visas inte korrekt och därför kan din plånboks saldo visas felaktigt. Denna information kommer att visas korrekt så snart din plånbok har synkroniserat klart med huntcoin nätverket enligt detaljer nedan.</translation>
     </message>
     <message>
-        <source>Attempting to spend globaltokens that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Försöka sig på att spendera globaltokens som påverkas av transaktioner som ännu inte visas kommer inte bli accepterade av nätverket. </translation>
+        <source>Attempting to spend huntcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Försöka sig på att spendera huntcoins som påverkas av transaktioner som ännu inte visas kommer inte bli accepterade av nätverket. </translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1073,16 +1073,16 @@ Var vänlig och försök igen.</translation>
         <translation>&amp;Spendera obekräftad växel</translation>
     </message>
     <message>
-        <source>Automatically open the Globaltoken client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Öppna automatiskt Globaltoken-klientens port på routern. Detta fungerar endast om din router har UPnP aktiverat.</translation>
+        <source>Automatically open the Huntcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Öppna automatiskt Huntcoin-klientens port på routern. Detta fungerar endast om din router har UPnP aktiverat.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Tilldela port med hjälp av &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Globaltoken network through a SOCKS5 proxy.</source>
-        <translation>Anslut till Globaltoken-nätverket genom en SOCKS5-proxy.</translation>
+        <source>Connect to the Huntcoin network through a SOCKS5 proxy.</source>
+        <translation>Anslut till Huntcoin-nätverket genom en SOCKS5-proxy.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1117,8 +1117,8 @@ Var vänlig och försök igen.</translation>
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Globaltoken network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Anslut till Globaltoken-nätverket genom en separat SOCKS5-proxy för dolda tjänster i Tor.</translation>
+        <source>Connect to the Huntcoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Anslut till Huntcoin-nätverket genom en separat SOCKS5-proxy för dolda tjänster i Tor.</translation>
     </message>
     <message>
         <source>&amp;Window</source>
@@ -1220,8 +1220,8 @@ Var vänlig och försök igen.</translation>
         <translation>Formulär</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Globaltoken network after a connection is established, but this process has not completed yet.</source>
-        <translation>Den visade informationen kan vara inaktuell. Plånboken synkroniseras automatiskt med Globaltoken-nätverket efter att anslutningen är upprättad, men denna process har inte slutförts ännu.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Huntcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Den visade informationen kan vara inaktuell. Plånboken synkroniseras automatiskt med Huntcoin-nätverket efter att anslutningen är upprättad, men denna process har inte slutförts ännu.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1295,8 +1295,8 @@ Var vänlig och försök igen.</translation>
         <translation>Fel vid betalningsbegäran</translation>
     </message>
     <message>
-        <source>Cannot start globaltoken: click-to-pay handler</source>
-        <translation>Kan inte starta globaltoken: klicka-och-betala handhavare</translation>
+        <source>Cannot start huntcoin: click-to-pay handler</source>
+        <translation>Kan inte starta huntcoin: klicka-och-betala handhavare</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1311,8 +1311,8 @@ Var vänlig och försök igen.</translation>
         <translation>Ogiltig betalningsadress %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Globaltoken address or malformed URI parameters.</source>
-        <translation>URI kan inte tolkas! Detta kan orsakas av en ogiltig Globaltoken-adress eller felaktiga URI parametrar.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Huntcoin address or malformed URI parameters.</source>
+        <translation>URI kan inte tolkas! Detta kan orsakas av en ogiltig Huntcoin-adress eller felaktiga URI parametrar.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1413,8 +1413,8 @@ Var vänlig och försök igen.</translation>
         <translation>Mängd</translation>
     </message>
     <message>
-        <source>Enter a Globaltoken address (e.g. %1)</source>
-        <translation>Ange en Globaltoken-adress (t.ex. %1)</translation>
+        <source>Enter a Huntcoin address (e.g. %1)</source>
+        <translation>Ange en Huntcoin-adress (t.ex. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1825,8 +1825,8 @@ Var vänlig och försök igen.</translation>
         <translation>&amp;Meddelande:</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Globaltoken network.</source>
-        <translation>Ett frivilligt meddelande att bifoga betalningsbegäran, vilket visas när begäran öppnas. NB: Meddelandet kommer inte att sändas med betalningen över Globaltokennätverket.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Huntcoin network.</source>
+        <translation>Ett frivilligt meddelande att bifoga betalningsbegäran, vilket visas när begäran öppnas. NB: Meddelandet kommer inte att sändas med betalningen över Huntcoinnätverket.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2058,8 +2058,8 @@ Var vänlig och försök igen.</translation>
         <translation>Göm</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for globaltoken transactions than the network can process.</source>
-        <translation>Att betala endast den minsta avgiften är bara bra så länge det är mindre transaktionsvolym än utrymme i blocken. Men tänk på att det kan hamna i en aldrig bekräftar transaktion när det finns mer efterfrågan på globaltoken transaktioner än nätverket kan bearbeta.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for huntcoin transactions than the network can process.</source>
+        <translation>Att betala endast den minsta avgiften är bara bra så länge det är mindre transaktionsvolym än utrymme i blocken. Men tänk på att det kan hamna i en aldrig bekräftar transaktion när det finns mer efterfrågan på huntcoin transaktioner än nätverket kan bearbeta.</translation>
     </message>
     <message>
         <source>(read the tooltip)</source>
@@ -2222,8 +2222,8 @@ Var vänlig och försök igen.</translation>
         <translation><numerusform>Uppskattas till att påbörja bekräftelse inom %n block.</numerusform><numerusform>Uppskattas till att påbörja bekräftelse inom %n block.</numerusform></translation>
     </message>
     <message>
-        <source>Warning: Invalid Globaltoken address</source>
-        <translation>Varning: Felaktig Globaltokenadress</translation>
+        <source>Warning: Invalid Huntcoin address</source>
+        <translation>Varning: Felaktig Huntcoinadress</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2265,8 +2265,8 @@ Var vänlig och försök igen.</translation>
         <translation>Detta är en normal betalning.</translation>
     </message>
     <message>
-        <source>The Globaltoken address to send the payment to</source>
-        <translation>Globaltokenadress att sända betalning till</translation>
+        <source>The Huntcoin address to send the payment to</source>
+        <translation>Huntcoinadress att sända betalning till</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2285,8 +2285,8 @@ Var vänlig och försök igen.</translation>
         <translation>Radera denna post</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less globaltokens than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>Avgiften dras från beloppet som skickas. Mottagaren kommer att få mindre globaltokens än du angivit i belopp-fältet. Om flera mottagare valts kommer avgiften delas jämt.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less huntcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Avgiften dras från beloppet som skickas. Mottagaren kommer att få mindre huntcoins än du angivit i belopp-fältet. Om flera mottagare valts kommer avgiften delas jämt.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2309,8 +2309,8 @@ Var vänlig och försök igen.</translation>
         <translation>Ange en etikett för denna adress att adderas till listan över använda adresser</translation>
     </message>
     <message>
-        <source>A message that was attached to the globaltoken: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Globaltoken network.</source>
-        <translation>Ett meddelande som bifogades globaltoken-URI, vilket lagras med transaktionen som referens. NB: Meddelandet kommer inte att sändas över Globaltokennätverket.</translation>
+        <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Huntcoin network.</source>
+        <translation>Ett meddelande som bifogades huntcoin-URI, vilket lagras med transaktionen som referens. NB: Meddelandet kommer inte att sändas över Huntcoinnätverket.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2354,12 +2354,12 @@ Var vänlig och försök igen.</translation>
         <translation>&amp;Signera Meddelande</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive globaltokens sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Du kan underteckna meddelanden/avtal med dina adresser för att bevisa att du kan ta emot globaltokens som skickats till dem. Var försiktig så du inte undertecknar något oklart eller konstigt, eftersom phishing-angrepp kan försöka få dig att underteckna din identitet till dem. Underteckna endast väldetaljerade meddelanden som du godkänner.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive huntcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Du kan underteckna meddelanden/avtal med dina adresser för att bevisa att du kan ta emot huntcoins som skickats till dem. Var försiktig så du inte undertecknar något oklart eller konstigt, eftersom phishing-angrepp kan försöka få dig att underteckna din identitet till dem. Underteckna endast väldetaljerade meddelanden som du godkänner.</translation>
     </message>
     <message>
-        <source>The Globaltoken address to sign the message with</source>
-        <translation>Globaltokenadress att signera meddelandet med</translation>
+        <source>The Huntcoin address to sign the message with</source>
+        <translation>Huntcoinadress att signera meddelandet med</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2390,7 +2390,7 @@ Var vänlig och försök igen.</translation>
         <translation>Kopiera signaturen till systemets Urklipp</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Globaltoken address</source>
+        <source>Sign the message to prove you own this Huntcoin address</source>
         <translation>Signera meddelandet för att bevisa att du äger denna adress</translation>
     </message>
     <message>
@@ -2414,12 +2414,12 @@ Var vänlig och försök igen.</translation>
         <translation>Ange mottagarens adress, meddelande (kopiera radbrytningar, mellanrum, flikar, etc. exakt) och signatur nedan för att verifiera meddelandet. Undvik att läsa in mera information i signaturen än vad som stod i själva undertecknade meddelandet, för att undvika ett man-in-the-middle-angrepp. Notera att detta endast bevisar att undertecknad tar emot med adressen, det bevisar inte vem som skickat transaktionen!</translation>
     </message>
     <message>
-        <source>The Globaltoken address the message was signed with</source>
-        <translation>Globaltokenadressen som meddelandet signerades med</translation>
+        <source>The Huntcoin address the message was signed with</source>
+        <translation>Huntcoinadressen som meddelandet signerades med</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Globaltoken address</source>
-        <translation>Verifiera meddelandet för att vara säker på att den var signerad med den angivna Globaltoken-adressen</translation>
+        <source>Verify the message to ensure it was signed with the specified Huntcoin address</source>
+        <translation>Verifiera meddelandet för att vara säker på att den var signerad med den angivna Huntcoin-adressen</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2998,7 +2998,7 @@ Var vänlig och försök igen.</translation>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Skicka Globaltokens</translation>
+        <translation>Skicka Huntcoins</translation>
     </message>
     <message>
         <source>Increasing transaction fee failed</source>
@@ -3127,8 +3127,8 @@ Var vänlig och försök igen.</translation>
         <translation>Kunde inte starta HTTP-server. Se avlusningsloggen för detaljer.</translation>
     </message>
     <message>
-        <source>Globaltoken Core</source>
-        <translation>Globaltoken Core</translation>
+        <source>Huntcoin Core</source>
+        <translation>Huntcoin Core</translation>
     </message>
 	<message>
         <source>Bitcoin Core</source>
@@ -3936,7 +3936,7 @@ Var vänlig och försök igen.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
-        <translation>Otillräckligt med globaltokens</translation>
+        <translation>Otillräckligt med huntcoins</translation>
     </message>
     <message>
         <source>InstantX options:</source>

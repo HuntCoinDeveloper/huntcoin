@@ -4,8 +4,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef GLOBALTOKEN_BLOCK_DEPENDENCIES_H
-#define GLOBALTOKEN_BLOCK_DEPENDENCIES_H
+#ifndef HUNTCOIN_BLOCK_DEPENDENCIES_H
+#define HUNTCOIN_BLOCK_DEPENDENCIES_H
 
 #include <serialize.h>
 #include <uint256.h>
@@ -220,4 +220,4 @@ public:
     }
 };
 
-#endif // GLOBALTOKEN_BLOCK_DEPENDENCIES_H
+#endif // HUNTCOIN_BLOCK_DEPENDENCIES_H

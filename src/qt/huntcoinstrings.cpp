@@ -10,7 +10,7 @@
 #endif
 static const char UNUSED *bitcoin_strings[] = {
 QT_TRANSLATE_NOOP("bitcoin-core", "Bitcoin Core"),
-QT_TRANSLATE_NOOP("bitcoin-core", "Globaltoken Core"),
+QT_TRANSLATE_NOOP("bitcoin-core", "Huntcoin Core"),
 QT_TRANSLATE_NOOP("bitcoin-core", "The %s developers"),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
 "(1 = keep tx meta data e.g. account owner and payment request information, 2 "
@@ -58,7 +58,7 @@ QT_TRANSLATE_NOOP("bitcoin-core", ""
 "Delete all wallet transactions and only recover those parts of the "
 "blockchain through -rescan on startup"),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
-"Disable all Globaltoken specific functionality (Masternodes, "
+"Disable all Huntcoin specific functionality (Masternodes, "
 "InstantSend) (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
 "Discover own IP addresses (default: 1 when listening and no -externalip or -"
@@ -125,7 +125,7 @@ QT_TRANSLATE_NOOP("bitcoin-core", ""
 "testnet: %s)"),
 QT_TRANSLATE_NOOP("the-core", ""
 "InstantSend doesn't support sending values that high yet. Transactions are "
-"currently limited to %1 GLT."),
+"currently limited to %1 HUNT."),
 QT_TRANSLATE_NOOP("the-core", ""
 "InstantSend requires inputs with at least %d confirmations, you might need "
 "to wait a few minutes and try again."),

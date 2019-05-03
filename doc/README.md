@@ -1,30 +1,30 @@
-Globaltoken Core
+Huntcoin Core
 =============
 
 Setup
 ---------------------
-Globaltoken Core is the original Globaltoken client and it builds the backbone of the network. It downloads and, by default, stores the entire history of Globaltoken transactions (which is currently more than 100 GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
+Huntcoin Core is the original Huntcoin client and it builds the backbone of the network. It downloads and, by default, stores the entire history of Huntcoin transactions (which is currently more than 100 GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
-To download Globaltoken Core, visit [globaltoken.org](https://globaltoken.org/#downloads).
+To download Huntcoin Core, visit [huntcoin.org](https://huntcoin.org/#downloads).
 
 Running
 ---------------------
-The following are some helpful notes on how to run Globaltoken on your native platform.
+The following are some helpful notes on how to run Huntcoin on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- `bin/globaltoken-qt` (GUI) or
-- `bin/globaltokend` (headless)
+- `bin/huntcoin-qt` (GUI) or
+- `bin/huntcoind` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run globaltoken-qt.exe.
+Unpack the files into a directory, and then run huntcoin-qt.exe.
 
 ### OS X
 
-Drag Globaltoken-Core to your applications folder, and then run Globaltoken-Core.
+Drag Huntcoin-Core to your applications folder, and then run Huntcoin-Core.
 
 ### Need Help?
 
@@ -35,7 +35,7 @@ for help and more information.
 
 Building
 ---------------------
-The following are developer notes on how to build Globaltoken on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build Huntcoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [Dependencies](dependencies.md)
 - [OS X Build Notes](build-osx.md)
@@ -47,7 +47,7 @@ The following are developer notes on how to build Globaltoken on your native pla
 
 Development
 ---------------------
-The Globaltoken repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The Huntcoin repo's [root README](/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Release Notes](release-notes.md)

@@ -46,12 +46,12 @@
         <translation>Duke marr adresen</translation>
     </message>
     <message>
-        <source>These are your Globaltoken addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Këto janë Globaltoken adresat e juaja për të dërguar pagesa. Gjithmon kontrolloni shumën dhe adresën pranuese para se të dërgoni monedha.</translation>
+        <source>These are your Huntcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Këto janë Huntcoin adresat e juaja për të dërguar pagesa. Gjithmon kontrolloni shumën dhe adresën pranuese para se të dërgoni monedha.</translation>
     </message>
     <message>
-        <source>These are your Globaltoken addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Këto janë Globaltoken adresat e juaja për të pranuar pagesa. Rekomandohet që gjithmon të përdorni një adresë të re për çdo transaksion.</translation>
+        <source>These are your Huntcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Këto janë Huntcoin adresat e juaja për të pranuar pagesa. Rekomandohet që gjithmon të përdorni një adresë të re për çdo transaksion.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -214,8 +214,8 @@
         <translation>Ndrysho frazkalimin e përdorur per enkriptimin e portofolit</translation>
     </message>
     <message>
-        <source>Globaltoken</source>
-        <translation>Globaltoken</translation>
+        <source>Huntcoin</source>
+        <translation>Huntcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -389,8 +389,8 @@
         <translation>Bitcoin</translation>
     </message>
 	<message>
-        <source>Globaltoken</source>
-        <translation>Globaltoken</translation>
+        <source>Huntcoin</source>
+        <translation>Huntcoin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -796,8 +796,8 @@
         <translation>Opsionet:</translation>
     </message>
     <message>
-        <source>Globaltoken Core</source>
-        <translation>Berthama Globaltoken</translation>
+        <source>Huntcoin Core</source>
+        <translation>Berthama Huntcoin</translation>
     </message>
 	<message>
         <source>Bitcoin Core</source>

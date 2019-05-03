@@ -126,7 +126,7 @@
         <translation>Оношилгоо ба засварын консолыг онгойлго</translation>
     </message>
     <message>
-        <source>Globaltoken</source>
+        <source>Huntcoin</source>
         <translation>Биткойн</translation>
     </message>
     <message>
@@ -237,7 +237,7 @@
         <translation>Биткойн</translation>
     </message>
 	<message>
-        <source>Globaltoken</source>
+        <source>Huntcoin</source>
         <translation>Биткойн</translation>
     </message>
     <message>

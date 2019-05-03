@@ -1,5 +1,5 @@
 // Copyright (c) 2014-2017 The Dash Core developers
-// Copyright (c) 2018 The Globaltoken Core developers
+// Copyright (c) 2018 The Huntcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -7,7 +7,7 @@
 
 #include <base58.h>
 #include <chainparams.h>
-#include <globaltoken/hardfork.h>
+#include <huntcoin/hardfork.h>
 #include <validation.h>
 #include <wallet/wallet.h>
 #include <messagesigner.h>
@@ -22,7 +22,7 @@ std::map<uint256, CSporkMessage> mapSporks;
 std::map<int, int64_t> mapSporkDefaults = {
     {SPORK_1_INSTANTSEND_ENABLED,            0},             // ON
     {SPORK_2_INSTANTSEND_BLOCK_FILTERING,    0},             // ON
-    {SPORK_3_INSTANTSEND_MAX_VALUE,          250000},        // 250000 GLT
+    {SPORK_3_INSTANTSEND_MAX_VALUE,          250000},        // 250000 HUNT
     {SPORK_4_NEW_SIGS,                       4070908800ULL}, // OFF
     {SPORK_5_MASTERNODE_PAYMENT_ENFORCEMENT, 4070908800ULL}, // OFF
     {SPORK_6_MASTERNODE_PAY_UPDATED_NODES,   4070908800ULL}, // OFF

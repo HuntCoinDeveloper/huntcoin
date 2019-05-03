@@ -62,12 +62,12 @@
         <translation>Alınan Adresler</translation>
     </message>
     <message>
-        <source>These are your Globaltoken addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Bunlar ödeme göndermek için gereken Globaltoken adreslerinizdir. Para göndermeden önce her zaman miktarı ve alıcı adresi kontrol edin.</translation>
+        <source>These are your Huntcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Bunlar ödeme göndermek için gereken Huntcoin adreslerinizdir. Para göndermeden önce her zaman miktarı ve alıcı adresi kontrol edin.</translation>
     </message>
     <message>
-        <source>These are your Globaltoken addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Bunlar ödeme almak için kullanılacak Globaltoken adreslerinizdir. Her işlem için yeni bir ödeme alma adresi kullanılması tavsiye edilir.</translation>
+        <source>These are your Huntcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Bunlar ödeme almak için kullanılacak Huntcoin adreslerinizdir. Her işlem için yeni bir ödeme alma adresi kullanılması tavsiye edilir.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,7 +168,7 @@
         <translation>Cüzdan Şifrelemesini Onaylayın</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GLOBALTOKENS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HUNTCOINS&lt;/b&gt;!</source>
         <translation>Uyarı: Eğer cüzdanınızı şifreleyip parolanızı kaybederseniz (unutursanız) , &lt;b&gt;BÜTÜN BITCOIN'LERINIZI KAYBEDECEKSINIZ&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -180,8 +180,8 @@
         <translation>Cüzdan Şifrelendi</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your globaltokens from being stolen by malware infecting your computer.</source>
-        <translation>%1 Şifreleme işlemini bitirmek için kapatılacak. Şunu unutmayın ki şampiyon galatasaray ve şifrelemek, globaltokenlerinizin bilgisayarınıza bulaşan malware yazılımları tarafından çalınmasını tamamen engelleyemez.</translation>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your huntcoins from being stolen by malware infecting your computer.</source>
+        <translation>%1 Şifreleme işlemini bitirmek için kapatılacak. Şunu unutmayın ki şampiyon galatasaray ve şifrelemek, huntcoinlerinizin bilgisayarınıza bulaşan malware yazılımları tarafından çalınmasını tamamen engelleyemez.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -254,16 +254,16 @@
         <translation>Ağ etkinliği devre dışı.</translation>
     </message>
     <message>
-        <source>Send coins to a Globaltoken address</source>
-        <translation>Globaltoken adresine madeni para gönderin</translation>
+        <source>Send coins to a Huntcoin address</source>
+        <translation>Huntcoin adresine madeni para gönderin</translation>
     </message>
     <message>
         <source>Bitcoin</source>
         <translation>Bitcoin</translation>
     </message>
 	<message>
-        <source>Globaltoken</source>
-        <translation>Globaltoken</translation>
+        <source>Huntcoin</source>
+        <translation>Huntcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -317,8 +317,8 @@
         <translation>Bitcoin</translation>
     </message>
 	<message>
-        <source>Globaltoken</source>
-        <translation>Globaltoken</translation>
+        <source>Huntcoin</source>
+        <translation>Huntcoin</translation>
     </message>
     <message>
         <source>Error</source>

@@ -1,5 +1,5 @@
 // Copyright (c) 2014-2017 The Dash Core developers
-// Copyright (c) 2018 The Globaltoken Core developers
+// Copyright (c) 2018 The Huntcoin Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -15,14 +15,14 @@
 
 void ThreadCheckMasternodes(CConnman& connman)
 {
-    if(fLiteMode) return; // disable all Globaltoken specific functionality
+    if(fLiteMode) return; // disable all Huntcoin specific functionality
 
     static bool fOneThread;
     if(fOneThread) return;
     fOneThread = true;
 
     // Make this thread recognisable as the MasternodeCheck thread
-    RenameThread("globaltoken-mncheck");
+    RenameThread("huntcoin-mncheck");
 
     unsigned int nTick = 0;
 

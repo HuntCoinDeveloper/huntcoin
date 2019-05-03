@@ -1,81 +1,81 @@
-policy_module(globaltoken, 1.100.1)
+policy_module(huntcoin, 1.100.1)
 
 ########################################
 #
 # Declarations
 #
 
-type globaltoken_t;
-type globaltoken_exec_t;
-init_daemon_domain(globaltoken_t, globaltoken_exec_t)
+type huntcoin_t;
+type huntcoin_exec_t;
+init_daemon_domain(huntcoin_t, huntcoin_exec_t)
 
-permissive globaltoken_t;
+permissive huntcoin_t;
 
-type globaltoken_initrc_exec_t;
-init_script_file(globaltoken_initrc_exec_t)
+type huntcoin_initrc_exec_t;
+init_script_file(huntcoin_initrc_exec_t)
 
-type globaltoken_conf_t;
-files_type(globaltoken_conf_t)
+type huntcoin_conf_t;
+files_type(huntcoin_conf_t)
 
-type globaltoken_var_lib_t;
-files_type(globaltoken_var_lib_t)
+type huntcoin_var_lib_t;
+files_type(huntcoin_var_lib_t)
 
-type globaltoken_var_run_t;
-files_type(globaltoken_var_run_t)
+type huntcoin_var_run_t;
+files_type(huntcoin_var_run_t)
 
-type globaltoken_port_t;
-corenet_port(globaltoken_port_t)
+type huntcoin_port_t;
+corenet_port(huntcoin_port_t)
 
 ########################################
 #
-# globaltoken local policy
+# huntcoin local policy
 #
-allow globaltoken_t self:process { fork };
+allow huntcoin_t self:process { fork };
 
-allow globaltoken_t self:fifo_file rw_fifo_file_perms;
-allow globaltoken_t self:unix_stream_socket create_stream_socket_perms;
+allow huntcoin_t self:fifo_file rw_fifo_file_perms;
+allow huntcoin_t self:unix_stream_socket create_stream_socket_perms;
 
-manage_dirs_pattern(globaltoken_t, globaltoken_conf_t, globaltoken_conf_t)
-manage_files_pattern(globaltoken_t, globaltoken_conf_t, globaltoken_conf_t)
+manage_dirs_pattern(huntcoin_t, huntcoin_conf_t, huntcoin_conf_t)
+manage_files_pattern(huntcoin_t, huntcoin_conf_t, huntcoin_conf_t)
 
-manage_dirs_pattern(globaltoken_t, globaltoken_var_lib_t, globaltoken_var_lib_t)
-manage_files_pattern(globaltoken_t, globaltoken_var_lib_t, globaltoken_var_lib_t)
-files_var_lib_filetrans(globaltoken_t, globaltoken_var_lib_t, { dir file })
+manage_dirs_pattern(huntcoin_t, huntcoin_var_lib_t, huntcoin_var_lib_t)
+manage_files_pattern(huntcoin_t, huntcoin_var_lib_t, huntcoin_var_lib_t)
+files_var_lib_filetrans(huntcoin_t, huntcoin_var_lib_t, { dir file })
 
-manage_dirs_pattern(globaltoken_t, globaltoken_var_run_t, globaltoken_var_run_t)
-manage_files_pattern(globaltoken_t, globaltoken_var_run_t, globaltoken_var_run_t)
+manage_dirs_pattern(huntcoin_t, huntcoin_var_run_t, huntcoin_var_run_t)
+manage_files_pattern(huntcoin_t, huntcoin_var_run_t, huntcoin_var_run_t)
 
-sysnet_dns_name_resolve(globaltoken_t)
-corenet_all_recvfrom_unlabeled(globaltoken_t)
+sysnet_dns_name_resolve(huntcoin_t)
+corenet_all_recvfrom_unlabeled(huntcoin_t)
 
-allow globaltoken_t self:tcp_socket create_stream_socket_perms;
-corenet_tcp_sendrecv_generic_if(globaltoken_t)
-corenet_tcp_sendrecv_generic_node(globaltoken_t)
-corenet_tcp_sendrecv_all_ports(globaltoken_t)
-corenet_tcp_bind_generic_node(globaltoken_t)
-
-gen_require(`
-    type globaltoken_port_t;
-')
-allow globaltoken_t globaltoken_port_t:tcp_socket name_bind;
+allow huntcoin_t self:tcp_socket create_stream_socket_perms;
+corenet_tcp_sendrecv_generic_if(huntcoin_t)
+corenet_tcp_sendrecv_generic_node(huntcoin_t)
+corenet_tcp_sendrecv_all_ports(huntcoin_t)
+corenet_tcp_bind_generic_node(huntcoin_t)
 
 gen_require(`
-    type globaltoken_port_t;
+    type huntcoin_port_t;
 ')
-allow globaltoken_t globaltoken_port_t:tcp_socket name_connect;
+allow huntcoin_t huntcoin_port_t:tcp_socket name_bind;
 
-domain_use_interactive_fds(globaltoken_t)
+gen_require(`
+    type huntcoin_port_t;
+')
+allow huntcoin_t huntcoin_port_t:tcp_socket name_connect;
 
-files_read_etc_files(globaltoken_t)
+domain_use_interactive_fds(huntcoin_t)
 
-miscfiles_read_localization(globaltoken_t)
+files_read_etc_files(huntcoin_t)
 
-sysnet_dns_name_resolve(globaltoken_t)
+miscfiles_read_localization(huntcoin_t)
 
-allow globaltoken_t globaltoken_exec_t:file execute_no_trans;
-allow globaltoken_t self:process setsched;
-corecmd_exec_ls(globaltoken_t)
-corenet_tcp_connect_http_port(globaltoken_t)
-dev_read_urand(globaltoken_t)
-fs_getattr_xattr_fs(globaltoken_t)
-kernel_read_system_state(globaltoken_t)
+sysnet_dns_name_resolve(huntcoin_t)
+
+allow huntcoin_t huntcoin_exec_t:file execute_no_trans;
+allow huntcoin_t self:process setsched;
+corecmd_exec_ls(huntcoin_t)
+corenet_tcp_connect_http_port(huntcoin_t)
+dev_read_urand(huntcoin_t)
+fs_getattr_xattr_fs(huntcoin_t)
+kernel_read_system_state(huntcoin_t)

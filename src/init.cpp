@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2017 The Bitcoin Core developers
 // Copyright (c) 2009-2017 The DigiByte Core developers
 // Copyright (c) 2014-2017 The Dash Core developers
-// Copyright (c) 2017-2018 The Globaltoken Core developers
+// Copyright (c) 2017-2018 The Huntcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -102,7 +102,7 @@ std::unique_ptr<PeerLogicValidation> peerLogic;
 static CZMQNotificationInterface* pzmqNotificationInterface = nullptr;
 #endif
 
-static CGLTNotificationInterface* phuntNotificationInterface = nullptr;
+static CHUNTNotificationInterface* phuntNotificationInterface = nullptr;
 
 #ifdef WIN32
 // Win32 LevelDB doesn't use filedescriptors, and the ones used for
@@ -155,7 +155,7 @@ bool ShutdownRequested()
 /**
  * This is a minimally invasive approach to shutdown on LevelDB read errors from the
  * chainstate, while keeping user interface out of the common library, which is shared
- * between globaltokend, and globaltoken-qt and non-server tools.
+ * between huntcoind, and huntcoin-qt and non-server tools.
 */
 class CCoinsViewErrorCatcher final : public CCoinsViewBacked
 {
@@ -207,7 +207,7 @@ void Shutdown()
     /// for example if the data directory was found to be locked.
     /// Be sure that anything that writes files or flushes caches only does this if the respective
     /// module was initialized.
-    RenameThread("globaltoken-shutoff");
+    RenameThread("huntcoin-shutoff");
     mempool.AddTransactionsUpdated(1);
 
     StopHTTPRPC();
@@ -517,7 +517,7 @@ std::string HelpMessage(HelpMessageMode mode)
 
     AppendParamsHelpMessages(strUsage, showDebug);
     
-    strUsage += HelpMessageOpt("-litemode=<n>", strprintf(_("Disable all Globaltoken specific functionality (Masternodes, InstantSend) (0-1, default: %u)"), 0));
+    strUsage += HelpMessageOpt("-litemode=<n>", strprintf(_("Disable all Huntcoin specific functionality (Masternodes, InstantSend) (0-1, default: %u)"), 0));
     strUsage += HelpMessageOpt("-sporkaddr=<hex>", strprintf(_("Override spork address. Only useful for regtest. Using this on mainnet or testnet will ban you.")));
     
     strUsage += HelpMessageGroup(_("Masternode options:"));
@@ -581,10 +581,10 @@ std::string HelpMessage(HelpMessageMode mode)
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/globaltoken/globaltoken>";
-    const std::string URL_WEBSITE = "<https://globaltoken.org>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/huntcoin/huntcoin>";
+    const std::string URL_WEBSITE = "<https://huntcoin.org>";
 
-    return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2009, COPYRIGHT_YEAR) + " ") + "\n" + CopyrightHoldersGLT(strprintf(_("Copyright (C) %i-%i"), COPYRIGHT_GLT_START, COPYRIGHT_YEAR) + " ") + "\n" +
+    return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2009, COPYRIGHT_YEAR) + " ") + "\n" + CopyrightHoldersHUNT(strprintf(_("Copyright (C) %i-%i"), COPYRIGHT_HUNT_START, COPYRIGHT_YEAR) + " ") + "\n" +
            "\n" +
            strprintf(_("Please contribute if you find %s useful. "
                        "Visit %s for further information about the software."),
@@ -687,7 +687,7 @@ void CleanupBlockRevFiles()
 void ThreadImport(std::vector<fs::path> vImportFiles)
 {
     const CChainParams& chainparams = Params();
-    RenameThread("globaltoken-loadblk");
+    RenameThread("huntcoin-loadblk");
 
     {
     CImportingNow imp;
@@ -1310,9 +1310,9 @@ bool AppInitMain()
     // Warn about relative -datadir path.
     if (gArgs.IsArgSet("-datadir") && !fs::path(gArgs.GetArg("-datadir", "")).is_absolute()) {
         LogPrintf("Warning: relative datadir option '%s' specified, which will be interpreted relative to the "
-                  "current working directory '%s'. This is fragile, because if globaltoken is started in the future "
+                  "current working directory '%s'. This is fragile, because if huntcoin is started in the future "
                   "from a different location, it will be unable to locate the current data files. There could "
-                  "also be data loss if globaltoken is started while in a temporary directory.\n",
+                  "also be data loss if huntcoin is started while in a temporary directory.\n",
             gArgs.GetArg("-datadir", ""), fs::current_path().string());
     }
 
@@ -1542,7 +1542,7 @@ bool AppInitMain()
     }
 #endif
 
-    phuntNotificationInterface = new CGLTNotificationInterface(connman);
+    phuntNotificationInterface = new CHUNTNotificationInterface(connman);
     RegisterValidationInterface(phuntNotificationInterface);
 
     uint64_t nMaxOutboundLimit = 0; //unlimited unless -maxuploadtarget is set
@@ -1842,7 +1842,7 @@ bool AppInitMain()
     fLiteMode = gArgs.GetBoolArg("-litemode", false);
 
     if(fLiteMode) {
-        InitWarning(_("You are starting in lite mode, all Globaltoken-specific functionality is disabled."));
+        InitWarning(_("You are starting in lite mode, all Huntcoin-specific functionality is disabled."));
     }
 
     if((!fLiteMode && fTxIndex == false)
@@ -1937,14 +1937,14 @@ bool AppInitMain()
     }
 
 
-    // ********************************************************* Step 11c: update block tip in Globaltoken modules
+    // ********************************************************* Step 11c: update block tip in Huntcoin modules
 
     // force UpdatedBlockTip to initialize nCachedBlockHeight for DS and MN payments
     // but don't call it directly to prevent triggering of other listeners like zmq etc.
     // GetMainSignals().UpdatedBlockTip(chainActive.Tip());
     phuntNotificationInterface->InitializeCurrentBlockTip();
     
-    // ********************************************************* Step 11d: start globaltoken-helper threads
+    // ********************************************************* Step 11d: start huntcoin-helper threads
 
     threadGroup.create_thread(boost::bind(&ThreadCheckMasternodes, boost::ref(*g_connman)));
 
