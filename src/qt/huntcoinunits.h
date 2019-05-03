@@ -44,12 +44,12 @@
 /** Bitcoin unit definitions. Encapsulates parsing and formatting
    and serves as list model for drop-down selection boxes.
 */
-class BitcoinUnits: public QAbstractListModel
+class HuntcoinUnits: public QAbstractListModel
 {
     Q_OBJECT
 
 public:
-    explicit BitcoinUnits(QObject *parent);
+    explicit HuntcoinUnits(QObject *parent);
 
     /** Bitcoin units.
       @note Source: https://en.huntcoin.it/wiki/Units . Please add only sensible ones
@@ -123,8 +123,8 @@ public:
     static CAmount maxMoney();
 
 private:
-    QList<BitcoinUnits::Unit> unitlist;
+    QList<HuntcoinUnits::Unit> unitlist;
 };
-typedef BitcoinUnits::Unit BitcoinUnit;
+typedef HuntcoinUnits::Unit BitcoinUnit;
 
 #endif // HUNTCOIN_QT_HUNTCOINUNITS_H
