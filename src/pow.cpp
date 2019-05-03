@@ -346,7 +346,7 @@ bool CheckProofOfWork(const CBlockHeader& block, const Consensus::Params& params
         
         // The HUNT block should have no nonce, just the auxpow block stores it.
         if (block.nBigNonce != uint256())
-            return error("%s : auxpow - Found nonce in GlobalToken block!", __func__);
+            return error("%s : auxpow - Found nonce in HuntCoin block!", __func__);
 
         if (!block.auxpow->check(block.GetHash(), block.GetChainId(), params))
             return error("%s : AUX POW is not valid", __func__);

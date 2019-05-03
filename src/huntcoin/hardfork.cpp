@@ -130,7 +130,7 @@ std::string GetCoinbaseFeeString(int type)
         << "You can agree to pay the fees by the following way:\n"
         << "\n- Always start the wallet with the -acceptdividedcoinbase argument\n"
         << "- Add acceptdividedcoinbase=1 to your huntcoin.conf file and restart the wallet.\n"
-        << "\nIf you don't agree to pay the fees, you will not be able to mine GlobalTokens and your blocks will be rejected.\n";
+        << "\nIf you don't agree to pay the fees, you will not be able to mine HuntCoins and your blocks will be rejected.\n";
         return strStream.str();
     }
     else if(type == DIVIDEDPAYMENTS_BLOCKTEMPLATE_WARNING)
@@ -154,7 +154,7 @@ std::string GetCoinbaseFeeString(int type)
         << "You can agree to pay the fees by the following way:\n"
         << "\n- Always start the wallet with the -acceptdividedcoinbase argument\n"
         << "- Add acceptdividedcoinbase=1 to your huntcoin.conf file and restart the wallet.\n"
-        << "\nIf you don't agree to pay the treasury, you will not be able to mine GlobalTokens and your blocks will be rejected.\n";
+        << "\nIf you don't agree to pay the treasury, you will not be able to mine HuntCoins and your blocks will be rejected.\n";
         return strStream.str();
     }
     else if(type == DIVIDEDPAYMENTS_AUXPOW_WARNING)
@@ -172,7 +172,7 @@ std::string GetCoinbaseFeeString(int type)
         << "You can agree to pay the fees by the following way:\n"
         << "\n- Always start the wallet with the -acceptdividedcoinbase argument\n"
         << "- Add acceptdividedcoinbase=1 to your huntcoin.conf file and restart the wallet.\n"
-        << "\nIf you don't agree to pay fees, you will not be able to mine GlobalTokens and your blocks will be rejected.\n";
+        << "\nIf you don't agree to pay fees, you will not be able to mine HuntCoins and your blocks will be rejected.\n";
         return strStream.str();
     }
     else

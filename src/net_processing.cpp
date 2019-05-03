@@ -999,7 +999,7 @@ bool static AlreadyHave(const CInv& inv) EXCLUSIVE_LOCKS_REQUIRED(cs_main)
         return mapBlockIndex.count(inv.hash);
     
     /* 
-        GlobalToken Related Inventory Messages
+        HuntCoin Related Inventory Messages
 
         --
 

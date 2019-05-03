@@ -174,7 +174,7 @@ UniValue getblocktreasury(const JSONRPCRequest& request)
             "\nResult:\n"
             "{\n"
             "  \"height\":       xxxxx,     (numeric) The height of this treasury details\n"
-            "  \"address\":      xxxxx,     (string)  The GlobalToken treasury address of this height\n"
+            "  \"address\":      xxxxx,     (string)  The HuntCoin treasury address of this height\n"
             "  \"scriptPubKey\": xxxxx,     (string)  The scriptpubkey of the treasury address\n"
             "  \"amount\":       xxxxx,     (numeric) The treasury amount for this height in Satoshis\n"
             "  \"hex\":          xxxxx      (string)  The hex TXOutput, that can be added to the coinbase transaction, to include treasury easily\n"
@@ -217,8 +217,8 @@ UniValue getnetworkhashps(const JSONRPCRequest& request)
 
 UniValue generateBlocks(std::shared_ptr<CReserveScript> coinbaseScript, int nGenerate, uint64_t nMaxTries, bool keepScript)
 {
-	static const int nInnerLoopGlobalTokenMask = 0x1FFFF;
-    static const int nInnerLoopGlobalTokenCount = 0x10000;
+	static const int nInnerLoopHuntCoinMask = 0x1FFFF;
+    static const int nInnerLoopHuntCoinCount = 0x10000;
     static const int nInnerLoopEquihashMask = 0xFFFF;
 	static const int nInnerLoopEquihashCount = 0xFFFF;
     int nHeightEnd = 0;
@@ -352,8 +352,8 @@ UniValue generateBlocks(std::shared_ptr<CReserveScript> coinbaseScript, int nGen
 			else
 			{
                 CDefaultBlockHeader defaultblockheader = pblock->GetDefaultBlockHeader();
-				nInnerLoopMask = nInnerLoopGlobalTokenMask;
-				nInnerLoopCount = nInnerLoopGlobalTokenCount;
+				nInnerLoopMask = nInnerLoopHuntCoinMask;
+				nInnerLoopCount = nInnerLoopHuntCoinCount;
 				while (nMaxTries > 0 && defaultblockheader.nNonce < nInnerLoopCount && !CheckProofOfWork(defaultblockheader.GetPoWHash(currentAlgo), defaultblockheader.nBits, Params().GetConsensus(), currentAlgo)) {
 					++defaultblockheader.nNonce;
 					--nMaxTries;
@@ -367,8 +367,8 @@ UniValue generateBlocks(std::shared_ptr<CReserveScript> coinbaseScript, int nGen
 		else
 		{
             CDefaultBlockHeader defaultblockheader = pblock->GetDefaultBlockHeader();
-			nInnerLoopMask = nInnerLoopGlobalTokenMask;
-			nInnerLoopCount = nInnerLoopGlobalTokenCount;
+			nInnerLoopMask = nInnerLoopHuntCoinMask;
+			nInnerLoopCount = nInnerLoopHuntCoinCount;
 			while (nMaxTries > 0 && defaultblockheader.nNonce < nInnerLoopCount && !CheckProofOfWork(defaultblockheader.GetPoWHash(ALGO_SHA256D), defaultblockheader.nBits, Params().GetConsensus(), ALGO_SHA256D)) {
 				++defaultblockheader.nNonce;
 				--nMaxTries;
@@ -701,7 +701,7 @@ UniValue getblocktemplate(const JSONRPCRequest& request)
             "  \"coinbasetxn\" : { ... },          (json object) information for coinbase transaction\n"
             "  \"treasury\" : {\n                  (json object) treasury transaction,that must be included in this block.\n"
             "       \"height\":       xxxxx,       (numeric) The height of this treasury details\n"
-            "       \"address\":      xxxxx,       (string)  The GlobalToken treasury address of this height\n"
+            "       \"address\":      xxxxx,       (string)  The HuntCoin treasury address of this height\n"
             "       \"scriptPubKey\": xxxxx,       (string)  The scriptpubkey of the treasury address\n"
             "       \"amount\":       xxxxx,       (numeric) The treasury amount for this height in Satoshis\n"
             "       \"hex\":          xxxxx        (string)  The hex TXOutput, that can be added to the coinbase transaction, to include treasury easily\n"
@@ -1432,11 +1432,11 @@ void AuxMiningCheck()
   if (g_connman->GetNodeCount(CConnman::CONNECTIONS_ALL) == 0
         && !Params().MineBlocksOnDemand())
     throw JSONRPCError(RPC_CLIENT_NOT_CONNECTED,
-                       "GlobalToken is not connected!");
+                       "HuntCoin is not connected!");
 
   if (IsInitialBlockDownload() && !Params().MineBlocksOnDemand())
     throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD,
-                       "GlobalToken is downloading blocks...");
+                       "HuntCoin is downloading blocks...");
 
   /* This should never fail, since the chain is already
      past the point of merge-mining start.  Check nevertheless.  */

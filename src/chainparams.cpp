@@ -208,30 +208,30 @@ public:
         // service bits we want, but we should get them updated to support all service bits wanted by any
         // release ASAP to avoid it where possible.
         vSeeds.emplace_back("134.255.221.7"); // Huntcoin base node
-        vSeeds.emplace_back("huntcoin.org"); // GlobalToken base node II
-        vSeeds.emplace_back("explorer.huntcoin.org"); // GlobalToken base node III
-        vSeeds.emplace_back("lameserver.de"); // GlobalToken Node by Astrali
-        vSeeds.emplace_back("pool.cryptopowered.club"); // GlobalToken Cryptopowered node
-        vSeeds.emplace_back("bit2pool.com"); // GlobalToken Bit2Pool node
+        vSeeds.emplace_back("huntcoin.org"); // HuntCoin base node II
+        vSeeds.emplace_back("explorer.huntcoin.org"); // HuntCoin base node III
+        vSeeds.emplace_back("lameserver.de"); // HuntCoin Node by Astrali
+        vSeeds.emplace_back("pool.cryptopowered.club"); // HuntCoin Cryptopowered node
+        vSeeds.emplace_back("bit2pool.com"); // HuntCoin Bit2Pool node
         // Hardfork Seednodes
-        vSeeds.emplace_back("185.206.144.200"); // GlobalToken Hardfork node: 01/18
-        vSeeds.emplace_back("185.206.145.201"); // GlobalToken Hardfork node: 02/18
-        vSeeds.emplace_back("185.206.146.200"); // GlobalToken Hardfork node: 03/18
-        vSeeds.emplace_back("185.206.147.203"); // GlobalToken Hardfork node: 04/18
-        vSeeds.emplace_back("185.205.209.67");  // GlobalToken Hardfork node: 05/18
-        vSeeds.emplace_back("185.206.147.202"); // GlobalToken Hardfork node: 06/18
-        vSeeds.emplace_back("185.205.209.137"); // GlobalToken Hardfork node: 07/18
-        vSeeds.emplace_back("185.203.119.194"); // GlobalToken Hardfork node: 08/18
-        vSeeds.emplace_back("185.203.119.195"); // GlobalToken Hardfork node: 09/18
-        vSeeds.emplace_back("185.206.144.201"); // GlobalToken Hardfork node: 10/18
-        vSeeds.emplace_back("185.141.62.86");   // GlobalToken Hardfork node: 11/18
-        vSeeds.emplace_back("185.141.62.87");   // GlobalToken Hardfork node: 12/18
-        vSeeds.emplace_back("185.141.62.88");   // GlobalToken Hardfork node: 13/18
-        vSeeds.emplace_back("185.141.62.89");   // GlobalToken Hardfork node: 14/18
-        vSeeds.emplace_back("185.141.62.90");   // GlobalToken Hardfork node: 15/18
-        vSeeds.emplace_back("185.141.62.91");   // GlobalToken Hardfork node: 16/18
-        vSeeds.emplace_back("185.141.62.92");   // GlobalToken Hardfork node: 17/18
-        vSeeds.emplace_back("185.203.118.117"); // GlobalToken Hardfork node: 18/18
+        vSeeds.emplace_back("185.206.144.200"); // HuntCoin Hardfork node: 01/18
+        vSeeds.emplace_back("185.206.145.201"); // HuntCoin Hardfork node: 02/18
+        vSeeds.emplace_back("185.206.146.200"); // HuntCoin Hardfork node: 03/18
+        vSeeds.emplace_back("185.206.147.203"); // HuntCoin Hardfork node: 04/18
+        vSeeds.emplace_back("185.205.209.67");  // HuntCoin Hardfork node: 05/18
+        vSeeds.emplace_back("185.206.147.202"); // HuntCoin Hardfork node: 06/18
+        vSeeds.emplace_back("185.205.209.137"); // HuntCoin Hardfork node: 07/18
+        vSeeds.emplace_back("185.203.119.194"); // HuntCoin Hardfork node: 08/18
+        vSeeds.emplace_back("185.203.119.195"); // HuntCoin Hardfork node: 09/18
+        vSeeds.emplace_back("185.206.144.201"); // HuntCoin Hardfork node: 10/18
+        vSeeds.emplace_back("185.141.62.86");   // HuntCoin Hardfork node: 11/18
+        vSeeds.emplace_back("185.141.62.87");   // HuntCoin Hardfork node: 12/18
+        vSeeds.emplace_back("185.141.62.88");   // HuntCoin Hardfork node: 13/18
+        vSeeds.emplace_back("185.141.62.89");   // HuntCoin Hardfork node: 14/18
+        vSeeds.emplace_back("185.141.62.90");   // HuntCoin Hardfork node: 15/18
+        vSeeds.emplace_back("185.141.62.91");   // HuntCoin Hardfork node: 16/18
+        vSeeds.emplace_back("185.141.62.92");   // HuntCoin Hardfork node: 17/18
+        vSeeds.emplace_back("185.203.118.117"); // HuntCoin Hardfork node: 18/18
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,38);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
@@ -658,26 +658,26 @@ public:
         // nodes with support for servicebits filtering should be at the top
 
         vSeeds.emplace_back("134.255.221.7");
-        vSeeds.emplace_back("lameserver.de"); // GlobalToken Node by Astrali
+        vSeeds.emplace_back("lameserver.de"); // HuntCoin Node by Astrali
         // Hardfork Seednodes
-        vSeeds.emplace_back("185.206.144.200"); // GlobalToken Hardfork node: 01/18
-        vSeeds.emplace_back("185.206.145.201"); // GlobalToken Hardfork node: 02/18
-        vSeeds.emplace_back("185.206.146.200"); // GlobalToken Hardfork node: 03/18
-        vSeeds.emplace_back("185.206.147.203"); // GlobalToken Hardfork node: 04/18
-        vSeeds.emplace_back("185.205.209.67");  // GlobalToken Hardfork node: 05/18
-        vSeeds.emplace_back("185.206.147.202"); // GlobalToken Hardfork node: 06/18
-        vSeeds.emplace_back("185.205.209.137"); // GlobalToken Hardfork node: 07/18
-        vSeeds.emplace_back("185.203.119.194"); // GlobalToken Hardfork node: 08/18
-        vSeeds.emplace_back("185.203.119.195"); // GlobalToken Hardfork node: 09/18
-        vSeeds.emplace_back("185.206.144.201"); // GlobalToken Hardfork node: 10/18
-        vSeeds.emplace_back("185.141.62.86");   // GlobalToken Hardfork node: 11/18
-        vSeeds.emplace_back("185.141.62.87");   // GlobalToken Hardfork node: 12/18
-        vSeeds.emplace_back("185.141.62.88");   // GlobalToken Hardfork node: 13/18
-        vSeeds.emplace_back("185.141.62.89");   // GlobalToken Hardfork node: 14/18
-        vSeeds.emplace_back("185.141.62.90");   // GlobalToken Hardfork node: 15/18
-        vSeeds.emplace_back("185.141.62.91");   // GlobalToken Hardfork node: 16/18
-        vSeeds.emplace_back("185.141.62.92");   // GlobalToken Hardfork node: 17/18
-        vSeeds.emplace_back("185.203.118.117"); // GlobalToken Hardfork node: 18/18
+        vSeeds.emplace_back("185.206.144.200"); // HuntCoin Hardfork node: 01/18
+        vSeeds.emplace_back("185.206.145.201"); // HuntCoin Hardfork node: 02/18
+        vSeeds.emplace_back("185.206.146.200"); // HuntCoin Hardfork node: 03/18
+        vSeeds.emplace_back("185.206.147.203"); // HuntCoin Hardfork node: 04/18
+        vSeeds.emplace_back("185.205.209.67");  // HuntCoin Hardfork node: 05/18
+        vSeeds.emplace_back("185.206.147.202"); // HuntCoin Hardfork node: 06/18
+        vSeeds.emplace_back("185.205.209.137"); // HuntCoin Hardfork node: 07/18
+        vSeeds.emplace_back("185.203.119.194"); // HuntCoin Hardfork node: 08/18
+        vSeeds.emplace_back("185.203.119.195"); // HuntCoin Hardfork node: 09/18
+        vSeeds.emplace_back("185.206.144.201"); // HuntCoin Hardfork node: 10/18
+        vSeeds.emplace_back("185.141.62.86");   // HuntCoin Hardfork node: 11/18
+        vSeeds.emplace_back("185.141.62.87");   // HuntCoin Hardfork node: 12/18
+        vSeeds.emplace_back("185.141.62.88");   // HuntCoin Hardfork node: 13/18
+        vSeeds.emplace_back("185.141.62.89");   // HuntCoin Hardfork node: 14/18
+        vSeeds.emplace_back("185.141.62.90");   // HuntCoin Hardfork node: 15/18
+        vSeeds.emplace_back("185.141.62.91");   // HuntCoin Hardfork node: 16/18
+        vSeeds.emplace_back("185.141.62.92");   // HuntCoin Hardfork node: 17/18
+        vSeeds.emplace_back("185.203.118.117"); // HuntCoin Hardfork node: 18/18
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);

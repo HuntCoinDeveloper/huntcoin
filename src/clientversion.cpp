@@ -13,7 +13,7 @@
  * for both huntcoind and huntcoin-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("GlobalToken");
+const std::string CLIENT_NAME("HuntCoin");
 
 /**
  * Client version number
