@@ -1,6 +1,6 @@
 This directory contains the HuntcoinQT graphical user interface (GUI). It uses the cross platform framework [QT](https://www1.qt.io/developers/).
 
-The current precise version for QT 5 is specified in [qt.mk](/depends/packages/qt.mk). QT 4 is also supported (see [#8263](https://github.com/bitcoin/bitcoin/issues/8263)).
+The current precise version for QT 5 is specified in [qt.mk](/depends/packages/qt.mk). QT 4 is also supported (see [#8263](https://github.com/huntcoin/huntcoin/issues/8263)).
 
 ## Compile and run
 
@@ -30,7 +30,7 @@ Resources such as the icon.
 
 Tests.
 
-### bitcoingui.(h/cpp)
+### huntcoingui.(h/cpp)
 
 Represents the main window of the Huntcoin UI.
 
@@ -38,7 +38,7 @@ Represents the main window of the Huntcoin UI.
 
 The model. When it has a corresponding controller, it generally inherits from  [QAbstractTableModel](http://doc.qt.io/qt-5/qabstracttablemodel.html). Models that are used by controllers as helpers inherit from other QT classes like [QValidator](http://doc.qt.io/qt-5/qvalidator.html).
 
-ClientModel is used by the main application `bitcoingui` and several models like `peertablemodel`.
+ClientModel is used by the main application `huntcoingui` and several models like `peertablemodel`.
 
 ### \*page.(h/cpp)
 
@@ -50,7 +50,7 @@ Various dialogs, e.g. to open a URL. Inherit from [QDialog](http://doc.qt.io/qt-
 
 ### paymentserver.(h/cpp)
 
-Used to process BIP21 and BIP70 (see https://github.com/bitcoin/bitcoin/pull/11622) payment URI / requests. Also handles URI based application switching (e.g. when following a bitcoin:... link from a browser).
+Used to process BIP21 and BIP70 (see https://github.com/huntcoin/huntcoin/pull/11622) payment URI / requests. Also handles URI based application switching (e.g. when following a huntcoin:... link from a browser).
 
 ### walletview.(h/cpp)
 
@@ -59,8 +59,8 @@ Represents the view to a single wallet.
 ### Other .h/cpp files
 
 * UI elements like BitcoinAmountField, which inherit from QWidget.
-* `bitcoinstrings.cpp`: automatically generated
-* `bitcoinunits.(h/cpp)`: HUNT / mHUNT / etc handling
+* `huntcoinstrings.cpp`: automatically generated
+* `huntcoinunits.(h/cpp)`: HUNT / mHUNT / etc handling
 * `callback.h`
 * `guiconstants.h`: UI colors, app name, etc
 * `guiutil.h`: several helper functions
@@ -71,7 +71,7 @@ Represents the view to a single wallet.
 
 See [CONTRIBUTING.md](/CONTRIBUTING.md) for general guidelines. Specifically for QT:
 
-* don't change `local/bitcoin_en.ts`; this happens [automatically](/doc/translation_process.md#writing-code-with-translations)
+* don't change `local/huntcoin_en.ts`; this happens [automatically](/doc/translation_process.md#writing-code-with-translations)
 
 ## Using Qt Creator as IDE
 

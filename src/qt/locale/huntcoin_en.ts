@@ -304,7 +304,7 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <location filename="../bitcoingui.cpp" line="+358"/>
+        <location filename="../huntcoingui.cpp" line="+358"/>
         <source>Sign &amp;message...</source>
         <translation>Sign &amp;message...</translation>
     </message>
@@ -720,7 +720,7 @@
         <translation>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../bitcoin.cpp" line="+534"/>
+        <location filename="../huntcoin.cpp" line="+534"/>
         <source>A fatal error occurred. Huntcoin can no longer continue safely and will quit.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2077,7 +2077,7 @@
         <translation>Error reading masternode configuration file: %1</translation>
     </message>
     <message>
-        <location filename="../bitcoinunits.cpp" line="+185"/>
+        <location filename="../huntcoinunits.cpp" line="+185"/>
         <source>Amount</source>
         <translation type="unfinished">Amount</translation>
     </message>
@@ -2197,7 +2197,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../bitcoin.cpp" line="+178"/>
+        <location filename="../huntcoin.cpp" line="+178"/>
         <source>%1 didn&apos;t yet exit safely...</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2210,7 +2210,7 @@
 <context>
     <name>QObject::QObject</name>
     <message>
-        <location filename="../bitcoin.cpp" line="-86"/>
+        <location filename="../huntcoin.cpp" line="-86"/>
         <source>Error: Specified data directory &quot;%1&quot; does not exist.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3363,15 +3363,7 @@
     </message>
     <message>
         <location line="+54"/>
-<<<<<<< HEAD
         <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Huntcoin network.</source>
-=======
-<<<<<<< HEAD
-        <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Huntcoin network.</source>
-=======
-        <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Globaltoken network.</source>
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4229,7 +4221,7 @@
 <context>
     <name>UnitDisplayStatusBarControl</name>
     <message>
-        <location filename="../bitcoingui.cpp" line="+129"/>
+        <location filename="../huntcoingui.cpp" line="+129"/>
         <source>Unit to show amounts in. Click to select another unit.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4352,9 +4344,9 @@
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>huntcoin-core</name>
     <message>
-        <location filename="../bitcoinstrings.cpp" line="+351"/>
+        <location filename="../huntcoinstrings.cpp" line="+351"/>
         <source>Options:</source>
         <translation>Options:</translation>
     </message>

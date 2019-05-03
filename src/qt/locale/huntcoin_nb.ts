@@ -431,15 +431,7 @@
     </message>
     <message>
         <source>Open a huntcoin: URI or payment request</source>
-<<<<<<< HEAD
         <translation>Åpne en Huntcoin: URI eller betalingsetterspørring</translation>
-=======
-<<<<<<< HEAD
-        <translation>Åpne en Huntcoin: URI eller betalingsetterspørring</translation>
-=======
-        <translation>Åpne en Globaltoken: URI eller betalingsetterspørring</translation>
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1334,15 +1326,7 @@
         <translation>Ugyldig betalingsadresse %1</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>URI cannot be parsed! This can be caused by an invalid Huntcoin address or malformed URI parameters.</source>
-=======
-<<<<<<< HEAD
-        <source>URI cannot be parsed! This can be caused by an invalid Huntcoin address or malformed URI parameters.</source>
-=======
-        <source>URI cannot be parsed! This can be caused by an invalid Globaltoken address or malformed URI parameters.</source>
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
         <translation>URI kan ikke fortolkes! Dette kan være forårsaket av en ugyldig huntcoin-adresse eller feilformede URI-parametre.</translation>
     </message>
     <message>
@@ -2098,15 +2082,7 @@
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for huntcoin transactions than the network can process.</source>
-<<<<<<< HEAD
         <translation>Betaling av bare minimumsavgiften går helt fint så lenge det er mindre transaksjonsvolum enn plass i blokkene. Men vær klar over at dette kan ende opp i en transaksjon som aldri blir bekreftet når det er mer etterspørsel etter Huntcoin-transaksjoner enn nettverket kan behandle.</translation>
-=======
-<<<<<<< HEAD
-        <translation>Betaling av bare minimumsavgiften går helt fint så lenge det er mindre transaksjonsvolum enn plass i blokkene. Men vær klar over at dette kan ende opp i en transaksjon som aldri blir bekreftet når det er mer etterspørsel etter Huntcoin-transaksjoner enn nettverket kan behandle.</translation>
-=======
-        <translation>Betaling av bare minimumsavgiften går helt fint så lenge det er mindre transaksjonsvolum enn plass i blokkene. Men vær klar over at dette kan ende opp i en transaksjon som aldri blir bekreftet når det er mer etterspørsel etter Globaltoken-transaksjoner enn nettverket kan behandle.</translation>
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
     </message>
     <message>
         <source>(read the tooltip)</source>
@@ -2261,15 +2237,7 @@
         <translation><numerusform>Antatt bekreftelsesbegynnelse innen %n blokk.</numerusform><numerusform>Antatt bekreftelsesbegynnelse innen %n blokker.</numerusform></translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Warning: Invalid Huntcoin address</source>
-=======
-<<<<<<< HEAD
-        <source>Warning: Invalid Huntcoin address</source>
-=======
-        <source>Warning: Invalid Globaltoken address</source>
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
         <translation>Advarsel Ugyldig huntcoin-adresse</translation>
     </message>
     <message>
@@ -2360,18 +2328,8 @@
         <translation>Skriv inn en merkelapp for denne adressen for å legge den til listen av brukte adresser</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Huntcoin network.</source>
         <translation>En melding som var tilknyttet huntcoinen: URI vil bli lagret med transaksjonen for din oversikt. Denne meldingen vil ikke bli sendt over Huntcoin-nettverket.</translation>
-=======
-<<<<<<< HEAD
-        <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Huntcoin network.</source>
-        <translation>En melding som var tilknyttet huntcoinen: URI vil bli lagret med transaksjonen for din oversikt. Denne meldingen vil ikke bli sendt over Huntcoin-nettverket.</translation>
-=======
-        <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Globaltoken network.</source>
-        <translation>En melding som var tilknyttet huntcoinen: URI vil bli lagret med transaksjonen for din oversikt. Denne meldingen vil ikke bli sendt over Globaltoken-nettverket.</translation>
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
     </message>
     <message>
         <source>Pay To:</source>
@@ -3110,7 +3068,7 @@
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>huntcoin-core</name>
     <message>
         <source>Options:</source>
         <translation>Innstillinger:</translation>

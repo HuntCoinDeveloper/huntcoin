@@ -1,6 +1,6 @@
 usr/local/bin/huntcoin-qt usr/bin
-share/pixmaps/bitcoin32.xpm usr/share/pixmaps
-share/pixmaps/bitcoin16.xpm usr/share/pixmaps
-share/pixmaps/bitcoin128.png usr/share/pixmaps
+share/pixmaps/huntcoin32.xpm usr/share/pixmaps
+share/pixmaps/huntcoin16.xpm usr/share/pixmaps
+share/pixmaps/huntcoin128.png usr/share/pixmaps
 debian/huntcoin-qt.desktop usr/share/applications
 debian/huntcoin-qt.protocol usr/share/kde4/services/

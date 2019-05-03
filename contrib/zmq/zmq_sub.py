@@ -7,15 +7,7 @@
 """
     ZMQ example using python3's asyncio
 
-<<<<<<< HEAD
     Huntcoin should be started with the command line arguments:
-=======
-<<<<<<< HEAD
-    Huntcoin should be started with the command line arguments:
-=======
-    Globaltoken should be started with the command line arguments:
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
         huntcoind -testnet -daemon \
                 -zmqpubrawtx=tcp://127.0.0.1:29319 \
                 -zmqpubrawblock=tcp://127.0.0.1:29319 \
@@ -28,7 +20,7 @@
     alternative is to wrap the contents of `handle` inside `while True`.
 
     A blocking example using python 2.7 can be obtained from the git history:
-    https://github.com/bitcoin/bitcoin/blob/37a7fe9e440b83e2364d5498931253937abe9294/contrib/zmq/zmq_sub.py
+    https://github.com/huntcoin/huntcoin/blob/37a7fe9e440b83e2364d5498931253937abe9294/contrib/zmq/zmq_sub.py
 """
 
 import binascii

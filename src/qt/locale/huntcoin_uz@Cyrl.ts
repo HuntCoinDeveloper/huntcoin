@@ -235,15 +235,7 @@
     </message>
     <message>
         <source>Open a huntcoin: URI or payment request</source>
-<<<<<<< HEAD
         <translation>Huntcoin’ни очиш: URI ёки тўлов сўрови</translation>
-=======
-<<<<<<< HEAD
-        <translation>Huntcoin’ни очиш: URI ёки тўлов сўрови</translation>
-=======
-        <translation>Globaltoken’ни очиш: URI ёки тўлов сўрови</translation>
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1178,7 +1170,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>huntcoin-core</name>
     <message>
         <source>Options:</source>
         <translation>Танламалар:</translation>

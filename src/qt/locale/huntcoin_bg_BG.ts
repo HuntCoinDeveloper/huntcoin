@@ -892,7 +892,7 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>huntcoin-core</name>
     <message>
         <source>Bitcoin Core</source>
         <translation>Bitcoin Core</translation>

@@ -263,11 +263,7 @@ const CLogCategoryDesc LogCategories[] =
     {BCLog::MNPAYMENTS, "mnpayments"},
     {BCLog::MNSYNC, "mnsync"},
     {BCLog::SPORK, "spork"},
-<<<<<<< HEAD
     {BCLog::HUNTCOIN, "huntcoin"},
-=======
-    {BCLog::GLOBALTOKEN, "huntcoin"},
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
     {BCLog::ALL, "1"},
     {BCLog::ALL, "all"},
 };
@@ -593,21 +589,9 @@ void PrintExceptionContinue(const std::exception* pex, const char* pszThread)
 
 fs::path GetDefaultDataDir()
 {
-<<<<<<< HEAD
     // Windows < Vista: C:\Documents and Settings\Username\Application Data\Huntcoin
     // Windows >= Vista: C:\Users\Username\AppData\Roaming\Huntcoin
     // Mac: ~/Library/Application Support/Huntcoin
-=======
-<<<<<<< HEAD
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Huntcoin
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Huntcoin
-    // Mac: ~/Library/Application Support/Huntcoin
-=======
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Globaltoken
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Globaltoken
-    // Mac: ~/Library/Application Support/Globaltoken
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
     // Unix: ~/.huntcoin
 #ifdef WIN32
     // Windows
@@ -690,7 +674,7 @@ void ArgsManager::ReadConfigFile(const std::string& confPath)
 {
     fs::ifstream streamConfig(GetConfigFile(confPath));
     if (!streamConfig.good())
-        return; // No bitcoin.conf file is OK
+        return; // No huntcoin.conf file is OK
 
     {
         LOCK(cs_args);
@@ -699,7 +683,7 @@ void ArgsManager::ReadConfigFile(const std::string& confPath)
 
         for (boost::program_options::detail::config_file_iterator it(streamConfig, setOptions), end; it != end; ++it)
         {
-            // Don't overwrite existing settings so command line settings override bitcoin.conf
+            // Don't overwrite existing settings so command line settings override huntcoin.conf
             std::string strKey = std::string("-") + it->string_key;
             std::string strValue = it->value[0];
             InterpretNegativeSetting(strKey, strValue);

@@ -5,15 +5,7 @@ connections, inter-process communication, and shared-memory,
 providing various message-oriented semantics such as publish/subscribe,
 request/reply, and push/pull.
 
-<<<<<<< HEAD
 The Huntcoin Core daemon can be configured to act as a trusted "border
-=======
-<<<<<<< HEAD
-The Huntcoin Core daemon can be configured to act as a trusted "border
-=======
-The Globaltoken Core daemon can be configured to act as a trusted "border
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
 router", implementing the huntcoin wire protocol and relay, making
 consensus decisions, maintaining the local blockchain database,
 broadcasting locally generated transactions into the network, and

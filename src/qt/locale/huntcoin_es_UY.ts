@@ -469,7 +469,7 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>huntcoin-core</name>
     <message>
         <source>Options:</source>
         <translation>Opciones:</translation>

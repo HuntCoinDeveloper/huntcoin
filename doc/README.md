@@ -5,15 +5,7 @@ Setup
 ---------------------
 Huntcoin Core is the original Huntcoin client and it builds the backbone of the network. It downloads and, by default, stores the entire history of Huntcoin transactions (which is currently more than 100 GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
-<<<<<<< HEAD
 To download Huntcoin Core, visit [huntcoin.org](https://huntcoin.org/#downloads).
-=======
-<<<<<<< HEAD
-To download Huntcoin Core, visit [huntcoin.org](https://huntcoin.org/#downloads).
-=======
-To download Globaltoken Core, visit [huntcoin.org](https://huntcoin.org/#downloads).
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
 
 Running
 ---------------------
@@ -36,10 +28,10 @@ Drag Huntcoin-Core to your applications folder, and then run Huntcoin-Core.
 
 ### Need Help?
 
-* See the documentation at the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Main_Page)
+* See the documentation at the [Bitcoin Wiki](https://en.huntcoin.it/wiki/Main_Page)
 for help and more information.
-* Ask for help on [#bitcoin](http://webchat.freenode.net?channels=bitcoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=bitcoin).
-* Ask for help on the [BitcoinTalk](https://bitcointalk.org/) forums, in the [Technical Support board](https://bitcointalk.org/index.php?board=4.0).
+* Ask for help on [#huntcoin](http://webchat.freenode.net?channels=huntcoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=huntcoin).
+* Ask for help on the [BitcoinTalk](https://huntcointalk.org/) forums, in the [Technical Support board](https://huntcointalk.org/index.php?board=4.0).
 
 Building
 ---------------------
@@ -60,7 +52,7 @@ The Huntcoin repo's [root README](/README.md) contains relevant information on t
 - [Developer Notes](developer-notes.md)
 - [Release Notes](release-notes.md)
 - [Release Process](release-process.md)
-- [Source Code Documentation (External Link)](https://dev.visucore.com/bitcoin/doxygen/)
+- [Source Code Documentation (External Link)](https://dev.visucore.com/huntcoin/doxygen/)
 - [Translation Process](translation_process.md)
 - [Translation Strings Policy](translation_strings_policy.md)
 - [Travis CI](travis-ci.md)
@@ -71,9 +63,9 @@ The Huntcoin repo's [root README](/README.md) contains relevant information on t
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/) forums, in the [Development & Technical Discussion board](https://bitcointalk.org/index.php?board=6.0).
-* Discuss project-specific development on #bitcoin-core-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=bitcoin-core-dev).
-* Discuss general Bitcoin development on #bitcoin-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=bitcoin-dev).
+* Discuss on the [BitcoinTalk](https://huntcointalk.org/) forums, in the [Development & Technical Discussion board](https://huntcointalk.org/index.php?board=6.0).
+* Discuss project-specific development on #huntcoin-core-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=huntcoin-core-dev).
+* Discuss general Bitcoin development on #huntcoin-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=huntcoin-dev).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

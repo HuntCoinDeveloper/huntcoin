@@ -11,7 +11,7 @@
   </array>
 
   <key>CFBundleIconFile</key>
-  <string>bitcoin.icns</string>
+  <string>huntcoin.icns</string>
 
   <key>CFBundlePackageType</key>
   <string>APPL</string>
@@ -38,15 +38,7 @@
   <true/>
 
   <key>CFBundleIdentifier</key>
-<<<<<<< HEAD
   <string>org.huntcoin.Huntcoin-Qt</string>
-=======
-<<<<<<< HEAD
-  <string>org.huntcoin.Huntcoin-Qt</string>
-=======
-  <string>org.huntcoin.Globaltoken-Qt</string>
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -54,15 +46,7 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-<<<<<<< HEAD
       <string>org.huntcoin.HuntcoinPayment</string>
-=======
-<<<<<<< HEAD
-      <string>org.huntcoin.HuntcoinPayment</string>
-=======
-      <string>org.huntcoin.GlobaltokenPayment</string>
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
       <key>CFBundleURLSchemes</key>
       <array>
         <string>huntcoin</string>

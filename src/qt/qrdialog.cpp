@@ -5,7 +5,7 @@
 #include <qt/qrdialog.h>
 #include <qt/forms/ui_qrdialog.h>
 
-#include <qt/bitcoinunits.h>
+#include <qt/huntcoinunits.h>
 #include <qt/guiconstants.h>
 #include <qt/guiutil.h>
 #include <qt/optionsmodel.h>
@@ -22,7 +22,7 @@
 #endif
 
 #if defined(HAVE_CONFIG_H)
-#include <config/bitcoin-config.h> /* for USE_QRCODE */
+#include <config/huntcoin-config.h> /* for USE_QRCODE */
 #endif
 
 #ifdef USE_QRCODE

@@ -62,18 +62,8 @@
         <translation>Indirizzi di ricezione</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>These are your Huntcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Questi sono i tuoi indirizzi Huntcoin per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo del beneficiario prima di inviare huntcoin.</translation>
-=======
-<<<<<<< HEAD
-        <source>These are your Huntcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Questi sono i tuoi indirizzi Huntcoin per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo del beneficiario prima di inviare huntcoin.</translation>
-=======
-        <source>These are your Globaltoken addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Questi sono i tuoi indirizzi Globaltoken per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo del beneficiario prima di inviare huntcoin.</translation>
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
     </message>
     <message>
         <source>These are your Huntcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
@@ -772,15 +762,7 @@
         <translation>Modifica indirizzo d'invio</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>The entered address "%1" is not a valid Huntcoin address.</source>
-=======
-<<<<<<< HEAD
-        <source>The entered address "%1" is not a valid Huntcoin address.</source>
-=======
-        <source>The entered address "%1" is not a valid Globaltoken address.</source>
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
         <translation>L'indirizzo inserito "%1" non è un indirizzo huntcoin valido.</translation>
     </message>
     <message>
@@ -2561,18 +2543,8 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <translation>Inserisci un'etichetta per questo indirizzo per aggiungerlo alla lista degli indirizzi utilizzati</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Huntcoin network.</source>
         <translation>Messaggio incluso nel huntcoin URI e che sarà memorizzato con la transazione per vostro riferimento. Nota: Questo messaggio non sarà inviato attraverso la rete Huntcoin.</translation>
-=======
-<<<<<<< HEAD
-        <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Huntcoin network.</source>
-        <translation>Messaggio incluso nel huntcoin URI e che sarà memorizzato con la transazione per vostro riferimento. Nota: Questo messaggio non sarà inviato attraverso la rete Huntcoin.</translation>
-=======
-        <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Globaltoken network.</source>
-        <translation>Messaggio incluso nel huntcoin URI e che sarà memorizzato con la transazione per vostro riferimento. Nota: Questo messaggio non sarà inviato attraverso la rete Globaltoken.</translation>
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
     </message>
     <message>
         <source>Pay To:</source>
@@ -3323,7 +3295,7 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>huntcoin-core</name>
     <message>
         <source>Options:</source>
         <translation>Opzioni:</translation>

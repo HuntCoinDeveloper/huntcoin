@@ -243,20 +243,20 @@ done
 
 %if %{_buildqt}
 # qt icons
-install -D -p share/pixmaps/bitcoin.ico %{buildroot}%{_datadir}/pixmaps/bitcoin.ico
+install -D -p share/pixmaps/huntcoin.ico %{buildroot}%{_datadir}/pixmaps/huntcoin.ico
 install -p share/pixmaps/nsis-header.bmp %{buildroot}%{_datadir}/pixmaps/
 install -p share/pixmaps/nsis-wizard.bmp %{buildroot}%{_datadir}/pixmaps/
-install -p %{SOURCE100} %{buildroot}%{_datadir}/pixmaps/bitcoin.svg
-%{_bindir}/inkscape %{SOURCE100} --export-png=%{buildroot}%{_datadir}/pixmaps/bitcoin16.png -w16 -h16
-%{_bindir}/inkscape %{SOURCE100} --export-png=%{buildroot}%{_datadir}/pixmaps/bitcoin32.png -w32 -h32
-%{_bindir}/inkscape %{SOURCE100} --export-png=%{buildroot}%{_datadir}/pixmaps/bitcoin64.png -w64 -h64
-%{_bindir}/inkscape %{SOURCE100} --export-png=%{buildroot}%{_datadir}/pixmaps/bitcoin128.png -w128 -h128
-%{_bindir}/inkscape %{SOURCE100} --export-png=%{buildroot}%{_datadir}/pixmaps/bitcoin256.png -w256 -h256
-%{_bindir}/convert -resize 16x16 %{buildroot}%{_datadir}/pixmaps/bitcoin256.png %{buildroot}%{_datadir}/pixmaps/bitcoin16.xpm
-%{_bindir}/convert -resize 32x32 %{buildroot}%{_datadir}/pixmaps/bitcoin256.png %{buildroot}%{_datadir}/pixmaps/bitcoin32.xpm
-%{_bindir}/convert -resize 64x64 %{buildroot}%{_datadir}/pixmaps/bitcoin256.png %{buildroot}%{_datadir}/pixmaps/bitcoin64.xpm
-%{_bindir}/convert -resize 128x128 %{buildroot}%{_datadir}/pixmaps/bitcoin256.png %{buildroot}%{_datadir}/pixmaps/bitcoin128.xpm
-%{_bindir}/convert %{buildroot}%{_datadir}/pixmaps/bitcoin256.png %{buildroot}%{_datadir}/pixmaps/bitcoin256.xpm
+install -p %{SOURCE100} %{buildroot}%{_datadir}/pixmaps/huntcoin.svg
+%{_bindir}/inkscape %{SOURCE100} --export-png=%{buildroot}%{_datadir}/pixmaps/huntcoin16.png -w16 -h16
+%{_bindir}/inkscape %{SOURCE100} --export-png=%{buildroot}%{_datadir}/pixmaps/huntcoin32.png -w32 -h32
+%{_bindir}/inkscape %{SOURCE100} --export-png=%{buildroot}%{_datadir}/pixmaps/huntcoin64.png -w64 -h64
+%{_bindir}/inkscape %{SOURCE100} --export-png=%{buildroot}%{_datadir}/pixmaps/huntcoin128.png -w128 -h128
+%{_bindir}/inkscape %{SOURCE100} --export-png=%{buildroot}%{_datadir}/pixmaps/huntcoin256.png -w256 -h256
+%{_bindir}/convert -resize 16x16 %{buildroot}%{_datadir}/pixmaps/huntcoin256.png %{buildroot}%{_datadir}/pixmaps/huntcoin16.xpm
+%{_bindir}/convert -resize 32x32 %{buildroot}%{_datadir}/pixmaps/huntcoin256.png %{buildroot}%{_datadir}/pixmaps/huntcoin32.xpm
+%{_bindir}/convert -resize 64x64 %{buildroot}%{_datadir}/pixmaps/huntcoin256.png %{buildroot}%{_datadir}/pixmaps/huntcoin64.xpm
+%{_bindir}/convert -resize 128x128 %{buildroot}%{_datadir}/pixmaps/huntcoin256.png %{buildroot}%{_datadir}/pixmaps/huntcoin128.xpm
+%{_bindir}/convert %{buildroot}%{_datadir}/pixmaps/huntcoin256.png %{buildroot}%{_datadir}/pixmaps/huntcoin256.xpm
 touch %{buildroot}%{_datadir}/pixmaps/*.png -r %{SOURCE100}
 touch %{buildroot}%{_datadir}/pixmaps/*.xpm -r %{SOURCE100}
 
@@ -265,27 +265,14 @@ mkdir -p %{buildroot}%{_datadir}/applications
 cat <<EOF > %{buildroot}%{_datadir}/applications/huntcoin-core.desktop
 [Desktop Entry]
 Encoding=UTF-8
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
 Name=Huntcoin
 Comment=Huntcoin P2P Cryptocurrency
 Comment[fr]=Huntcoin, monnaie virtuelle cryptographique pair à pair
 Comment[tr]=Huntcoin, eşten eşe kriptografik sanal para birimi
-<<<<<<< HEAD
-=======
-=======
-Name=Globaltoken
-Comment=Globaltoken P2P Cryptocurrency
-Comment[fr]=Globaltoken, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=Globaltoken, eşten eşe kriptografik sanal para birimi
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
 Exec=huntcoin-qt %u
 Terminal=false
 Type=Application
-Icon=bitcoin128
+Icon=huntcoin128
 MimeType=x-scheme-handler/huntcoin;
 Categories=Office;Finance;
 EOF
@@ -324,7 +311,7 @@ rm -f %{buildroot}%{_bindir}/test_*
 
 %check
 make check
-srcdir=src test/bitcoin-util-test.py
+srcdir=src test/huntcoin-util-test.py
 test/functional/test_runner.py --extended
 
 %post libs -p /sbin/ldconfig
@@ -335,15 +322,7 @@ test/functional/test_runner.py --extended
 getent group huntcoin >/dev/null || groupadd -r huntcoin
 getent passwd huntcoin >/dev/null ||
 	useradd -r -g huntcoin -d /var/lib/huntcoin -s /sbin/nologin \
-<<<<<<< HEAD
 	-c "Huntcoin wallet server" huntcoin
-=======
-<<<<<<< HEAD
-	-c "Huntcoin wallet server" huntcoin
-=======
-	-c "Globaltoken wallet server" huntcoin
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
 exit 0
 
 %post server
@@ -460,4 +439,4 @@ rm -rf %{buildroot}
 - Initial spec file for 0.12.0 release
 
 # This spec file is written from scratch but a lot of the packaging decisions are directly
-# based upon the 0.11.2 package spec file from https://www.ringingliberty.com/bitcoin/
+# based upon the 0.11.2 package spec file from https://www.ringingliberty.com/huntcoin/

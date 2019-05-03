@@ -4,13 +4,13 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/bitcoin-config.h"
+#include "config/huntcoin-config.h"
 #endif
 
 #include <arith_uint256.h>
 #include <crypto/sha256.h>
 #include <crypto/algos/equihash/equihash.h>
-#include <test/test_bitcoin.h>
+#include <test/test_huntcoin.h>
 #include <uint256.h>
 
 #include <sodium.h>

@@ -10,7 +10,7 @@ received a VERACK.
 This test connects to a node and sends it a few messages, trying to intice it
 into sending us something it shouldn't.
 
-Also test that nodes that send unsupported service bits to bitcoind are disconnected
+Also test that nodes that send unsupported service bits to huntcoind are disconnected
 and don't receive a VERACK. Unsupported service bits are currently 1 << 5 and
 1 << 7 (until August 1st 2018)."""
 

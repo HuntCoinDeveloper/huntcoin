@@ -77,9 +77,9 @@ BITCOIN_TESTS =\
   test/sigopcount_tests.cpp \
   test/skiplist_tests.cpp \
   test/streams_tests.cpp \
-  test/test_bitcoin.cpp \
-  test/test_bitcoin.h \
-  test/test_bitcoin_main.cpp \
+  test/test_huntcoin.cpp \
+  test/test_huntcoin.h \
+  test/test_huntcoin_main.cpp \
   test/timedata_tests.cpp \
   test/torcontrol_tests.cpp \
   test/transaction_tests.cpp \
@@ -106,11 +106,7 @@ test_test_huntcoin_LDADD += $(LIBBITCOIN_WALLET)
 endif
 test_test_huntcoin_LDADD += $(LIBBITCOIN_SERVER) $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CONSENSUS) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) \
   $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) $(BOOST_LIBS) $(BOOST_UNIT_TEST_FRAMEWORK_LIB) $(LIBSECP256K1) $(EVENT_LIBS) $(EVENT_PTHREADS_LIBS) \
-<<<<<<< HEAD
   $(LIBEQUIHASH_LIBS) $(LIBBITCOIN_ALGOS) $(LIBBITCOIN_HUNTCOIN_HARDFORK)
-=======
-  $(LIBEQUIHASH_LIBS) $(LIBBITCOIN_ALGOS) $(LIBBITCOIN_GLOBALTOKEN_HARDFORK)
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
 test_test_huntcoin_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 
 test_test_huntcoin_LDADD += $(LIBBITCOIN_CONSENSUS) $(LIBBITCOIN_ALGOS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
@@ -122,7 +118,7 @@ endif
 #
 
 # test_huntcoin_fuzzy binary #
-test_test_huntcoin_fuzzy_SOURCES = test/test_bitcoin_fuzzy.cpp
+test_test_huntcoin_fuzzy_SOURCES = test/test_huntcoin_fuzzy.cpp
 test_test_huntcoin_fuzzy_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 test_test_huntcoin_fuzzy_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 test_test_huntcoin_fuzzy_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) $(YESCRYPT_LDFLAGS)
@@ -159,8 +155,8 @@ huntcoin_test_clean : FORCE
 	rm -f $(CLEAN_BITCOIN_TEST) $(test_test_huntcoin_OBJECTS) $(TEST_BINARY)
 
 check-local:
-	@echo "Running test/util/bitcoin-util-test.py..."
-	$(PYTHON) $(top_builddir)/test/util/bitcoin-util-test.py
+	@echo "Running test/util/huntcoin-util-test.py..."
+	$(PYTHON) $(top_builddir)/test/util/huntcoin-util-test.py
 	$(AM_V_at)$(MAKE) $(AM_MAKEFLAGS) -C secp256k1 check
 if EMBEDDED_UNIVALUE
 	$(AM_V_at)$(MAKE) $(AM_MAKEFLAGS) -C univalue check

@@ -16,18 +16,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-<<<<<<< HEAD
             VALUE "CompanyName",        "Huntcoin"
             VALUE "FileDescription",    "huntcoind (Huntcoin node with a JSON-RPC server)"
-=======
-<<<<<<< HEAD
-            VALUE "CompanyName",        "Huntcoin"
-            VALUE "FileDescription",    "huntcoind (Huntcoin node with a JSON-RPC server)"
-=======
-            VALUE "CompanyName",        "Globaltoken"
-            VALUE "FileDescription",    "huntcoind (Globaltoken node with a JSON-RPC server)"
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "huntcoind"
             VALUE "LegalCopyright",     COPYRIGHT_STR

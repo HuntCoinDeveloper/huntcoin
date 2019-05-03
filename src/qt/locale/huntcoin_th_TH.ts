@@ -230,18 +230,8 @@
         <translation>เข้ารหัส private keys/ รหัสส่วนตัว สำหรับกระเป๋าเงินของท่าน</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Sign messages with your Huntcoin addresses to prove you own them</source>
         <translation>เซ็นชื่อด้วยข้อความ ที่เก็บ Huntcoin เพื่อแสดงว่าท่านเป็นเจ้าของ huntcoin นี้จริง</translation>
-=======
-<<<<<<< HEAD
-        <source>Sign messages with your Huntcoin addresses to prove you own them</source>
-        <translation>เซ็นชื่อด้วยข้อความ ที่เก็บ Huntcoin เพื่อแสดงว่าท่านเป็นเจ้าของ huntcoin นี้จริง</translation>
-=======
-        <source>Sign messages with your Globaltoken addresses to prove you own them</source>
-        <translation>เซ็นชื่อด้วยข้อความ ที่เก็บ Globaltoken เพื่อแสดงว่าท่านเป็นเจ้าของ huntcoin นี้จริง</translation>
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Huntcoin addresses</source>
@@ -906,7 +896,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>huntcoin-core</name>
     <message>
         <source>Options:</source>
         <translation>ตัวเลือก:</translation>

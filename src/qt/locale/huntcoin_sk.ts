@@ -358,15 +358,7 @@
         <translation>Preindexúvam bloky na disku...</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Send coins to a Huntcoin address</source>
-=======
-<<<<<<< HEAD
-        <source>Send coins to a Huntcoin address</source>
-=======
-        <source>Send coins to a Globaltoken address</source>
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
         <translation>Poslať huntcoins na adresu</translation>
     </message>
     <message>
@@ -1518,15 +1510,7 @@
     </message>
     <message>
         <source>Cannot start huntcoin: click-to-pay handler</source>
-<<<<<<< HEAD
         <translation>Nemôžeme spustiť Huntcoin: obsluha click-to-pay</translation>
-=======
-<<<<<<< HEAD
-        <translation>Nemôžeme spustiť Huntcoin: obsluha click-to-pay</translation>
-=======
-        <translation>Nemôžeme spustiť Globaltoken: obsluha click-to-pay</translation>
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
     </message>
     <message>
         <source>URI handling</source>
@@ -1647,15 +1631,7 @@
         <translation>Suma</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Enter a Huntcoin address (e.g. %1)</source>
-=======
-<<<<<<< HEAD
-        <source>Enter a Huntcoin address (e.g. %1)</source>
-=======
-        <source>Enter a Globaltoken address (e.g. %1)</source>
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
         <translation>Zadajte huntcoin adresu (napr. %1)</translation>
     </message>
     <message>
@@ -2623,18 +2599,8 @@
         <translation>Vložte popis pre túto adresu aby sa uložila do zoznamu použitých adries</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Huntcoin network.</source>
         <translation>Správa ktorá bola pripojená k huntcoin: URI a ktorá bude uložená s transakcou pre Vaše potreby. Poznámka: Táto správa nebude poslaná cez sieť Huntcoin.</translation>
-=======
-<<<<<<< HEAD
-        <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Huntcoin network.</source>
-        <translation>Správa ktorá bola pripojená k huntcoin: URI a ktorá bude uložená s transakcou pre Vaše potreby. Poznámka: Táto správa nebude poslaná cez sieť Huntcoin.</translation>
-=======
-        <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Globaltoken network.</source>
-        <translation>Správa ktorá bola pripojená k huntcoin: URI a ktorá bude uložená s transakcou pre Vaše potreby. Poznámka: Táto správa nebude poslaná cez sieť Globaltoken.</translation>
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
     </message>
     <message>
         <source>Pay To:</source>
@@ -3393,7 +3359,7 @@
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>huntcoin-core</name>
     <message>
         <source>Options:</source>
         <translation>Možnosti:</translation>

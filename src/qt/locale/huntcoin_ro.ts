@@ -1138,7 +1138,7 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>huntcoin-core</name>
     <message>
         <source>Huntcoin Core</source>
         <translation>Huntcoin Core</translation>

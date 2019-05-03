@@ -62,18 +62,8 @@
         <translation>Modtagelsesadresser</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>These are your Huntcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Disse er dine Huntcoin-adresser til afsendelse af betalinger. Tjek altid beløb og modtagelsesadresse, inden du sender huntcoins.</translation>
-=======
-<<<<<<< HEAD
-        <source>These are your Huntcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Disse er dine Huntcoin-adresser til afsendelse af betalinger. Tjek altid beløb og modtagelsesadresse, inden du sender huntcoins.</translation>
-=======
-        <source>These are your Globaltoken addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Disse er dine Globaltoken-adresser til afsendelse af betalinger. Tjek altid beløb og modtagelsesadresse, inden du sender huntcoins.</translation>
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
     </message>
     <message>
         <source>These are your Huntcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
@@ -352,18 +342,8 @@
         <translation>Genindekserer blokke på disken…</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Send coins to a Huntcoin address</source>
         <translation>Send huntcoins til en Huntcoin-adresse</translation>
-=======
-<<<<<<< HEAD
-        <source>Send coins to a Huntcoin address</source>
-        <translation>Send huntcoins til en Huntcoin-adresse</translation>
-=======
-        <source>Send coins to a Globaltoken address</source>
-        <translation>Send huntcoins til en Globaltoken-adresse</translation>
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -2392,18 +2372,8 @@
         <translation>Indtast et mærkat for denne adresse for at føje den til listen over brugte adresser</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Huntcoin network.</source>
         <translation>En besked, som blev føjet til “bitcon:”-URI'en, som vil gemmes med transaktionen til din reference. Bemærk: Denne besked vil ikke blive sendt over Huntcoin-netværket.</translation>
-=======
-<<<<<<< HEAD
-        <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Huntcoin network.</source>
-        <translation>En besked, som blev føjet til “bitcon:”-URI'en, som vil gemmes med transaktionen til din reference. Bemærk: Denne besked vil ikke blive sendt over Huntcoin-netværket.</translation>
-=======
-        <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Globaltoken network.</source>
-        <translation>En besked, som blev føjet til “bitcon:”-URI'en, som vil gemmes med transaktionen til din reference. Bemærk: Denne besked vil ikke blive sendt over Globaltoken-netværket.</translation>
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
     </message>
     <message>
         <source>Pay To:</source>
@@ -3142,7 +3112,7 @@
     </message>
 </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>huntcoin-core</name>
     <message>
         <source>Options:</source>
         <translation>Indstillinger:</translation>

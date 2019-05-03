@@ -274,15 +274,7 @@
         <translation>Φόρτωση ευρετηρίου μπλοκ στον σκληρο δισκο...</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Send coins to a Huntcoin address</source>
-=======
-<<<<<<< HEAD
-        <source>Send coins to a Huntcoin address</source>
-=======
-        <source>Send coins to a Globaltoken address</source>
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
         <translation>Στείλε νομίσματα σε μια διεύθυνση huntcoin</translation>
     </message>
     <message>
@@ -1717,7 +1709,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>huntcoin-core</name>
     <message>
         <source>Options:</source>
         <translation>Επιλογές:</translation>

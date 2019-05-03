@@ -19,15 +19,7 @@ reference the release tarball available from https://huntcoin.org/bin/ and
 `Source1` should reference the BerkeleyDB source.
 
 Sources 10-99 are for source files that are maintained in the
-<<<<<<< HEAD
 [Huntcoin git repository](https://github.com/huntcoin/huntcoin) but are not part of
-=======
-<<<<<<< HEAD
-[Huntcoin git repository](https://github.com/huntcoin/huntcoin) but are not part of
-=======
-[Globaltoken git repository](https://github.com/huntcoin/huntcoin) but are not part of
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
 the release tarball. Most of these will reside in the `contrib` sub-directory.
 
 Sources 10-19 should be reserved for miscellaneous configuration files.
@@ -42,15 +34,7 @@ release, the full URL specified in the RPM spec file will not work. You can get
 them from the git repository where you retrieved this file.
 
 Sources 100+ are for files that are not source tarballs and are not maintained
-<<<<<<< HEAD
 in the huntcoin git repository. At present only an SVG version of the Huntcoin
-=======
-<<<<<<< HEAD
-in the huntcoin git repository. At present only an SVG version of the Huntcoin
-=======
-in the huntcoin git repository. At present only an SVG version of the Globaltoken
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
 icon is used.
 
 ## Patches
@@ -172,7 +156,7 @@ developed on (CentOS 7).
 ## Legacy Credit
 
 This RPM spec file is largely based upon the work of Michael Hampton at
-[Ringing Liberty](https://www.ringingliberty.com/bitcoin/). He has been
+[Ringing Liberty](https://www.ringingliberty.com/huntcoin/). He has been
 packaging Bitcoin for Fedora at least since 2012.
 
 Most of the differences between his packaging and this package are stylistic in

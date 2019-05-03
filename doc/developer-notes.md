@@ -244,15 +244,7 @@ Threads
 
 - ThreadRPCServer : Remote procedure call handler, listens on port 8332 for connections and services them.
 
-<<<<<<< HEAD
 - HuntcoinMiner : Generates huntcoins (if wallet is enabled).
-=======
-<<<<<<< HEAD
-- HuntcoinMiner : Generates huntcoins (if wallet is enabled).
-=======
-- GlobaltokenMiner : Generates huntcoins (if wallet is enabled).
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
 
 - Shutdown : Does an orderly shutdown of everything.
 
@@ -541,10 +533,10 @@ Current subtrees include:
   - Upstream at https://github.com/google/leveldb ; Maintained by Google, but open important PRs to Core to avoid delay
 
 - src/libsecp256k1
-  - Upstream at https://github.com/bitcoin-core/secp256k1/ ; actively maintaned by Core contributors.
+  - Upstream at https://github.com/huntcoin-core/secp256k1/ ; actively maintaned by Core contributors.
 
 - src/crypto/ctaes
-  - Upstream at https://github.com/bitcoin-core/ctaes ; actively maintained by Core contributors.
+  - Upstream at https://github.com/huntcoin-core/ctaes ; actively maintained by Core contributors.
 
 - src/univalue
   - Upstream at https://github.com/jgarzik/univalue ; report important PRs to Core to avoid delay.

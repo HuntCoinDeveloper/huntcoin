@@ -302,15 +302,7 @@
         <translation>Re-indeksiranje blokova na disku...</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Send coins to a Huntcoin address</source>
-=======
-<<<<<<< HEAD
-        <source>Send coins to a Huntcoin address</source>
-=======
-        <source>Send coins to a Globaltoken address</source>
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
         <translation>Slanje novca na huntcoin adresu</translation>
     </message>
     <message>
@@ -362,27 +354,11 @@
         <translation>Šifriranje privatnih ključeva koji u novčaniku</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Sign messages with your Huntcoin addresses to prove you own them</source>
         <translation>Poruku potpišemo s huntcoin adresom, kako bi dokazali vlasništvo nad tom adresom</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Huntcoin addresses</source>
-=======
-<<<<<<< HEAD
-        <source>Sign messages with your Huntcoin addresses to prove you own them</source>
-        <translation>Poruku potpišemo s huntcoin adresom, kako bi dokazali vlasništvo nad tom adresom</translation>
-    </message>
-    <message>
-        <source>Verify messages to ensure they were signed with specified Huntcoin addresses</source>
-=======
-        <source>Sign messages with your Globaltoken addresses to prove you own them</source>
-        <translation>Poruku potpišemo s huntcoin adresom, kako bi dokazali vlasništvo nad tom adresom</translation>
-    </message>
-    <message>
-        <source>Verify messages to ensure they were signed with specified Globaltoken addresses</source>
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
         <translation>Provjeravanje poruke, kao dokaz, da je potpisana navedenom huntcoin adresom</translation>
     </message>
     <message>
@@ -642,15 +618,7 @@
         <translation>Uredi adresu za slanje</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>The entered address "%1" is not a valid Huntcoin address.</source>
-=======
-<<<<<<< HEAD
-        <source>The entered address "%1" is not a valid Huntcoin address.</source>
-=======
-        <source>The entered address "%1" is not a valid Globaltoken address.</source>
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
         <translation>Upisana adresa "%1" nije valjana huntcoin adresa.</translation>
     </message>
     <message>
@@ -1684,7 +1652,7 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>huntcoin-core</name>
     <message>
         <source>Options:</source>
         <translation>Postavke:</translation>

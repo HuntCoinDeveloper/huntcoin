@@ -4,9 +4,9 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include <qt/bitcoingui.h>
+#include <qt/huntcoingui.h>
 
-#include <qt/bitcoinunits.h>
+#include <qt/huntcoinunits.h>
 #include <qt/clientmodel.h>
 #include <qt/guiconstants.h>
 #include <qt/guiutil.h>
@@ -875,7 +875,7 @@ void BitcoinGUI::setNumBlocks(int count, const QDateTime& blockDate, double nVer
     if (walletFrame)
     {
         // Set icon state: spinning if catching up, tick otherwise
-        if(secs < 20*60) // 90*60 in bitcoin
+        if(secs < 20*60) // 90*60 in huntcoin
         {
             if(fLiteMode)
             {

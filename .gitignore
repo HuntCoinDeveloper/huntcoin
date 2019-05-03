@@ -1,12 +1,12 @@
 *.tar.gz
 
 *.exe
-src/bitcoin
+src/huntcoin
 src/huntcoind
-src/bitcoin-cli
+src/huntcoin-cli
 src/huntcoin-tx
-src/test/test_bitcoin
-src/test/test_bitcoin_fuzzy
+src/test/test_huntcoin
+src/test/test_huntcoin_fuzzy
 src/qt/test/test_huntcoin-qt
 
 # autoreconf
@@ -30,8 +30,8 @@ config.log
 config.status
 configure
 libtool
-src/config/bitcoin-config.h
-src/config/bitcoin-config.h.in
+src/config/huntcoin-config.h
+src/config/huntcoin-config.h.in
 src/config/stamp-h1
 share/setup.nsi
 share/qt/Info.plist
@@ -44,11 +44,11 @@ src/qt/forms/ui_*.h
 
 src/qt/test/moc*.cpp
 
-src/qt/bitcoin-qt.config
-src/qt/bitcoin-qt.creator
-src/qt/bitcoin-qt.creator.user
-src/qt/bitcoin-qt.files
-src/qt/bitcoin-qt.includes
+src/qt/huntcoin-qt.config
+src/qt/huntcoin-qt.creator
+src/qt/huntcoin-qt.creator.user
+src/qt/huntcoin-qt.files
+src/qt/huntcoin-qt.includes
 
 .deps
 .dirstamp
@@ -99,7 +99,7 @@ build
 *.gcno
 *.gcda
 /*.info
-test_bitcoin.coverage/
+test_huntcoin.coverage/
 total.coverage/
 coverage_percent.txt
 

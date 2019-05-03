@@ -142,15 +142,7 @@
         <translation>Cargando el index de bloques...</translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Send coins to a Huntcoin address</source>
-=======
-<<<<<<< HEAD
-        <source>Send coins to a Huntcoin address</source>
-=======
-        <source>Send coins to a Globaltoken address</source>
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
         <translation>Enviar monedas a una dirección huntcoin</translation>
     </message>
     <message>
@@ -766,7 +758,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>huntcoin-core</name>
     <message>
         <source>Options:</source>
         <translation>Opciones:
@@ -788,20 +780,12 @@
 </translation>
     </message>
     <message>
-<<<<<<< HEAD
         <source>Huntcoin Core</source>
-=======
-<<<<<<< HEAD
-        <source>Huntcoin Core</source>
-=======
-        <source>Globaltoken Core</source>
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
         <translation>huntcoin core</translation>
     </message>
 	<message>
         <source>Bitcoin Core</source>
-        <translation>bitcoin core</translation>
+        <translation>huntcoin core</translation>
     </message>
     <message>
         <source>Error loading block database</source>

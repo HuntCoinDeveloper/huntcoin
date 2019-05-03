@@ -6,7 +6,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include <config/bitcoin-config.h>
+#include <config/huntcoin-config.h>
 #endif
 
 #include <chainparams.h>
@@ -32,18 +32,8 @@
  *
  * \section intro_sec Introduction
  *
-<<<<<<< HEAD
  * This is the developer documentation of the reference client for an experimental new digital currency called Huntcoin (https://www.huntcoin.org/),
  * which enables instant payments to anyone, anywhere in the world. Huntcoin uses peer-to-peer technology to operate
-=======
-<<<<<<< HEAD
- * This is the developer documentation of the reference client for an experimental new digital currency called Huntcoin (https://www.huntcoin.org/),
- * which enables instant payments to anyone, anywhere in the world. Huntcoin uses peer-to-peer technology to operate
-=======
- * This is the developer documentation of the reference client for an experimental new digital currency called Globaltoken (https://www.huntcoin.org/),
- * which enables instant payments to anyone, anywhere in the world. Globaltoken uses peer-to-peer technology to operate
->>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
->>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
  * with no central authority: managing transactions and issuing money are carried out collectively by the network.
  *
  * The software is a community-driven open source project, released under the MIT license.
@@ -75,7 +65,7 @@ bool AppInit(int argc, char* argv[])
     //
     // Parameters
     //
-    // If Qt is used, parameters/huntcoin.conf are parsed in qt/bitcoin.cpp's main()
+    // If Qt is used, parameters/huntcoin.conf are parsed in qt/huntcoin.cpp's main()
     gArgs.ParseParameters(argc, argv);
 
     // Process help and version before taking care about datadir

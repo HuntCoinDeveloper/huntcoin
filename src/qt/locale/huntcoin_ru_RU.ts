@@ -930,7 +930,7 @@
     </message>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>huntcoin-core</name>
     <message>
         <source>Huntcoin Core</source>
         <translation>Huntcoin Core</translation>
@@ -941,7 +941,7 @@
     </message>
     <message>
         <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
-        <translation>bitcoin-core</translation>
+        <translation>huntcoin-core</translation>
     </message>
     <message>
         <source>Information</source>

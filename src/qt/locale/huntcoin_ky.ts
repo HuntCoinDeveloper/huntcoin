@@ -346,7 +346,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>bitcoin-core</name>
+    <name>huntcoin-core</name>
     <message>
         <source>Information</source>
         <translation>Маалымат</translation>
