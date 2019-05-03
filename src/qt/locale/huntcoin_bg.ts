@@ -843,7 +843,7 @@
         <translation>Използване на директория ръчно</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>Huntcoin</source>
         <translation>Биткоин</translation>
     </message>
     <message>

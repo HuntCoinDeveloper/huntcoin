@@ -599,7 +599,7 @@
         <translation>خوش آمدید</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>Huntcoin</source>
         <translation>بیت کوین</translation>
     </message>
 	<message>

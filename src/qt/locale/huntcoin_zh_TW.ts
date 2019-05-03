@@ -891,8 +891,8 @@
         <translation>使用自訂的資料目錄:</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>Huntcoin</source>
+        <translation>Huntcoin</translation>
     </message>
 	<message>
         <source>Huntcoin</source>

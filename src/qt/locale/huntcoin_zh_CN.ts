@@ -875,7 +875,7 @@
         <translation>使用自定义的数据目录：</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>Huntcoin</source>
         <translation>比特币</translation>
     </message>
 	<message>

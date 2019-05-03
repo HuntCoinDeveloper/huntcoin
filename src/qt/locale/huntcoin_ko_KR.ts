@@ -875,7 +875,7 @@
         <translation>커스텀 데이터 폴더 사용:</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>Huntcoin</source>
         <translation>비트코인</translation>
     </message>
 	<message>

@@ -485,8 +485,8 @@
     </message>
 	<message>
         <location line="+517"/>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>Huntcoin</source>
+        <translation>Huntcoin</translation>
     </message>
     <message>
         <location line="+517"/>

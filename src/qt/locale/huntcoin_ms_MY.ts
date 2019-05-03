@@ -363,8 +363,8 @@ Alihkan fail data ke dalam tab semasa</translation>
         <translation>sahkan mesej</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>Huntcoin</source>
+        <translation>Huntcoin</translation>
     </message>
 	<message>
         <source>Huntcoin</source>
@@ -442,8 +442,8 @@ Alihkan fail data ke dalam tab semasa</translation>
 <context>
     <name>Intro</name>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>Huntcoin</source>
+        <translation>Huntcoin</translation>
     </message>
     </context>
 <context>

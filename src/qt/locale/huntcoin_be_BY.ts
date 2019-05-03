@@ -675,7 +675,7 @@
         <translation>Вітаем</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>Huntcoin</source>
         <translation>Біткойн</translation>
     </message>
     <message>

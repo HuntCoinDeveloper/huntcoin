@@ -751,7 +751,7 @@
         <translation>استفاده از یک مسیر سفارشی:</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>Huntcoin</source>
         <translation>بیت‌کوین</translation>
     </message>
 	<message>

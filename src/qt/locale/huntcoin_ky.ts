@@ -101,8 +101,8 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
+        <source>Huntcoin</source>
+        <translation>Huntcoin</translation>
     </message>
 	<message>
         <source>Huntcoin</source>

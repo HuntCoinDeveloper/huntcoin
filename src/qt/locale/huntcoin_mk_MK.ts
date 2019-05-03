@@ -299,7 +299,7 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>Bitcoin</source>
+        <source>Huntcoin</source>
         <translation>Биткоин</translation>
     </message>
 	<message>

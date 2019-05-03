@@ -226,7 +226,7 @@
 <context>
     <name>Intro</name>
     <message>
-        <source>Bitcoin</source>
+        <source>Huntcoin</source>
         <translation>बीटकोइन</translation>
     </message>
 	<message>

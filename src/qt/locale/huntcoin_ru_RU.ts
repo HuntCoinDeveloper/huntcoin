@@ -322,7 +322,7 @@
         <translation>&amp;Проверить сообщение...</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>Huntcoin</source>
         <translation>Bitcoin Core</translation>
     </message>
 	<message>
@@ -485,7 +485,7 @@
         <translation>Добро пожаловать в %1.</translation>
     </message>
     <message>
-        <source>Bitcoin</source>
+        <source>Huntcoin</source>
         <translation>Bitcoin Core</translation>
     </message>
 	<message>
