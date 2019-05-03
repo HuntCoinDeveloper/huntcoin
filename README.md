@@ -1,9 +1,9 @@
 Globaltoken Core integration/staging tree
 =====================================
 
-[![Build Status](https://travis-ci.org/globaltoken/globaltoken.svg?branch=master)](https://travis-ci.org/globaltoken/globaltoken)
+[![Build Status](https://travis-ci.org/huntcoin/huntcoin.svg?branch=master)](https://travis-ci.org/huntcoin/huntcoin)
 
-https://globaltoken.org
+https://huntcoin.org
 
 What is Globaltoken?
 ----------------
@@ -15,7 +15,7 @@ out collectively by the network. Globaltoken Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Globaltoken Core software, see https://globaltoken.org/#downloads, or read the
+the Globaltoken Core software, see https://huntcoin.org/#downloads, or read the
 [original Bitcoin whitepaper](https://bitcoincore.org/bitcoin.pdf).
 
 License
@@ -28,7 +28,7 @@ Development Process
 -------------------
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/globaltoken/globaltoken/tags) are created
+completely stable. [Tags](https://github.com/huntcoin/huntcoin/tags) are created
 regularly to indicate new official, stable release versions of Globaltoken Core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).

@@ -15,15 +15,15 @@ It is considered good form for all sources to reference a URL where the source
 can be downloaded.
 
 Sources 0-9 should be reserved for source code tarballs. `Source0` should
-reference the release tarball available from https://globaltoken.org/bin/ and
+reference the release tarball available from https://huntcoin.org/bin/ and
 `Source1` should reference the BerkeleyDB source.
 
 Sources 10-99 are for source files that are maintained in the
-[Globaltoken git repository](https://github.com/globaltoken/globaltoken) but are not part of
+[Globaltoken git repository](https://github.com/huntcoin/huntcoin) but are not part of
 the release tarball. Most of these will reside in the `contrib` sub-directory.
 
 Sources 10-19 should be reserved for miscellaneous configuration files.
-Currently only `Source10` is used, for the example `globaltoken.conf` file.
+Currently only `Source10` is used, for the example `huntcoin.conf` file.
 
 Sources 20-29 should be reserved for man pages. Currently only `Source20`
 through `Source23` are used.
@@ -34,17 +34,17 @@ release, the full URL specified in the RPM spec file will not work. You can get
 them from the git repository where you retrieved this file.
 
 Sources 100+ are for files that are not source tarballs and are not maintained
-in the globaltoken git repository. At present only an SVG version of the Globaltoken
+in the huntcoin git repository. At present only an SVG version of the Globaltoken
 icon is used.
 
 ## Patches
 
 In general, patches should be avoided. When a packager feels a patch is
-necessary, the packager should bring the problem to the attention of the globaltoken
+necessary, the packager should bring the problem to the attention of the huntcoin
 developers so that an official fix to the issue can make it into the next
 release.
 
-### Patch0 globaltoken-0.12.0-libressl.patch
+### Patch0 huntcoin-0.12.0-libressl.patch
 
 This patch is only needed if building against LibreSSL. LibreSSL is not the
 standard TLS library on most Linux distributions. The patch will likely not be
@@ -91,7 +91,7 @@ assigned to them in the `touch` command that specifies the timestamp.
 
 ## SVG, PNG, and XPM Icons
 
-The `globaltoken.png` file is from the source listed as `Source100`. It is used as
+The `huntcoin.png` file is from the source listed as `Source100`. It is used as
 the source for the PNG and XPM files. The generated PNG and XPM files are given
 the same timestamp as the source SVG file as a means of indicating they are
 derived from it.
@@ -99,7 +99,7 @@ derived from it.
 ## Systemd
 
 This spec file assumes the target distribution uses systemd. That really only
-matters for the `globaltoken-server` package. At this point, most RPM based
+matters for the `huntcoin-server` package. At this point, most RPM based
 distributions that still receive vendor updates do in fact use systemd.
 
 The files to control the service are created in the RPM spec file itself using
@@ -112,7 +112,7 @@ command that specifies the timestamp.
 
 ## SELinux
 
-The `globaltoken-server` package should have SELinux support. How to properly do
+The `huntcoin-server` package should have SELinux support. How to properly do
 that *may* vary by distribution and version of distribution.
 
 The SELinux stuff in this RPM spec file *should* be correct for CentOS, RHEL,
@@ -174,9 +174,9 @@ academic.
 specifying a build without the Qt GUI, or specifying which version of the Qt
 libraries to use.
 
-4. I renamed the `globaltoken` package that contains the Qt GUI to `globaltoken-core` as
+4. I renamed the `huntcoin` package that contains the Qt GUI to `huntcoin-core` as
 that appears to be how the general population refers to it, in contrast to
-`globaltoken-xt` or `globaltoken-classic`. I wanted to make sure the general population
+`huntcoin-xt` or `huntcoin-classic`. I wanted to make sure the general population
 knows what they are getting when installing the GUI package.
 
 As far as minor differences, I generally prefer to assign the file permissions

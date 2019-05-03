@@ -89,8 +89,8 @@ const int64_t nStartupTime = GetTime();
 bool fMasternodeMode = false;
 bool fLiteMode = false;
 
-const char * const BITCOIN_CONF_FILENAME = "globaltoken.conf";
-const char * const BITCOIN_PID_FILENAME = "globaltokend.pid";
+const char * const BITCOIN_CONF_FILENAME = "huntcoin.conf";
+const char * const BITCOIN_PID_FILENAME = "huntcoind.pid";
 const char * const DEFAULT_DEBUGLOGFILE = "debug.log";
 
 ArgsManager gArgs;
@@ -263,7 +263,7 @@ const CLogCategoryDesc LogCategories[] =
     {BCLog::MNPAYMENTS, "mnpayments"},
     {BCLog::MNSYNC, "mnsync"},
     {BCLog::SPORK, "spork"},
-    {BCLog::GLOBALTOKEN, "globaltoken"},
+    {BCLog::GLOBALTOKEN, "huntcoin"},
     {BCLog::ALL, "1"},
     {BCLog::ALL, "all"},
 };
@@ -570,7 +570,7 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(nullptr, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "globaltoken";
+    const char* pszModule = "huntcoin";
 #endif
     if (pex)
         return strprintf(
@@ -592,7 +592,7 @@ fs::path GetDefaultDataDir()
     // Windows < Vista: C:\Documents and Settings\Username\Application Data\Globaltoken
     // Windows >= Vista: C:\Users\Username\AppData\Roaming\Globaltoken
     // Mac: ~/Library/Application Support/Globaltoken
-    // Unix: ~/.globaltoken
+    // Unix: ~/.huntcoin
 #ifdef WIN32
     // Windows
     return GetSpecialFolderPath(CSIDL_APPDATA) / "Globaltoken";
@@ -608,7 +608,7 @@ fs::path GetDefaultDataDir()
     return pathRet / "Library/Application Support/Globaltoken";
 #else
     // Unix
-    return pathRet / ".globaltoken";
+    return pathRet / ".huntcoin";
 #endif
 #endif
 }

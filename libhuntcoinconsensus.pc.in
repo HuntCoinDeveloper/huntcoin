@@ -6,6 +6,6 @@ includedir=@includedir@
 Name: @PACKAGE_NAME@ consensus library
 Description: Library for the Globaltoken consensus protocol.
 Version: @PACKAGE_VERSION@
-Libs: -L${libdir} -lglobaltokenconsensus
+Libs: -L${libdir} -lhuntcoinconsensus
 Cflags: -I${includedir}
 Requires.private: libcrypto

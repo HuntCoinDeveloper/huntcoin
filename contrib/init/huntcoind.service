@@ -1,23 +1,23 @@
 # It is not recommended to modify this file in-place, because it will
 # be overwritten during package upgrades. If you want to add further
 # options or overwrite existing ones then use
-# $ systemctl edit globaltokend.service
+# $ systemctl edit huntcoind.service
 # See "man systemd.service" for details.
 
 # Note that almost all daemon options could be specified in
-# /etc/globaltoken/globaltoken.conf
+# /etc/huntcoin/huntcoin.conf
 
 [Unit]
 Description=Globaltoken daemon
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/globaltokend -daemon -conf=/etc/globaltoken/globaltoken.conf -pid=/run/globaltokend/globaltokend.pid
-# Creates /run/globaltokend owned by globaltoken
-RuntimeDirectory=globaltokend
-User=globaltoken
+ExecStart=/usr/bin/huntcoind -daemon -conf=/etc/huntcoin/huntcoin.conf -pid=/run/huntcoind/huntcoind.pid
+# Creates /run/huntcoind owned by huntcoin
+RuntimeDirectory=huntcoind
+User=huntcoin
 Type=forking
-PIDFile=/run/globaltokend/globaltokend.pid
+PIDFile=/run/huntcoind/huntcoind.pid
 Restart=on-failure
 PrivateTmp=true
 

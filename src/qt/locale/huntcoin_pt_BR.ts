@@ -355,7 +355,7 @@
     </message>
     <message>
         <source>Send coins to a Globaltoken address</source>
-        <translation>Enviar moedas para um endereço globaltoken</translation>
+        <translation>Enviar moedas para um endereço huntcoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -430,8 +430,8 @@
         <translation>Barra de ferramentas</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and globaltoken: URIs)</source>
-        <translation>Solicitações de pagamentos (gera códigos QR e globaltoken: URIs)</translation>
+        <source>Request payments (generates QR codes and huntcoin: URIs)</source>
+        <translation>Solicitações de pagamentos (gera códigos QR e huntcoin: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -442,8 +442,8 @@
         <translation>Mostrar a lista de endereços de recebimento usados ​​e rótulos</translation>
     </message>
     <message>
-        <source>Open a globaltoken: URI or payment request</source>
-        <translation>Abrir um globaltoken: URI ou cobrança</translation>
+        <source>Open a huntcoin: URI or payment request</source>
+        <translation>Abrir um huntcoin: URI ou cobrança</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1086,11 +1086,11 @@ Esta sincronização inicial é muito exigente e pode expor problemas de hardwar
         <translation>Formulário</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the globaltoken network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the huntcoin network, as detailed below.</source>
         <translation>Transações recentes podem não estar visíveis ainda, portanto o seu saldo pode estar incorreto. Esta informação será corrigida assim que sua carteira for sincronizada com a rede, como detalhado abaixo.</translation>
     </message>
     <message>
-        <source>Attempting to spend globaltokens that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend huntcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation>Gastar moedas de transações desconhecidas podem não ser aceitas pela rede.</translation>
     </message>
     <message>
@@ -1353,7 +1353,7 @@ Esta sincronização inicial é muito exigente e pode expor problemas de hardwar
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Escolha a unidade padrão de subdivisão para interface mostrar quando enviar globaltokens.</translation>
+        <translation>Escolha a unidade padrão de subdivisão para interface mostrar quando enviar huntcoins.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1494,8 +1494,8 @@ Esta sincronização inicial é muito exigente e pode expor problemas de hardwar
         <translation>Erro no pedido de pagamento</translation>
     </message>
     <message>
-        <source>Cannot start globaltoken: click-to-pay handler</source>
-        <translation>Não foi possível iniciar globaltoken: manipulador click-to-pay</translation>
+        <source>Cannot start huntcoin: click-to-pay handler</source>
+        <translation>Não foi possível iniciar huntcoin: manipulador click-to-pay</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -2316,7 +2316,7 @@ Esta sincronização inicial é muito exigente e pode expor problemas de hardwar
         <translation>Ocultar</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for globaltoken transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for huntcoin transactions than the network can process.</source>
         <translation>Pagando apenas a taxa mínima é bom, desde que haja pouco volume de transações. Mas esteja ciente de que isso pode acabar em uma transação nunca confirmanda uma vez que há mais demanda por transações do que a rede pode processar.</translation>
     </message>
     <message>
@@ -2555,8 +2555,8 @@ Esta sincronização inicial é muito exigente e pode expor problemas de hardwar
         <translation>Remover esta entrada</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less globaltokens than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>A taxa será deduzida da quantia que está sendo enviada. O destinatário receberá menos globaltokens do que você colocou no campo de quantidade. Se vários destinatários estão selecionados, a taxa é dividida igualmente.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less huntcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>A taxa será deduzida da quantia que está sendo enviada. O destinatário receberá menos huntcoins do que você colocou no campo de quantidade. Se vários destinatários estão selecionados, a taxa é dividida igualmente.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2583,8 +2583,8 @@ Esta sincronização inicial é muito exigente e pode expor problemas de hardwar
         <translation>Digite um rótulo para este endereço para adicioná-lo no catálogo</translation>
     </message>
     <message>
-        <source>A message that was attached to the globaltoken: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Globaltoken network.</source>
-        <translation>A mensagem que foi anexada ao globaltoken: URI na qual será gravada na transação para sua referência. Nota: Essa mensagem não será gravada publicamente na rede Globaltoken.</translation>
+        <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Globaltoken network.</source>
+        <translation>A mensagem que foi anexada ao huntcoin: URI na qual será gravada na transação para sua referência. Nota: Essa mensagem não será gravada publicamente na rede Globaltoken.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2628,8 +2628,8 @@ Esta sincronização inicial é muito exigente e pode expor problemas de hardwar
         <translation>&amp;Assinar mensagem</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive globaltokens sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Você pode assinar mensagens com seus endereços para provar que você pode receber globaltokens enviados por alguém. Cuidado para não assinar nada vago ou aleatório, pois ataques phishing podem tentar te enganar para assinar coisas para eles como se fosse você. Somente assine termos bem detalhados que você concorde.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive huntcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Você pode assinar mensagens com seus endereços para provar que você pode receber huntcoins enviados por alguém. Cuidado para não assinar nada vago ou aleatório, pois ataques phishing podem tentar te enganar para assinar coisas para eles como se fosse você. Somente assine termos bem detalhados que você concorde.</translation>
     </message>
     <message>
         <source>The Globaltoken address to sign the message with</source>

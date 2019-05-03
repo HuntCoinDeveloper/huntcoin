@@ -143,7 +143,7 @@
     </message>
     <message>
         <source>Send coins to a Globaltoken address</source>
-        <translation>Enviar monedas a una dirección globaltoken</translation>
+        <translation>Enviar monedas a una dirección huntcoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -206,8 +206,8 @@
         <translation>Barra de pestañas</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and globaltoken: URIs)</source>
-        <translation>Pide pagos (genera codigos QR and globaltoken: URls)</translation>
+        <source>Request payments (generates QR codes and huntcoin: URIs)</source>
+        <translation>Pide pagos (genera codigos QR and huntcoin: URls)</translation>
     </message>
     <message>
         <source>Error</source>
@@ -781,7 +781,7 @@
     </message>
     <message>
         <source>Globaltoken Core</source>
-        <translation>globaltoken core</translation>
+        <translation>huntcoin core</translation>
     </message>
 	<message>
         <source>Bitcoin Core</source>

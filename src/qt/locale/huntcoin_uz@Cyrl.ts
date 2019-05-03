@@ -222,8 +222,8 @@
         <translation>Ички ойналар асбоблар панели</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and globaltoken: URIs)</source>
-        <translation>Тўловлар (QR кодлари ва globaltoken ёрдамида яратишлар: URI’лар) сўраш</translation>
+        <source>Request payments (generates QR codes and huntcoin: URIs)</source>
+        <translation>Тўловлар (QR кодлари ва huntcoin ёрдамида яратишлар: URI’лар) сўраш</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -234,7 +234,7 @@
         <translation>Фойдаланилган қабул қилинган манзиллар ва ёрлиқлар рўйхатини кўрсатиш</translation>
     </message>
     <message>
-        <source>Open a globaltoken: URI or payment request</source>
+        <source>Open a huntcoin: URI or payment request</source>
         <translation>Globaltoken’ни очиш: URI ёки тўлов сўрови</translation>
     </message>
     <message>

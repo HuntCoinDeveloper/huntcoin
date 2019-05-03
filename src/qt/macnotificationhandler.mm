@@ -13,7 +13,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"org.globaltoken.Globaltoken-Qt";
+        return @"org.huntcoin.Globaltoken-Qt";
     } else {
         return [self __bundleIdentifier];
     }

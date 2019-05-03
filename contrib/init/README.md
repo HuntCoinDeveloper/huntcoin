@@ -1,11 +1,11 @@
 Sample configuration files for:
 ```
-SystemD: globaltokend.service
-Upstart: globaltokend.conf
-OpenRC:  globaltokend.openrc
-         globaltokend.openrcconf
-CentOS:  globaltokend.init
-OS X:    org.globaltoken.globaltokend.plist
+SystemD: huntcoind.service
+Upstart: huntcoind.conf
+OpenRC:  huntcoind.openrc
+         huntcoind.openrcconf
+CentOS:  huntcoind.init
+OS X:    org.huntcoin.huntcoind.plist
 ```
 have been made available to assist packagers in creating node packages here.
 

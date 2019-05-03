@@ -366,12 +366,12 @@
         <translation>Vahelehe tööriistariba</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and globaltoken: URIs)</source>
-        <translation>Loo maksepäring (genereerib QR koodid ja globaltokeni: URId)</translation>
+        <source>Request payments (generates QR codes and huntcoin: URIs)</source>
+        <translation>Loo maksepäring (genereerib QR koodid ja huntcoini: URId)</translation>
     </message>
     <message>
-        <source>Open a globaltoken: URI or payment request</source>
-        <translation>Ava globaltokeni: URI või maksepäring</translation>
+        <source>Open a huntcoin: URI or payment request</source>
+        <translation>Ava huntcoini: URI või maksepäring</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>

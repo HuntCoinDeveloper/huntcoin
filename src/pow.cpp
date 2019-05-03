@@ -12,7 +12,7 @@
 #include <arith_uint256.h>
 #include <chain.h>
 #include <chainparams.h>
-#include <globaltoken/hardfork.h>
+#include <huntcoin/hardfork.h>
 #include <primitives/block.h>
 #include <primitives/mining_block.h>
 #include <uint256.h>

@@ -39,11 +39,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Izvēlies adresi uz kuru sūtīt globaltokens</translation>
+        <translation>Izvēlies adresi uz kuru sūtīt huntcoins</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Izvēlies adresi ar kuru saņemt globaltokens</translation>
+        <translation>Izvēlies adresi ar kuru saņemt huntcoins</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -278,12 +278,12 @@
         <translation>Ciļņu rīkjosla</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and globaltoken: URIs)</source>
-        <translation>Pieprasīt maksājumus (izveido QR kodu un globaltoken: URIs)</translation>
+        <source>Request payments (generates QR codes and huntcoin: URIs)</source>
+        <translation>Pieprasīt maksājumus (izveido QR kodu un huntcoin: URIs)</translation>
     </message>
     <message>
-        <source>Open a globaltoken: URI or payment request</source>
-        <translation>Atvērt globaltoken URI vai maksājuma pieprasījumu</translation>
+        <source>Open a huntcoin: URI or payment request</source>
+        <translation>Atvērt huntcoin URI vai maksājuma pieprasījumu</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -563,7 +563,7 @@
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
-        <translation>Ieslēgt globaltoken &amp;kontroles funkcijas</translation>
+        <translation>Ieslēgt huntcoin &amp;kontroles funkcijas</translation>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>

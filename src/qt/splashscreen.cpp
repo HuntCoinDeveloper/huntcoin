@@ -46,7 +46,7 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle *networkStyle) 
     QString titleText       = tr(PACKAGE_NAME);
     QString versionText     = QString("Version %1").arg(QString::fromStdString(FormatFullVersion()));
     QString copyrightText   = QString::fromUtf8(CopyrightHolders(strprintf("\xc2\xA9 %u-%u ", 2009, COPYRIGHT_YEAR)).c_str());
-	QString globaltokenText = QString::fromUtf8(CopyrightHoldersGLT(strprintf("\xc2\xA9 %u-%u ", COPYRIGHT_GLT_START, COPYRIGHT_YEAR)).c_str());
+	QString huntcoinText = QString::fromUtf8(CopyrightHoldersGLT(strprintf("\xc2\xA9 %u-%u ", COPYRIGHT_GLT_START, COPYRIGHT_YEAR)).c_str());
     QString titleAddText    = networkStyle->getTitleAddText();
 
     QString font            = QApplication::font().toString();
@@ -70,7 +70,7 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle *networkStyle) 
     QRect rGradient(QPoint(0,0), splashSize);
     pixPaint.fillRect(rGradient, gradient);
 
-    // draw the globaltoken icon, expected size of PNG: 1024x1024
+    // draw the huntcoin icon, expected size of PNG: 1024x1024
     QRect rectIcon(QPoint(-150,-122), QSize(430,430));
 
     const QSize requiredSize(1024,1024);
@@ -111,7 +111,7 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle *networkStyle) 
         QRect copyrightRect(x, y, pixmap.width() - x - paddingRight, pixmap.height() - y);
 		QRect copyrightRect_GLT(x, y_hunt, pixmap.width() - x - paddingRight, pixmap.height() - y_hunt);
         pixPaint.drawText(copyrightRect, Qt::AlignLeft | Qt::AlignTop | Qt::TextWordWrap, copyrightText);
-		pixPaint.drawText(copyrightRect_GLT, Qt::AlignLeft | Qt::AlignTop | Qt::TextWordWrap, globaltokenText);
+		pixPaint.drawText(copyrightRect_GLT, Qt::AlignLeft | Qt::AlignTop | Qt::TextWordWrap, huntcoinText);
     }
 
     // draw additional text if special network

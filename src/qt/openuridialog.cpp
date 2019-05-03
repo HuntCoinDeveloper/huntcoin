@@ -17,7 +17,7 @@ OpenURIDialog::OpenURIDialog(QWidget *parent) :
 {
     ui->setupUi(this);
 #if QT_VERSION >= 0x040700
-    ui->uriEdit->setPlaceholderText("globaltoken:");
+    ui->uriEdit->setPlaceholderText("huntcoin:");
 #endif
 }
 
@@ -49,5 +49,5 @@ void OpenURIDialog::on_selectFileButton_clicked()
     if(filename.isEmpty())
         return;
     QUrl fileUri = QUrl::fromLocalFile(filename);
-    ui->uriEdit->setText("globaltoken:?r=" + QUrl::toPercentEncoding(fileUri.toString()));
+    ui->uriEdit->setText("huntcoin:?r=" + QUrl::toPercentEncoding(fileUri.toString()));
 }

@@ -6,7 +6,7 @@
 #include <txdb.h>
 
 #include <chainparams.h>
-#include <globaltoken/hardfork.h>
+#include <huntcoin/hardfork.h>
 #include <hash.h>
 #include <random.h>
 #include <pow.h>

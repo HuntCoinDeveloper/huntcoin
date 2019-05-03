@@ -1,2 +1,2 @@
-usr/local/bin/globaltokend usr/bin
-usr/local/bin/globaltoken-cli usr/bin
+usr/local/bin/huntcoind usr/bin
+usr/local/bin/huntcoin-cli usr/bin

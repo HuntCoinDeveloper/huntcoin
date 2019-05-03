@@ -22,7 +22,7 @@ void ThreadCheckMasternodes(CConnman& connman)
     fOneThread = true;
 
     // Make this thread recognisable as the MasternodeCheck thread
-    RenameThread("globaltoken-mncheck");
+    RenameThread("huntcoin-mncheck");
 
     unsigned int nTick = 0;
 

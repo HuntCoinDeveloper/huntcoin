@@ -9,7 +9,7 @@ See build instructions ([OSX](/doc/build-osx.md), [Windows](/doc/build-windows.m
 To run:
 
 ```sh
-./src/qt/globaltoken-qt
+./src/qt/huntcoin-qt
 ```
 
 ## Files and directories
@@ -86,10 +86,10 @@ Instructions for OSX:
 1. Make sure you installed everything through Homebrew mentioned in the [OSX build instructions](/docs/build-osx.md)
 2. Use `./configure` with the `--enable-debug` flag
 3. In Qt Creator do "New Project" -> Import Project -> Import Existing Project
-4. Enter "globaltoken-qt" as project name, enter src/qt as location
+4. Enter "huntcoin-qt" as project name, enter src/qt as location
 5. Leave the file selection as it is
 6. Confirm the "summary page"
 7. In the "Projects" tab select "Manage Kits..."
 8. Select the default "Desktop" kit and select "Clang (x86 64bit in /usr/bin)" as compiler
 9. Select LLDB as debugger (you might need to set the path to your installation)
-10. Start debugging with Qt Creator (you might need to the executable to "globaltoken-qt" under "Run", which is where you can also add command line arguments)
+10. Start debugging with Qt Creator (you might need to the executable to "huntcoin-qt" under "Run", which is where you can also add command line arguments)

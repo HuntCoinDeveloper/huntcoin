@@ -17,7 +17,7 @@
 #include <consensus/tx_verify.h>
 #include <consensus/validation.h>
 #include <cuckoocache.h>
-#include <globaltoken/hardfork.h>
+#include <huntcoin/hardfork.h>
 #include <hash.h>
 #include <init.h>
 #include <policy/fees.h>
@@ -1764,7 +1764,7 @@ static bool WriteTxIndexDataForBlock(const CBlock& block, CValidationState& stat
 static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck() {
-    RenameThread("globaltoken-scriptch");
+    RenameThread("huntcoin-scriptch");
     scriptcheckqueue.Thread();
 }
 

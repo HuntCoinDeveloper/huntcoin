@@ -1,11 +1,11 @@
-# bash programmable completion for globaltoken-cli(1)
+# bash programmable completion for huntcoin-cli(1)
 # Copyright (c) 2012-2016 The Bitcoin Core developers
 # Copyright (c) 2018 The Globaltoken Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-# call $globaltoken-cli for RPC
-_globaltoken_rpc() {
+# call $huntcoin-cli for RPC
+_huntcoin_rpc() {
     # determine already specified args necessary for RPC
     local rpcargs=()
     for i in ${COMP_LINE}; do
@@ -15,23 +15,23 @@ _globaltoken_rpc() {
                 ;;
         esac
     done
-    $globaltoken_cli "${rpcargs[@]}" "$@"
+    $huntcoin_cli "${rpcargs[@]}" "$@"
 }
 
 # Add wallet accounts to COMPREPLY
-_globaltoken_accounts() {
+_huntcoin_accounts() {
     local accounts
-    accounts=$(_globaltoken_rpc listaccounts | awk -F '"' '{ print $2 }')
+    accounts=$(_huntcoin_rpc listaccounts | awk -F '"' '{ print $2 }')
     COMPREPLY=( "${COMPREPLY[@]}" $( compgen -W "$accounts" -- "$cur" ) )
 }
 
-_globaltoken_cli() {
+_huntcoin_cli() {
     local cur prev words=() cword
-    local globaltoken_cli
+    local huntcoin_cli
 
-    # save and use original argument to invoke globaltoken-cli for -help, help and RPC
-    # as globaltoken-cli might not be in $PATH
-    globaltoken_cli="$1"
+    # save and use original argument to invoke huntcoin-cli for -help, help and RPC
+    # as huntcoin-cli might not be in $PATH
+    huntcoin_cli="$1"
 
     COMPREPLY=()
     _get_comp_words_by_ref -n = cur prev words cword
@@ -61,7 +61,7 @@ _globaltoken_cli() {
     if ((cword > 3)); then
         case ${words[cword-3]} in
             addmultisigaddress)
-                _globaltoken_accounts
+                _huntcoin_accounts
                 return 0
                 ;;
             getbalance|gettxout|importaddress|importpubkey|importprivkey|listreceivedbyaccount|listreceivedbyaddress|listsinceblock)
@@ -86,7 +86,7 @@ _globaltoken_cli() {
                 return 0
                 ;;
             move|setaccount)
-                _globaltoken_accounts
+                _huntcoin_accounts
                 return 0
                 ;;
         esac
@@ -102,7 +102,7 @@ _globaltoken_cli() {
             return 0
             ;;
         getaccountaddress|getaddressesbyaccount|getbalance|getnewaddress|getreceivedbyaccount|listtransactions|move|sendfrom|sendmany)
-            _globaltoken_accounts
+            _huntcoin_accounts
             return 0
             ;;
     esac
@@ -126,12 +126,12 @@ _globaltoken_cli() {
 
             # only parse -help if senseful
             if [[ -z "$cur" || "$cur" =~ ^- ]]; then
-                helpopts=$($globaltoken_cli -help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
+                helpopts=$($huntcoin_cli -help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
             fi
 
             # only parse help if senseful
             if [[ -z "$cur" || "$cur" =~ ^[a-z] ]]; then
-                commands=$(_globaltoken_rpc help 2>/dev/null | awk '$1 ~ /^[a-z]/ { print $1; }')
+                commands=$(_huntcoin_rpc help 2>/dev/null | awk '$1 ~ /^[a-z]/ { print $1; }')
             fi
 
             COMPREPLY=( $( compgen -W "$helpopts $commands" -- "$cur" ) )
@@ -144,7 +144,7 @@ _globaltoken_cli() {
             ;;
     esac
 } &&
-complete -F _globaltoken_cli globaltoken-cli
+complete -F _huntcoin_cli huntcoin-cli
 
 # Local variables:
 # mode: shell-script

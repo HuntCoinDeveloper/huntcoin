@@ -414,7 +414,7 @@
         <translation>شريط أدوات علامات التبويب</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and globaltoken: URIs)</source>
+        <source>Request payments (generates QR codes and huntcoin: URIs)</source>
         <translation>أطلب دفعات (يولد كودات الرمز المربع وبيت كوين: العناوين المعطاة)</translation>
     </message>
     <message>
@@ -426,7 +426,7 @@
         <translation>عرض قائمة عناوين الإستقبال المستخدمة والملصقات</translation>
     </message>
     <message>
-        <source>Open a globaltoken: URI or payment request</source>
+        <source>Open a huntcoin: URI or payment request</source>
         <translation>فتح URI : Globaltoken أو طلب دفع</translation>
     </message>
     <message>

@@ -5,7 +5,7 @@
 
 #include <chain.h>
 #include <bignum.h>
-#include <globaltoken/hardfork.h>
+#include <huntcoin/hardfork.h>
 #include <validation.h>
 
 CBlockHeader CBlockIndex::GetBlockHeader(const Consensus::Params& consensusParams) const

@@ -1,2 +1,2 @@
-contrib/globaltokend.bash-completion	globaltokend
-contrib/globaltoken-cli.bash-completion	globaltoken-cli
+contrib/huntcoind.bash-completion	huntcoind
+contrib/huntcoin-cli.bash-completion	huntcoin-cli

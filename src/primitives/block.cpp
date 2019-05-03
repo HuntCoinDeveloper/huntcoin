@@ -7,7 +7,7 @@
 #include <primitives/mining_block.h>
 
 #ifndef NO_GLOBALTOKEN_HARDFORK
-#include <globaltoken/hardfork.h>
+#include <huntcoin/hardfork.h>
 #else
 #define IsHardForkActivated(nTime) (((nTime) >= (1533081600)) ? true : false)
 #endif

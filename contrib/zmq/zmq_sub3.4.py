@@ -9,7 +9,7 @@
 
     Globaltoken should be started with the command line arguments:
 
-        globaltokend -testnet -daemon \
+        huntcoind -testnet -daemon \
                 -zmqpubrawtx=tcp://127.0.0.1:29319 \
                 -zmqpubrawblock=tcp://127.0.0.1:29319 \
                 -zmqpubhashtx=tcp://127.0.0.1:29319 \

@@ -3,9 +3,9 @@ Release Process
 
 Before every release candidate:
 
-* Update translations (ping wumpus on IRC) see [translation_process.md](https://github.com/globaltoken/globaltoken/blob/master/doc/translation_process.md#synchronising-translations).
+* Update translations (ping wumpus on IRC) see [translation_process.md](https://github.com/huntcoin/huntcoin/blob/master/doc/translation_process.md#synchronising-translations).
 
-* Update manpages, see [gen-manpages.sh](https://github.com/globaltoken/globaltoken/blob/master/contrib/devtools/README.md#gen-manpagessh).
+* Update manpages, see [gen-manpages.sh](https://github.com/huntcoin/huntcoin/blob/master/contrib/devtools/README.md#gen-manpagessh).
 
 Before every minor and major release:
 
@@ -37,7 +37,7 @@ Check out the source code in the following directory hierarchy.
     git clone https://github.com/bitcoin-core/gitian.sigs.git
     git clone https://github.com/bitcoin-core/bitcoin-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/globaltoken/globaltoken.git
+    git clone https://github.com/huntcoin/huntcoin.git
 
 ### Globaltoken maintainers/release engineers, suggestion for writing release notes
 
@@ -62,7 +62,7 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 
 Setup Gitian descriptors:
 
-    pushd ./globaltoken
+    pushd ./huntcoin
     export SIGNER=(your Gitian key, ie bluematt, sipa, etc)
     export VERSION=(new version, e.g. 0.8.0)
     git fetch
@@ -96,7 +96,7 @@ Create the OS X SDK tarball, see the [OS X readme](README_osx.md) for details, a
 By default, Gitian will fetch source files as needed. To cache them ahead of time:
 
     pushd ./gitian-builder
-    make -C ../globaltoken/depends download SOURCES_PATH=`pwd`/cache/common
+    make -C ../huntcoin/depends download SOURCES_PATH=`pwd`/cache/common
     popd
 
 Only missing files will be fetched, so this is safe to re-run for each build.
@@ -104,7 +104,7 @@ Only missing files will be fetched, so this is safe to re-run for each build.
 NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from local URLs. For example:
 
     pushd ./gitian-builder
-    ./bin/gbuild --url globaltoken=/path/to/globaltoken,signature=/path/to/sigs {rest of arguments}
+    ./bin/gbuild --url huntcoin=/path/to/huntcoin,signature=/path/to/sigs {rest of arguments}
     popd
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
@@ -112,39 +112,39 @@ The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 ### Build and sign Globaltoken Core for Linux, Windows, and OS X:
 
     pushd ./gitian-builder
-    ./bin/gbuild --num-make 2 --memory 3000 --commit globaltoken=v${VERSION} ../globaltoken/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../globaltoken/contrib/gitian-descriptors/gitian-linux.yml
-    mv build/out/globaltoken-*.tar.gz build/out/src/globaltoken-*.tar.gz ../
+    ./bin/gbuild --num-make 2 --memory 3000 --commit huntcoin=v${VERSION} ../huntcoin/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../huntcoin/contrib/gitian-descriptors/gitian-linux.yml
+    mv build/out/huntcoin-*.tar.gz build/out/src/huntcoin-*.tar.gz ../
 
-    ./bin/gbuild --num-make 2 --memory 3000 --commit globaltoken=v${VERSION} ../globaltoken/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../globaltoken/contrib/gitian-descriptors/gitian-win.yml
-    mv build/out/globaltoken-*-win-unsigned.tar.gz inputs/globaltoken-win-unsigned.tar.gz
-    mv build/out/globaltoken-*.zip build/out/globaltoken-*.exe ../
+    ./bin/gbuild --num-make 2 --memory 3000 --commit huntcoin=v${VERSION} ../huntcoin/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../huntcoin/contrib/gitian-descriptors/gitian-win.yml
+    mv build/out/huntcoin-*-win-unsigned.tar.gz inputs/huntcoin-win-unsigned.tar.gz
+    mv build/out/huntcoin-*.zip build/out/huntcoin-*.exe ../
 
-    ./bin/gbuild --num-make 2 --memory 3000 --commit globaltoken=v${VERSION} ../globaltoken/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../globaltoken/contrib/gitian-descriptors/gitian-osx.yml
-    mv build/out/globaltoken-*-osx-unsigned.tar.gz inputs/globaltoken-osx-unsigned.tar.gz
-    mv build/out/globaltoken-*.tar.gz build/out/globaltoken-*.dmg ../
+    ./bin/gbuild --num-make 2 --memory 3000 --commit huntcoin=v${VERSION} ../huntcoin/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../huntcoin/contrib/gitian-descriptors/gitian-osx.yml
+    mv build/out/huntcoin-*-osx-unsigned.tar.gz inputs/huntcoin-osx-unsigned.tar.gz
+    mv build/out/huntcoin-*.tar.gz build/out/huntcoin-*.dmg ../
     popd
 
 Build output expected:
 
-  1. source tarball (`globaltoken-${VERSION}.tar.gz`)
-  2. linux 32-bit and 64-bit dist tarballs (`globaltoken-${VERSION}-linux[32|64].tar.gz`)
-  3. windows 32-bit and 64-bit unsigned installers and dist zips (`globaltoken-${VERSION}-win[32|64]-setup-unsigned.exe`, `globaltoken-${VERSION}-win[32|64].zip`)
-  4. OS X unsigned installer and dist tarball (`globaltoken-${VERSION}-osx-unsigned.dmg`, `globaltoken-${VERSION}-osx64.tar.gz`)
+  1. source tarball (`huntcoin-${VERSION}.tar.gz`)
+  2. linux 32-bit and 64-bit dist tarballs (`huntcoin-${VERSION}-linux[32|64].tar.gz`)
+  3. windows 32-bit and 64-bit unsigned installers and dist zips (`huntcoin-${VERSION}-win[32|64]-setup-unsigned.exe`, `huntcoin-${VERSION}-win[32|64].zip`)
+  4. OS X unsigned installer and dist tarball (`huntcoin-${VERSION}-osx-unsigned.dmg`, `huntcoin-${VERSION}-osx64.tar.gz`)
   5. Gitian signatures (in `gitian.sigs/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
 
 ### Verify other gitian builders signatures to your own. (Optional)
 
-Add other gitian builders keys to your gpg keyring, and/or refresh keys: See `../globaltoken/contrib/gitian-keys/README.md`.
+Add other gitian builders keys to your gpg keyring, and/or refresh keys: See `../huntcoin/contrib/gitian-keys/README.md`.
 
 Verify the signatures
 
     pushd ./gitian-builder
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../globaltoken/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../globaltoken/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../globaltoken/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../huntcoin/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../huntcoin/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../huntcoin/contrib/gitian-descriptors/gitian-osx.yml
     popd
 
 ### Next steps:
@@ -165,22 +165,22 @@ Codesigner only: Create Windows/OS X detached signatures:
 
 Codesigner only: Sign the osx binary:
 
-    transfer globaltoken-osx-unsigned.tar.gz to osx for signing
-    tar xf globaltoken-osx-unsigned.tar.gz
+    transfer huntcoin-osx-unsigned.tar.gz to osx for signing
+    tar xf huntcoin-osx-unsigned.tar.gz
     ./detached-sig-create.sh -s "Key ID"
     Enter the keychain password and authorize the signature
     Move signature-osx.tar.gz back to the gitian host
 
 Codesigner only: Sign the windows binaries:
 
-    tar xf globaltoken-win-unsigned.tar.gz
+    tar xf huntcoin-win-unsigned.tar.gz
     ./detached-sig-create.sh -key /path/to/codesign.key
     Enter the passphrase for the key when prompted
     signature-win.tar.gz will be created
 
 Codesigner only: Commit the detached codesign payloads:
 
-    cd ~/globaltoken-detached-sigs
+    cd ~/huntcoin-detached-sigs
     checkout the appropriate branch for this release series
     rm -rf *
     tar xf signature-osx.tar.gz
@@ -198,20 +198,20 @@ Non-codesigners: wait for Windows/OS X detached signatures:
 Create (and optionally verify) the signed OS X binary:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../globaltoken/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../globaltoken/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../globaltoken/contrib/gitian-descriptors/gitian-osx-signer.yml
-    mv build/out/globaltoken-osx-signed.dmg ../globaltoken-${VERSION}-osx.dmg
+    ./bin/gbuild -i --commit signature=v${VERSION} ../huntcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../huntcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../huntcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+    mv build/out/huntcoin-osx-signed.dmg ../huntcoin-${VERSION}-osx.dmg
     popd
 
 Create (and optionally verify) the signed Windows binaries:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../globaltoken/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../globaltoken/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../globaltoken/contrib/gitian-descriptors/gitian-win-signer.yml
-    mv build/out/globaltoken-*win64-setup.exe ../globaltoken-${VERSION}-win64-setup.exe
-    mv build/out/globaltoken-*win32-setup.exe ../globaltoken-${VERSION}-win32-setup.exe
+    ./bin/gbuild -i --commit signature=v${VERSION} ../huntcoin/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../huntcoin/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../huntcoin/contrib/gitian-descriptors/gitian-win-signer.yml
+    mv build/out/huntcoin-*win64-setup.exe ../huntcoin-${VERSION}-win64-setup.exe
+    mv build/out/huntcoin-*win32-setup.exe ../huntcoin-${VERSION}-win32-setup.exe
     popd
 
 Commit your signature for the signed OS X/Windows binaries:
@@ -233,23 +233,23 @@ sha256sum * > SHA256SUMS
 
 The list of files should be:
 ```
-globaltoken-${VERSION}-aarch64-linux-gnu.tar.gz
-globaltoken-${VERSION}-arm-linux-gnueabihf.tar.gz
-globaltoken-${VERSION}-i686-pc-linux-gnu.tar.gz
-globaltoken-${VERSION}-x86_64-linux-gnu.tar.gz
-globaltoken-${VERSION}-osx64.tar.gz
-globaltoken-${VERSION}-osx.dmg
-globaltoken-${VERSION}.tar.gz
-globaltoken-${VERSION}-win32-setup.exe
-globaltoken-${VERSION}-win32.zip
-globaltoken-${VERSION}-win64-setup.exe
-globaltoken-${VERSION}-win64.zip
+huntcoin-${VERSION}-aarch64-linux-gnu.tar.gz
+huntcoin-${VERSION}-arm-linux-gnueabihf.tar.gz
+huntcoin-${VERSION}-i686-pc-linux-gnu.tar.gz
+huntcoin-${VERSION}-x86_64-linux-gnu.tar.gz
+huntcoin-${VERSION}-osx64.tar.gz
+huntcoin-${VERSION}-osx.dmg
+huntcoin-${VERSION}.tar.gz
+huntcoin-${VERSION}-win32-setup.exe
+huntcoin-${VERSION}-win32.zip
+huntcoin-${VERSION}-win64-setup.exe
+huntcoin-${VERSION}-win64.zip
 ```
 The `*-debug*` files generated by the gitian build contain debug symbols
 for troubleshooting by developers. It is assumed that anyone that is interested
 in debugging can run gitian to generate the files for themselves. To avoid
 end-user confusion about which file to pick, as well as save storage
-space *do not upload these to the globaltoken.org server, nor put them in the torrent*.
+space *do not upload these to the huntcoin.org server, nor put them in the torrent*.
 
 - GPG-sign it, delete the unsigned file:
 ```
@@ -302,6 +302,6 @@ bitcoin.org (see below for bitcoin.org update instructions).
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/globaltoken/globaltoken/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/huntcoin/huntcoin/releases/new) with a link to the archived release notes.
 
   - Celebrate

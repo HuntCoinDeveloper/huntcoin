@@ -1,8 +1,8 @@
-/usr/bin/globaltoken-cli		--	gen_context(system_u:object_r:globaltoken_exec_t,s0)
-/usr/sbin/globaltokend		--	gen_context(system_u:object_r:globaltoken_exec_t,s0)
-/usr/lib(64)?/globaltoken/globaltokend		--	gen_context(system_u:object_r:globaltoken_exec_t,s0)
+/usr/bin/huntcoin-cli		--	gen_context(system_u:object_r:huntcoin_exec_t,s0)
+/usr/sbin/huntcoind		--	gen_context(system_u:object_r:huntcoin_exec_t,s0)
+/usr/lib(64)?/huntcoin/huntcoind		--	gen_context(system_u:object_r:huntcoin_exec_t,s0)
 
-/etc/globaltoken(/.*)?		gen_context(system_u:object_r:globaltoken_conf_t,s0)
-/var/lib/globaltoken(/.*)?		gen_context(system_u:object_r:globaltoken_var_lib_t,s0)
+/etc/huntcoin(/.*)?		gen_context(system_u:object_r:huntcoin_conf_t,s0)
+/var/lib/huntcoin(/.*)?		gen_context(system_u:object_r:huntcoin_var_lib_t,s0)
 
-(/var)?/run/globaltokend(/.*)?   gen_context(system_u:object_r:globaltoken_var_run_t,s0)
+(/var)?/run/huntcoind(/.*)?   gen_context(system_u:object_r:huntcoin_var_run_t,s0)

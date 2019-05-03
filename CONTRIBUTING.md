@@ -57,7 +57,7 @@ the pull request affects. Valid areas as:
 
   - *Consensus* for changes to consensus critical code
   - *Docs* for changes to the documentation
-  - *Qt* for changes to globaltoken-qt
+  - *Qt* for changes to huntcoin-qt
   - *Mining* for changes to the mining code
   - *Net* or *P2P* for changes to the peer-to-peer network code
   - *RPC/REST/ZMQ* for changes to the RPC, REST or ZMQ APIs
@@ -273,7 +273,7 @@ Release Policy
 --------------
 
 The project leader is the release manager for each Globaltoken Core release.
-Currently this is globaltokenfirstdev. (globaltoken)
+Currently this is huntcoinfirstdev. (huntcoin)
 
 Copyright
 ---------

@@ -7,7 +7,7 @@
 
 #include <base58.h>
 #include <chainparams.h>
-#include <globaltoken/hardfork.h>
+#include <huntcoin/hardfork.h>
 #include <validation.h>
 #include <wallet/wallet.h>
 #include <messagesigner.h>

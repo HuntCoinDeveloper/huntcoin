@@ -5,7 +5,7 @@ Setup
 ---------------------
 Globaltoken Core is the original Globaltoken client and it builds the backbone of the network. It downloads and, by default, stores the entire history of Globaltoken transactions (which is currently more than 100 GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
-To download Globaltoken Core, visit [globaltoken.org](https://globaltoken.org/#downloads).
+To download Globaltoken Core, visit [huntcoin.org](https://huntcoin.org/#downloads).
 
 Running
 ---------------------
@@ -15,12 +15,12 @@ The following are some helpful notes on how to run Globaltoken on your native pl
 
 Unpack the files into a directory and run:
 
-- `bin/globaltoken-qt` (GUI) or
-- `bin/globaltokend` (headless)
+- `bin/huntcoin-qt` (GUI) or
+- `bin/huntcoind` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run globaltoken-qt.exe.
+Unpack the files into a directory, and then run huntcoin-qt.exe.
 
 ### OS X
 

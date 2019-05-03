@@ -1,36 +1,36 @@
 #!/bin/bash
 #
-#  globaltokend The globaltoken core server.
+#  huntcoind The huntcoin core server.
 #
 #
 # chkconfig: 345 80 20
-# description: globaltokend
-# processname: globaltokend
+# description: huntcoind
+# processname: huntcoind
 #
 
 # Source function library.
 . /etc/init.d/functions
 
-# you can override defaults in /etc/sysconfig/globaltokend, see below
-if [ -f /etc/sysconfig/globaltokend ]; then
-        . /etc/sysconfig/globaltokend
+# you can override defaults in /etc/sysconfig/huntcoind, see below
+if [ -f /etc/sysconfig/huntcoind ]; then
+        . /etc/sysconfig/huntcoind
 fi
 
 RETVAL=0
 
-prog=globaltokend
-# you can override the lockfile via GLOBALTOKEND_LOCKFILE in /etc/sysconfig/globaltokend
-lockfile=${GLOBALTOKEND_LOCKFILE-/var/lock/subsys/globaltokend}
+prog=huntcoind
+# you can override the lockfile via GLOBALTOKEND_LOCKFILE in /etc/sysconfig/huntcoind
+lockfile=${GLOBALTOKEND_LOCKFILE-/var/lock/subsys/huntcoind}
 
-# globaltokend defaults to /usr/bin/globaltokend, override with GLOBALTOKEND_BIN
-globaltokend=${GLOBALTOKEND_BIN-/usr/bin/globaltokend}
+# huntcoind defaults to /usr/bin/huntcoind, override with GLOBALTOKEND_BIN
+huntcoind=${GLOBALTOKEND_BIN-/usr/bin/huntcoind}
 
-# globaltokend opts default to -disablewallet, override with GLOBALTOKEND_OPTS
-globaltokend_opts=${GLOBALTOKEND_OPTS--disablewallet}
+# huntcoind opts default to -disablewallet, override with GLOBALTOKEND_OPTS
+huntcoind_opts=${GLOBALTOKEND_OPTS--disablewallet}
 
 start() {
     echo -n $"Starting $prog: "
-    daemon $DAEMONOPTS $globaltokend $globaltokend_opts
+    daemon $DAEMONOPTS $huntcoind $huntcoind_opts
     RETVAL=$?
     echo
     [ $RETVAL -eq 0 ] && touch $lockfile

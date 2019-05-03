@@ -218,7 +218,7 @@
         <translation>Barra de pestañas</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and globaltoken: URIs)</source>
+        <source>Request payments (generates QR codes and huntcoin: URIs)</source>
         <translation>Solicitar pagos (genera codigo QR y URL's de Globaltoken)</translation>
     </message>
     <message>
@@ -230,8 +230,8 @@
         <translation>Muestra la lista de direcciones de recepción y etiquetas</translation>
     </message>
     <message>
-        <source>Open a globaltoken: URI or payment request</source>
-        <translation>Abrir un globaltoken: URI o petición de pago</translation>
+        <source>Open a huntcoin: URI or payment request</source>
+        <translation>Abrir un huntcoin: URI o petición de pago</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>

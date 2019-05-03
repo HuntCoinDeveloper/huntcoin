@@ -208,8 +208,8 @@ public:
         // service bits we want, but we should get them updated to support all service bits wanted by any
         // release ASAP to avoid it where possible.
         vSeeds.emplace_back("134.255.221.7"); // Globaltoken base node
-        vSeeds.emplace_back("globaltoken.org"); // GlobalToken base node II
-        vSeeds.emplace_back("explorer.globaltoken.org"); // GlobalToken base node III
+        vSeeds.emplace_back("huntcoin.org"); // GlobalToken base node II
+        vSeeds.emplace_back("explorer.huntcoin.org"); // GlobalToken base node III
         vSeeds.emplace_back("lameserver.de"); // GlobalToken Node by Astrali
         vSeeds.emplace_back("pool.cryptopowered.club"); // GlobalToken Cryptopowered node
         vSeeds.emplace_back("bit2pool.com"); // GlobalToken Bit2Pool node

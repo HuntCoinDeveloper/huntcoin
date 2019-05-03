@@ -147,8 +147,8 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
 
 bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
-    // return if URI is not valid or is no globaltoken: URI
-    if(!uri.isValid() || uri.scheme() != QString("globaltoken"))
+    // return if URI is not valid or is no huntcoin: URI
+    if(!uri.isValid() || uri.scheme() != QString("huntcoin"))
         return false;
 
     SendCoinsRecipient rv;
@@ -217,13 +217,13 @@ bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 
 bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 {
-    // Convert globaltoken:// to globaltoken:
+    // Convert huntcoin:// to huntcoin:
     //
-    //    Cannot handle this later, because globaltoken:// will cause Qt to see the part after // as host,
+    //    Cannot handle this later, because huntcoin:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
-    if(uri.startsWith("globaltoken://", Qt::CaseInsensitive))
+    if(uri.startsWith("huntcoin://", Qt::CaseInsensitive))
     {
-        uri.replace(0, 10, "globaltoken:");
+        uri.replace(0, 10, "huntcoin:");
     }
     QUrl uriInstance(uri);
     return parseBitcoinURI(uriInstance, out);
@@ -231,7 +231,7 @@ bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 
 QString formatBitcoinURI(const SendCoinsRecipient &info)
 {
-    QString ret = QString("globaltoken:%1").arg(info.address);
+    QString ret = QString("huntcoin:%1").arg(info.address);
     int paramCount = 0;
 
     if (info.amount)
@@ -444,7 +444,7 @@ bool openBitcoinConf()
     
     configFile.close();
     
-    /* Open globaltoken.conf with the associated application */
+    /* Open huntcoin.conf with the associated application */
     return QDesktopServices::openUrl(QUrl::fromLocalFile(boostPathToQString(pathConfig)));
 }
 
@@ -739,8 +739,8 @@ fs::path static GetAutostartFilePath()
 {
     std::string chain = ChainNameFromCommandLine();
     if (chain == CBaseChainParams::MAIN)
-        return GetAutostartDir() / "globaltoken.desktop";
-    return GetAutostartDir() / strprintf("globaltoken-%s.lnk", chain);
+        return GetAutostartDir() / "huntcoin.desktop";
+    return GetAutostartDir() / strprintf("huntcoin-%s.lnk", chain);
 }
 
 bool GetStartOnSystemStartup()
@@ -780,7 +780,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         if (!optionFile.good())
             return false;
         std::string chain = ChainNameFromCommandLine();
-        // Write a globaltoken.desktop file to the autostart directory:
+        // Write a huntcoin.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
         if (chain == CBaseChainParams::MAIN)
@@ -812,7 +812,7 @@ LSSharedFileListItemRef findStartupItemInList(LSSharedFileListRef list, CFURLRef
         return nullptr;
     }
     
-    // loop through the list of startup items and try to find the globaltoken app
+    // loop through the list of startup items and try to find the huntcoin app
     for(int i = 0; i < CFArrayGetCount(listSnapshot); i++) {
         LSSharedFileListItemRef item = (LSSharedFileListItemRef)CFArrayGetValueAtIndex(listSnapshot, i);
         UInt32 resolutionFlags = kLSSharedFileListNoUserInteraction | kLSSharedFileListDoNotMountVolumes;

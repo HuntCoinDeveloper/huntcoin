@@ -50,7 +50,7 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 36
 
 #define QAPP_ORG_NAME "Globaltoken"
-#define QAPP_ORG_DOMAIN "globaltoken.org"
+#define QAPP_ORG_DOMAIN "huntcoin.org"
 #define QAPP_APP_NAME_DEFAULT "Globaltoken-Qt"
 #define QAPP_APP_NAME_TESTNET "Globaltoken-Qt-testnet"
 

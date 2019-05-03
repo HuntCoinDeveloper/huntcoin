@@ -11,7 +11,7 @@
 #include <blockencodings.h>
 #include <chainparams.h>
 #include <consensus/validation.h>
-#include <globaltoken/hardfork.h>
+#include <huntcoin/hardfork.h>
 #include <hash.h>
 #include <init.h>
 #include <validation.h>
