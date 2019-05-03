@@ -2892,7 +2892,7 @@ bool CWallet::CreateTransaction(const std::vector<CRecipient>& vecSend, CWalletT
                 }
                 
                 if (fUseInstantSend && nValueIn > sporkManager.GetSporkValue(SPORK_3_INSTANTSEND_MAX_VALUE)*COIN) {
-                    strFailReason += " " + strprintf(_("InstantSend doesn't support sending values that high yet. Transactions are currently limited to %1 GLT."), sporkManager.GetSporkValue(SPORK_3_INSTANTSEND_MAX_VALUE));
+                    strFailReason += " " + strprintf(_("InstantSend doesn't support sending values that high yet. Transactions are currently limited to %1 HUNT."), sporkManager.GetSporkValue(SPORK_3_INSTANTSEND_MAX_VALUE));
                     return false;
                 }
 
@@ -3733,7 +3733,7 @@ bool CWallet::GetOutpointAndKeysFromOutput(const COutput& out, COutPoint& outpoi
     
     if(expectedScript != address1)
     {
-        LogPrintf("CWallet::GetOutpointAndKeysFromOutput -- Unsupported collateral-address format! Globaltoken supports only the legacy-address format for masternodes! (Expected output: %s | Got : %s)\n", EncodeDestination(expectedScript), EncodeDestination(address1));
+        LogPrintf("CWallet::GetOutpointAndKeysFromOutput -- Unsupported collateral-address format! Huntcoin supports only the legacy-address format for masternodes! (Expected output: %s | Got : %s)\n", EncodeDestination(expectedScript), EncodeDestination(address1));
         return false;
     }
 

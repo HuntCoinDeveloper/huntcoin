@@ -40,17 +40,17 @@ from the root of the repository.
 
 **Note**: You only need Berkeley DB if the wallet is enabled (see the section *Disable-Wallet mode* below).
 
-Build Globaltoken Core
+Build Huntcoin Core
 ------------------------
 
-1. Clone the globaltoken source code and cd into `globaltoken`
+1. Clone the huntcoin source code and cd into `huntcoin`
 
-        git clone https://github.com/globaltoken/globaltoken
-        cd globaltoken
+        git clone https://github.com/huntcoin/huntcoin
+        cd huntcoin
 
-2.  Build globaltoken-core:
+2.  Build huntcoin-core:
 
-    Configure and build the headless globaltoken binaries as well as the GUI (if Qt is found).
+    Configure and build the headless huntcoin binaries as well as the GUI (if Qt is found).
 
     You can disable the GUI build by passing `--without-gui` to configure.
 
@@ -69,26 +69,26 @@ Build Globaltoken Core
 Running
 -------
 
-Globaltoken Core is now available at `./src/globaltokend`
+Huntcoin Core is now available at `./src/huntcoind`
 
 Before running, it's recommended you create an RPC configuration file.
 
-    echo -e "rpcuser=globaltokenrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Globaltoken/globaltoken.conf"
+    echo -e "rpcuser=huntcoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Huntcoin/huntcoin.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/Globaltoken/globaltoken.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/Huntcoin/huntcoin.conf"
 
-The first time you run globaltokend, it will start downloading the blockchain. This process could take several hours.
+The first time you run huntcoind, it will start downloading the blockchain. This process could take several hours.
 
 You can monitor the download process by looking at the debug.log file:
 
-    tail -f $HOME/Library/Application\ Support/Globaltoken/debug.log
+    tail -f $HOME/Library/Application\ Support/Huntcoin/debug.log
 
 Other commands:
 -------
 
-    ./src/globaltokend -daemon # Starts the globaltoken daemon.
-    ./src/globaltoken-cli --help # Outputs a list of command-line options.
-    ./src/globaltoken-cli help # Outputs a list of RPC commands when the daemon is running.
+    ./src/huntcoind -daemon # Starts the huntcoin daemon.
+    ./src/huntcoin-cli --help # Outputs a list of command-line options.
+    ./src/huntcoin-cli help # Outputs a list of RPC commands when the daemon is running.
 
 Notes
 -----

@@ -1,6 +1,6 @@
 [Protocol]
-exec=globaltoken-qt '%u'
-protocol=globaltoken
+exec=huntcoin-qt '%u'
+protocol=huntcoin
 input=none
 output=none
 helper=true

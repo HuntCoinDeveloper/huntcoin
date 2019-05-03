@@ -144,9 +144,9 @@ void BumpFee(TransactionView& view, const uint256& txid, bool expectDisabled, st
 //
 // This also requires overriding the default minimal Qt platform:
 //
-//     src/qt/test/test_globaltoken-qt -platform xcb      # Linux
-//     src/qt/test/test_globaltoken-qt -platform windows  # Windows
-//     src/qt/test/test_globaltoken-qt -platform cocoa    # macOS
+//     src/qt/test/test_huntcoin-qt -platform xcb      # Linux
+//     src/qt/test/test_huntcoin-qt -platform windows  # Windows
+//     src/qt/test/test_huntcoin-qt -platform cocoa    # macOS
 void TestGUI()
 {
     g_address_type = OUTPUT_TYPE_P2SH_SEGWIT;

@@ -1,16 +1,16 @@
 (note: this is a temporary file, to be added-to by anybody, and moved to
 release-notes at release time)
 
-Globaltoken Core version *version* is now available from:
+Huntcoin Core version *version* is now available from:
 
-  <https://globaltoken.org>
+  <https://huntcoin.org>
 
 This is a new major version release, including new features, various bugfixes
 and performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at GitHub:
 
-  <https://github.com/globaltoken/globaltoken/issues>
+  <https://github.com/huntcoin/huntcoin/issues>
 
 To receive security and update notifications, please subscribe to:
 
@@ -21,8 +21,8 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
-installer (on Windows) or just copy over `/Applications/Globaltoken-Qt` (on Mac)
-or `globaltokend`/`globaltoken-qt` (on Linux).
+installer (on Windows) or just copy over `/Applications/Huntcoin-Qt` (on Mac)
+or `huntcoind`/`huntcoin-qt` (on Linux).
 
 The first time you run version 0.15.0, your chainstate database will be converted to a
 new format, which will take anywhere from a few minutes to half an hour,
@@ -47,10 +47,10 @@ processing the entire blockchain.
 Compatibility
 ==============
 
-Globaltoken Core is extensively tested on multiple operating systems using
+Huntcoin Core is extensively tested on multiple operating systems using
 the Linux kernel, macOS 10.8+, and Windows Vista and later. Windows XP is not supported.
 
-Globaltoken Core should also work on most other Unix-like systems but is not
+Huntcoin Core should also work on most other Unix-like systems but is not
 frequently tested on them.
 
 Notable changes

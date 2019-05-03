@@ -1,4 +1,4 @@
-// Copyright (c) 2017 The Globaltoken Core developers
+// Copyright (c) 2017 The Huntcoin Core developers
 
 #ifndef BITCOIN_CHAINPARAMSSEEDS_H
 #define BITCOIN_CHAINPARAMSSEEDS_H

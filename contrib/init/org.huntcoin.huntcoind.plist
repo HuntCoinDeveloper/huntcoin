@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>Label</key>
-	<string>org.globaltoken.globaltokend</string>
+	<string>org.huntcoin.huntcoind</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/usr/local/bin/globaltokend</string>
+		<string>/usr/local/bin/huntcoind</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>

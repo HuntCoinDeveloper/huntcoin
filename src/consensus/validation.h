@@ -9,7 +9,7 @@
 #include <string>
 #include <version.h>
 #include <consensus/consensus.h>
-#include <globaltoken/hardfork.h>
+#include <huntcoin/hardfork.h>
 #include <primitives/transaction.h>
 #include <primitives/block.h>
 

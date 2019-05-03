@@ -12,7 +12,7 @@
 #include <coins.h>
 #include <consensus/validation.h>
 #include <instantx.h>
-#include <globaltoken/hardfork.h>
+#include <huntcoin/hardfork.h>
 #include <validation.h>
 #include <core_io.h>
 #include <policy/feerate.h>
@@ -1124,8 +1124,8 @@ UniValue gettxout(const JSONRPCRequest& request)
             "     \"hex\" : \"hex\",        (string) \n"
             "     \"reqSigs\" : n,          (numeric) Number of required signatures\n"
             "     \"type\" : \"pubkeyhash\", (string) The type, eg pubkeyhash\n"
-            "     \"addresses\" : [          (array of string) array of globaltoken addresses\n"
-            "        \"address\"     (string) globaltoken address\n"
+            "     \"addresses\" : [          (array of string) array of huntcoin addresses\n"
+            "        \"address\"     (string) huntcoin address\n"
             "        ,...\n"
             "     ]\n"
             "  },\n"
@@ -1381,14 +1381,14 @@ UniValue getblockchaininfo(const JSONRPCRequest& request)
     CBlockIndex* tip = chainActive.Tip();
     UniValue softforks(UniValue::VARR);
     UniValue bip9_softforks(UniValue::VOBJ);
-    UniValue globaltoken_hardfork(UniValue::VOBJ);
-    UniValue globaltoken_hardfork_id_1(UniValue::VOBJ);
-    globaltoken_hardfork_id_1.pushKV("activated", IsHardForkActivated(tip->nTime));
-    globaltoken_hardfork_id_1.pushKV("activation_time", (int64_t)consensusParams.HardforkTime);
-    globaltoken_hardfork_id_1.pushKV("activation_height", (int64_t)consensusParams.HardforkHeight);
-    globaltoken_hardfork_id_1.pushKV("activation_blockhash", consensusParams.HardforkHash.GetHex());
-    globaltoken_hardfork_id_1.pushKV("blocks_since_hardfork", tip->nHeight - consensusParams.HardforkHeight);
-    globaltoken_hardfork.pushKV("1", globaltoken_hardfork_id_1);
+    UniValue huntcoin_hardfork(UniValue::VOBJ);
+    UniValue huntcoin_hardfork_id_1(UniValue::VOBJ);
+    huntcoin_hardfork_id_1.pushKV("activated", IsHardForkActivated(tip->nTime));
+    huntcoin_hardfork_id_1.pushKV("activation_time", (int64_t)consensusParams.HardforkTime);
+    huntcoin_hardfork_id_1.pushKV("activation_height", (int64_t)consensusParams.HardforkHeight);
+    huntcoin_hardfork_id_1.pushKV("activation_blockhash", consensusParams.HardforkHash.GetHex());
+    huntcoin_hardfork_id_1.pushKV("blocks_since_hardfork", tip->nHeight - consensusParams.HardforkHeight);
+    huntcoin_hardfork.pushKV("1", huntcoin_hardfork_id_1);
     softforks.push_back(SoftForkDesc("bip34", 2, tip, consensusParams));
     softforks.push_back(SoftForkDesc("bip66", 3, tip, consensusParams));
     softforks.push_back(SoftForkDesc("bip65", 4, tip, consensusParams));
@@ -1397,7 +1397,7 @@ UniValue getblockchaininfo(const JSONRPCRequest& request)
     }
     obj.pushKV("softforks",             softforks);
     obj.pushKV("bip9_softforks", bip9_softforks);
-    obj.pushKV("hardforks", globaltoken_hardfork);
+    obj.pushKV("hardforks", huntcoin_hardfork);
 
     obj.pushKV("warnings", GetWarnings("statusbar"));
     return obj;

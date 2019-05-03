@@ -70,7 +70,7 @@
         <translation>Құпия сөзді өзгерту</translation>
     </message>
     <message>
-        <source>Globaltoken</source>
+        <source>Huntcoin</source>
         <translation>Биткоин</translation>
     </message>
     <message>
@@ -173,7 +173,7 @@
         <translation>Биткоин</translation>
     </message>
 	<message>
-        <source>Globaltoken</source>
+        <source>Huntcoin</source>
         <translation>Биткоин</translation>
     </message>
     <message>

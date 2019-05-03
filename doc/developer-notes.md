@@ -155,7 +155,7 @@ to see it.
 
 **testnet and regtest modes**
 
-Run with the -testnet option to run with "play globaltokens" on the test network, if you
+Run with the -testnet option to run with "play huntcoins" on the test network, if you
 are testing multi-machine code that needs to operate across the internet.
 
 If you are testing something that can run on one machine, run with the -regtest option.
@@ -164,7 +164,7 @@ that run in -regtest mode.
 
 **DEBUG_LOCKORDER**
 
-Globaltoken Core is a multithreaded application, and deadlocks or other multithreading bugs
+Huntcoin Core is a multithreaded application, and deadlocks or other multithreading bugs
 can be very difficult to track down. Compiling with -DDEBUG_LOCKORDER (configure
 CXXFLAGS="-DDEBUG_LOCKORDER -g") inserts run-time checks to keep track of which locks
 are held, and adds warnings to the debug.log file if inconsistencies are detected.
@@ -173,15 +173,15 @@ are held, and adds warnings to the debug.log file if inconsistencies are detecte
 
 Valgrind is a programming tool for memory debugging, memory leak detection, and
 profiling. The repo contains a Valgrind suppressions file
-([`valgrind.supp`](https://github.com/globaltoken/globaltoken/blob/master/contrib/valgrind.supp))
+([`valgrind.supp`](https://github.com/huntcoin/huntcoin/blob/master/contrib/valgrind.supp))
 which includes known Valgrind warnings in our dependencies that cannot be fixed
 in-tree. Example use:
 
 ```shell
-$ valgrind --suppressions=contrib/valgrind.supp src/test/test_globaltoken
+$ valgrind --suppressions=contrib/valgrind.supp src/test/test_huntcoin
 $ valgrind --suppressions=contrib/valgrind.supp --leak-check=full \
-      --show-leak-kinds=all src/test/test_globaltoken --log_level=test_suite
-$ valgrind -v --leak-check=full src/globaltokend -printtoconsole
+      --show-leak-kinds=all src/test/test_huntcoin --log_level=test_suite
+$ valgrind -v --leak-check=full src/huntcoind -printtoconsole
 ```
 
 **compiling for test coverage**
@@ -197,7 +197,7 @@ To enable LCOV report generation during test runs:
 make
 make cov
 
-# A coverage report will now be accessible at `./test_globaltoken.coverage/index.html`.
+# A coverage report will now be accessible at `./test_huntcoin.coverage/index.html`.
 ```
 
 Locking/mutex usage notes
@@ -244,7 +244,7 @@ Threads
 
 - ThreadRPCServer : Remote procedure call handler, listens on port 8332 for connections and services them.
 
-- GlobaltokenMiner : Generates globaltokens (if wallet is enabled).
+- HuntcoinMiner : Generates huntcoins (if wallet is enabled).
 
 - Shutdown : Does an orderly shutdown of everything.
 
@@ -254,7 +254,7 @@ Ignoring IDE/editor files
 In closed-source environments in which everyone uses the same IDE it is common
 to add temporary files it produces to the project-wide `.gitignore` file.
 
-However, in open source software such as Globaltoken Core, where everyone uses
+However, in open source software such as Huntcoin Core, where everyone uses
 their own editors/IDE/tools, it is less common. Only you know what files your
 editor produces and this may change from version to version. The canonical way
 to do this is thus to create your local gitignore. Add this to `~/.gitconfig`:
@@ -284,9 +284,9 @@ Development guidelines
 ============================
 
 A few non-style-related recommendations for developers, as well as points to
-pay attention to for reviewers of Globaltoken Core code.
+pay attention to for reviewers of Huntcoin Core code.
 
-General Globaltoken Core
+General Huntcoin Core
 ----------------------
 
 - New features should be exposed on RPC first, then can be made available in the GUI
@@ -402,7 +402,7 @@ Strings and formatting
 
 - For `strprintf`, `LogPrint`, `LogPrintf` formatting characters don't need size specifiers
 
-  - *Rationale*: Globaltoken Core uses tinyformat, which is type safe. Leave them out to avoid confusion
+  - *Rationale*: Huntcoin Core uses tinyformat, which is type safe. Leave them out to avoid confusion
 
 Variable names
 --------------
@@ -516,12 +516,12 @@ Subtrees
 
 Several parts of the repository are subtrees of software maintained elsewhere.
 
-Some of these are maintained by active developers of Globaltoken Core, in which case changes should probably go
+Some of these are maintained by active developers of Huntcoin Core, in which case changes should probably go
 directly upstream without being PRed directly against the project.  They will be merged back in the next
 subtree merge.
 
 Others are external projects without a tight relationship with our project.  Changes to these should also
-be sent upstream but bugfixes may also be prudent to PR against Globaltoken Core so that they can be integrated
+be sent upstream but bugfixes may also be prudent to PR against Huntcoin Core so that they can be integrated
 quickly.  Cosmetic changes should be purely taken upstream.
 
 There is a tool in contrib/devtools/git-subtree-check.sh to check a subtree directory for consistency with
@@ -584,7 +584,7 @@ Git and GitHub tips
 
         [remote "upstream-pull"]
                 fetch = +refs/pull/*:refs/remotes/upstream-pull/*
-                url = git@github.com:globaltoken/globaltoken.git
+                url = git@github.com:huntcoin/huntcoin.git
 
   This will add an `upstream-pull` remote to your git repository, which can be fetched using `git fetch --all`
   or `git fetch upstream-pull`. Afterwards, you can use `upstream-pull/NUMBER/head` in arguments to `git show`,
@@ -650,7 +650,7 @@ A few guidelines for introducing and reviewing new RPC interfaces:
 - Try not to overload methods on argument type. E.g. don't make `getblock(true)` and `getblock("hash")`
   do different things.
 
-  - *Rationale*: This is impossible to use with `globaltoken-cli`, and can be surprising to users.
+  - *Rationale*: This is impossible to use with `huntcoin-cli`, and can be surprising to users.
 
   - *Exception*: Some RPC calls can take both an `int` and `bool`, most notably when a bool was switched
     to a multi-value, or due to other historical reasons. **Always** have false map to 0 and
@@ -669,7 +669,7 @@ A few guidelines for introducing and reviewing new RPC interfaces:
 
 - Add every non-string RPC argument `(method, idx, name)` to the table `vRPCConvertParams` in `rpc/client.cpp`.
 
-  - *Rationale*: `globaltoken-cli` and the GUI debug console use this table to determine how to
+  - *Rationale*: `huntcoin-cli` and the GUI debug console use this table to determine how to
     convert a plaintext command line to JSON. If the types don't match, the method can be unusable
     from there.
 

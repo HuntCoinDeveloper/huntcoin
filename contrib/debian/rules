@@ -1,9 +1,9 @@
 #!/usr/bin/make -f
 # -*- mode: makefile; coding: utf-8 -*-
 
-#DEB_MAKE_CHECK_TARGET = test_globaltoken
-#build/globaltokend::
-#	$(if $(filter nocheck,$(DEB_BUILD_OPTIONS)),,src/test_globaltoken)
+#DEB_MAKE_CHECK_TARGET = test_huntcoin
+#build/huntcoind::
+#	$(if $(filter nocheck,$(DEB_BUILD_OPTIONS)),,src/test_huntcoin)
 
 %:
 	dh --with bash-completion $@

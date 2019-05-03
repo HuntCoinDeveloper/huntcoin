@@ -9,17 +9,17 @@ define(_COPYRIGHT_HUNT_START, 2019)
 define(_COPYRIGHT_YEAR, 2018)
 define(_COPYRIGHT_HOLDERS,[The %s developers])
 define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Bitcoin Core]])
-define(_COPYRIGHT_HOLDERS_SUBSTITUTION_HUNT,[[Globaltoken Core]])
-AC_INIT([Globaltoken Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/globaltoken/globaltoken/issues],[globaltoken],[https://globaltoken.org/])
+define(_COPYRIGHT_HOLDERS_SUBSTITUTION_HUNT,[[Huntcoin Core]])
+AC_INIT([Huntcoin Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/huntcoin/huntcoin/issues],[huntcoin],[https://huntcoin.org/])
 AC_CONFIG_SRCDIR([src/validation.cpp])
 AC_CONFIG_HEADERS([src/config/huntcoin-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
-HUNTCOIN_DAEMON_NAME=globaltokend
-HUNTCOIN_GUI_NAME=globaltoken-qt
-HUNTCOIN_CLI_NAME=globaltoken-cli
-HUNTCOIN_TX_NAME=globaltoken-tx
+HUNTCOIN_DAEMON_NAME=huntcoind
+HUNTCOIN_GUI_NAME=huntcoin-qt
+HUNTCOIN_CLI_NAME=huntcoin-cli
+HUNTCOIN_TX_NAME=huntcoin-tx
 
 dnl Unless the user specified ARFLAGS, force it to be cr
 AC_ARG_VAR(ARFLAGS, [Flags for the archiver, defaults to <cr> if not set])
@@ -1113,11 +1113,11 @@ else
 	NEOSCRYPT_FLAGS="$NEOSCRYPT_FLAGS -DSHA256 -DOPT"
 fi
 
-AC_MSG_CHECKING([whether to build globaltokend])
+AC_MSG_CHECKING([whether to build huntcoind])
 AM_CONDITIONAL([BUILD_HUNTCOIND], [test x$build_huntcoind = xyes])
 AC_MSG_RESULT($build_huntcoind)
 
-AC_MSG_CHECKING([whether to build utils (globaltoken-cli globaltoken-tx)])
+AC_MSG_CHECKING([whether to build utils (huntcoin-cli huntcoin-tx)])
 AM_CONDITIONAL([BUILD_HUNTCOIN_UTILS], [test x$build_huntcoin_utils = xyes])
 AC_MSG_RESULT($build_huntcoin_utils)
 
@@ -1218,7 +1218,7 @@ if test x$huntcoin_enable_qt != xno; then
     AC_MSG_WARN("xgettext is required to update qt translations")
   fi
 
-  AC_MSG_CHECKING([whether to build test_globaltoken-qt])
+  AC_MSG_CHECKING([whether to build test_huntcoin-qt])
   if test x$use_gui_tests$huntcoin_enable_qt_test = xyesyes; then
     AC_MSG_RESULT([yes])
     BUILD_TEST_QT="yes"

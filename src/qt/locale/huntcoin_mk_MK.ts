@@ -138,7 +138,7 @@
         <translation>Повторно индексирање на блокови од дискот...</translation>
     </message>
     <message>
-        <source>Send coins to a Globaltoken address</source>
+        <source>Send coins to a Huntcoin address</source>
         <translation>Испрати биткоини на Биткоин адреса</translation>
     </message>
     <message>
@@ -146,7 +146,7 @@
         <translation>&amp;Потврди порака...</translation>
     </message>
     <message>
-        <source>Globaltoken</source>
+        <source>Huntcoin</source>
         <translation>Биткоин</translation>
     </message>
     <message>
@@ -303,7 +303,7 @@
         <translation>Биткоин</translation>
     </message>
 	<message>
-        <source>Globaltoken</source>
+        <source>Huntcoin</source>
         <translation>Биткоин</translation>
     </message>
     <message>
@@ -598,8 +598,8 @@
         <translation>Биткоин Core</translation>
     </message>
 	<message>
-        <source>Globaltoken Core</source>
-        <translation>Globaltoken Core</translation>
+        <source>Huntcoin Core</source>
+        <translation>Huntcoin Core</translation>
     </message>
     <message>
         <source>Warning</source>

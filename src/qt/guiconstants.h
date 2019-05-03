@@ -1,5 +1,5 @@
 // Copyright (c) 2011-2016 The Bitcoin Core developers
-// Copyright (c) 2017 The Globaltoken Core developers
+// Copyright (c) 2017 The Huntcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -49,9 +49,9 @@ static const int MAX_URI_LENGTH = 255;
 /* Number of frames in spinner animation */
 #define SPINNER_FRAMES 36
 
-#define QAPP_ORG_NAME "Globaltoken"
-#define QAPP_ORG_DOMAIN "globaltoken.org"
-#define QAPP_APP_NAME_DEFAULT "Globaltoken-Qt"
-#define QAPP_APP_NAME_TESTNET "Globaltoken-Qt-testnet"
+#define QAPP_ORG_NAME "Huntcoin"
+#define QAPP_ORG_DOMAIN "huntcoin.org"
+#define QAPP_APP_NAME_DEFAULT "Huntcoin-Qt"
+#define QAPP_APP_NAME_TESTNET "Huntcoin-Qt-testnet"
 
 #endif // BITCOIN_QT_GUICONSTANTS_H

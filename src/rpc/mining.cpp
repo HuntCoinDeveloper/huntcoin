@@ -5,7 +5,7 @@
 // Copyright (c) 2016-2017 The Zcash developers
 // Copyright (c) 2018 The Bitcoin Private developers
 // Copyright (c) 2017-2018 The Bitcoin Gold developers
-// Copyright (c) 2017-2018 The Globaltoken Core developers
+// Copyright (c) 2017-2018 The Huntcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -18,7 +18,7 @@
 #include <consensus/validation.h>
 #include <core_io.h>
 #include <crypto/algos/equihash/equihash.h>
-#include <globaltoken/hardfork.h>
+#include <huntcoin/hardfork.h>
 #include <init.h>
 #include <validation.h>
 #include <miner.h>
@@ -257,7 +257,7 @@ UniValue generateBlocks(std::shared_ptr<CReserveScript> coinbaseScript, int nGen
                 strStream << "You cannot mine " << GetAlgoName(currentAlgo) << " right now.\n"
                 << "Because of very slow solutions on CPUs " << GetAlgoName(currentAlgo) << " is disabled.\n"
                 << "You can enable it the following way:\n\n"
-                << "Add -enable" << GetAlgoName(currentAlgo) << "=1 to your globaltoken.conf or\n"
+                << "Add -enable" << GetAlgoName(currentAlgo) << "=1 to your huntcoin.conf or\n"
                 << "start the daemon with the -enable" << GetAlgoName(currentAlgo) << " argument.\n\n"
                 << "To activate Equihash, follow the described steps and restart your wallet.";
                 throw std::runtime_error(strStream.str());
@@ -269,7 +269,7 @@ UniValue generateBlocks(std::shared_ptr<CReserveScript> coinbaseScript, int nGen
                 strStream << "You cannot mine " << GetAlgoName(currentAlgo) << " right now.\n"
                 << "Because of very slow solutions on CPUs " << GetAlgoName(currentAlgo) << " is disabled.\n"
                 << "You can enable it the following way:\n\n"
-                << "Add -enable" << GetAlgoName(currentAlgo) << "=1 to your globaltoken.conf or\n"
+                << "Add -enable" << GetAlgoName(currentAlgo) << "=1 to your huntcoin.conf or\n"
                 << "start the daemon with the -enable" << GetAlgoName(currentAlgo) << " argument.\n\n"
                 << "To activate Zhash, follow the described steps and restart your wallet.";
                 throw std::runtime_error(strStream.str());
@@ -410,7 +410,7 @@ UniValue generatetoaddress(const JSONRPCRequest& request)
             "\nMine blocks immediately to a specified address (before the RPC call returns)\n"
             "\nArguments:\n"
             "1. nblocks      (numeric, required) How many blocks are generated immediately.\n"
-            "2. address      (string, required) The address to send the newly generated globaltoken to.\n"
+            "2. address      (string, required) The address to send the newly generated huntcoin to.\n"
             "3. maxtries     (numeric, optional) How many iterations to try (default = 1000000 or 50000 for scrypt, neoscrypt and yescrypt).\n"
             "\nResult:\n"
             "[ blockhashes ]     (array) hashes of blocks generated\n"
@@ -815,17 +815,17 @@ UniValue getblocktemplate(const JSONRPCRequest& request)
         throw JSONRPCError(RPC_CLIENT_P2P_DISABLED, "Error: Peer-to-peer functionality missing or disabled");
 
     if (g_connman->GetNodeCount(CConnman::CONNECTIONS_ALL) == 0)
-        throw JSONRPCError(RPC_CLIENT_NOT_CONNECTED, "Globaltoken is not connected!");
+        throw JSONRPCError(RPC_CLIENT_NOT_CONNECTED, "Huntcoin is not connected!");
 
     if (IsInitialBlockDownload())
-        throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "Globaltoken is downloading blocks...");
+        throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "Huntcoin is downloading blocks...");
     
     // when enforcement is on we need information about a masternode payee or otherwise our block is going to be orphaned by the network
     CScript payee;
     if (sporkManager.IsSporkActive(SPORK_5_MASTERNODE_PAYMENT_ENFORCEMENT)
         && !masternodeSync.IsWinnersListSynced()
         && !mnpayments.GetBlockPayee(chainActive.Height() + 1, payee))
-            throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "Globaltoken is downloading masternode winners...");
+            throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "Huntcoin is downloading masternode winners...");
 
     static unsigned int nTransactionsUpdatedLast;
 

@@ -29,16 +29,16 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>Globaltoken-Qt</string>
+  <string>Huntcoin-Qt</string>
   
   <key>CFBundleName</key>
-  <string>Globaltoken-Qt</string>
+  <string>Huntcoin-Qt</string>
 
   <key>LSHasLocalizedDisplayName</key>
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>org.globaltoken.Globaltoken-Qt</string>
+  <string>org.huntcoin.Huntcoin-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,10 +46,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>org.globaltoken.GlobaltokenPayment</string>
+      <string>org.huntcoin.HuntcoinPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>globaltoken</string>
+        <string>huntcoin</string>
       </array>
     </dict>
   </array>
@@ -58,9 +58,9 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>org.globaltoken.paymentrequest</string>
+      <string>org.huntcoin.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>Globaltoken payment request</string>
+      <string>Huntcoin payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -68,10 +68,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-globaltoken-payment-request</string>
+        <string>application/x-huntcoin-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>globaltokenpaymentrequest</string>
+          <string>huntcoinpaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -84,7 +84,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>org.globaltoken.paymentrequest</string>
+        <string>org.huntcoin.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

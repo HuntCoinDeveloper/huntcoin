@@ -218,7 +218,7 @@ def main():
 
     enable_wallet = config["components"].getboolean("ENABLE_WALLET")
     enable_utils = config["components"].getboolean("ENABLE_UTILS")
-    enable_globaltokend = config["components"].getboolean("ENABLE_BITCOIND")
+    enable_huntcoind = config["components"].getboolean("ENABLE_BITCOIND")
 
     if config["environment"]["EXEEXT"] == ".exe" and not args.force:
         # https://github.com/bitcoin/bitcoin/commit/d52802551752140cf41f0d9a225a43e84404d3e9
@@ -226,8 +226,8 @@ def main():
         print("Tests currently disabled on Windows by default. Use --force option to enable")
         sys.exit(0)
 
-    if not (enable_wallet and enable_utils and enable_globaltokend):
-        print("No functional tests to run. Wallet, utils, and globaltokend must all be enabled")
+    if not (enable_wallet and enable_utils and enable_huntcoind):
+        print("No functional tests to run. Wallet, utils, and huntcoind must all be enabled")
         print("Rerun `configure` with -enable-wallet, -with-utils and -with-daemon and rerun make")
         sys.exit(0)
 
@@ -280,10 +280,10 @@ def main():
     run_tests(test_list, config["environment"]["SRCDIR"], config["environment"]["BUILDDIR"], config["environment"]["EXEEXT"], tmpdir, args.jobs, args.coverage, passon_args, args.combinedlogslen)
 
 def run_tests(test_list, src_dir, build_dir, exeext, tmpdir, jobs=1, enable_coverage=False, args=[], combined_logs_len=0):
-    # Warn if globaltokend is already running (unix only)
+    # Warn if huntcoind is already running (unix only)
     try:
-        if subprocess.check_output(["pidof", "globaltokend"]) is not None:
-            print("%sWARNING!%s There is already a globaltokend process running on this system. Tests may fail unexpectedly due to resource contention!" % (BOLD[1], BOLD[0]))
+        if subprocess.check_output(["pidof", "huntcoind"]) is not None:
+            print("%sWARNING!%s There is already a huntcoind process running on this system. Tests may fail unexpectedly due to resource contention!" % (BOLD[1], BOLD[0]))
     except (OSError, subprocess.SubprocessError):
         pass
 
@@ -294,8 +294,8 @@ def run_tests(test_list, src_dir, build_dir, exeext, tmpdir, jobs=1, enable_cove
 
     #Set env vars
     if "BITCOIND" not in os.environ:
-        os.environ["BITCOIND"] = build_dir + '/src/globaltokend' + exeext
-        os.environ["BITCOINCLI"] = build_dir + '/src/globaltoken-cli' + exeext
+        os.environ["BITCOIND"] = build_dir + '/src/huntcoind' + exeext
+        os.environ["BITCOINCLI"] = build_dir + '/src/huntcoin-cli' + exeext
 
     tests_dir = src_dir + '/test/functional/'
 
@@ -392,7 +392,7 @@ class TestHandler:
         self.test_list = test_list
         self.flags = flags
         self.num_running = 0
-        # In case there is a graveyard of zombie globaltokends, we can apply a
+        # In case there is a graveyard of zombie huntcoinds, we can apply a
         # pseudorandom offset to hopefully jump over them.
         # (625 is PORT_RANGE/MAX_NODES)
         self.portseed_offset = int(time.time() * 1000) % 625

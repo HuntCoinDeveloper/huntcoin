@@ -25,12 +25,12 @@ python27
 
 Download the source code:
 ```
-git clone https://github.com/globaltoken/globaltoken
+git clone https://github.com/huntcoin/huntcoin
 ```
 
 See [dependencies.md](dependencies.md) for a complete overview.
 
-### Building Globaltoken Core
+### Building Huntcoin Core
 
 **Important**: Use `gmake` (the non-GNU `make` will exit with an error).
 

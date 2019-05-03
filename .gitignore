@@ -2,12 +2,12 @@
 
 *.exe
 src/bitcoin
-src/globaltokend
+src/huntcoind
 src/bitcoin-cli
-src/globaltoken-tx
+src/huntcoin-tx
 src/test/test_bitcoin
 src/test/test_bitcoin_fuzzy
-src/qt/test/test_globaltoken-qt
+src/qt/test/test_huntcoin-qt
 
 # autoreconf
 Makefile.in
@@ -80,13 +80,13 @@ src/qt/bitcoin-qt.includes
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-globaltoken-qt
+huntcoin-qt
 Bitcoin-Qt.app
 background.tiff*
 
 # Unit-tests
 Makefile.test
-globaltoken-qt_test
+huntcoin-qt_test
 
 # Resources cpp
 qrc_*.cpp

@@ -1520,7 +1520,7 @@ void ThreadMapPort()
             }
         }
 
-        std::string strDesc = "Globaltoken " + FormatFullVersion();
+        std::string strDesc = "Huntcoin " + FormatFullVersion();
 
         do {
 #ifndef UPNPDISCOVER_SUCCESS

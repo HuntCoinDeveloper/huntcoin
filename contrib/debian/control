@@ -1,4 +1,4 @@
-Source: globaltoken
+Source: huntcoin
 Section: utils
 Priority: optional
 Maintainer: Matt Corallo <matt@mattcorallo.com>
@@ -26,45 +26,45 @@ Build-Depends: debhelper,
  python,
  libzmq3-dev
 Standards-Version: 3.9.2
-Homepage: https://globaltoken.org/
-Vcs-Git: git://github.com/globaltoken/globaltoken.git
-Vcs-Browser: https://github.com/globaltoken/globaltoken
+Homepage: https://huntcoin.org/
+Vcs-Git: git://github.com/huntcoin/huntcoin.git
+Vcs-Browser: https://github.com/huntcoin/huntcoin
 
-Package: globaltokend
+Package: huntcoind
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
- Globaltoken is a free open source peer-to-peer electronic cash system that
+ Huntcoin is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
  check for double-spending.
  .
- This package provides the daemon, globaltokend, and the CLI tool
- globaltoken-cli to interact with the daemon.
+ This package provides the daemon, huntcoind, and the CLI tool
+ huntcoin-cli to interact with the daemon.
 
-Package: globaltoken-qt
+Package: huntcoin-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
- Globaltoken is a free open source peer-to-peer electronic cash system that
+ Huntcoin is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
  check for double-spending.
  .
- This package provides Globaltoken-Qt, a GUI for Globaltoken based on Qt.
+ This package provides Huntcoin-Qt, a GUI for Huntcoin based on Qt.
 
-Package: globaltoken-tx
+Package: huntcoin-tx
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer digital currency - standalone transaction tool
- Globaltoken is a free open source peer-to-peer electronic cash system that
+ Huntcoin is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
  check for double-spending.
  .
- This package provides globaltoken-tx, a command-line transaction creation
- tool which can be used without a globaltoken daemon.  Some means of
+ This package provides huntcoin-tx, a command-line transaction creation
+ tool which can be used without a huntcoin daemon.  Some means of
  exchanging minimal transaction data with peers is still required.

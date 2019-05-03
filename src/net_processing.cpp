@@ -11,7 +11,7 @@
 #include <blockencodings.h>
 #include <chainparams.h>
 #include <consensus/validation.h>
-#include <globaltoken/hardfork.h>
+#include <huntcoin/hardfork.h>
 #include <hash.h>
 #include <init.h>
 #include <validation.h>
@@ -39,7 +39,7 @@
 #include <masternodeman.h>
 
 #if defined(NDEBUG)
-# error "Globaltoken cannot be compiled without assertions."
+# error "Huntcoin cannot be compiled without assertions."
 #endif
 
 std::atomic<int64_t> nTimeBestReceived(0); // Used only to inform the wallet of when we last received a block

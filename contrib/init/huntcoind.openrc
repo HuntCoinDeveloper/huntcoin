@@ -2,26 +2,26 @@
 
 # backward compatibility for existing gentoo layout 
 #
-if [ -d "/var/lib/globaltoken/.globaltoken" ]; then
-	GLOBALTOKEND_DEFAULT_DATADIR="/var/lib/globaltoken/.globaltoken"
+if [ -d "/var/lib/huntcoin/.huntcoin" ]; then
+	GLOBALTOKEND_DEFAULT_DATADIR="/var/lib/huntcoin/.huntcoin"
 else
-	GLOBALTOKEND_DEFAULT_DATADIR="/var/lib/globaltokend"
+	GLOBALTOKEND_DEFAULT_DATADIR="/var/lib/huntcoind"
 fi
 
-GLOBALTOKEND_CONFIGFILE=${GLOBALTOKEND_CONFIGFILE:-/etc/globaltoken/globaltoken.conf}
-GLOBALTOKEND_PIDDIR=${GLOBALTOKEND_PIDDIR:-/var/run/globaltokend}
-GLOBALTOKEND_PIDFILE=${GLOBALTOKEND_PIDFILE:-${GLOBALTOKEND_PIDDIR}/globaltokend.pid}
+GLOBALTOKEND_CONFIGFILE=${GLOBALTOKEND_CONFIGFILE:-/etc/huntcoin/huntcoin.conf}
+GLOBALTOKEND_PIDDIR=${GLOBALTOKEND_PIDDIR:-/var/run/huntcoind}
+GLOBALTOKEND_PIDFILE=${GLOBALTOKEND_PIDFILE:-${GLOBALTOKEND_PIDDIR}/huntcoind.pid}
 GLOBALTOKEND_DATADIR=${GLOBALTOKEND_DATADIR:-${GLOBALTOKEND_DEFAULT_DATADIR}}
-GLOBALTOKEND_USER=${GLOBALTOKEND_USER:-${GLOBALTOKEN_USER:-globaltoken}}
-GLOBALTOKEND_GROUP=${GLOBALTOKEND_GROUP:-globaltoken}
-GLOBALTOKEND_BIN=${GLOBALTOKEND_BIN:-/usr/bin/globaltokend}
+GLOBALTOKEND_USER=${GLOBALTOKEND_USER:-${GLOBALTOKEN_USER:-huntcoin}}
+GLOBALTOKEND_GROUP=${GLOBALTOKEND_GROUP:-huntcoin}
+GLOBALTOKEND_BIN=${GLOBALTOKEND_BIN:-/usr/bin/huntcoind}
 GLOBALTOKEND_NICE=${GLOBALTOKEND_NICE:-${NICELEVEL:-0}}
 GLOBALTOKEND_OPTS="${GLOBALTOKEND_OPTS:-${GLOBALTOKEN_OPTS}}"
 
-name="Globaltoken Core Daemon"
-description="Globaltoken cryptocurrency P2P network daemon"
+name="Huntcoin Core Daemon"
+description="Huntcoin cryptocurrency P2P network daemon"
 
-command="/usr/bin/globaltokend"
+command="/usr/bin/huntcoind"
 command_args="-pid=\"${GLOBALTOKEND_PIDFILE}\" \
 		-conf=\"${GLOBALTOKEND_CONFIGFILE}\" \
 		-datadir=\"${GLOBALTOKEND_DATADIR}\" \
@@ -71,7 +71,7 @@ checkconfig()
 {
 	if ! grep -qs '^rpcpassword=' "${GLOBALTOKEND_CONFIGFILE}" ; then
 		eerror ""
-		eerror "ERROR: You must set a secure rpcpassword to run globaltokend."
+		eerror "ERROR: You must set a secure rpcpassword to run huntcoind."
 		eerror "The setting must appear in ${GLOBALTOKEND_CONFIGFILE}"
 		eerror ""
 		eerror "This password is security critical to securing wallets "
@@ -84,7 +84,7 @@ checkconfig()
 		eerror "It is recommended that you also set alertnotify so you are "
 		eerror "notified of problems:"
 		eerror ""
-		eerror "ie: alertnotify=echo %%s | mail -s \"Globaltoken Alert\"" \
+		eerror "ie: alertnotify=echo %%s | mail -s \"Huntcoin Alert\"" \
 			"admin@foo.com"
 		eerror ""
 		return 1

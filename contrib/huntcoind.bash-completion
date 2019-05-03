@@ -1,16 +1,16 @@
-# bash programmable completion for globaltokend(1) and globaltoken-qt(1)
+# bash programmable completion for huntcoind(1) and huntcoin-qt(1)
 # Copyright (c) 2012-2016 The Bitcoin Core developers
-# Copyright (c) 2018 The Globaltoken Core developers
+# Copyright (c) 2018 The Huntcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-_globaltokend() {
+_huntcoind() {
     local cur prev words=() cword
-    local globaltokend
+    local huntcoind
 
-    # save and use original argument to invoke globaltokend for -help
+    # save and use original argument to invoke huntcoind for -help
     # it might not be in $PATH
-    globaltokend="$1"
+    huntcoind="$1"
 
     COMPREPLY=()
     _get_comp_words_by_ref -n = cur prev words cword
@@ -34,7 +34,7 @@ _globaltokend() {
             # only parse -help if sensible
             if [[ -z "$cur" || "$cur" =~ ^- ]]; then
                 local helpopts
-                helpopts=$($globaltokend -help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
+                helpopts=$($huntcoind -help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
                 COMPREPLY=( $( compgen -W "$helpopts" -- "$cur" ) )
             fi
 
@@ -46,7 +46,7 @@ _globaltokend() {
             ;;
     esac
 } &&
-complete -F _globaltokend globaltokend globaltoken-qt
+complete -F _huntcoind huntcoind huntcoin-qt
 
 # Local variables:
 # mode: shell-script

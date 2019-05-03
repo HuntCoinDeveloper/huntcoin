@@ -1,5 +1,5 @@
 // Copyright (c) 2014-2017 The Dash Core developers
-// Copyright (c) 2018 The Globaltoken Core developers
+// Copyright (c) 2018 The Huntcoin Core developers
 // Copyright (c) 2018 PM-Tech
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -861,9 +861,9 @@ UniValue masternodebroadcast(const JSONRPCRequest& request)
 static const CRPCCommand commands[] =
 { //  category                     name                      actor (function)         argNames
   //  ---------------------        ------------------------  -----------------------  ----------
-    { "globaltoken",               "masternode",             &masternode,             {} },
-    { "globaltoken",               "masternodelist",         &masternodelist,         {} },
-    { "globaltoken",               "masternodebroadcast",    &masternodebroadcast,    {} },
+    { "huntcoin",               "masternode",             &masternode,             {} },
+    { "huntcoin",               "masternodelist",         &masternodelist,         {} },
+    { "huntcoin",               "masternodebroadcast",    &masternodebroadcast,    {} },
 };
 
 void RegisterMasternodeRPCCommands(CRPCTable &t)

@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2017 The Bitcoin Core developers
 // Copyright (c) 2009-2017 The DigiByte Core developers
 // Copyright (c) 2016-2017 The Zcash developers
-// Copyright (c) 2018 The Globaltoken Core developers
+// Copyright (c) 2018 The Huntcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -12,7 +12,7 @@
 #include <arith_uint256.h>
 #include <chain.h>
 #include <chainparams.h>
-#include <globaltoken/hardfork.h>
+#include <huntcoin/hardfork.h>
 #include <primitives/block.h>
 #include <primitives/mining_block.h>
 #include <uint256.h>
@@ -344,7 +344,7 @@ bool CheckProofOfWork(const CBlockHeader& block, const Consensus::Params& params
         if (block.auxpow->getEquihashParentBlock().IsAuxpow())
             return error("%s : auxpow parent block has auxpow version", __func__);
         
-        // The GLT block should have no nonce, just the auxpow block stores it.
+        // The HUNT block should have no nonce, just the auxpow block stores it.
         if (block.nBigNonce != uint256())
             return error("%s : auxpow - Found nonce in GlobalToken block!", __func__);
 
