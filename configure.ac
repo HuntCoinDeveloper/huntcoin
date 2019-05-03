@@ -9,8 +9,13 @@ define(_COPYRIGHT_HUNT_START, 2019)
 define(_COPYRIGHT_YEAR, 2018)
 define(_COPYRIGHT_HOLDERS,[The %s developers])
 define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Bitcoin Core]])
+<<<<<<< HEAD
 define(_COPYRIGHT_HOLDERS_SUBSTITUTION_HUNT,[[Huntcoin Core]])
 AC_INIT([Huntcoin Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/huntcoin/huntcoin/issues],[huntcoin],[https://huntcoin.org/])
+=======
+define(_COPYRIGHT_HOLDERS_SUBSTITUTION_HUNT,[[Globaltoken Core]])
+AC_INIT([Globaltoken Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/huntcoin/huntcoin/issues],[huntcoin],[https://huntcoin.org/])
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
 AC_CONFIG_SRCDIR([src/validation.cpp])
 AC_CONFIG_HEADERS([src/config/huntcoin-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
