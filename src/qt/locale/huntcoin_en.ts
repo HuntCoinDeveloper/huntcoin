@@ -302,7 +302,7 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>HuntcoinGUI</name>
     <message>
         <location filename="../huntcoingui.cpp" line="+358"/>
         <source>Sign &amp;message...</source>

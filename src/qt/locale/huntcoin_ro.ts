@@ -212,7 +212,7 @@
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>HuntcoinGUI</name>
     <message>
         <source>Sign &amp;message...</source>
         <translation>Semnează &amp;mesajul...</translation>
