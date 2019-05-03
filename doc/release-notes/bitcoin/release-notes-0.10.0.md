@@ -225,7 +225,7 @@ Consensus library
 Starting from 0.10.0, the Bitcoin Core distribution includes a consensus library.
 
 The purpose of this library is to make the verification functionality that is
-critical to Bitcoin's consensus available to other applications, e.g. to language
+critical to Huntcoin's consensus available to other applications, e.g. to language
 bindings such as [python-huntcoinlib](https://pypi.python.org/pypi/python-huntcoinlib) or
 alternative node implementations.
 
