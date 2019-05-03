@@ -272,7 +272,15 @@ about:
 Release Policy
 --------------
 
+<<<<<<< HEAD
 The project leader is the release manager for each Huntcoin Core release.
+=======
+<<<<<<< HEAD
+The project leader is the release manager for each Huntcoin Core release.
+=======
+The project leader is the release manager for each Globaltoken Core release.
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
+>>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
 Currently this is huntcoinfirstdev. (huntcoin)
 
 Copyright

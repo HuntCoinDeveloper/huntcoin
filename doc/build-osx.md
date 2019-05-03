@@ -69,6 +69,10 @@ Build Huntcoin Core
 Running
 -------
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
 Huntcoin Core is now available at `./src/huntcoind`
 
 Before running, it's recommended you create an RPC configuration file.
@@ -76,7 +80,20 @@ Before running, it's recommended you create an RPC configuration file.
     echo -e "rpcuser=huntcoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Huntcoin/huntcoin.conf"
 
     chmod 600 "/Users/${USER}/Library/Application Support/Huntcoin/huntcoin.conf"
+<<<<<<< HEAD
 
+=======
+=======
+Globaltoken Core is now available at `./src/huntcoind`
+
+Before running, it's recommended you create an RPC configuration file.
+
+    echo -e "rpcuser=huntcoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Globaltoken/huntcoin.conf"
+
+    chmod 600 "/Users/${USER}/Library/Application Support/Globaltoken/huntcoin.conf"
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
+
+>>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
 The first time you run huntcoind, it will start downloading the blockchain. This process could take several hours.
 
 You can monitor the download process by looking at the debug.log file:

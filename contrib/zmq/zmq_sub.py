@@ -7,7 +7,15 @@
 """
     ZMQ example using python3's asyncio
 
+<<<<<<< HEAD
     Huntcoin should be started with the command line arguments:
+=======
+<<<<<<< HEAD
+    Huntcoin should be started with the command line arguments:
+=======
+    Globaltoken should be started with the command line arguments:
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
+>>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
         huntcoind -testnet -daemon \
                 -zmqpubrawtx=tcp://127.0.0.1:29319 \
                 -zmqpubrawblock=tcp://127.0.0.1:29319 \
