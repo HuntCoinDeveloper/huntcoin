@@ -19,6 +19,7 @@ fi
 RETVAL=0
 
 prog=huntcoind
+<<<<<<< HEAD
 # you can override the lockfile via HUNTCOIND_LOCKFILE in /etc/sysconfig/huntcoind
 lockfile=${HUNTCOIND_LOCKFILE-/var/lock/subsys/huntcoind}
 
@@ -27,6 +28,16 @@ huntcoind=${HUNTCOIND_BIN-/usr/bin/huntcoind}
 
 # huntcoind opts default to -disablewallet, override with HUNTCOIND_OPTS
 huntcoind_opts=${HUNTCOIND_OPTS--disablewallet}
+=======
+# you can override the lockfile via GLOBALTOKEND_LOCKFILE in /etc/sysconfig/huntcoind
+lockfile=${GLOBALTOKEND_LOCKFILE-/var/lock/subsys/huntcoind}
+
+# huntcoind defaults to /usr/bin/huntcoind, override with GLOBALTOKEND_BIN
+huntcoind=${GLOBALTOKEND_BIN-/usr/bin/huntcoind}
+
+# huntcoind opts default to -disablewallet, override with GLOBALTOKEND_OPTS
+huntcoind_opts=${GLOBALTOKEND_OPTS--disablewallet}
+>>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
 
 start() {
     echo -n $"Starting $prog: "
