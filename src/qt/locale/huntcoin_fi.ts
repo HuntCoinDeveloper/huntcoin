@@ -1470,7 +1470,15 @@
     </message>
     <message>
         <source>Cannot start huntcoin: click-to-pay handler</source>
+<<<<<<< HEAD
         <translation>Huntcoinia ei voi käynnistää: klikkaa-maksaaksesi -käsittelijän virhe</translation>
+=======
+<<<<<<< HEAD
+        <translation>Huntcoinia ei voi käynnistää: klikkaa-maksaaksesi -käsittelijän virhe</translation>
+=======
+        <translation>Globaltokenia ei voi käynnistää: klikkaa-maksaaksesi -käsittelijän virhe</translation>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
+>>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
     </message>
     <message>
         <source>URI handling</source>
@@ -2494,8 +2502,18 @@
         <translation>Aseta nimi tälle osoitteelle lisätäksesi sen käytettyjen osoitteiden listalle.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Huntcoin network.</source>
         <translation>Viesti joka liitettiin huntcoin: URI:iin tallennetaan rahansiirtoon viitteeksi. Tätä viestiä ei lähetetä Huntcoin-verkkoon.</translation>
+=======
+<<<<<<< HEAD
+        <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Huntcoin network.</source>
+        <translation>Viesti joka liitettiin huntcoin: URI:iin tallennetaan rahansiirtoon viitteeksi. Tätä viestiä ei lähetetä Huntcoin-verkkoon.</translation>
+=======
+        <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Globaltoken network.</source>
+        <translation>Viesti joka liitettiin huntcoin: URI:iin tallennetaan rahansiirtoon viitteeksi. Tätä viestiä ei lähetetä Globaltoken-verkkoon.</translation>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
+>>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
     </message>
     <message>
         <source>Pay To:</source>

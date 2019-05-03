@@ -746,7 +746,15 @@
         <translation>Editar o endereço de envio</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The entered address "%1" is not a valid Huntcoin address.</source>
+=======
+<<<<<<< HEAD
+        <source>The entered address "%1" is not a valid Huntcoin address.</source>
+=======
+        <source>The entered address "%1" is not a valid Globaltoken address.</source>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
+>>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
         <translation>O endereço introduzido "%1" não é um endereço huntcoin válido.</translation>
     </message>
     <message>
@@ -1057,7 +1065,15 @@
         <translation>&amp;Gastar troco não confirmado</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Automatically open the Huntcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+=======
+<<<<<<< HEAD
+        <source>Automatically open the Huntcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+=======
+        <source>Automatically open the Globaltoken client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
+>>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
         <translation>Abrir a porta do cliente huntcoin automaticamente no seu router. Isto apenas funciona se o seu router suportar UPnP e este se encontrar ligado.</translation>
     </message>
     <message>
@@ -2298,8 +2314,18 @@
         <translation>Introduza um rótulo para este endereço para o adicionar à sua lista de endereços usados</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Huntcoin network.</source>
         <translation>Uma mensagem que estava anexada ao URI huntcoin: que será armazenada com a transação para sua referência. Nota: Esta mensagem não será enviada através da rede Huntcoin.</translation>
+=======
+<<<<<<< HEAD
+        <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Huntcoin network.</source>
+        <translation>Uma mensagem que estava anexada ao URI huntcoin: que será armazenada com a transação para sua referência. Nota: Esta mensagem não será enviada através da rede Huntcoin.</translation>
+=======
+        <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Globaltoken network.</source>
+        <translation>Uma mensagem que estava anexada ao URI huntcoin: que será armazenada com a transação para sua referência. Nota: Esta mensagem não será enviada através da rede Globaltoken.</translation>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
+>>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
     </message>
     <message>
         <source>Pay To:</source>

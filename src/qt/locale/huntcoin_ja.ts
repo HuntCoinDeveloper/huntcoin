@@ -172,7 +172,11 @@
         <translation>ウォレットの暗号化を確認する</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR HUNTCOINS&lt;/b&gt;!</source>
+=======
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR GLOBALTOKENS&lt;/b&gt;!</source>
+>>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
         <translation>警告: もしもあなたのウォレットを暗号化してパスフレーズを失ってしまったなら、&lt;b&gt;あなたの Huntcoin はすべて失われます&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -1327,7 +1331,15 @@
     </message>
     <message>
         <source>Cannot start huntcoin: click-to-pay handler</source>
+<<<<<<< HEAD
         <translation>Huntcoin を起動できません: click-to-pay handler</translation>
+=======
+<<<<<<< HEAD
+        <translation>Huntcoin を起動できません: click-to-pay handler</translation>
+=======
+        <translation>Globaltoken を起動できません: click-to-pay handler</translation>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
+>>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
     </message>
     <message>
         <source>URI handling</source>
@@ -2356,8 +2368,18 @@
         <translation>このアドレスに対するラベルを入力することで、使用済みアドレスの一覧に追加することができます</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Huntcoin network.</source>
         <translation>huntcoin: URIに添付されていたメッセージです。これは参照用としてトランザクションとともに保存されます。注意：このメッセージはHuntcoinネットワークを通して送信されるわけではありません。</translation>
+=======
+<<<<<<< HEAD
+        <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Huntcoin network.</source>
+        <translation>huntcoin: URIに添付されていたメッセージです。これは参照用としてトランザクションとともに保存されます。注意：このメッセージはHuntcoinネットワークを通して送信されるわけではありません。</translation>
+=======
+        <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Globaltoken network.</source>
+        <translation>huntcoin: URIに添付されていたメッセージです。これは参照用としてトランザクションとともに保存されます。注意：このメッセージはGlobaltokenネットワークを通して送信されるわけではありません。</translation>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
+>>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
     </message>
     <message>
         <source>Pay To:</source>

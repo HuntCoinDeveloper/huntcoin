@@ -207,7 +207,15 @@ public:
         // This is fine at runtime as we'll fall back to using them as a oneshot if they don't support the
         // service bits we want, but we should get them updated to support all service bits wanted by any
         // release ASAP to avoid it where possible.
+<<<<<<< HEAD
         vSeeds.emplace_back("134.255.221.7"); // Huntcoin base node
+=======
+<<<<<<< HEAD
+        vSeeds.emplace_back("134.255.221.7"); // Huntcoin base node
+=======
+        vSeeds.emplace_back("134.255.221.7"); // Globaltoken base node
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
+>>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
         vSeeds.emplace_back("huntcoin.org"); // GlobalToken base node II
         vSeeds.emplace_back("explorer.huntcoin.org"); // GlobalToken base node III
         vSeeds.emplace_back("lameserver.de"); // GlobalToken Node by Astrali

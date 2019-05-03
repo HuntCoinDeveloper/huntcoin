@@ -1142,7 +1142,15 @@ Exportar los datos en la pestaña actual a un archivo</translation>
     </message>
     <message>
         <source>Cannot start huntcoin: click-to-pay handler</source>
+<<<<<<< HEAD
         <translation>No se puede iniciar Huntcoin: controlador de clic para pagar</translation>
+=======
+<<<<<<< HEAD
+        <translation>No se puede iniciar Huntcoin: controlador de clic para pagar</translation>
+=======
+        <translation>No se puede iniciar Globaltoken: controlador de clic para pagar</translation>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
+>>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
     </message>
     <message>
         <source>URI handling</source>

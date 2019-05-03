@@ -354,7 +354,15 @@
         <translation>Ponowne indeksowanie bloków na dysku...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Send coins to a Huntcoin address</source>
+=======
+<<<<<<< HEAD
+        <source>Send coins to a Huntcoin address</source>
+=======
+        <source>Send coins to a Globaltoken address</source>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
+>>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
         <translation>Wyślij monety na adres huntcoinowy</translation>
     </message>
     <message>
@@ -410,7 +418,15 @@
         <translation>Podpisz wiadomości swoim adresem aby udowodnić jego posiadanie</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Verify messages to ensure they were signed with specified Huntcoin addresses</source>
+=======
+<<<<<<< HEAD
+        <source>Verify messages to ensure they were signed with specified Huntcoin addresses</source>
+=======
+        <source>Verify messages to ensure they were signed with specified Globaltoken addresses</source>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
+>>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
         <translation>Zweryfikuj wiadomość,  aby upewnić się, że została podpisana podanym adresem huntcoinowym.</translation>
     </message>
     <message>
@@ -1406,7 +1422,15 @@
         <translation>Formularz</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Huntcoin network after a connection is established, but this process has not completed yet.</source>
+=======
+<<<<<<< HEAD
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Huntcoin network after a connection is established, but this process has not completed yet.</source>
+=======
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Globaltoken network after a connection is established, but this process has not completed yet.</source>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
+>>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
         <translation>Wyświetlana informacja może być nieaktualna. Twój portfel synchronizuje się automatycznie z siecią huntcoin, zaraz po tym jak uzyskano połączenie, ale proces ten nie został jeszcze ukończony.</translation>
     </message>
     <message>
@@ -1603,7 +1627,15 @@
         <translation>Kwota</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Enter a Huntcoin address (e.g. %1)</source>
+=======
+<<<<<<< HEAD
+        <source>Enter a Huntcoin address (e.g. %1)</source>
+=======
+        <source>Enter a Globaltoken address (e.g. %1)</source>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
+>>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
         <translation>Wprowadź adres huntcoinowy (np. %1)</translation>
     </message>
     <message>
@@ -2526,8 +2558,18 @@
         <translation>Wprowadź etykietę dla tego adresu by dodać go do listy użytych adresów</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Huntcoin network.</source>
         <translation>Wiadomość, która została dołączona do URI huntcoin:, która będzie przechowywana wraz z transakcją w celach informacyjnych. Uwaga: Ta wiadomość nie będzie rozsyłana w sieci Huntcoin.</translation>
+=======
+<<<<<<< HEAD
+        <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Huntcoin network.</source>
+        <translation>Wiadomość, która została dołączona do URI huntcoin:, która będzie przechowywana wraz z transakcją w celach informacyjnych. Uwaga: Ta wiadomość nie będzie rozsyłana w sieci Huntcoin.</translation>
+=======
+        <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Globaltoken network.</source>
+        <translation>Wiadomość, która została dołączona do URI huntcoin:, która będzie przechowywana wraz z transakcją w celach informacyjnych. Uwaga: Ta wiadomość nie będzie rozsyłana w sieci Globaltoken.</translation>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
+>>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
     </message>
     <message>
         <source>Pay To:</source>

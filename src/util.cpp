@@ -263,7 +263,11 @@ const CLogCategoryDesc LogCategories[] =
     {BCLog::MNPAYMENTS, "mnpayments"},
     {BCLog::MNSYNC, "mnsync"},
     {BCLog::SPORK, "spork"},
+<<<<<<< HEAD
     {BCLog::HUNTCOIN, "huntcoin"},
+=======
+    {BCLog::GLOBALTOKEN, "huntcoin"},
+>>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
     {BCLog::ALL, "1"},
     {BCLog::ALL, "all"},
 };
@@ -589,9 +593,21 @@ void PrintExceptionContinue(const std::exception* pex, const char* pszThread)
 
 fs::path GetDefaultDataDir()
 {
+<<<<<<< HEAD
     // Windows < Vista: C:\Documents and Settings\Username\Application Data\Huntcoin
     // Windows >= Vista: C:\Users\Username\AppData\Roaming\Huntcoin
     // Mac: ~/Library/Application Support/Huntcoin
+=======
+<<<<<<< HEAD
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Huntcoin
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Huntcoin
+    // Mac: ~/Library/Application Support/Huntcoin
+=======
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Globaltoken
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Globaltoken
+    // Mac: ~/Library/Application Support/Globaltoken
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
+>>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
     // Unix: ~/.huntcoin
 #ifdef WIN32
     // Windows

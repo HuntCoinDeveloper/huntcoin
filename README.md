@@ -15,7 +15,15 @@ out collectively by the network. Huntcoin Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
+<<<<<<< HEAD
 the Huntcoin Core software, see https://huntcoin.org/#downloads, or read the
+=======
+<<<<<<< HEAD
+the Huntcoin Core software, see https://huntcoin.org/#downloads, or read the
+=======
+the Globaltoken Core software, see https://huntcoin.org/#downloads, or read the
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
+>>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
 [original Bitcoin whitepaper](https://bitcoincore.org/bitcoin.pdf).
 
 License
@@ -29,7 +37,15 @@ Development Process
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
 completely stable. [Tags](https://github.com/huntcoin/huntcoin/tags) are created
+<<<<<<< HEAD
 regularly to indicate new official, stable release versions of Huntcoin Core.
+=======
+<<<<<<< HEAD
+regularly to indicate new official, stable release versions of Huntcoin Core.
+=======
+regularly to indicate new official, stable release versions of Globaltoken Core.
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
+>>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
 
