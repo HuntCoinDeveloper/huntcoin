@@ -427,7 +427,11 @@
     </message>
     <message>
         <source>Open a huntcoin: URI or payment request</source>
+<<<<<<< HEAD
         <translation>فتح URI : Huntcoin أو طلب دفع</translation>
+=======
+        <translation>فتح URI : Globaltoken أو طلب دفع</translation>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
     </message>
     <message>
         <source>&amp;Command-line options</source>

@@ -339,8 +339,13 @@ Var vänlig och försök igen.</translation>
         <translation>Återindexerar block på disken...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Send coins to a Huntcoin address</source>
         <translation>Skicka huntcoins till en Huntcoin-adress</translation>
+=======
+        <source>Send coins to a Globaltoken address</source>
+        <translation>Skicka huntcoins till en Globaltoken-adress</translation>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -2309,8 +2314,13 @@ Var vänlig och försök igen.</translation>
         <translation>Ange en etikett för denna adress att adderas till listan över använda adresser</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Huntcoin network.</source>
         <translation>Ett meddelande som bifogades huntcoin-URI, vilket lagras med transaktionen som referens. NB: Meddelandet kommer inte att sändas över Huntcoinnätverket.</translation>
+=======
+        <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Globaltoken network.</source>
+        <translation>Ett meddelande som bifogades huntcoin-URI, vilket lagras med transaktionen som referens. NB: Meddelandet kommer inte att sändas över Globaltokennätverket.</translation>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
     </message>
     <message>
         <source>Pay To:</source>

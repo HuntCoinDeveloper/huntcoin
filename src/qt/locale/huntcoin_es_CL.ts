@@ -142,7 +142,11 @@
         <translation>Cargando el index de bloques...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Send coins to a Huntcoin address</source>
+=======
+        <source>Send coins to a Globaltoken address</source>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
         <translation>Enviar monedas a una dirección huntcoin</translation>
     </message>
     <message>
@@ -780,7 +784,11 @@
 </translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Huntcoin Core</source>
+=======
+        <source>Globaltoken Core</source>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
         <translation>huntcoin core</translation>
     </message>
 	<message>

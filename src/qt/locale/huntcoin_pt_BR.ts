@@ -354,7 +354,11 @@
         <translation>Reindexando blocos no disco...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Send coins to a Huntcoin address</source>
+=======
+        <source>Send coins to a Globaltoken address</source>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
         <translation>Enviar moedas para um endereço huntcoin</translation>
     </message>
     <message>
@@ -2583,8 +2587,13 @@ Esta sincronização inicial é muito exigente e pode expor problemas de hardwar
         <translation>Digite um rótulo para este endereço para adicioná-lo no catálogo</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Huntcoin network.</source>
         <translation>A mensagem que foi anexada ao huntcoin: URI na qual será gravada na transação para sua referência. Nota: Essa mensagem não será gravada publicamente na rede Huntcoin.</translation>
+=======
+        <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Globaltoken network.</source>
+        <translation>A mensagem que foi anexada ao huntcoin: URI na qual será gravada na transação para sua referência. Nota: Essa mensagem não será gravada publicamente na rede Globaltoken.</translation>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
     </message>
     <message>
         <source>Pay To:</source>

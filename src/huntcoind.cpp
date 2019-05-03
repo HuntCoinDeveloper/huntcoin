@@ -32,8 +32,13 @@
  *
  * \section intro_sec Introduction
  *
+<<<<<<< HEAD
  * This is the developer documentation of the reference client for an experimental new digital currency called Huntcoin (https://www.huntcoin.org/),
  * which enables instant payments to anyone, anywhere in the world. Huntcoin uses peer-to-peer technology to operate
+=======
+ * This is the developer documentation of the reference client for an experimental new digital currency called Globaltoken (https://www.huntcoin.org/),
+ * which enables instant payments to anyone, anywhere in the world. Globaltoken uses peer-to-peer technology to operate
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
  * with no central authority: managing transactions and issuing money are carried out collectively by the network.
  *
  * The software is a community-driven open source project, released under the MIT license.

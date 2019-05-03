@@ -589,9 +589,15 @@ void PrintExceptionContinue(const std::exception* pex, const char* pszThread)
 
 fs::path GetDefaultDataDir()
 {
+<<<<<<< HEAD
     // Windows < Vista: C:\Documents and Settings\Username\Application Data\Huntcoin
     // Windows >= Vista: C:\Users\Username\AppData\Roaming\Huntcoin
     // Mac: ~/Library/Application Support/Huntcoin
+=======
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Globaltoken
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Globaltoken
+    // Mac: ~/Library/Application Support/Globaltoken
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
     // Unix: ~/.huntcoin
 #ifdef WIN32
     // Windows

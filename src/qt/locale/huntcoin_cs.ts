@@ -62,11 +62,19 @@
         <translation>Přijímací adresy</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>These are your Huntcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Tohle jsou tvé huntcoinové adresy pro posílání plateb. Před odesláním mincí si vždy zkontroluj částku a cílovou adresu.</translation>
     </message>
     <message>
         <source>These are your Huntcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+=======
+        <source>These are your Globaltoken addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Tohle jsou tvé huntcoinové adresy pro posílání plateb. Před odesláním mincí si vždy zkontroluj částku a cílovou adresu.</translation>
+    </message>
+    <message>
+        <source>These are your Globaltoken addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
         <translation>Tohle jsou tvé huntcoinové adresy pro příjem plateb. Je doporučeno pro každou transakci vždy vygenerovat novou adresu.</translation>
     </message>
     <message>
@@ -342,7 +350,11 @@
         <translation>Vytvářím nový index bloků na disku...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Send coins to a Huntcoin address</source>
+=======
+        <source>Send coins to a Globaltoken address</source>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
         <translation>Pošli mince na huntcoinovou adresu</translation>
     </message>
     <message>
@@ -394,11 +406,19 @@
         <translation>Zašifruj soukromé klíče ve své peněžence</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Sign messages with your Huntcoin addresses to prove you own them</source>
         <translation>Podepiš zprávy svými huntcoinovými adresami, čímž prokážeš, že jsi jejich vlastníkem</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Huntcoin addresses</source>
+=======
+        <source>Sign messages with your Globaltoken addresses to prove you own them</source>
+        <translation>Podepiš zprávy svými huntcoinovými adresami, čímž prokážeš, že jsi jejich vlastníkem</translation>
+    </message>
+    <message>
+        <source>Verify messages to ensure they were signed with specified Globaltoken addresses</source>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
         <translation>Ověř zprávy, aby ses ujistil, že byly podepsány danými huntcoinovými adresami</translation>
     </message>
     <message>
@@ -438,7 +458,11 @@
         <translation>Ar&amp;gumenty příkazové řádky</translation>
     </message>
     <message numerus="yes">
+<<<<<<< HEAD
         <source>%n active connection(s) to Huntcoin network</source>
+=======
+        <source>%n active connection(s) to Globaltoken network</source>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
         <translation><numerusform>%n aktivní spojení do huntcoinové sítě</numerusform><numerusform>%n aktivní spojení do huntcoinové sítě</numerusform><numerusform>%n aktivních spojení do huntcoinové sítě</numerusform></translation>
     </message>
     <message>
@@ -746,7 +770,11 @@
         <translation>Uprav odesílací adresu</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The entered address "%1" is not a valid Huntcoin address.</source>
+=======
+        <source>The entered address "%1" is not a valid Globaltoken address.</source>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
         <translation>Zadaná adresa „%1“ není platná huntcoinová adresa.</translation>
     </message>
     <message>
@@ -1104,7 +1132,11 @@
         <translation>Přijímat spojení z venku.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Connect to the Huntcoin network through a SOCKS5 proxy.</source>
+=======
+        <source>Connect to the Globaltoken network through a SOCKS5 proxy.</source>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
         <translation>Připojí se do huntcoinové sítě přes SOCKS5 proxy.</translation>
     </message>
     <message>
@@ -1140,7 +1172,11 @@
         <translation>Tor</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Connect to the Huntcoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
+=======
+        <source>Connect to the Globaltoken network through a separate SOCKS5 proxy for Tor hidden services.</source>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
         <translation>Připojí se do huntcoinové sítě přes SOCKS5 proxy vyhrazenou pro skryté služby v Tor síti.</translation>
     </message>
     <message>
@@ -1243,7 +1279,11 @@
         <translation>Formulář</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Huntcoin network after a connection is established, but this process has not completed yet.</source>
+=======
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Globaltoken network after a connection is established, but this process has not completed yet.</source>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
         <translation>Zobrazené informace nemusí být aktuální. Tvá peněženka se automaticky sesynchronizuje s huntcoinovou sítí, jakmile se s ní spojí. Zatím ale ještě není synchronizace dokončena.</translation>
     </message>
     <message>
@@ -1334,7 +1374,11 @@
         <translation>Neplatná platební adresa %1</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>URI cannot be parsed! This can be caused by an invalid Huntcoin address or malformed URI parameters.</source>
+=======
+        <source>URI cannot be parsed! This can be caused by an invalid Globaltoken address or malformed URI parameters.</source>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
         <translation>Nepodařilo se analyzovat URI! Důvodem může být neplatná huntcoinová adresa nebo poškozené parametry URI.</translation>
     </message>
     <message>
@@ -1436,7 +1480,11 @@
         <translation>Částka</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Enter a Huntcoin address (e.g. %1)</source>
+=======
+        <source>Enter a Globaltoken address (e.g. %1)</source>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
         <translation>Zadej huntcoinovou adresu (např. %1)</translation>
     </message>
     <message>
@@ -1852,7 +1900,11 @@
         <translation>&amp;Zpráva:</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Huntcoin network.</source>
+=======
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Globaltoken network.</source>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
         <translation>Volitelná zpráva, která se připojí k platebnímu požadavku a která se zobrazí, když se požadavek otevře. Poznámka: tahle zpráva se neposílá s platbou po huntcoinové síti.</translation>
     </message>
     <message>
@@ -2245,7 +2297,11 @@
         <translation><numerusform>Potvrzování by podle odhadu mělo začít během %n bloku.</numerusform><numerusform>Potvrzování by podle odhadu mělo začít během %n bloků.</numerusform><numerusform>Potvrzování by podle odhadu mělo začít během %n bloků.</numerusform></translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Warning: Invalid Huntcoin address</source>
+=======
+        <source>Warning: Invalid Globaltoken address</source>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
         <translation>Upozornění: Neplatná huntcoinová adresa</translation>
     </message>
     <message>
@@ -2332,7 +2388,11 @@
         <translation>Zadej označení této adresy; obojí se ti pak uloží do adresáře</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Huntcoin network.</source>
+=======
+        <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Globaltoken network.</source>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
         <translation>Zpráva, která byla připojena k huntcoin: URI a která se ti pro přehled uloží k transakci. Poznámka: Tahle zpráva se neposílá s platbou po huntcoinové síti.</translation>
     </message>
     <message>
@@ -2413,7 +2473,11 @@
         <translation>Zkopíruj tento podpis do schránky</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Sign the message to prove you own this Huntcoin address</source>
+=======
+        <source>Sign the message to prove you own this Globaltoken address</source>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
         <translation>Podepiš zprávu, čímž prokážeš, že jsi vlastníkem této huntcoinové adresy</translation>
     </message>
     <message>
@@ -2441,7 +2505,11 @@
         <translation>Huntcoinová adresa, kterou je zpráva podepsána</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Verify the message to ensure it was signed with the specified Huntcoin address</source>
+=======
+        <source>Verify the message to ensure it was signed with the specified Globaltoken address</source>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
         <translation>Ověř zprávu, aby ses ujistil, že byla podepsána danou huntcoinovou adresou</translation>
     </message>
     <message>

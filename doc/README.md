@@ -5,7 +5,11 @@ Setup
 ---------------------
 Huntcoin Core is the original Huntcoin client and it builds the backbone of the network. It downloads and, by default, stores the entire history of Huntcoin transactions (which is currently more than 100 GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
+<<<<<<< HEAD
 To download Huntcoin Core, visit [huntcoin.org](https://huntcoin.org/#downloads).
+=======
+To download Globaltoken Core, visit [huntcoin.org](https://huntcoin.org/#downloads).
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
 
 Running
 ---------------------

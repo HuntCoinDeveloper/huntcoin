@@ -49,9 +49,16 @@ static const int MAX_URI_LENGTH = 255;
 /* Number of frames in spinner animation */
 #define SPINNER_FRAMES 36
 
+<<<<<<< HEAD
 #define QAPP_ORG_NAME "Huntcoin"
 #define QAPP_ORG_DOMAIN "huntcoin.org"
 #define QAPP_APP_NAME_DEFAULT "Huntcoin-Qt"
 #define QAPP_APP_NAME_TESTNET "Huntcoin-Qt-testnet"
+=======
+#define QAPP_ORG_NAME "Globaltoken"
+#define QAPP_ORG_DOMAIN "huntcoin.org"
+#define QAPP_APP_NAME_DEFAULT "Globaltoken-Qt"
+#define QAPP_APP_NAME_TESTNET "Globaltoken-Qt-testnet"
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
 
 #endif // BITCOIN_QT_GUICONSTANTS_H

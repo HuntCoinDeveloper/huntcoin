@@ -338,8 +338,13 @@
         <translation>Reindexando bloques en disco...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Send coins to a Huntcoin address</source>
         <translation>Enviar huntcoins a una dirección Huntcoin</translation>
+=======
+        <source>Send coins to a Globaltoken address</source>
+        <translation>Enviar huntcoins a una dirección Globaltoken</translation>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -1978,7 +1983,11 @@
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for huntcoin transactions than the network can process.</source>
+<<<<<<< HEAD
         <translation>Pagando solamente la cuota mínima es correcto, siempre y cuando haya menos volumen de transacciones que el espacio en los bloques. Pero tenga en cuenta que esto puede terminar en una transacción nunca confirmada, una vez que haya más demanda para transacciones Huntcoin que la red pueda procesar.</translation>
+=======
+        <translation>Pagando solamente la cuota mínima es correcto, siempre y cuando haya menos volumen de transacciones que el espacio en los bloques. Pero tenga en cuenta que esto puede terminar en una transacción nunca confirmada, una vez que haya más demanda para transacciones Globaltoken que la red pueda procesar.</translation>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
     </message>
     <message>
         <source>(read the tooltip)</source>
@@ -2212,8 +2221,13 @@
         <translation>Introduce una etiqueta para esta dirección para añadirla a la lista de direcciones utilizadas</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Huntcoin network.</source>
         <translation>Un mensaje que se adjuntó a la huntcoin: URL que será almacenada con la transacción para su referencia. Nota: Este mensaje no se envía a través de la red Huntcoin.</translation>
+=======
+        <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Globaltoken network.</source>
+        <translation>Un mensaje que se adjuntó a la huntcoin: URL que será almacenada con la transacción para su referencia. Nota: Este mensaje no se envía a través de la red Globaltoken.</translation>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
     </message>
     <message>
         <source>Pay To:</source>

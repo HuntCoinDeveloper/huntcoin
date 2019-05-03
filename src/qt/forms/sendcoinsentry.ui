@@ -199,7 +199,11 @@
     <item row="3" column="1">
      <widget class="QLabel" name="messageTextLabel">
       <property name="toolTip">
+<<<<<<< HEAD
        <string>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Huntcoin network.</string>
+=======
+       <string>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Globaltoken network.</string>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
       </property>
       <property name="textFormat">
        <enum>Qt::PlainText</enum>

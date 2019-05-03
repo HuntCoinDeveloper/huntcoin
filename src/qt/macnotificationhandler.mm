@@ -13,7 +13,11 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
+<<<<<<< HEAD
         return @"org.huntcoin.Huntcoin-Qt";
+=======
+        return @"org.huntcoin.Globaltoken-Qt";
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
     } else {
         return [self __bundleIdentifier];
     }

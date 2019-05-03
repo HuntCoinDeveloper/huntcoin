@@ -592,7 +592,11 @@ static const CRPCCommand commands[] =
     { "util",               "verifymessage",          &verifymessage,          {"address","signature","message"} },
     { "util",               "signmessagewithprivkey", &signmessagewithprivkey, {"privkey","message"} },
     
+<<<<<<< HEAD
     /* Huntcoin features */
+=======
+    /* Globaltoken features */
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
     { "huntcoin",        "mnsync",                 &mnsync,                 {} },
     { "huntcoin",        "spork",                  &spork,                  {"value"} },
 

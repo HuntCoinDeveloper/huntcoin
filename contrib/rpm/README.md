@@ -19,7 +19,11 @@ reference the release tarball available from https://huntcoin.org/bin/ and
 `Source1` should reference the BerkeleyDB source.
 
 Sources 10-99 are for source files that are maintained in the
+<<<<<<< HEAD
 [Huntcoin git repository](https://github.com/huntcoin/huntcoin) but are not part of
+=======
+[Globaltoken git repository](https://github.com/huntcoin/huntcoin) but are not part of
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
 the release tarball. Most of these will reside in the `contrib` sub-directory.
 
 Sources 10-19 should be reserved for miscellaneous configuration files.
@@ -34,7 +38,11 @@ release, the full URL specified in the RPM spec file will not work. You can get
 them from the git repository where you retrieved this file.
 
 Sources 100+ are for files that are not source tarballs and are not maintained
+<<<<<<< HEAD
 in the huntcoin git repository. At present only an SVG version of the Huntcoin
+=======
+in the huntcoin git repository. At present only an SVG version of the Globaltoken
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
 icon is used.
 
 ## Patches

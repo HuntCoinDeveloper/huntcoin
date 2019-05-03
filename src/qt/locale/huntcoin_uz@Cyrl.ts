@@ -235,7 +235,11 @@
     </message>
     <message>
         <source>Open a huntcoin: URI or payment request</source>
+<<<<<<< HEAD
         <translation>Huntcoin’ни очиш: URI ёки тўлов сўрови</translation>
+=======
+        <translation>Globaltoken’ни очиш: URI ёки тўлов сўрови</translation>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
     </message>
     <message>
         <source>&amp;Command-line options</source>

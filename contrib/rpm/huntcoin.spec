@@ -265,10 +265,17 @@ mkdir -p %{buildroot}%{_datadir}/applications
 cat <<EOF > %{buildroot}%{_datadir}/applications/huntcoin-core.desktop
 [Desktop Entry]
 Encoding=UTF-8
+<<<<<<< HEAD
 Name=Huntcoin
 Comment=Huntcoin P2P Cryptocurrency
 Comment[fr]=Huntcoin, monnaie virtuelle cryptographique pair à pair
 Comment[tr]=Huntcoin, eşten eşe kriptografik sanal para birimi
+=======
+Name=Globaltoken
+Comment=Globaltoken P2P Cryptocurrency
+Comment[fr]=Globaltoken, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Globaltoken, eşten eşe kriptografik sanal para birimi
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
 Exec=huntcoin-qt %u
 Terminal=false
 Type=Application
@@ -322,7 +329,11 @@ test/functional/test_runner.py --extended
 getent group huntcoin >/dev/null || groupadd -r huntcoin
 getent passwd huntcoin >/dev/null ||
 	useradd -r -g huntcoin -d /var/lib/huntcoin -s /sbin/nologin \
+<<<<<<< HEAD
 	-c "Huntcoin wallet server" huntcoin
+=======
+	-c "Globaltoken wallet server" huntcoin
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
 exit 0
 
 %post server

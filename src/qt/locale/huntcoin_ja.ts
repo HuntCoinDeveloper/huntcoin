@@ -1327,7 +1327,11 @@
     </message>
     <message>
         <source>Cannot start huntcoin: click-to-pay handler</source>
+<<<<<<< HEAD
         <translation>Huntcoin を起動できません: click-to-pay handler</translation>
+=======
+        <translation>Globaltoken を起動できません: click-to-pay handler</translation>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
     </message>
     <message>
         <source>URI handling</source>
@@ -2356,8 +2360,13 @@
         <translation>このアドレスに対するラベルを入力することで、使用済みアドレスの一覧に追加することができます</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Huntcoin network.</source>
         <translation>huntcoin: URIに添付されていたメッセージです。これは参照用としてトランザクションとともに保存されます。注意：このメッセージはHuntcoinネットワークを通して送信されるわけではありません。</translation>
+=======
+        <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Globaltoken network.</source>
+        <translation>huntcoin: URIに添付されていたメッセージです。これは参照用としてトランザクションとともに保存されます。注意：このメッセージはGlobaltokenネットワークを通して送信されるわけではありません。</translation>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
     </message>
     <message>
         <source>Pay To:</source>

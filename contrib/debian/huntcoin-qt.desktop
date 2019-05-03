@@ -1,10 +1,18 @@
 [Desktop Entry]
 Version=1.0
+<<<<<<< HEAD
 Name=Huntcoin Core
 Comment=Connect to the Huntcoin P2P Network
 Comment[de]=Verbinde mit dem Huntcoin peer-to-peer Netzwerk
 Comment[fr]=Huntcoin, monnaie virtuelle cryptographique pair à pair
 Comment[tr]=Huntcoin, eşten eşe kriptografik sanal para birimi
+=======
+Name=Globaltoken Core
+Comment=Connect to the Globaltoken P2P Network
+Comment[de]=Verbinde mit dem Globaltoken peer-to-peer Netzwerk
+Comment[fr]=Globaltoken, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Globaltoken, eşten eşe kriptografik sanal para birimi
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
 Exec=huntcoin-qt %u
 Terminal=false
 Type=Application

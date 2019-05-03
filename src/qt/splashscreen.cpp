@@ -46,7 +46,11 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle *networkStyle) 
     QString titleText       = tr(PACKAGE_NAME);
     QString versionText     = QString("Version %1").arg(QString::fromStdString(FormatFullVersion()));
     QString copyrightText   = QString::fromUtf8(CopyrightHolders(strprintf("\xc2\xA9 %u-%u ", 2009, COPYRIGHT_YEAR)).c_str());
+<<<<<<< HEAD
 	QString huntcoinText = QString::fromUtf8(CopyrightHoldersHUNT(strprintf("\xc2\xA9 %u-%u ", COPYRIGHT_HUNT_START, COPYRIGHT_YEAR)).c_str());
+=======
+	QString huntcoinText = QString::fromUtf8(CopyrightHoldersGLT(strprintf("\xc2\xA9 %u-%u ", COPYRIGHT_GLT_START, COPYRIGHT_YEAR)).c_str());
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
     QString titleAddText    = networkStyle->getTitleAddText();
 
     QString font            = QApplication::font().toString();
@@ -111,7 +115,11 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle *networkStyle) 
         QRect copyrightRect(x, y, pixmap.width() - x - paddingRight, pixmap.height() - y);
 		QRect copyrightRect_HUNT(x, y_hunt, pixmap.width() - x - paddingRight, pixmap.height() - y_hunt);
         pixPaint.drawText(copyrightRect, Qt::AlignLeft | Qt::AlignTop | Qt::TextWordWrap, copyrightText);
+<<<<<<< HEAD
 		pixPaint.drawText(copyrightRect_HUNT, Qt::AlignLeft | Qt::AlignTop | Qt::TextWordWrap, huntcoinText);
+=======
+		pixPaint.drawText(copyrightRect_GLT, Qt::AlignLeft | Qt::AlignTop | Qt::TextWordWrap, huntcoinText);
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
     }
 
     // draw additional text if special network

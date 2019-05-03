@@ -62,8 +62,13 @@
         <translation>Ontvangstadressen</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>These are your Huntcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Dit zijn uw Huntcoinadressen om betalingen mee te verzenden. Controleer altijd het bedrag en het ontvangstadres voordat u uw huntcoins verzendt.</translation>
+=======
+        <source>These are your Globaltoken addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dit zijn uw Globaltokenadressen om betalingen mee te verzenden. Controleer altijd het bedrag en het ontvangstadres voordat u uw huntcoins verzendt.</translation>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
     </message>
     <message>
         <source>These are your Huntcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
@@ -1094,7 +1099,11 @@
     </message>
     <message>
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the huntcoin network, as detailed below.</source>
+<<<<<<< HEAD
         <translation>Recente transacties zijn mogelijk nog niet zichtbaar. De balans van de geldbeugel is daarom mogelijk niet correct. Deze informatie is correct van zodra de synchronisatie met het Huntcoin-netwerk werd voltooid, zoals onderaan beschreven.</translation>
+=======
+        <translation>Recente transacties zijn mogelijk nog niet zichtbaar. De balans van de geldbeugel is daarom mogelijk niet correct. Deze informatie is correct van zodra de synchronisatie met het Globaltoken-netwerk werd voltooid, zoals onderaan beschreven.</translation>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
     </message>
     <message>
         <source>Attempting to spend huntcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
@@ -2566,8 +2575,13 @@
         <translation>Vul een label voor dit adres in om het aan de lijst met gebruikte adressen toe te voegen</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Huntcoin network.</source>
         <translation>Een bericht dat werd toegevoegd aan de huntcoin: URI welke wordt opgeslagen met de transactie ter referentie. Opmerking: Dit bericht zal niet worden verzonden over het Huntcoinnetwerk.</translation>
+=======
+        <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Globaltoken network.</source>
+        <translation>Een bericht dat werd toegevoegd aan de huntcoin: URI welke wordt opgeslagen met de transactie ter referentie. Opmerking: Dit bericht zal niet worden verzonden over het Globaltokennetwerk.</translation>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
     </message>
     <message>
         <source>Pay To:</source>
@@ -2612,7 +2626,11 @@
     </message>
     <message>
         <source>You can sign messages/agreements with your addresses to prove you can receive huntcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+<<<<<<< HEAD
         <translation>U kunt berichten/overeenkomsten ondertekenen met uw adres om te bewijzen dat u Huntcoins kunt versturen. Wees voorzichtig met het ondertekenen van iets vaags of willekeurigs, omdat phishingaanvallen u kunnen proberen te misleiden tot het ondertekenen van overeenkomsten om uw identiteit aan hen toe te vertrouwen. Onderteken alleen volledig gedetailleerde verklaringen voordat u akkoord gaat.</translation>
+=======
+        <translation>U kunt berichten/overeenkomsten ondertekenen met uw adres om te bewijzen dat u Globaltokens kunt versturen. Wees voorzichtig met het ondertekenen van iets vaags of willekeurigs, omdat phishingaanvallen u kunnen proberen te misleiden tot het ondertekenen van overeenkomsten om uw identiteit aan hen toe te vertrouwen. Onderteken alleen volledig gedetailleerde verklaringen voordat u akkoord gaat.</translation>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
     </message>
     <message>
         <source>The Huntcoin address to sign the message with</source>

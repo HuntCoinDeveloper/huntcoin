@@ -915,7 +915,11 @@
     </message>
     <message>
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the huntcoin network, as detailed below.</source>
+<<<<<<< HEAD
         <translation>Tranzactiile recente pot sa nu fie inca vizibile, de aceea balanta portofelului poate fi incorecta. Aceasta informatie va fi corecta de indata ce portofelul va fi complet sincronizat cu reteaua Huntcoin, asa cum este detaliat mai jos.</translation>
+=======
+        <translation>Tranzactiile recente pot sa nu fie inca vizibile, de aceea balanta portofelului poate fi incorecta. Aceasta informatie va fi corecta de indata ce portofelul va fi complet sincronizat cu reteaua Globaltoken, asa cum este detaliat mai jos.</translation>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
     </message>
     <message>
         <source>Attempting to spend huntcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
@@ -1299,7 +1303,11 @@
     </message>
     <message>
         <source>Cannot start huntcoin: click-to-pay handler</source>
+<<<<<<< HEAD
         <translation>Huntcoin nu poate porni: click-to-pay handler</translation>
+=======
+        <translation>Globaltoken nu poate porni: click-to-pay handler</translation>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
     </message>
     <message>
         <source>URI handling</source>
@@ -2225,7 +2233,11 @@
         <translation><numerusform>Se estimeaza inceperea confirmarii in %n bloc.</numerusform><numerusform>Se estimeaza inceperea confirmarii in %n blocuri.</numerusform><numerusform>Se estimeaza inceperea confirmarii in %n blocuri.</numerusform></translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Warning: Invalid Huntcoin address</source>
+=======
+        <source>Warning: Invalid Globaltoken address</source>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
         <translation>Atenţie: Adresa huntcoin nevalidă!</translation>
     </message>
     <message>
@@ -2268,7 +2280,11 @@
         <translation>Aceasta este o tranzacţie normală.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The Huntcoin address to send the payment to</source>
+=======
+        <source>The Globaltoken address to send the payment to</source>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
         <translation>Adresa huntcoin către care se face plata</translation>
     </message>
     <message>
@@ -2312,7 +2328,11 @@
         <translation>Introduceţi eticheta pentru ca această adresa să fie introdusă în lista de adrese folosite</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Huntcoin network.</source>
+=======
+        <source>A message that was attached to the huntcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Globaltoken network.</source>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
         <translation>un mesaj a fost ataşat la huntcoin: URI care va fi stocat cu tranzacţia pentru referinţa dvs. Notă: Acest mesaj nu va fi trimis către reţeaua huntcoin.</translation>
     </message>
     <message>

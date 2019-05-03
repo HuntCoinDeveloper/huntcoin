@@ -138,7 +138,11 @@
         <translation>Промени &amp;лозинку...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Send coins to a Huntcoin address</source>
+=======
+        <source>Send coins to a Globaltoken address</source>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
         <translation>Пошаљите новац на huntcoin адресу</translation>
     </message>
     <message>

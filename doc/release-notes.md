@@ -21,7 +21,11 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
+<<<<<<< HEAD
 installer (on Windows) or just copy over `/Applications/Huntcoin-Qt` (on Mac)
+=======
+installer (on Windows) or just copy over `/Applications/Globaltoken-Qt` (on Mac)
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
 or `huntcoind`/`huntcoin-qt` (on Linux).
 
 The first time you run version 0.15.0, your chainstate database will be converted to a

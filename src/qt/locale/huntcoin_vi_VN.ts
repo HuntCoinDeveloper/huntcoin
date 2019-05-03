@@ -392,7 +392,11 @@ Ví của bạn chưa được mã hóa.</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and huntcoin: URIs)</source>
+<<<<<<< HEAD
         <translation>Yêu cầu thanh toán(tạo mã QR và địa chỉ Huntcoin: URLs)</translation>
+=======
+        <translation>Yêu cầu thanh toán(tạo mã QR và địa chỉ Globaltoken: URLs)</translation>
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
