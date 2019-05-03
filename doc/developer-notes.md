@@ -244,7 +244,15 @@ Threads
 
 - ThreadRPCServer : Remote procedure call handler, listens on port 8332 for connections and services them.
 
+<<<<<<< HEAD
 - HuntcoinMiner : Generates huntcoins (if wallet is enabled).
+=======
+<<<<<<< HEAD
+- HuntcoinMiner : Generates huntcoins (if wallet is enabled).
+=======
+- GlobaltokenMiner : Generates huntcoins (if wallet is enabled).
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
+>>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
 
 - Shutdown : Does an orderly shutdown of everything.
 

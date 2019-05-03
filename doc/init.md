@@ -68,9 +68,21 @@ can then be controlled by group membership.
 ### Mac OS X
 
 Binary:              `/usr/local/bin/huntcoind`  
+<<<<<<< HEAD
 Configuration file:  `~/Library/Application Support/Huntcoin/huntcoin.conf`  
 Data directory:      `~/Library/Application Support/Huntcoin`  
 Lock file:           `~/Library/Application Support/Huntcoin/.lock`  
+=======
+<<<<<<< HEAD
+Configuration file:  `~/Library/Application Support/Huntcoin/huntcoin.conf`  
+Data directory:      `~/Library/Application Support/Huntcoin`  
+Lock file:           `~/Library/Application Support/Huntcoin/.lock`  
+=======
+Configuration file:  `~/Library/Application Support/Globaltoken/huntcoin.conf`  
+Data directory:      `~/Library/Application Support/Globaltoken`  
+Lock file:           `~/Library/Application Support/Globaltoken/.lock`  
+>>>>>>> 942c1d744b8c414ea0de0c05269f730cd0d19c58
+>>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
 
 Installing Service Configuration
 -----------------------------------
