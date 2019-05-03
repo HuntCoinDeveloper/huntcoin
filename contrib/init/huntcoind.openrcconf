@@ -1,6 +1,7 @@
 # /etc/conf.d/huntcoind: config file for /etc/init.d/huntcoind
 
 # Config file location
+<<<<<<< HEAD
 #HUNTCOIND_CONFIGFILE="/etc/huntcoin/huntcoin.conf"
 
 # What directory to write pidfile to?  (created and owned by $HUNTCOIND_USER)
@@ -21,6 +22,28 @@
 
 # Nice value to run huntcoind under
 #HUNTCOIND_NICE=0
+=======
+#GLOBALTOKEND_CONFIGFILE="/etc/huntcoin/huntcoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $GLOBALTOKEND_USER)
+#GLOBALTOKEND_PIDDIR="/var/run/huntcoind"
+
+# What filename to give the pidfile
+#GLOBALTOKEND_PIDFILE="${GLOBALTOKEND_PIDDIR}/huntcoind.pid"
+
+# Where to write huntcoind data (be mindful that the blockchain is large)
+#GLOBALTOKEND_DATADIR="/var/lib/huntcoind"
+
+# User and group to own huntcoind process
+#GLOBALTOKEND_USER="huntcoin"
+#GLOBALTOKEND_GROUP="huntcoin"
+
+# Path to huntcoind executable
+#GLOBALTOKEND_BIN="/usr/bin/huntcoind"
+
+# Nice value to run huntcoind under
+#GLOBALTOKEND_NICE=0
+>>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
 
 # Additional options (avoid -conf and -datadir, use flags above)
 #HUNTCOIND_OPTS=""

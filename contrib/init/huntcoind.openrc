@@ -3,6 +3,7 @@
 # backward compatibility for existing gentoo layout 
 #
 if [ -d "/var/lib/huntcoin/.huntcoin" ]; then
+<<<<<<< HEAD
 	HUNTCOIND_DEFAULT_DATADIR="/var/lib/huntcoin/.huntcoin"
 else
 	HUNTCOIND_DEFAULT_DATADIR="/var/lib/huntcoind"
@@ -17,14 +18,36 @@ HUNTCOIND_GROUP=${HUNTCOIND_GROUP:-huntcoin}
 HUNTCOIND_BIN=${HUNTCOIND_BIN:-/usr/bin/huntcoind}
 HUNTCOIND_NICE=${HUNTCOIND_NICE:-${NICELEVEL:-0}}
 HUNTCOIND_OPTS="${HUNTCOIND_OPTS:-${HUNTCOIN_OPTS}}"
+=======
+	GLOBALTOKEND_DEFAULT_DATADIR="/var/lib/huntcoin/.huntcoin"
+else
+	GLOBALTOKEND_DEFAULT_DATADIR="/var/lib/huntcoind"
+fi
+
+GLOBALTOKEND_CONFIGFILE=${GLOBALTOKEND_CONFIGFILE:-/etc/huntcoin/huntcoin.conf}
+GLOBALTOKEND_PIDDIR=${GLOBALTOKEND_PIDDIR:-/var/run/huntcoind}
+GLOBALTOKEND_PIDFILE=${GLOBALTOKEND_PIDFILE:-${GLOBALTOKEND_PIDDIR}/huntcoind.pid}
+GLOBALTOKEND_DATADIR=${GLOBALTOKEND_DATADIR:-${GLOBALTOKEND_DEFAULT_DATADIR}}
+GLOBALTOKEND_USER=${GLOBALTOKEND_USER:-${GLOBALTOKEN_USER:-huntcoin}}
+GLOBALTOKEND_GROUP=${GLOBALTOKEND_GROUP:-huntcoin}
+GLOBALTOKEND_BIN=${GLOBALTOKEND_BIN:-/usr/bin/huntcoind}
+GLOBALTOKEND_NICE=${GLOBALTOKEND_NICE:-${NICELEVEL:-0}}
+GLOBALTOKEND_OPTS="${GLOBALTOKEND_OPTS:-${GLOBALTOKEN_OPTS}}"
+>>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
 
 name="Huntcoin Core Daemon"
 description="Huntcoin cryptocurrency P2P network daemon"
 
 command="/usr/bin/huntcoind"
+<<<<<<< HEAD
 command_args="-pid=\"${HUNTCOIND_PIDFILE}\" \
 		-conf=\"${HUNTCOIND_CONFIGFILE}\" \
 		-datadir=\"${HUNTCOIND_DATADIR}\" \
+=======
+command_args="-pid=\"${GLOBALTOKEND_PIDFILE}\" \
+		-conf=\"${GLOBALTOKEND_CONFIGFILE}\" \
+		-datadir=\"${GLOBALTOKEND_DATADIR}\" \
+>>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
 		-daemon \
 		${HUNTCOIND_OPTS}"
 
@@ -72,7 +95,11 @@ checkconfig()
 	if ! grep -qs '^rpcpassword=' "${HUNTCOIND_CONFIGFILE}" ; then
 		eerror ""
 		eerror "ERROR: You must set a secure rpcpassword to run huntcoind."
+<<<<<<< HEAD
 		eerror "The setting must appear in ${HUNTCOIND_CONFIGFILE}"
+=======
+		eerror "The setting must appear in ${GLOBALTOKEND_CONFIGFILE}"
+>>>>>>> ba4b2a2ed19d80adc586a03c663af411f92fafe9
 		eerror ""
 		eerror "This password is security critical to securing wallets "
 		eerror "and must not be the same as the rpcuser setting."
