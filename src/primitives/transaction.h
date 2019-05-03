@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_PRIMITIVES_TRANSACTION_H
-#define BITCOIN_PRIMITIVES_TRANSACTION_H
+#ifndef HUNTCOIN_PRIMITIVES_TRANSACTION_H
+#define HUNTCOIN_PRIMITIVES_TRANSACTION_H
 
 #include <stdint.h>
 #include <amount.h>
@@ -654,4 +654,4 @@ typedef std::shared_ptr<const CPOSTransaction> CPOSTransactionRef;
 static inline CPOSTransactionRef MakePOSTransactionRef() { return std::make_shared<const CPOSTransaction>(); }
 template <typename Tx> static inline CPOSTransactionRef MakePOSTransactionRef(Tx&& txIn) { return std::make_shared<const CPOSTransaction>(std::forward<Tx>(txIn)); }
 
-#endif // BITCOIN_PRIMITIVES_TRANSACTION_H
+#endif // HUNTCOIN_PRIMITIVES_TRANSACTION_H

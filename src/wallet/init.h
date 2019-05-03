@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_WALLET_INIT_H
-#define BITCOIN_WALLET_INIT_H
+#ifndef HUNTCOIN_WALLET_INIT_H
+#define HUNTCOIN_WALLET_INIT_H
 
 #include <string>
 
@@ -40,4 +40,4 @@ void StopWallets();
 //! Close all wallets.
 void CloseWallets();
 
-#endif // BITCOIN_WALLET_INIT_H
+#endif // HUNTCOIN_WALLET_INIT_H

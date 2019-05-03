@@ -89,8 +89,8 @@ const int64_t nStartupTime = GetTime();
 bool fMasternodeMode = false;
 bool fLiteMode = false;
 
-const char * const BITCOIN_CONF_FILENAME = "huntcoin.conf";
-const char * const BITCOIN_PID_FILENAME = "huntcoind.pid";
+const char * const HUNTCOIN_CONF_FILENAME = "huntcoin.conf";
+const char * const HUNTCOIN_PID_FILENAME = "huntcoind.pid";
 const char * const DEFAULT_DEBUGLOGFILE = "debug.log";
 
 ArgsManager gArgs;
@@ -702,7 +702,7 @@ void ArgsManager::ReadConfigFile(const std::string& confPath)
 #ifndef WIN32
 fs::path GetPidFile()
 {
-    return AbsPathForConfigVal(fs::path(gArgs.GetArg("-pid", BITCOIN_PID_FILENAME)));
+    return AbsPathForConfigVal(fs::path(gArgs.GetArg("-pid", HUNTCOIN_PID_FILENAME)));
 }
 
 void CreatePidFile(const fs::path &path, pid_t pid)

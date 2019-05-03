@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_BITCOINGUI_H
-#define BITCOIN_QT_BITCOINGUI_H
+#ifndef HUNTCOIN_QT_HUNTCOINGUI_H
+#define HUNTCOIN_QT_HUNTCOINGUI_H
 
 #if defined(HAVE_CONFIG_H)
 #include <config/huntcoin-config.h>
@@ -281,4 +281,4 @@ private Q_SLOTS:
     void onMenuSelection(QAction* action);
 };
 
-#endif // BITCOIN_QT_BITCOINGUI_H
+#endif // HUNTCOIN_QT_HUNTCOINGUI_H

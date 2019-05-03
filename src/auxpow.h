@@ -5,8 +5,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_AUXPOW_H
-#define BITCOIN_AUXPOW_H
+#ifndef HUNTCOIN_AUXPOW_H
+#define HUNTCOIN_AUXPOW_H
 
 #include <consensus/params.h>
 #include <primitives/mining_block.h>
@@ -348,4 +348,4 @@ public:
 
 };
 
-#endif // BITCOIN_AUXPOW_H
+#endif // HUNTCOIN_AUXPOW_H

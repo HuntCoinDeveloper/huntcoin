@@ -26,7 +26,7 @@ from .util import (
 # For Python 3.4 compatibility
 JSONDecodeError = getattr(json, "JSONDecodeError", ValueError)
 
-BITCOIND_PROC_WAIT_TIMEOUT = 60
+HUNTCOIND_PROC_WAIT_TIMEOUT = 60
 
 class TestNode():
     """A class for representing a huntcoind node under test.
@@ -52,7 +52,7 @@ class TestNode():
             # Wait for up to 60 seconds for the RPC server to respond
             self.rpc_timeout = 60
         if binary is None:
-            self.binary = os.getenv("BITCOIND", "huntcoind")
+            self.binary = os.getenv("HUNTCOIND", "huntcoind")
         else:
             self.binary = binary
         self.stderr = stderr
@@ -63,7 +63,7 @@ class TestNode():
         self.extra_args = extra_args
         self.args = [self.binary, "-datadir=" + self.datadir, "-logtimemicros", "-debug", "-debugexclude=libevent", "-debugexclude=leveldb", "-mocktime=" + str(mocktime), "-uacomment=testnode%d" % i]
 
-        self.cli = TestNodeCLI(os.getenv("BITCOINCLI", "huntcoin-cli"), self.datadir)
+        self.cli = TestNodeCLI(os.getenv("HUNTCOINCLI", "huntcoin-cli"), self.datadir)
         self.use_cli = use_cli
 
         self.running = False
@@ -159,7 +159,7 @@ class TestNode():
         self.log.debug("Node stopped")
         return True
 
-    def wait_until_stopped(self, timeout=BITCOIND_PROC_WAIT_TIMEOUT):
+    def wait_until_stopped(self, timeout=HUNTCOIND_PROC_WAIT_TIMEOUT):
         wait_until(self.is_node_stopped, timeout=timeout)
 
     def node_encrypt_wallet(self, passphrase):

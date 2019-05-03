@@ -4,8 +4,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_POW_H
-#define BITCOIN_POW_H
+#ifndef HUNTCOIN_POW_H
+#define HUNTCOIN_POW_H
 
 #include <consensus/params.h>
 
@@ -49,4 +49,4 @@ bool CheckProofOfWork(const CBlockHeader& block, const Consensus::Params& params
 /** Calculations */
 int CalculateDiffRetargetingBlock(const CBlockIndex* pindex, int retargettype, uint8_t algo, const Consensus::Params&);
 
-#endif // BITCOIN_POW_H
+#endif // HUNTCOIN_POW_H

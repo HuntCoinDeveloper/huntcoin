@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_NET_PROCESSING_H
-#define BITCOIN_NET_PROCESSING_H
+#ifndef HUNTCOIN_NET_PROCESSING_H
+#define HUNTCOIN_NET_PROCESSING_H
 
 #include <net.h>
 #include <validationinterface.h>
@@ -83,4 +83,4 @@ void Misbehaving(NodeId nodeid, int howmuch, const std::string& message="");
 /** Relay a Transaction from external functions. */
 void RelayTransactionFromExtern(const CTransaction& tx, CConnman* connman);
 
-#endif // BITCOIN_NET_PROCESSING_H
+#endif // HUNTCOIN_NET_PROCESSING_H

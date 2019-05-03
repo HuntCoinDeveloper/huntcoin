@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_UI_INTERFACE_H
-#define BITCOIN_UI_INTERFACE_H
+#ifndef HUNTCOIN_UI_INTERFACE_H
+#define HUNTCOIN_UI_INTERFACE_H
 
 #include <stdint.h>
 #include <string>
@@ -128,4 +128,4 @@ std::string AmountErrMsg(const char* const optname, const std::string& strValue)
 
 extern CClientUIInterface uiInterface;
 
-#endif // BITCOIN_UI_INTERFACE_H
+#endif // HUNTCOIN_UI_INTERFACE_H

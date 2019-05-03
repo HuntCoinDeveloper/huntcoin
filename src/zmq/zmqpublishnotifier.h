@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_ZMQ_ZMQPUBLISHNOTIFIER_H
-#define BITCOIN_ZMQ_ZMQPUBLISHNOTIFIER_H
+#ifndef HUNTCOIN_ZMQ_ZMQPUBLISHNOTIFIER_H
+#define HUNTCOIN_ZMQ_ZMQPUBLISHNOTIFIER_H
 
 #include <zmq/zmqabstractnotifier.h>
 
@@ -64,4 +64,4 @@ public:
     bool NotifyTransactionLock(const CTransactionRef &ptransaction) override;
 };
 
-#endif // BITCOIN_ZMQ_ZMQPUBLISHNOTIFIER_H
+#endif // HUNTCOIN_ZMQ_ZMQPUBLISHNOTIFIER_H

@@ -104,7 +104,7 @@ use old versions of Upstart and do not supply the start-stop-daemon utility.
 Copy huntcoind.init to /etc/init.d/huntcoind. Test by running `service huntcoind start`.
 
 Using this script, you can adjust the path and flags to the huntcoind program by
-setting the BITCOIND and FLAGS environment variables in the file
+setting the HUNTCOIND and FLAGS environment variables in the file
 /etc/sysconfig/huntcoind. You can also use the DAEMONOPTS environment variable here.
 
 ### Mac OS X

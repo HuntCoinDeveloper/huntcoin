@@ -5,8 +5,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_EQUIHASH_H
-#define BITCOIN_EQUIHASH_H
+#ifndef HUNTCOIN_EQUIHASH_H
+#define HUNTCOIN_EQUIHASH_H
 
 #include <compat/endian.h>
 #include <crypto/sha256.h>
@@ -303,4 +303,4 @@ inline unsigned int EhSolutionWidth(int n, int k)
     return ret;
 }
 
-#endif // BITCOIN_EQUIHASH_H
+#endif // HUNTCOIN_EQUIHASH_H

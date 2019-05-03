@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_CHAINPARAMSBASE_H
-#define BITCOIN_CHAINPARAMSBASE_H
+#ifndef HUNTCOIN_CHAINPARAMSBASE_H
+#define HUNTCOIN_CHAINPARAMSBASE_H
 
 #include <memory>
 #include <string>
@@ -60,4 +60,4 @@ void SelectBaseParams(const std::string& chain);
  */
 std::string ChainNameFromCommandLine();
 
-#endif // BITCOIN_CHAINPARAMSBASE_H
+#endif // HUNTCOIN_CHAINPARAMSBASE_H

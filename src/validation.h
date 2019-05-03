@@ -4,8 +4,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_VALIDATION_H
-#define BITCOIN_VALIDATION_H
+#ifndef HUNTCOIN_VALIDATION_H
+#define HUNTCOIN_VALIDATION_H
 
 #if defined(HAVE_CONFIG_H)
 #include <config/huntcoin-config.h>
@@ -508,4 +508,4 @@ bool LoadMempool();
 /** Checks if Hardfork is activated at current tip */
 bool CheckCurrentHardforkState();
 
-#endif // BITCOIN_VALIDATION_H
+#endif // HUNTCOIN_VALIDATION_H

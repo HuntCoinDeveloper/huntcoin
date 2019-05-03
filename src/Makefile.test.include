@@ -22,7 +22,7 @@ RAW_TEST_FILES =
 GENERATED_TEST_FILES = $(JSON_TEST_FILES:.json=.json.h) $(RAW_TEST_FILES:.raw=.raw.h)
 
 # test_huntcoin binary #
-BITCOIN_TESTS =\
+HUNTCOIN_TESTS =\
   test/arith_uint256_tests.cpp \
   test/scriptnum10.h \
   test/addrman_tests.cpp \
@@ -90,7 +90,7 @@ BITCOIN_TESTS =\
   test/util_tests.cpp
 
 if ENABLE_WALLET
-BITCOIN_TESTS += \
+HUNTCOIN_TESTS += \
   wallet/test/wallet_test_fixture.cpp \
   wallet/test/wallet_test_fixture.h \
   wallet/test/accounting_tests.cpp \
@@ -98,18 +98,18 @@ BITCOIN_TESTS += \
   wallet/test/crypto_tests.cpp
 endif
 
-test_test_huntcoin_SOURCES = $(BITCOIN_TESTS) $(JSON_TEST_FILES) $(RAW_TEST_FILES)
-test_test_huntcoin_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(TESTDEFS) $(EVENT_CFLAGS)
+test_test_huntcoin_SOURCES = $(HUNTCOIN_TESTS) $(JSON_TEST_FILES) $(RAW_TEST_FILES)
+test_test_huntcoin_CPPFLAGS = $(AM_CPPFLAGS) $(HUNTCOIN_INCLUDES) $(TESTDEFS) $(EVENT_CFLAGS)
 test_test_huntcoin_LDADD =
 if ENABLE_WALLET
-test_test_huntcoin_LDADD += $(LIBBITCOIN_WALLET)
+test_test_huntcoin_LDADD += $(LIBHUNTCOIN_WALLET)
 endif
-test_test_huntcoin_LDADD += $(LIBBITCOIN_SERVER) $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CONSENSUS) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) \
+test_test_huntcoin_LDADD += $(LIBHUNTCOIN_SERVER) $(LIBHUNTCOIN_CLI) $(LIBHUNTCOIN_COMMON) $(LIBHUNTCOIN_UTIL) $(LIBHUNTCOIN_CONSENSUS) $(LIBHUNTCOIN_CRYPTO) $(LIBUNIVALUE) \
   $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) $(BOOST_LIBS) $(BOOST_UNIT_TEST_FRAMEWORK_LIB) $(LIBSECP256K1) $(EVENT_LIBS) $(EVENT_PTHREADS_LIBS) \
-  $(LIBEQUIHASH_LIBS) $(LIBBITCOIN_ALGOS) $(LIBBITCOIN_HUNTCOIN_HARDFORK)
+  $(LIBEQUIHASH_LIBS) $(LIBHUNTCOIN_ALGOS) $(LIBHUNTCOIN_HUNTCOIN_HARDFORK)
 test_test_huntcoin_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 
-test_test_huntcoin_LDADD += $(LIBBITCOIN_CONSENSUS) $(LIBBITCOIN_ALGOS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
+test_test_huntcoin_LDADD += $(LIBHUNTCOIN_CONSENSUS) $(LIBHUNTCOIN_ALGOS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
 test_test_huntcoin_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(YESCRYPT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) -static
 
 if ENABLE_ZMQ
@@ -119,19 +119,19 @@ endif
 
 # test_huntcoin_fuzzy binary #
 test_test_huntcoin_fuzzy_SOURCES = test/test_huntcoin_fuzzy.cpp
-test_test_huntcoin_fuzzy_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+test_test_huntcoin_fuzzy_CPPFLAGS = $(AM_CPPFLAGS) $(HUNTCOIN_INCLUDES)
 test_test_huntcoin_fuzzy_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 test_test_huntcoin_fuzzy_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) $(YESCRYPT_LDFLAGS)
 
 test_test_huntcoin_fuzzy_LDADD = \
   $(LIBUNIVALUE) \
-  $(LIBBITCOIN_SERVER) \
-  $(LIBBITCOIN_COMMON) \
-  $(LIBBITCOIN_UTIL) \
-  $(LIBBITCOIN_CONSENSUS) \
-  $(LIBBITCOIN_HUNTCOIN_HARDFORK) \
-  $(LIBBITCOIN_CRYPTO) \
-  $(LIBBITCOIN_ALGOS) \
+  $(LIBHUNTCOIN_SERVER) \
+  $(LIBHUNTCOIN_COMMON) \
+  $(LIBHUNTCOIN_UTIL) \
+  $(LIBHUNTCOIN_CONSENSUS) \
+  $(LIBHUNTCOIN_HUNTCOIN_HARDFORK) \
+  $(LIBHUNTCOIN_CRYPTO) \
+  $(LIBHUNTCOIN_ALGOS) \
   $(LIBSECP256K1) \
   $(LIBEQUIHASH_LIBS)
 
@@ -140,11 +140,11 @@ test_test_huntcoin_fuzzy_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 
 nodist_test_test_huntcoin_SOURCES = $(GENERATED_TEST_FILES)
 
-$(BITCOIN_TESTS): $(GENERATED_TEST_FILES)
+$(HUNTCOIN_TESTS): $(GENERATED_TEST_FILES)
 
-CLEAN_BITCOIN_TEST = test/*.gcda test/*.gcno $(GENERATED_TEST_FILES)
+CLEAN_HUNTCOIN_TEST = test/*.gcda test/*.gcno $(GENERATED_TEST_FILES)
 
-CLEANFILES += $(CLEAN_BITCOIN_TEST)
+CLEANFILES += $(CLEAN_HUNTCOIN_TEST)
 
 huntcoin_test: $(TEST_BINARY)
 
@@ -152,7 +152,7 @@ huntcoin_test_check: $(TEST_BINARY) FORCE
 	$(MAKE) check-TESTS TESTS=$^
 
 huntcoin_test_clean : FORCE
-	rm -f $(CLEAN_BITCOIN_TEST) $(test_test_huntcoin_OBJECTS) $(TEST_BINARY)
+	rm -f $(CLEAN_HUNTCOIN_TEST) $(test_test_huntcoin_OBJECTS) $(TEST_BINARY)
 
 check-local:
 	@echo "Running test/util/huntcoin-util-test.py..."

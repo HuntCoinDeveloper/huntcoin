@@ -218,7 +218,7 @@ def main():
 
     enable_wallet = config["components"].getboolean("ENABLE_WALLET")
     enable_utils = config["components"].getboolean("ENABLE_UTILS")
-    enable_huntcoind = config["components"].getboolean("ENABLE_BITCOIND")
+    enable_huntcoind = config["components"].getboolean("ENABLE_HUNTCOIND")
 
     if config["environment"]["EXEEXT"] == ".exe" and not args.force:
         # https://github.com/huntcoin/huntcoin/commit/d52802551752140cf41f0d9a225a43e84404d3e9
@@ -293,9 +293,9 @@ def run_tests(test_list, src_dir, build_dir, exeext, tmpdir, jobs=1, enable_cove
         print("%sWARNING!%s There is a cache directory here: %s. If tests fail unexpectedly, try deleting the cache directory." % (BOLD[1], BOLD[0], cache_dir))
 
     #Set env vars
-    if "BITCOIND" not in os.environ:
-        os.environ["BITCOIND"] = build_dir + '/src/huntcoind' + exeext
-        os.environ["BITCOINCLI"] = build_dir + '/src/huntcoin-cli' + exeext
+    if "HUNTCOIND" not in os.environ:
+        os.environ["HUNTCOIND"] = build_dir + '/src/huntcoind' + exeext
+        os.environ["HUNTCOINCLI"] = build_dir + '/src/huntcoin-cli' + exeext
 
     tests_dir = src_dir + '/test/functional/'
 

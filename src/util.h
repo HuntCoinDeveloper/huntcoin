@@ -9,8 +9,8 @@
  * Server/client environment: argument handling, config file parsing,
  * logging, thread wrappers, startup time
  */
-#ifndef BITCOIN_UTIL_H
-#define BITCOIN_UTIL_H
+#ifndef HUNTCOIN_UTIL_H
+#define HUNTCOIN_UTIL_H
 
 #if defined(HAVE_CONFIG_H)
 #include <config/huntcoin-config.h>
@@ -72,8 +72,8 @@ extern bool fLogIPs;
 extern std::atomic<bool> fReopenDebugLog;
 extern CTranslationInterface translationInterface;
 
-extern const char * const BITCOIN_CONF_FILENAME;
-extern const char * const BITCOIN_PID_FILENAME;
+extern const char * const HUNTCOIN_CONF_FILENAME;
+extern const char * const HUNTCOIN_PID_FILENAME;
 
 extern uint8_t currentAlgo;
 extern std::atomic<uint32_t> logCategories;
@@ -384,4 +384,4 @@ std::unique_ptr<T> MakeUnique(Args&&... args)
     return std::unique_ptr<T>(new T(std::forward<Args>(args)...));
 }
 
-#endif // BITCOIN_UTIL_H
+#endif // HUNTCOIN_UTIL_H

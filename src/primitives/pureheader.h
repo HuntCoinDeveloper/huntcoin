@@ -4,8 +4,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_PRIMITIVES_PUREHEADER_H
-#define BITCOIN_PRIMITIVES_PUREHEADER_H
+#ifndef HUNTCOIN_PRIMITIVES_PUREHEADER_H
+#define HUNTCOIN_PRIMITIVES_PUREHEADER_H
 
 #include <primitives/mining_block.h>
 #include <primitives/block_dependencies.h>
@@ -198,4 +198,4 @@ public:
     }
 };
 
-#endif // BITCOIN_PRIMITIVES_PUREHEADER_H
+#endif // HUNTCOIN_PRIMITIVES_PUREHEADER_H

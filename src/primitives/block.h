@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_PRIMITIVES_BLOCK_H
-#define BITCOIN_PRIMITIVES_BLOCK_H
+#ifndef HUNTCOIN_PRIMITIVES_BLOCK_H
+#define HUNTCOIN_PRIMITIVES_BLOCK_H
 
 #include <auxpow.h>
 #include <primitives/pureheader.h>
@@ -153,4 +153,4 @@ struct CBlockLocator
     }
 };
 
-#endif // BITCOIN_PRIMITIVES_BLOCK_H
+#endif // HUNTCOIN_PRIMITIVES_BLOCK_H

@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_VERSION_H
-#define BITCOIN_VERSION_H
+#ifndef HUNTCOIN_VERSION_H
+#define HUNTCOIN_VERSION_H
 
 /**
  * network protocol versioning
@@ -43,4 +43,4 @@ static const int SHORT_IDS_BLOCKS_VERSION = 70001;
 //! not banning for invalid compact blocks starts with this version
 static const int INVALID_CB_NO_BAN_VERSION = 70002;
 
-#endif // BITCOIN_VERSION_H
+#endif // HUNTCOIN_VERSION_H
