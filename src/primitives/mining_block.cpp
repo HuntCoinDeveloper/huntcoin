@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2017 The Bitcoin Core developers
+// Copyright (c) 2009-2017 The Funcoin Core developers
 // Copyright (c) 2009-2017 The DigiByte Core developers
 // Copyright (c) 2013-2014 Phoenixcoin Developers
 // Copyright (c) 2016-2018 The CryptoCoderz Team / Espers
