@@ -1,8 +1,8 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2017 The Funcoin Core developers
 // Copyright (c) 2016-2017 The Zcash developers
-// Copyright (c) 2018 The Bitcoin Private developers
-// Copyright (c) 2017-2018 The Bitcoin Gold developers
+// Copyright (c) 2018 The Funcoin Private developers
+// Copyright (c) 2017-2018 The Funcoin Gold developers
 // Copyright (c) 2018 The Huntcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
