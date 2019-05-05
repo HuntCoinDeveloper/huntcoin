@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2017 The Funcoin Core developers
+// Copyright (c) 2014-2017 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -11,7 +11,7 @@
 
 /**
  * CBaseChainParams defines the base parameters (shared between huntcoin-cli and huntcoind)
- * of a given instance of the Bitcoin system.
+ * of a given instance of the Huntcoin system.
  */
 class CBaseChainParams
 {

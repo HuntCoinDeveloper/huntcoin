@@ -1,5 +1,5 @@
 Win32, Linux, MacOSX and source releases for huntcoin v0.3.23 have been uploaded to
-https://sourceforge.net/projects/huntcoin/files/Bitcoin/huntcoin-0.3.23/
+https://sourceforge.net/projects/huntcoin/files/Huntcoin/huntcoin-0.3.23/
 
 This is another quick bugfix release, trying to deal with the influx of new huntcoin users.
 

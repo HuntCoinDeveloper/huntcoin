@@ -1050,8 +1050,8 @@
         <translation>Craidd Huntcoin</translation>
     </message>
 	<message>
-        <source>Bitcoin Core</source>
-        <translation>Craidd Bitcoin</translation>
+        <source>Huntcoin Core</source>
+        <translation>Craidd Huntcoin</translation>
     </message>
     <message>
         <source>Information</source>

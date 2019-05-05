@@ -58,7 +58,7 @@ Represents the view to a single wallet.
 
 ### Other .h/cpp files
 
-* UI elements like BitcoinAmountField, which inherit from QWidget.
+* UI elements like HuntcoinAmountField, which inherit from QWidget.
 * `huntcoinstrings.cpp`: automatically generated
 * `huntcoinunits.(h/cpp)`: HUNT / mHUNT / etc handling
 * `callback.h`

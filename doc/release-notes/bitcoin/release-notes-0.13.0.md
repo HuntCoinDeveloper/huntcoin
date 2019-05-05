@@ -1,4 +1,4 @@
-Bitcoin Core version 0.13.0 is now available from:
+Huntcoin Core version 0.13.0 is now available from:
 
   <https://huntcoin.org/bin/huntcoin-core-0.13.0/>
 
@@ -21,7 +21,7 @@ an OS initially released in 2001. This means that not even critical security
 updates will be released anymore. Without security updates, using a huntcoin
 wallet on a XP machine is irresponsible at least.
 
-In addition to that, with 0.12.x there have been varied reports of Bitcoin Core
+In addition to that, with 0.12.x there have been varied reports of Huntcoin Core
 randomly crashing on Windows XP. It is [not clear](https://github.com/huntcoin/huntcoin/issues/7681#issuecomment-217439891)
 what the source of these crashes is, but it is likely that upstream
 libraries such as Qt are no longer being tested on XP.
@@ -76,7 +76,7 @@ table by any user on the system.
 C++11 and Python 3
 ------------------
 
-Various code modernizations have been done. The Bitcoin Core code base has
+Various code modernizations have been done. The Huntcoin Core code base has
 started using C++11. This means that a C++11-capable compiler is now needed for
 building. Effectively this means GCC 4.7 or higher, or Clang 3.3 or higher.
 
@@ -156,7 +156,7 @@ You can't disable HD key generation once you have created a HD wallet.
 
 There is no distinction between internal (change) and external keys.
 
-HD wallets are incompatible with older versions of Bitcoin Core.
+HD wallets are incompatible with older versions of Huntcoin Core.
 
 [Pull request](https://github.com/huntcoin/huntcoin/pull/8035/files), [BIP 32](https://github.com/huntcoin/bips/blob/master/bip-0032.mediawiki)
 
@@ -172,7 +172,7 @@ The code preparations for Segregated Witness ("segwit"), as described in [BIP
 finished and included in this release.  However, BIP 141 does not yet specify
 activation parameters on mainnet, and so this release does not support segwit
 use on mainnet.  Testnet use is supported, and after BIP 141 is updated with
-proposed parameters, a future release of Bitcoin Core is expected that
+proposed parameters, a future release of Huntcoin Core is expected that
 implements those parameters for mainnet.
 
 Furthermore, because segwit activation is not yet specified for mainnet,

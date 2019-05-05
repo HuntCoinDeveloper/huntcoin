@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# Copyright (c) 2012-2017 The Funcoin Core developers
+# Copyright (c) 2012-2017 The Bittcoin Core developers
 # Copyright (c) 2017 The Huntcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.

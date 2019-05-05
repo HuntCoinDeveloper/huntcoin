@@ -1,5 +1,5 @@
-Bitcoin version 0.7.0 is now available for download at:
-  http://sourceforge.net/projects/huntcoin/files/Bitcoin/huntcoin-0.7.0/
+Huntcoin version 0.7.0 is now available for download at:
+  http://sourceforge.net/projects/huntcoin/files/Huntcoin/huntcoin-0.7.0/
 
 We recommend that everybody running prior versions of huntcoind/Huntcoin-Qt
 upgrade to this release, except for users running Mac OSX 10.5.
@@ -45,7 +45,7 @@ Incompatible Changes
   and 'getrawmempool' commands.
 * Remove deprecated RPC 'getblocknumber'
 
-Bitcoin Improvement Proposals implemented
+Huntcoin Improvement Proposals implemented
 
 BIP 22 - 'getblocktemplate', 'submitblock' RPCs
 BIP 34 - block version 2, height in coinbase

@@ -3288,7 +3288,7 @@
         <translation>Huntcoin-ydin</translation>
     </message>
 	<message>
-        <source>Bitcoin Core</source>
+        <source>Huntcoin Core</source>
         <translation>Huntcoin-ydin</translation>
     </message>
     <message>

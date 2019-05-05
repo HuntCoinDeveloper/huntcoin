@@ -1,4 +1,4 @@
-Bitcoin Core version 0.9.2 is now available from:
+Huntcoin Core version 0.9.2 is now available from:
 
   https://huntcoin.org/bin/0.9.2/
 

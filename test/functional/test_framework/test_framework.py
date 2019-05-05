@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2014-2017 The Funcoin Core developers
+# Copyright (c) 2014-2017 The Bitcoin Core developers
 # Copyright (c) 2018 The Huntcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -42,7 +42,7 @@ TEST_EXIT_PASSED = 0
 TEST_EXIT_FAILED = 1
 TEST_EXIT_SKIPPED = 77
 
-class BitcoinTestFramework():
+class HuntcoinTestFramework():
     """Base class for a huntcoin test script.
 
     Individual huntcoin test scripts should subclass this class and override the set_test_params() and run_test() methods.
@@ -363,7 +363,7 @@ class BitcoinTestFramework():
         self.log.addHandler(ch)
 
         if self.options.trace_rpc:
-            rpc_logger = logging.getLogger("BitcoinRPC")
+            rpc_logger = logging.getLogger("HuntcoinRPC")
             rpc_logger.setLevel(logging.DEBUG)
             rpc_handler = logging.StreamHandler(sys.stdout)
             rpc_handler.setLevel(logging.DEBUG)
@@ -446,7 +446,7 @@ class BitcoinTestFramework():
         for i in range(self.num_nodes):
             initialize_datadir(self.options.tmpdir, i)
 
-class ComparisonTestFramework(BitcoinTestFramework):
+class ComparisonTestFramework(HuntcoinTestFramework):
     """Test framework for doing p2p comparison testing
 
     Sets up some huntcoind binaries:

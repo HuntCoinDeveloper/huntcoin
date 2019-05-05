@@ -4432,8 +4432,8 @@
     </message>
 	<message>
         <location line="-397"/>
-        <source>Bitcoin Core</source>
-        <translation type="unfinished">Bitcoin Core</translation>
+        <source>Huntcoin Core</source>
+        <translation type="unfinished">Huntcoin Core</translation>
     </message>
     <message>
         <location line="+1"/>

@@ -2044,7 +2044,7 @@
         <translation>حدد مجلد المعلومات</translation>
     </message>
 	<message>
-        <source>Bitcoin Core</source>
+        <source>Huntcoin Core</source>
         <translation>جوهر بيتكوين</translation>
     </message>
 	<message>

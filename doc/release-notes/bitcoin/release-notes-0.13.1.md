@@ -1,4 +1,4 @@
-Bitcoin Core version 0.13.1 is now available from:
+Huntcoin Core version 0.13.1 is now available from:
 
   <https://huntcoin.org/bin/huntcoin-core-0.13.1/>
 
@@ -22,7 +22,7 @@ an OS initially released in 2001. This means that not even critical security
 updates will be released anymore. Without security updates, using a huntcoin
 wallet on a XP machine is irresponsible at least.
 
-In addition to that, with 0.12.x there have been varied reports of Bitcoin Core
+In addition to that, with 0.12.x there have been varied reports of Huntcoin Core
 randomly crashing on Windows XP. It is [not clear](https://github.com/huntcoin/huntcoin/issues/7681#issuecomment-217439891)
 what the source of these crashes is, but it is likely that upstream
 libraries such as Qt are no longer being tested on XP.
@@ -56,9 +56,9 @@ covered by the txid. This provides several immediate benefits:
   identifier (txid) of transactions without referencing the witness, which can
   sometimes be changed by third-parties (such as miners) or by co-signers in a
   multisig spend. This solves all known cases of unwanted transaction
-  malleability, which is a problem that makes programming Bitcoin wallet
+  malleability, which is a problem that makes programming Huntcoin wallet
   software more difficult and which seriously complicates the design of smart
-  contracts for Bitcoin.
+  contracts for Huntcoin.
 
 - **Capacity increase:** Segwit transactions contain new fields that are not
   part of the data currently used to calculate the size of a block, which
@@ -72,7 +72,7 @@ covered by the txid. This provides several immediate benefits:
   following section for details).
 
 - **Weighting data based on how it affects node performance:** Some parts of
-  each Bitcoin block need to be stored by nodes in order to validate future
+  each Huntcoin block need to be stored by nodes in order to validate future
   blocks; other parts of a block can be immediately forgotten (pruned) or used
   only for helping other nodes sync their copy of the block chain.  One large
   part of the immediately prunable data are transaction signatures (witnesses),
@@ -105,7 +105,7 @@ covered by the txid. This provides several immediate benefits:
   different signature method that doesn't suffer from this problem and doesn't
   have any unwanted side-effects.
 
-- **Increased security for multisig:** Bitcoin addresses (both P2PKH addresses
+- **Increased security for multisig:** Huntcoin addresses (both P2PKH addresses
   that start with a '1' and P2SH addresses that start with a '3') use a hash
   function known as RIPEMD-160.  For P2PKH addresses, this provides about 160
   bits of security---which is beyond what cryptographers believe can be broken
@@ -119,7 +119,7 @@ covered by the txid. This provides several immediate benefits:
   Curve Digital Security Algorithm [ECDSA].)
 
 - **More efficient almost-full-node security** Satoshi Nakamoto's original
-  Bitcoin paper describes a method for allowing newly-started full nodes to
+  Huntcoin paper describes a method for allowing newly-started full nodes to
   skip downloading and validating some data from historic blocks that are
   protected by large amounts of proof of work.  Unfortunately, Nakamoto's
   method can't guarantee that a newly-started node using this method will
@@ -131,18 +131,18 @@ covered by the txid. This provides several immediate benefits:
   (specifically, the segregated witnesses) while still ensuring that the node
   can build an accurate copy of the UTXO set for the block chain with the most
   proof of work.  Segwit enables this capability at the consensus layer, but
-  note that Bitcoin Core does not provide an option to use this capability as
+  note that Huntcoin Core does not provide an option to use this capability as
   of this 0.13.1 release.
 
 - **Script versioning:** Segwit makes it easy for future soft forks to allow
-  Bitcoin users to individually opt-in to almost any change in the Bitcoin
+  Huntcoin users to individually opt-in to almost any change in the Huntcoin
   Script language when those users receive new transactions.  Features
-  currently being researched by Bitcoin Core contributors that may use this
+  currently being researched by Huntcoin Core contributors that may use this
   capability include support for Schnorr signatures, which can improve the
   privacy and efficiency of multisig transactions (or transactions with
   multiple inputs), and Merklized Abstract Syntax Trees (MAST), which can
   improve the privacy and efficiency of scripts with two or more conditions.
-  Other Bitcoin community members are studying several other improvements
+  Other Huntcoin community members are studying several other improvements
   that can be made using script versioning.
 
 Activation for the segwit soft fork is being managed using BIP9
@@ -183,7 +183,7 @@ a third-party to insert data into other people's transactions, changing
 the transaction's txid (called transaction malleability) and possibly
 causing other problems.
 
-Since Bitcoin Core 0.10.0, nodes have defaulted to only relaying and
+Since Huntcoin Core 0.10.0, nodes have defaulted to only relaying and
 mining transactions whose dummy element was a null value (0x00, also
 called OP_0).  The null dummy soft fork turns this relay rule into a
 consensus rule both for non-segwit transactions and segwit transactions,

@@ -1922,8 +1922,8 @@
         <translation>Opsies:</translation>
     </message>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin Kern</translation>
+        <source>Huntcoin Core</source>
+        <translation>Huntcoin Kern</translation>
     </message>
     <message>
         <source>Huntcoin Core</source>

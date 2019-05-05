@@ -1,4 +1,4 @@
-// Copyright (c) 2011-2017 The Funcoin Core developers
+// Copyright (c) 2011-2017 The Bitcoin Core developers
 // Copyright (c) 2014-2017 The Dash Core developers
 // Copyright (c) 2017-2018 The Huntcoin Core developers
 // Distributed under the MIT software license, see the accompanying
@@ -1014,7 +1014,7 @@ void HuntcoinGUI::message(const QString &title, const QString &message, unsigned
             break;
         }
     }
-    // Append title to "Bitcoin - "
+    // Append title to "Huntcoin - "
     if (!msgType.isEmpty())
         strTitle += " - " + msgType;
 

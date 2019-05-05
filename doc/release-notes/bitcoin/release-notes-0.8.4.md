@@ -1,5 +1,5 @@
 Huntcoin-Qt version 0.8.4 is now available from:
-  http://sourceforge.net/projects/huntcoin/files/Bitcoin/huntcoin-0.8.4/
+  http://sourceforge.net/projects/huntcoin/files/Huntcoin/huntcoin-0.8.4/
 
 This is a maintenance release to fix a critical bug and three
 security issues; we urge all users to upgrade.
@@ -59,7 +59,7 @@ Linux: clicking on huntcoin: links was broken if you were using
 a Gnome-based desktop.
 
 Fix a hang-at-shutdown bug that only affects users that compile
-their own version of Bitcoin against Boost versions 1.50-1.52.
+their own version of Huntcoin against Boost versions 1.50-1.52.
 
 Other changes
 -------------

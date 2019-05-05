@@ -6,12 +6,12 @@
 # Test the merge-mining RPC interface:
 # getauxblock, createauxblock, submitauxblock
 
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import HuntcoinTestFramework
 from test_framework.util import *
 
 from test_framework import auxpow
 
-class AuxpowMiningTest (BitcoinTestFramework):
+class AuxpowMiningTest (HuntcoinTestFramework):
 
   def set_test_params (self):
     self.num_nodes = 2

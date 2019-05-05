@@ -1898,7 +1898,7 @@
         <translation>Kerno de Huntcoin</translation>
     </message>
 	<message>
-        <source>Bitcoin Core</source>
+        <source>Huntcoin Core</source>
         <translation>Kerno de Bitmono</translation>
     </message>
     <message>

@@ -1,4 +1,4 @@
-Bitcoin Core version 0.12.1 is now available from:
+Huntcoin Core version 0.12.1 is now available from:
 
   <https://huntcoin.org/bin/huntcoin-core-0.12.1/>
 
@@ -27,10 +27,10 @@ Downgrade warning
 
 Because release 0.12.0 and later will obfuscate the chainstate on every
 fresh sync or reindex, the chainstate is not backwards-compatible with
-pre-0.12 versions of Bitcoin Core or other software.
+pre-0.12 versions of Huntcoin Core or other software.
 
 If you want to downgrade after you have done a reindex with 0.12.0 or later,
-you will need to reindex when you first start Bitcoin Core version 0.11 or
+you will need to reindex when you first start Huntcoin Core version 0.11 or
 earlier.
 
 Notable changes
@@ -74,7 +74,7 @@ BIP112 soft fork to enforce OP_CHECKSEQUENCEVERIFY
 --------------------------------------------------
 
 [BIP112][] redefines the existing OP_NOP3 as OP_CHECKSEQUENCEVERIFY (CSV)
-for a new opcode in the Bitcoin scripting system that in combination with
+for a new opcode in the Huntcoin scripting system that in combination with
 [BIP68][] allows execution pathways of a script to be restricted based
 on the age of the output being spent.
 
@@ -84,11 +84,11 @@ For more information about the implementation, see
 BIP113 locktime enforcement soft fork
 -------------------------------------
 
-Bitcoin Core 0.11.2 previously introduced mempool-only locktime
+Huntcoin Core 0.11.2 previously introduced mempool-only locktime
 enforcement using GetMedianTimePast(). This release seeks to
 consensus enforce the rule.
 
-Bitcoin transactions currently may specify a locktime indicating when
+Huntcoin transactions currently may specify a locktime indicating when
 they may be added to a valid block.  Current consensus rules require
 that blocks have a block header time greater than the locktime specified
 in any transaction in that block.

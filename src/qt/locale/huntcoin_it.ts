@@ -3365,8 +3365,8 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <translation>Huntcoin Core</translation>
     </message>
 	<message>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin Core</translation>
+        <source>Huntcoin Core</source>
+        <translation>Huntcoin Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

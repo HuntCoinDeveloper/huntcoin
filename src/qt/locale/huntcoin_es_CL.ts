@@ -784,7 +784,7 @@
         <translation>huntcoin core</translation>
     </message>
 	<message>
-        <source>Bitcoin Core</source>
+        <source>Huntcoin Core</source>
         <translation>huntcoin core</translation>
     </message>
     <message>

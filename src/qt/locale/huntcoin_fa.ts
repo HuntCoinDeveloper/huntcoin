@@ -1714,7 +1714,7 @@
         <translation> هسته Huntcoin </translation>
     </message>
 	<message>
-        <source>Bitcoin Core</source>
+        <source>Huntcoin Core</source>
         <translation> هسته Huntcoin </translation>
     </message>
     <message>

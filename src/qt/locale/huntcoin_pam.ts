@@ -764,8 +764,8 @@
         <translation>Kapilubluban ning Huntcoin</translation>
     </message>
 	<message>
-        <source>Bitcoin Core</source>
-        <translation>Kapilubluban ning Bitcoin</translation>
+        <source>Huntcoin Core</source>
+        <translation>Kapilubluban ning Huntcoin</translation>
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>

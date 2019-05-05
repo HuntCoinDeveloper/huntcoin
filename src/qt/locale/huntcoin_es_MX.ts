@@ -652,8 +652,8 @@
         <translation>nucleo Huntcoin</translation>
     </message>
 	<message>
-        <source>Bitcoin Core</source>
-        <translation>nucleo Bitcoin</translation>
+        <source>Huntcoin Core</source>
+        <translation>nucleo Huntcoin</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>

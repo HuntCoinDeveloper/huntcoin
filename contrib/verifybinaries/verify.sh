@@ -1,5 +1,5 @@
 #!/bin/bash
-# Copyright (c) 2016 The Funcoin Core developers
+# Copyright (c) 2016 The Bittcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -123,7 +123,7 @@ if [ $RET -ne 0 ]; then
       echo "Bad signature."
    elif [ $RET -eq 2 ]; then
       #or if a gpg error has occurred
-      echo "gpg error. Do you have the Bitcoin Core binary release signing key installed?"
+      echo "gpg error. Do you have the Huntcoin Core binary release signing key installed?"
    fi
 
    echo "gpg output:"

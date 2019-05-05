@@ -12,7 +12,7 @@ Gavin Andresen:
 * Clean shutdown on SIGTERM on Linux.
 
 Download:
-http://sourceforge.net/projects/huntcoin/files/Bitcoin/huntcoin-0.3.13/
+http://sourceforge.net/projects/huntcoin/files/Huntcoin/huntcoin-0.3.13/
 
 (Thanks Laszlo for the Mac OSX build!)
 

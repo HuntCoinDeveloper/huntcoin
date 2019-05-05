@@ -1,4 +1,4 @@
-// Copyright (c) 2011-2017 The Funcoin Core developers
+// Copyright (c) 2011-2017 The Bitcoin Core developers
 // Copyright (c) 2014-2017 The Dash Core developers
 // Copyright (c) 2017-2018 The Huntcoin Core developers
 // Distributed under the MIT software license, see the accompanying
@@ -132,8 +132,8 @@ void setupAddressWidget(QValidatedLineEdit *widget, QWidget *parent)
     widget->setPlaceholderText(QObject::tr("Enter a Huntcoin address (e.g. %1)").arg(
         QString::fromStdString(DummyAddress(Params()))));
 #endif
-    widget->setValidator(new BitcoinAddressEntryValidator(parent));
-    widget->setCheckValidator(new BitcoinAddressCheckValidator(parent));
+    widget->setValidator(new HuntcoinAddressEntryValidator(parent));
+    widget->setCheckValidator(new HuntcoinAddressCheckValidator(parent));
 }
 
 void setupAmountWidget(QLineEdit *widget, QWidget *parent)
@@ -145,7 +145,7 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
     widget->setAlignment(Qt::AlignRight|Qt::AlignVCenter);
 }
 
-bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
+bool parseHuntcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
     // return if URI is not valid or is no huntcoin: URI
     if(!uri.isValid() || uri.scheme() != QString("huntcoin"))
@@ -215,7 +215,7 @@ bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
     return true;
 }
 
-bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
+bool parseHuntcoinURI(QString uri, SendCoinsRecipient *out)
 {
     // Convert huntcoin:// to huntcoin:
     //
@@ -226,10 +226,10 @@ bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
         uri.replace(0, 10, "huntcoin:");
     }
     QUrl uriInstance(uri);
-    return parseBitcoinURI(uriInstance, out);
+    return parseHuntcoinURI(uriInstance, out);
 }
 
-QString formatBitcoinURI(const SendCoinsRecipient &info)
+QString formatHuntcoinURI(const SendCoinsRecipient &info)
 {
     QString ret = QString("huntcoin:%1").arg(info.address);
     int paramCount = 0;
@@ -432,7 +432,7 @@ void openDebugLogfile()
         QDesktopServices::openUrl(QUrl::fromLocalFile(boostPathToQString(pathDebug)));
 }
 
-bool openBitcoinConf()
+bool openHuntcoinConf()
 {
     boost::filesystem::path pathConfig = GetConfigFile(gArgs.GetArg("-conf", HUNTCOIN_CONF_FILENAME));
 
@@ -649,7 +649,7 @@ fs::path static StartupShortcutPath()
 
 bool GetStartOnSystemStartup()
 {
-    // check for Bitcoin*.lnk
+    // check for Huntcoin*.lnk
     return fs::exists(StartupShortcutPath());
 }
 

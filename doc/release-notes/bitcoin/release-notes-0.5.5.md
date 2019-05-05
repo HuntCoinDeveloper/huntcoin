@@ -5,7 +5,7 @@ huntcoind and Huntcoin-Qt version 0.6.0.7 are also tagged in git, but it is reco
 
 These are bugfix-only releases.
 
-Please report bugs by replying to this forum thread. Note that the 0.4.x wxBitcoin GUI client is no longer maintained nor supported. If someone would like to step up to maintain this, they should contact Luke-Jr.
+Please report bugs by replying to this forum thread. Note that the 0.4.x wxHuntcoin GUI client is no longer maintained nor supported. If someone would like to step up to maintain this, they should contact Luke-Jr.
 
 BUG FIXES
 

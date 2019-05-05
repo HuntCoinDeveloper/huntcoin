@@ -43,7 +43,7 @@ The interface is defined in the C header `huntcoinconsensus.h` located in  `src/
 - `huntcoinconsensus_ERR_AMOUNT_REQUIRED` - Input amount is required if WITNESS is used
 
 ### Example Implementations
-- [NBitcoin](https://github.com/NicolasDorier/NBitcoin/blob/master/NBitcoin/Script.cs#L814) (.NET Bindings)
+- [NHuntcoin](https://github.com/NicolasDorier/NHuntcoin/blob/master/NHuntcoin/Script.cs#L814) (.NET Bindings)
 - [node-libhuntcoinconsensus](https://github.com/bitpay/node-libhuntcoinconsensus) (Node.js Bindings)
 - [java-libhuntcoinconsensus](https://github.com/dexX7/java-libhuntcoinconsensus) (Java Bindings)
 - [huntcoinconsensus-php](https://github.com/Bit-Wasp/huntcoinconsensus-php) (PHP Bindings)

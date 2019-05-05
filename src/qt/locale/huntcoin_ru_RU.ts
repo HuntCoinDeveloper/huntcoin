@@ -323,7 +323,7 @@
     </message>
     <message>
         <source>Huntcoin</source>
-        <translation>Bitcoin Core</translation>
+        <translation>Huntcoin Core</translation>
     </message>
 	<message>
         <source>Huntcoin</source>
@@ -486,7 +486,7 @@
     </message>
     <message>
         <source>Huntcoin</source>
-        <translation>Bitcoin Core</translation>
+        <translation>Huntcoin Core</translation>
     </message>
 	<message>
         <source>Huntcoin</source>
@@ -936,8 +936,8 @@
         <translation>Huntcoin Core</translation>
     </message>
 	<message>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin Core</translation>
+        <source>Huntcoin Core</source>
+        <translation>Huntcoin Core</translation>
     </message>
     <message>
         <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>

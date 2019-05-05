@@ -800,8 +800,8 @@
         <translation>Berthama Huntcoin</translation>
     </message>
 	<message>
-        <source>Bitcoin Core</source>
-        <translation>Berthama Bitcoin</translation>
+        <source>Huntcoin Core</source>
+        <translation>Berthama Huntcoin</translation>
     </message>
     <message>
         <source>Information</source>

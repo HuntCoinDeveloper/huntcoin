@@ -1,5 +1,5 @@
-Binaries for Bitcoin version 0.3.21 are available at:
-  https://sourceforge.net/projects/huntcoin/files/Bitcoin/huntcoin-0.3.21/
+Binaries for Huntcoin version 0.3.21 are available at:
+  https://sourceforge.net/projects/huntcoin/files/Huntcoin/huntcoin-0.3.21/
 
 Changes and new features from the 0.3.20 release include:
 

@@ -1,5 +1,5 @@
-Bitcoin version 0.7.1 is now available from:
-  http://sourceforge.net/projects/huntcoin/files/Bitcoin/huntcoin-0.7.1/
+Huntcoin version 0.7.1 is now available from:
+  http://sourceforge.net/projects/huntcoin/files/Huntcoin/huntcoin-0.7.1/
 
 This is a bug-fix minor release.
 

@@ -978,8 +978,8 @@
         <translation>Huntcoin branduolys</translation>
     </message>
 	<message>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin branduolys</translation>
+        <source>Huntcoin Core</source>
+        <translation>Huntcoin branduolys</translation>
     </message>
     <message>
         <source>Error opening block database</source>

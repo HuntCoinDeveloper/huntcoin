@@ -1,4 +1,4 @@
-Bitcoin Core version *0.15.0.1* is now available from:
+Huntcoin Core version *0.15.0.1* is now available from:
 
   <https://huntcoin.org/bin/huntcoin-core-0.15.0.1/>
 
@@ -51,10 +51,10 @@ processing the entire blockchain.
 Compatibility
 ==============
 
-Bitcoin Core is extensively tested on multiple operating systems using
+Huntcoin Core is extensively tested on multiple operating systems using
 the Linux kernel, macOS 10.8+, and Windows Vista and later. Windows XP is not supported.
 
-Bitcoin Core should also work on most other Unix-like systems but is not
+Huntcoin Core should also work on most other Unix-like systems but is not
 frequently tested on them.
 
 Notable changes

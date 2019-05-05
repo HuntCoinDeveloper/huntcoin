@@ -3106,8 +3106,8 @@
         <translation>Imposibil de pornit serverul HTTP. Pentru detalii vezi logul de depanare.</translation>
     </message>
     <message>
-        <source>Bitcoin Core</source>
-        <translation>Nucleul Bitcoin</translation>
+        <source>Huntcoin Core</source>
+        <translation>Nucleul Huntcoin</translation>
     </message>
 	<message>
         <source>Huntcoin Core</source>

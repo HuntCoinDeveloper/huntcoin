@@ -780,8 +780,8 @@
         <translation>Huntcoin Nucleus</translation>
     </message>
 	<message>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin Nucleus</translation>
+        <source>Huntcoin Core</source>
+        <translation>Huntcoin Nucleus</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>

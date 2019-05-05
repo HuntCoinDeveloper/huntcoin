@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2017 The Funcoin Core developers
+// Copyright (c) 2009-2017 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -49,7 +49,7 @@ static const unsigned int MAX_INV_SZ = 50000;
 static const unsigned int MAX_ADDR_TO_SEND = 1000;
 /**
  * Maximum length of incoming protocol messages (no message over 64 MiB is
- * currently acceptable).  Bitcoin has 4 MiB here, but we need more space
+ * currently acceptable).  Huntcoin has 4 MiB here, but we need more space
  * to allow for 2,000 block headers with auxpow.
  * Because of Equihash Auxpow headers, we choosed 64 MiB here.
  */

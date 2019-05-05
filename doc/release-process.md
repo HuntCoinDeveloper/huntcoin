@@ -273,14 +273,14 @@ huntcoin.org (see below for huntcoin.org update instructions).
 
 - Update huntcoin.org version
 
-  - First, check to see if the Bitcoin.org maintainers have prepared a
+  - First, check to see if the Huntcoin.org maintainers have prepared a
     release: https://github.com/huntcoin-dot-org/huntcoin.org/labels/Releases
 
       - If they have, it will have previously failed their Travis CI
         checks because the final release files weren't uploaded.
         Trigger a Travis CI rebuild---if it passes, merge.
 
-  - If they have not prepared a release, follow the Bitcoin.org release
+  - If they have not prepared a release, follow the Huntcoin.org release
     instructions: https://github.com/huntcoin-dot-org/huntcoin.org#release-notes
 
   - After the pull request is merged, the website will automatically show the newest version within 15 minutes, as well
@@ -290,13 +290,13 @@ huntcoin.org (see below for huntcoin.org update instructions).
 
   - huntcoin-dev and huntcoin-core-dev mailing list
 
-  - Bitcoin Core announcements list https://huntcoincore.org/en/list/announcements/join/
+  - Huntcoin Core announcements list https://huntcoincore.org/en/list/announcements/join/
 
   - huntcoincore.org blog post
 
   - Update title of #huntcoin on Freenode IRC
 
-  - Optionally twitter, reddit /r/Bitcoin, ... but this will usually sort out itself
+  - Optionally twitter, reddit /r/Huntcoin, ... but this will usually sort out itself
 
   - Notify BlueMatt so that he can start building [the PPAs](https://launchpad.net/~huntcoin/+archive/ubuntu/huntcoin)
 

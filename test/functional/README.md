@@ -23,7 +23,7 @@ don't have test cases for.
 - Avoid wildcard imports where possible
 - Use a module-level docstring to describe what the test is testing, and how it
   is testing it.
-- When subclassing the BitcoinTestFramwork, place overrides for the
+- When subclassing the HuntcoinTestFramwork, place overrides for the
   `set_test_params()`, `add_options()` and `setup_xxxx()` methods at the top of
   the subclass, then locally-defined helper methods, then the `run_test()` method.
 
@@ -79,7 +79,7 @@ implements the test logic.
 
 - `P2PConnection` is the class used to connect to a huntcoind.  `P2PInterface`
 contains the higher level logic for processing P2P payloads and connecting to
-the Bitcoin Core node application logic. For custom behaviour, subclass the
+the Huntcoin Core node application logic. For custom behaviour, subclass the
 P2PInterface object and override the callback methods.
 
 - Call `network_thread_start()` after all `P2PInterface` objects are created to
@@ -94,7 +94,7 @@ Examples tests are `p2p_unrequested_blocks.py`, `p2p_compactblocks.py`.
 - Comptool is a Testing framework for writing tests that compare the block/tx acceptance
 behavior of a huntcoind against 1 or more other huntcoind instances. It should not be used
 to write static tests with known outcomes, since that type of test is easier to write and
-maintain using the standard BitcoinTestFramework.
+maintain using the standard HuntcoinTestFramework.
 
 - Set the `num_nodes` variable (defined in `ComparisonTestFramework`) to start up
 1 or more nodes.  If using 1 node, then `--testbinary` can be used as a command line

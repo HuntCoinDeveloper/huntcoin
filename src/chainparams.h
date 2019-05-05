@@ -1,8 +1,8 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2017 The Funcoin Core developers
+// Copyright (c) 2009-2017 The Bittcoin Core developers
 // Copyright (c) 2016-2017 The Zcash developers
-// Copyright (c) 2018 The Funcoin Private developers
-// Copyright (c) 2017-2018 The Funcoin Gold developers
+// Copyright (c) 2018 The Bittcoin Private developers
+// Copyright (c) 2017-2018 The Bittcoin Gold developers
 // Copyright (c) 2018 The Huntcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -38,7 +38,7 @@ struct ChainTxData {
 
 /**
  * CChainParams defines various tweakable parameters of a given instance of the
- * Bitcoin system. There are three: the main network on which people trade goods
+ * Huntcoin system. There are three: the main network on which people trade goods
  * and services, the public test network which gets reset from time to time and
  * a regression test mode which is intended for private networks only. It has
  * minimal difficulty to ensure that blocks can be found instantly.

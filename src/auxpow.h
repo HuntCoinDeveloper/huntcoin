@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2014 The Funcoin Core developers
+// Copyright (c) 2009-2014 The Bittcoin Core developers
 // Copyright (c) 2014-2016 Daniel Kraft
 // Copyright (c) 2018 The Huntcoin Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
@@ -38,7 +38,7 @@ static const uint32_t CURRENT_AUXPOW_VERSION = 1;
  * Base class for CMerkleTx that just holds the fields and implements
  * serialisation.  This is the part that is needed for CAuxPow.  The other
  * functionality, needed by the wallet, is kept in CMerkleTx itself (defined
- * in wallet/wallet.h as in upstream Bitcoin).
+ * in wallet/wallet.h as in upstream Huntcoin).
  */
 class CBaseMerkleTx
 {

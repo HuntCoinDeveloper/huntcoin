@@ -3158,8 +3158,8 @@
         <translation>Huntcoin のコア</translation>
     </message>
 	<message>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin のコア</translation>
+        <source>Huntcoin Core</source>
+        <translation>Huntcoin のコア</translation>
     </message>
     <message>
         <source>The %s developers</source>

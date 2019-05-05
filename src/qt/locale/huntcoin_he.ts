@@ -2926,7 +2926,7 @@
         <translation>ריצה כסוכן ברקע וקבלת פקודות</translation>
     </message>
     <message>
-        <source>Bitcoin Core</source>
+        <source>Huntcoin Core</source>
         <translation>ליבת ביטקוין</translation>
     </message>
 	<message>

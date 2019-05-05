@@ -1,5 +1,5 @@
 Huntcoin-Qt version 0.8.2 is now available from:
-  http://sourceforge.net/projects/huntcoin/files/Bitcoin/huntcoin-0.8.2/
+  http://sourceforge.net/projects/huntcoin/files/Huntcoin/huntcoin-0.8.2/
 
 This is a maintenance release that fixes many bugs and includes
 a few small new features.

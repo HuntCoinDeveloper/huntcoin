@@ -157,7 +157,7 @@ developed on (CentOS 7).
 
 This RPM spec file is largely based upon the work of Michael Hampton at
 [Ringing Liberty](https://www.ringingliberty.com/huntcoin/). He has been
-packaging Bitcoin for Fedora at least since 2012.
+packaging Huntcoin for Fedora at least since 2012.
 
 Most of the differences between his packaging and this package are stylistic in
 nature. The major differences:

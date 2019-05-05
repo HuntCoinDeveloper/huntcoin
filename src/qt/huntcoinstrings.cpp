@@ -9,7 +9,7 @@
 #define UNUSED
 #endif
 static const char UNUSED *huntcoin_strings[] = {
-QT_TRANSLATE_NOOP("huntcoin-core", "Bitcoin Core"),
+QT_TRANSLATE_NOOP("huntcoin-core", "Huntcoin Core"),
 QT_TRANSLATE_NOOP("huntcoin-core", "Huntcoin Core"),
 QT_TRANSLATE_NOOP("huntcoin-core", "The %s developers"),
 QT_TRANSLATE_NOOP("huntcoin-core", ""

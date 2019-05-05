@@ -1,5 +1,5 @@
-Bitcoin version 0.6.0 is now available for download at:
-http://sourceforge.net/projects/huntcoin/files/Bitcoin/huntcoin-0.6.0/test/
+Huntcoin version 0.6.0 is now available for download at:
+http://sourceforge.net/projects/huntcoin/files/Huntcoin/huntcoin-0.6.0/test/
 
 This release includes more than 20 language localizations.
 More translations are welcome; join the

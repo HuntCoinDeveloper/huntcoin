@@ -3126,8 +3126,8 @@
         <translation>HTTP sunucusu başlatılamadı. Ayrıntılar için debug.log dosyasına bakınız.</translation>
     </message>
 	<message>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin Çekirdeği</translation>
+        <source>Huntcoin Core</source>
+        <translation>Huntcoin Çekirdeği</translation>
     </message>
     <message>
         <source>Huntcoin Core</source>

@@ -1,4 +1,4 @@
-Bitcoin Core version 0.11.0 is now available from:
+Huntcoin Core version 0.11.0 is now available from:
 
   <https://huntcoin.org/bin/huntcoin-core-0.11.0/>
 
@@ -25,7 +25,7 @@ Downgrade warning
 
 Because release 0.10.0 and later makes use of headers-first synchronization and
 parallel block download (see further), the block files and databases are not
-backwards-compatible with pre-0.10 versions of Bitcoin Core or other software:
+backwards-compatible with pre-0.10 versions of Huntcoin Core or other software:
 
 * Blocks will be stored on disk out of order (in the order they are
 received, really), which makes it incompatible with some tools or
@@ -86,7 +86,7 @@ related to the blockchain in the huntcoin system: the raw blocks as received ove
 the network (blk???.dat), the undo data (rev???.dat), the block index and the 
 UTXO set (both LevelDB databases). The databases are built from the raw data.
 
-Block pruning allows Bitcoin Core to delete the raw block and undo data once 
+Block pruning allows Huntcoin Core to delete the raw block and undo data once 
 it's been validated and used to build the databases. At that point, the raw data 
 is used only to relay blocks to other nodes, to handle reorganizations, to look 
 up old transactions (if -txindex is enabled or via the RPC/REST interfaces), or 
@@ -95,7 +95,7 @@ all blocks in the blockchain.
 
 The user specifies how much space to allot for block & undo files. The minimum 
 allowed is 550MB. Note that this is in addition to whatever is required for the 
-block index and UTXO databases. The minimum was chosen so that Bitcoin Core will 
+block index and UTXO databases. The minimum was chosen so that Huntcoin Core will 
 be able to maintain at least 288 blocks on disk (two days worth of blocks at 10 
 minutes per block). In rare instances it is possible that the amount of space 
 used will exceed the pruning target in order to keep the required last 288 
@@ -346,7 +346,7 @@ git merge commit are mentioned.
 - #5626 `ab0d798` Fix icon sizes and column width
 - #5683 `c7b22aa` add new osx dmg background picture
 - #5620 `7823598` Payment request expiration bug fix
-- #5729 `9c4a5a5` Allow unit changes for read-only BitcoinAmountField
+- #5729 `9c4a5a5` Allow unit changes for read-only HuntcoinAmountField
 - #5753 `0f44672` Add huntcoin logo to about screen
 - #5629 `a956586` Prevent amount overflow problem with payment requests
 - #5830 `215475a` Don't save geometry for options and about/help window
@@ -427,7 +427,7 @@ Thanks to everyone who directly contributed to this release:
 - azeteki
 - Ben Holden-Crowther
 - bikinibabe
-- BitcoinPRReadingGroup
+- HuntcoinPRReadingGroup
 - Blake Jakopovic
 - BtcDrak
 - charlescharles

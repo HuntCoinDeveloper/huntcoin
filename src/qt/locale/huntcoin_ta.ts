@@ -716,8 +716,8 @@
         <translation>Huntcoin மையம்</translation>
     </message>
 	<message>
-        <source>Bitcoin Core</source>
-        <translation>Bitcoin மையம்</translation>
+        <source>Huntcoin Core</source>
+        <translation>Huntcoin மையம்</translation>
     </message>
     <message>
         <source>(default: %u)</source>

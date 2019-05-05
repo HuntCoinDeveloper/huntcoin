@@ -1,5 +1,5 @@
 Huntcoin-Qt version 0.8.0 is now available from:
-  http://sourceforge.net/projects/huntcoin/files/Bitcoin/huntcoin-0.8.0/
+  http://sourceforge.net/projects/huntcoin/files/Huntcoin/huntcoin-0.8.0/
 
 This is a major release designed to improve performance and handle the
 increasing volume of transactions on the network.
@@ -31,7 +31,7 @@ details).
 Improvements
 ------------
 
-Mac and Windows binaries are signed with certificates owned by the Bitcoin
+Mac and Windows binaries are signed with certificates owned by the Huntcoin
 Foundation, to be compatible with the new security features in OSX 10.8 and
 Windows 8.
 
