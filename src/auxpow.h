@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2014 The Bittcoin Core developers
+// Copyright (c) 2009-2014 The Bitcoin Core developers
 // Copyright (c) 2014-2016 Daniel Kraft
 // Copyright (c) 2018 The Huntcoin Core developers
 // Distributed under the MIT/X11 software license, see the accompanying
