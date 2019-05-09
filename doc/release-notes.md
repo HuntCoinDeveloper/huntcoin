@@ -3,7 +3,7 @@ release-notes at release time)
 
 Huntcoin Core version *version* is now available from:
 
-  <https://huntcoin.org>
+  <https://huntcoin.africa>
 
 This is a new major version release, including new features, various bugfixes
 and performance improvements, as well as updated translations.

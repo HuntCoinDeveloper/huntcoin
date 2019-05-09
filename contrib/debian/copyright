@@ -7,7 +7,7 @@ Source: https://github.com/HuntCoinDeveloper/huntcoin
 Files: *
 Copyright: 2009-2018, Huntcoin Core Developers
 License: Expat
-Comment: The Huntcoin Core Developers encompasses the current developers listed on huntcoin.org,
+Comment: The Huntcoin Core Developers encompasses the current developers listed on huntcoin.africa,
          as well as the numerous contributors to the project.
 
 Files: debian/*

@@ -582,7 +582,7 @@ std::string HelpMessage(HelpMessageMode mode)
 std::string LicenseInfo()
 {
     const std::string URL_SOURCE_CODE = "<https://github.com/HuntCoinDeveloper/huntcoin>";
-    const std::string URL_WEBSITE = "<https://huntcoin.org>";
+    const std::string URL_WEBSITE = "<https://huntcoin.africa>";
 
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2009, COPYRIGHT_YEAR) + " ") + "\n" + CopyrightHoldersHUNT(strprintf(_("Copyright (C) %i-%i"), COPYRIGHT_HUNT_START, COPYRIGHT_YEAR) + " ") + "\n" +
            "\n" +

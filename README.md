@@ -3,7 +3,7 @@ Huntcoin Core integration/staging tree
 
 [![Build Status](https://travis-ci.org/huntcoin/huntcoin.svg?branch=master)](https://travis-ci.org/huntcoin/huntcoin)
 
-https://huntcoin.org
+https://huntcoin.africa
 
 What is Huntcoin?
 ----------------
@@ -15,7 +15,7 @@ out collectively by the network. Huntcoin Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Huntcoin Core software, see https://huntcoin.org/#downloads, or read the
+the Huntcoin Core software, see https://huntcoin.africa/#downloads, or read the
 [original Huntcoin whitepaper](https://huntcoincore.org/huntcoin.pdf).
 
 License

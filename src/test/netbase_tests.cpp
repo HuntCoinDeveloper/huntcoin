@@ -82,10 +82,10 @@ bool static TestSplitHost(std::string test, std::string host, int port)
 
 BOOST_AUTO_TEST_CASE(netbase_splithost)
 {
-    BOOST_CHECK(TestSplitHost("www.huntcoin.org", "www.huntcoin.org", -1));
-    BOOST_CHECK(TestSplitHost("[www.huntcoin.org]", "www.huntcoin.org", -1));
-    BOOST_CHECK(TestSplitHost("www.huntcoin.org:80", "www.huntcoin.org", 80));
-    BOOST_CHECK(TestSplitHost("[www.huntcoin.org]:80", "www.huntcoin.org", 80));
+    BOOST_CHECK(TestSplitHost("www.huntcoin.africa", "www.huntcoin.africa", -1));
+    BOOST_CHECK(TestSplitHost("[www.huntcoin.africa]", "www.huntcoin.africa", -1));
+    BOOST_CHECK(TestSplitHost("www.huntcoin.africa:80", "www.huntcoin.africa", 80));
+    BOOST_CHECK(TestSplitHost("[www.huntcoin.africa]:80", "www.huntcoin.africa", 80));
     BOOST_CHECK(TestSplitHost("127.0.0.1", "127.0.0.1", -1));
     BOOST_CHECK(TestSplitHost("127.0.0.1:8333", "127.0.0.1", 8333));
     BOOST_CHECK(TestSplitHost("[127.0.0.1]", "127.0.0.1", -1));

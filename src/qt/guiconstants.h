@@ -50,7 +50,7 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 36
 
 #define QAPP_ORG_NAME "Huntcoin"
-#define QAPP_ORG_DOMAIN "huntcoin.org"
+#define QAPP_ORG_DOMAIN "huntcoin.africa"
 #define QAPP_APP_NAME_DEFAULT "Huntcoin-Qt"
 #define QAPP_APP_NAME_TESTNET "Huntcoin-Qt-testnet"
 

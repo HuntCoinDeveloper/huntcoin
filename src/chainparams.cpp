@@ -208,8 +208,8 @@ public:
         // service bits we want, but we should get them updated to support all service bits wanted by any
         // release ASAP to avoid it where possible.
         vSeeds.emplace_back("134.255.221.7"); // Huntcoin base node
-        vSeeds.emplace_back("huntcoin.org"); // HuntCoin base node II
-        vSeeds.emplace_back("explorer.huntcoin.org"); // HuntCoin base node III
+        vSeeds.emplace_back("huntcoin.africa"); // HuntCoin base node II
+        vSeeds.emplace_back("explorer.huntcoin.africa"); // HuntCoin base node III
         vSeeds.emplace_back("lameserver.de"); // HuntCoin Node by Astrali
         vSeeds.emplace_back("pool.cryptopowered.club"); // HuntCoin Cryptopowered node
         vSeeds.emplace_back("bit2pool.com"); // HuntCoin Bit2Pool node

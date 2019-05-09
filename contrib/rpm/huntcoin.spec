@@ -20,7 +20,7 @@ Summary:	Peer to Peer Cryptographic Currency
 
 Group:		Applications/System
 License:	MIT
-URL:		https://huntcoin.org/
+URL:		https://huntcoin.africa/
 Source0:	https://github.com/HuntCoinDeveloper/huntcoin/archive/%{version}.tar.gz
 Source1:	http://download.oracle.com/berkeley-db/db-%{bdbv}.NC.tar.gz
 
@@ -37,7 +37,7 @@ Source30:	https://raw.githubusercontent.com/huntcoin/huntcoin/v%{version}/contri
 Source31:	https://raw.githubusercontent.com/huntcoin/huntcoin/v%{version}/contrib/rpm/huntcoin.fc
 Source32:	https://raw.githubusercontent.com/huntcoin/huntcoin/v%{version}/contrib/rpm/huntcoin.if
 
-Source100:	https://huntcoin.org/img/logo.png
+Source100:	https://huntcoin.africa/img/logo.png
 
 %if 0%{?_use_libressl:1}
 BuildRequires:	libressl-devel
