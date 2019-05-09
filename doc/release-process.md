@@ -3,9 +3,9 @@ Release Process
 
 Before every release candidate:
 
-* Update translations (ping wumpus on IRC) see [translation_process.md](https://github.com/huntcoin/huntcoin/blob/master/doc/translation_process.md#synchronising-translations).
+* Update translations (ping wumpus on IRC) see [translation_process.md](https://github.com/HuntCoinDeveloper/huntcoin/blob/master/doc/translation_process.md#synchronising-translations).
 
-* Update manpages, see [gen-manpages.sh](https://github.com/huntcoin/huntcoin/blob/master/contrib/devtools/README.md#gen-manpagessh).
+* Update manpages, see [gen-manpages.sh](https://github.com/HuntCoinDeveloper/huntcoin/blob/master/contrib/devtools/README.md#gen-manpagessh).
 
 Before every minor and major release:
 
@@ -21,10 +21,10 @@ Before every minor and major release:
 
 Before every major release:
 
-* Update hardcoded [seeds](/contrib/seeds/README.md), see [this pull request](https://github.com/huntcoin/huntcoin/pull/7415) for an example.
+* Update hardcoded [seeds](/contrib/seeds/README.md), see [this pull request](https://github.com/HuntCoinDeveloper/huntcoin/pull/7415) for an example.
 * Update [`BLOCK_CHAIN_SIZE`](/src/qt/intro.cpp) to the current size plus some overhead.
 * Update `src/chainparams.cpp` chainTxData with statistics about the transaction count and rate. Use the output of the RPC `getchaintxstats`, see
-  [this pull request](https://github.com/huntcoin/huntcoin/pull/12270) for an example. Reviewers can verify the results by running `getchaintxstats <window_block_count> <window_last_block_hash>` with the `window_block_count` and `window_last_block_hash` from your output.
+  [this pull request](https://github.com/HuntCoinDeveloper/huntcoin/pull/12270) for an example. Reviewers can verify the results by running `getchaintxstats <window_block_count> <window_last_block_hash>` with the `window_block_count` and `window_last_block_hash` from your output.
 * Update version of `contrib/gitian-descriptors/*.yml`: usually one'd want to do this on master after branching off the release - but be sure to at least do it before a new major release
 
 ### First time / New builders
@@ -34,10 +34,10 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/huntcoin-core/gitian.sigs.git
-    git clone https://github.com/huntcoin-core/huntcoin-detached-sigs.git
+    git clone https://github.com/HuntCoinDeveloper-core/gitian.sigs.git
+    git clone https://github.com/HuntCoinDeveloper-core/huntcoin-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/huntcoin/huntcoin.git
+    git clone https://github.com/HuntCoinDeveloper/huntcoin.git
 
 ### Huntcoin maintainers/release engineers, suggestion for writing release notes
 
@@ -193,7 +193,7 @@ Codesigner only: Commit the detached codesign payloads:
 Non-codesigners: wait for Windows/OS X detached signatures:
 
 - Once the Windows/OS X builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [huntcoin-detached-sigs](https://github.com/huntcoin-core/huntcoin-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [huntcoin-detached-sigs](https://github.com/HuntCoinDeveloper-core/huntcoin-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed OS X binary:
 
@@ -274,14 +274,14 @@ huntcoin.org (see below for huntcoin.org update instructions).
 - Update huntcoin.org version
 
   - First, check to see if the Huntcoin.org maintainers have prepared a
-    release: https://github.com/huntcoin-dot-org/huntcoin.org/labels/Releases
+    release: https://github.com/HuntCoinDeveloper-dot-org/huntcoin.org/labels/Releases
 
       - If they have, it will have previously failed their Travis CI
         checks because the final release files weren't uploaded.
         Trigger a Travis CI rebuild---if it passes, merge.
 
   - If they have not prepared a release, follow the Huntcoin.org release
-    instructions: https://github.com/huntcoin-dot-org/huntcoin.org#release-notes
+    instructions: https://github.com/HuntCoinDeveloper-dot-org/huntcoin.org#release-notes
 
   - After the pull request is merged, the website will automatically show the newest version within 15 minutes, as well
     as update the OS download links. Ping @saivann/@harding (saivann/harding on Freenode) in case anything goes wrong
@@ -302,6 +302,6 @@ huntcoin.org (see below for huntcoin.org update instructions).
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/huntcoin/huntcoin/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/HuntCoinDeveloper/huntcoin/releases/new) with a link to the archived release notes.
 
   - Celebrate

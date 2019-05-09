@@ -28,12 +28,12 @@ The interface is defined in the C header `huntcoinconsensus.h` located in  `src/
 
 ##### Script Flags
 - `huntcoinconsensus_SCRIPT_FLAGS_VERIFY_NONE`
-- `huntcoinconsensus_SCRIPT_FLAGS_VERIFY_P2SH` - Evaluate P2SH ([BIP16](https://github.com/huntcoin/bips/blob/master/bip-0016.mediawiki)) subscripts
-- `huntcoinconsensus_SCRIPT_FLAGS_VERIFY_DERSIG` - Enforce strict DER ([BIP66](https://github.com/huntcoin/bips/blob/master/bip-0066.mediawiki)) compliance
-- `huntcoinconsensus_SCRIPT_FLAGS_VERIFY_NULLDUMMY` - Enforce NULLDUMMY ([BIP147](https://github.com/huntcoin/bips/blob/master/bip-0147.mediawiki))
-- `huntcoinconsensus_SCRIPT_FLAGS_VERIFY_CHECKLOCKTIMEVERIFY` - Enable CHECKLOCKTIMEVERIFY ([BIP65](https://github.com/huntcoin/bips/blob/master/bip-0065.mediawiki))
-- `huntcoinconsensus_SCRIPT_FLAGS_VERIFY_CHECKSEQUENCEVERIFY` - Enable CHECKSEQUENCEVERIFY ([BIP112](https://github.com/huntcoin/bips/blob/master/bip-0112.mediawiki))
-- `huntcoinconsensus_SCRIPT_FLAGS_VERIFY_WITNESS` - Enable WITNESS ([BIP141](https://github.com/huntcoin/bips/blob/master/bip-0141.mediawiki))
+- `huntcoinconsensus_SCRIPT_FLAGS_VERIFY_P2SH` - Evaluate P2SH ([BIP16](https://github.com/HuntCoinDeveloper/bips/blob/master/bip-0016.mediawiki)) subscripts
+- `huntcoinconsensus_SCRIPT_FLAGS_VERIFY_DERSIG` - Enforce strict DER ([BIP66](https://github.com/HuntCoinDeveloper/bips/blob/master/bip-0066.mediawiki)) compliance
+- `huntcoinconsensus_SCRIPT_FLAGS_VERIFY_NULLDUMMY` - Enforce NULLDUMMY ([BIP147](https://github.com/HuntCoinDeveloper/bips/blob/master/bip-0147.mediawiki))
+- `huntcoinconsensus_SCRIPT_FLAGS_VERIFY_CHECKLOCKTIMEVERIFY` - Enable CHECKLOCKTIMEVERIFY ([BIP65](https://github.com/HuntCoinDeveloper/bips/blob/master/bip-0065.mediawiki))
+- `huntcoinconsensus_SCRIPT_FLAGS_VERIFY_CHECKSEQUENCEVERIFY` - Enable CHECKSEQUENCEVERIFY ([BIP112](https://github.com/HuntCoinDeveloper/bips/blob/master/bip-0112.mediawiki))
+- `huntcoinconsensus_SCRIPT_FLAGS_VERIFY_WITNESS` - Enable WITNESS ([BIP141](https://github.com/HuntCoinDeveloper/bips/blob/master/bip-0141.mediawiki))
 
 ##### Errors
 - `huntcoinconsensus_ERR_OK` - No errors with input parameters *(see the return value of `huntcoinconsensus_verify_script` for the verification status)*

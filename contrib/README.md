@@ -26,7 +26,7 @@ Contains files used to package huntcoind/huntcoin-qt
 for Debian-based Linux systems. If you compile huntcoind/huntcoin-qt yourself, there are some useful files here.
 
 ### [Gitian-descriptors](/contrib/gitian-descriptors) ###
-Files used during the gitian build process. For more information about gitian, see the [the Huntcoin Core documentation repository](https://github.com/huntcoin-core/docs).
+Files used during the gitian build process. For more information about gitian, see the [the Huntcoin Core documentation repository](https://github.com/HuntCoinDeveloper-core/docs).
 
 ### [Gitian-keys](/contrib/gitian-keys)
 PGP keys used for signing Huntcoin Core [Gitian release](/doc/release-process.md) results.

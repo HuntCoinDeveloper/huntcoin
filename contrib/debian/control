@@ -27,8 +27,8 @@ Build-Depends: debhelper,
  libzmq3-dev
 Standards-Version: 3.9.2
 Homepage: https://huntcoin.org/
-Vcs-Git: git://github.com/huntcoin/huntcoin.git
-Vcs-Browser: https://github.com/huntcoin/huntcoin
+Vcs-Git: git://github.com/HuntCoinDeveloper/huntcoin.git
+Vcs-Browser: https://github.com/HuntCoinDeveloper/huntcoin
 
 Package: huntcoind
 Architecture: any

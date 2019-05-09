@@ -45,7 +45,7 @@ Build Huntcoin Core
 
 1. Clone the huntcoin source code and cd into `huntcoin`
 
-        git clone https://github.com/huntcoin/huntcoin
+        git clone https://github.com/HuntCoinDeveloper/huntcoin
         cd huntcoin
 
 2.  Build huntcoin-core:
@@ -95,4 +95,4 @@ Notes
 
 * Tested on OS X 10.8 through 10.13 on 64-bit Intel processors only.
 
-* Building with downloaded Qt binaries is not officially supported. See the notes in [#7714](https://github.com/huntcoin/huntcoin/issues/7714)
+* Building with downloaded Qt binaries is not officially supported. See the notes in [#7714](https://github.com/HuntCoinDeveloper/huntcoin/issues/7714)

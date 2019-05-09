@@ -21,7 +21,7 @@ Summary:	Peer to Peer Cryptographic Currency
 Group:		Applications/System
 License:	MIT
 URL:		https://huntcoin.org/
-Source0:	https://github.com/huntcoin/huntcoin/archive/%{version}.tar.gz
+Source0:	https://github.com/HuntCoinDeveloper/huntcoin/archive/%{version}.tar.gz
 Source1:	http://download.oracle.com/berkeley-db/db-%{bdbv}.NC.tar.gz
 
 Source10:	https://raw.githubusercontent.com/huntcoin/huntcoin/v%{version}/contrib/debian/examples/huntcoin.conf

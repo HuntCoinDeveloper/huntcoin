@@ -1,6 +1,6 @@
 This directory contains the HuntcoinQT graphical user interface (GUI). It uses the cross platform framework [QT](https://www1.qt.io/developers/).
 
-The current precise version for QT 5 is specified in [qt.mk](/depends/packages/qt.mk). QT 4 is also supported (see [#8263](https://github.com/huntcoin/huntcoin/issues/8263)).
+The current precise version for QT 5 is specified in [qt.mk](/depends/packages/qt.mk). QT 4 is also supported (see [#8263](https://github.com/HuntCoinDeveloper/huntcoin/issues/8263)).
 
 ## Compile and run
 
@@ -50,7 +50,7 @@ Various dialogs, e.g. to open a URL. Inherit from [QDialog](http://doc.qt.io/qt-
 
 ### paymentserver.(h/cpp)
 
-Used to process BIP21 and BIP70 (see https://github.com/huntcoin/huntcoin/pull/11622) payment URI / requests. Also handles URI based application switching (e.g. when following a huntcoin:... link from a browser).
+Used to process BIP21 and BIP70 (see https://github.com/HuntCoinDeveloper/huntcoin/pull/11622) payment URI / requests. Also handles URI based application switching (e.g. when following a huntcoin:... link from a browser).
 
 ### walletview.(h/cpp)
 

@@ -221,8 +221,8 @@ def main():
     enable_huntcoind = config["components"].getboolean("ENABLE_HUNTCOIND")
 
     if config["environment"]["EXEEXT"] == ".exe" and not args.force:
-        # https://github.com/huntcoin/huntcoin/commit/d52802551752140cf41f0d9a225a43e84404d3e9
-        # https://github.com/huntcoin/huntcoin/pull/5677#issuecomment-136646964
+        # https://github.com/HuntCoinDeveloper/huntcoin/commit/d52802551752140cf41f0d9a225a43e84404d3e9
+        # https://github.com/HuntCoinDeveloper/huntcoin/pull/5677#issuecomment-136646964
         print("Tests currently disabled on Windows by default. Use --force option to enable")
         sys.exit(0)
 

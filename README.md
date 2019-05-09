@@ -28,7 +28,7 @@ Development Process
 -------------------
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/huntcoin/huntcoin/tags) are created
+completely stable. [Tags](https://github.com/HuntCoinDeveloper/huntcoin/tags) are created
 regularly to indicate new official, stable release versions of Huntcoin Core.
 
 The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).

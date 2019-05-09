@@ -173,7 +173,7 @@ are held, and adds warnings to the debug.log file if inconsistencies are detecte
 
 Valgrind is a programming tool for memory debugging, memory leak detection, and
 profiling. The repo contains a Valgrind suppressions file
-([`valgrind.supp`](https://github.com/huntcoin/huntcoin/blob/master/contrib/valgrind.supp))
+([`valgrind.supp`](https://github.com/HuntCoinDeveloper/huntcoin/blob/master/contrib/valgrind.supp))
 which includes known Valgrind warnings in our dependencies that cannot be fixed
 in-tree. Example use:
 
@@ -533,10 +533,10 @@ Current subtrees include:
   - Upstream at https://github.com/google/leveldb ; Maintained by Google, but open important PRs to Core to avoid delay
 
 - src/libsecp256k1
-  - Upstream at https://github.com/huntcoin-core/secp256k1/ ; actively maintaned by Core contributors.
+  - Upstream at https://github.com/HuntCoinDeveloper-core/secp256k1/ ; actively maintaned by Core contributors.
 
 - src/crypto/ctaes
-  - Upstream at https://github.com/huntcoin-core/ctaes ; actively maintained by Core contributors.
+  - Upstream at https://github.com/HuntCoinDeveloper-core/ctaes ; actively maintained by Core contributors.
 
 - src/univalue
   - Upstream at https://github.com/jgarzik/univalue ; report important PRs to Core to avoid delay.

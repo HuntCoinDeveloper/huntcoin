@@ -25,7 +25,7 @@ python27
 
 Download the source code:
 ```
-git clone https://github.com/huntcoin/huntcoin
+git clone https://github.com/HuntCoinDeveloper/huntcoin
 ```
 
 See [dependencies.md](dependencies.md) for a complete overview.
