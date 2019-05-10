@@ -16,7 +16,7 @@ software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
 the Huntcoin Core software, see https://huntcoin.africa/#downloads, or read the
-[original Huntcoin whitepaper](https://huntcoincore.org/huntcoin.pdf).
+[original Huntcoin whitepaper](https://huntcoin.africa/huntcoin.pdf).
 
 License
 -------

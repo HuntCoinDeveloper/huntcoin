@@ -533,10 +533,10 @@ Current subtrees include:
   - Upstream at https://github.com/google/leveldb ; Maintained by Google, but open important PRs to Core to avoid delay
 
 - src/libsecp256k1
-  - Upstream at https://github.com/HuntCoinDeveloper-core/secp256k1/ ; actively maintaned by Core contributors.
+  - Upstream at https://github.com/HuntCoinDeveloper/secp256k1/ ; actively maintaned by Core contributors.
 
 - src/crypto/ctaes
-  - Upstream at https://github.com/HuntCoinDeveloper-core/ctaes ; actively maintained by Core contributors.
+  - Upstream at https://github.com/HuntCoinDeveloper/ctaes ; actively maintained by Core contributors.
 
 - src/univalue
   - Upstream at https://github.com/jgarzik/univalue ; report important PRs to Core to avoid delay.

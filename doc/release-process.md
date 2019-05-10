@@ -34,8 +34,8 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/HuntCoinDeveloper-core/gitian.sigs.git
-    git clone https://github.com/HuntCoinDeveloper-core/huntcoin-detached-sigs.git
+    git clone https://github.com/HuntCoinDeveloper/gitian.sigs.git
+    git clone https://github.com/HuntCoinDeveloper/huntcoin-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
     git clone https://github.com/HuntCoinDeveloper/huntcoin.git
 
@@ -85,7 +85,7 @@ Ensure gitian-builder is up-to-date:
 
     pushd ./gitian-builder
     mkdir -p inputs
-    wget -P inputs https://huntcoincore.org/cfields/osslsigncode-Backports-to-1.7.1.patch
+    wget -P inputs https://huntcoin.africa/cfields/osslsigncode-Backports-to-1.7.1.patch
     wget -P inputs http://downloads.sourceforge.net/project/osslsigncode/osslsigncode/osslsigncode-1.7.1.tar.gz
     popd
 
@@ -193,7 +193,7 @@ Codesigner only: Commit the detached codesign payloads:
 Non-codesigners: wait for Windows/OS X detached signatures:
 
 - Once the Windows/OS X builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [huntcoin-detached-sigs](https://github.com/HuntCoinDeveloper-core/huntcoin-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [huntcoin-detached-sigs](https://github.com/HuntCoinDeveloper/huntcoin-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed OS X binary:
 
@@ -290,9 +290,9 @@ huntcoin.africa (see below for huntcoin.africa update instructions).
 
   - huntcoin-dev and huntcoin-core-dev mailing list
 
-  - Huntcoin Core announcements list https://huntcoincore.org/en/list/announcements/join/
+  - Huntcoin Core announcements list https://huntcoin.africa/en/list/announcements/join/
 
-  - huntcoincore.org blog post
+  - huntcoin.africa blog post
 
   - Update title of #huntcoin on Freenode IRC
 

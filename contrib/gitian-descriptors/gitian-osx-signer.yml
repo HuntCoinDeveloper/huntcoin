@@ -7,7 +7,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/HuntCoinDeveloper-core/huntcoin-detached-sigs.git"
+- "url": "https://github.com/HuntCoinDeveloper/huntcoin-detached-sigs.git"
   "dir": "signature"
 files:
 - "huntcoin-osx-unsigned.tar.gz"
