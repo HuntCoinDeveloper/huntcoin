@@ -42,8 +42,8 @@ reachable from the Tor network. Add these lines to your /etc/tor/torrc (or equiv
 config file):
 
 	HiddenServiceDir /var/lib/tor/huntcoin-service/
-	HiddenServicePort 8333 127.0.0.1:9319
-	HiddenServicePort 18333 127.0.0.1:19319
+	HiddenServicePort 8333 127.0.0.1:7377
+	HiddenServicePort 18333 127.0.0.1:17377
 
 The directory can be different of course, but (both) port numbers should be equal to
 your huntcoind's P2P listen port (8333 by default).

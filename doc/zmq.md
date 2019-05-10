@@ -66,7 +66,7 @@ address. The same address can be used in more than one notification.
 
 For instance:
 
-    $ huntcoind -zmqpubhashtx=tcp://127.0.0.1:29319 \
+    $ huntcoind -zmqpubhashtx=tcp://127.0.0.1:27377 \
                -zmqpubrawtx=ipc:///tmp/huntcoind.tx.raw
 
 Each PUB notification has a topic and body, where the header

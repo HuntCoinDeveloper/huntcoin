@@ -9,10 +9,10 @@
 
     Huntcoin should be started with the command line arguments:
         huntcoind -testnet -daemon \
-                -zmqpubrawtx=tcp://127.0.0.1:29319 \
-                -zmqpubrawblock=tcp://127.0.0.1:29319 \
-                -zmqpubhashtx=tcp://127.0.0.1:29319 \
-                -zmqpubhashblock=tcp://127.0.0.1:29319
+                -zmqpubrawtx=tcp://127.0.0.1:27377 \
+                -zmqpubrawblock=tcp://127.0.0.1:27377 \
+                -zmqpubhashtx=tcp://127.0.0.1:27377 \
+                -zmqpubhashblock=tcp://127.0.0.1:27377
 
     We use the asyncio library here.  `self.handle()` installs itself as a
     future at the end of the function.  Since it never returns with the event
@@ -35,7 +35,7 @@ if not (sys.version_info.major >= 3 and sys.version_info.minor >= 5):
     print("This example only works with Python 3.5 and greater")
     sys.exit(1)
 
-port = 29319
+port = 27377
 
 class ZMQHandler():
     def __init__(self):
