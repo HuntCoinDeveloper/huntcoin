@@ -333,11 +333,11 @@ for selinuxvariant in %{selinux_variants}; do
 	%{_sbindir}/semodule -s ${selinuxvariant} -i %{_datadir}/selinux/${selinuxvariant}/huntcoin.pp &> /dev/null || :
 done
 %{_sbindir}/semanage port -a -t huntcoin_port_t -p tcp 7377
-%{_sbindir}/semanage port -a -t huntcoin_port_t -p tcp 9320
+%{_sbindir}/semanage port -a -t huntcoin_port_t -p tcp 7304
 %{_sbindir}/semanage port -a -t huntcoin_port_t -p tcp 17377
-%{_sbindir}/semanage port -a -t huntcoin_port_t -p tcp 19320
-%{_sbindir}/semanage port -a -t huntcoin_port_t -p tcp 20144
-%{_sbindir}/semanage port -a -t huntcoin_port_t -p tcp 20145
+%{_sbindir}/semanage port -a -t huntcoin_port_t -p tcp 17304
+%{_sbindir}/semanage port -a -t huntcoin_port_t -p tcp 27702
+%{_sbindir}/semanage port -a -t huntcoin_port_t -p tcp 27705
 %{_sbindir}/fixfiles -R huntcoin-server restore &> /dev/null || :
 %{_sbindir}/restorecon -R %{_localstatedir}/lib/huntcoin || :
 fi

@@ -1063,7 +1063,7 @@ public:
         pchMessageStart[1] = 0x76;
         pchMessageStart[2] = 0x69;
         pchMessageStart[3] = 0xd6;
-        nDefaultPort = 20144;
+        nDefaultPort = 27702;
         nPruneAfterHeight = 1000;
         const size_t N = 48, K = 5;
         const size_t ZN = 96, ZK = 5;
