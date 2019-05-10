@@ -186,7 +186,7 @@ public:
         pchMessageStart[1] = 0x08;
         pchMessageStart[2] = 0xd3;
         pchMessageStart[3] = 0x2d;
-        nDefaultPort = 9319;
+        nDefaultPort = 7377;
         nPruneAfterHeight = 750000;
         const size_t N = 200, K = 9;
         const size_t ZN = 144, ZK = 5;
@@ -637,7 +637,7 @@ public:
         pchMessageStart[1] = 0x6f;
         pchMessageStart[2] = 0x37;
         pchMessageStart[3] = 0x5b;
-        nDefaultPort = 19319;
+        nDefaultPort = 17377;
         nPruneAfterHeight = 1000;
         const size_t N = 200, K = 9;  // Same as mainchain.
         const size_t ZN = 144, ZK = 5;  // Same as mainchain.
