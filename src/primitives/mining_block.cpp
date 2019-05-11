@@ -7,7 +7,7 @@
 // Copyright (c) 2009-2016 The Litecoin Core developers
 // Copyright (c) 2014-2017 The Mun Core developers
 // Copyright (c) 2017 The Raven Core developers
-// Copyright (c) 2018 The HuntCoin Core developers
+// Copyright (c) 2019 The HuntCoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 

@@ -1,4 +1,4 @@
-// Copyright (c) 2017 The Huntcoin Core developers
+// Copyright (c) 2019 The Huntcoin Core developers
 
 #ifndef HUNTCOIN_CHAINPARAMSSEEDS_H
 #define HUNTCOIN_CHAINPARAMSSEEDS_H

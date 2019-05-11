@@ -6,7 +6,7 @@
 // Copyright (c) 2017-2018 The AmsterdamCoin developers
 // Copyright (c) 2017 The Raven Core developers
 // Copyright (c) 2014-2017 The Mun Core developers
-// Copyright (c) 2018 The Huntcoin Core developers
+// Copyright (c) 2019 The Huntcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
