@@ -64,7 +64,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "05.12.2016 18.27h UTC plus 1 created Huntcoin";
+    const char* pszTimestamp = "Friday, May 17, 2019 17:06:19 GMT+02:00 Huntcoin established in Africa";
     const CScript genesisOutputScript = CScript() << ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
@@ -92,7 +92,7 @@ public:
         strNetworkID = "main";
         consensus.nSubsidyHalvingInterval = 840000;
         consensus.nMasternodeMinimumConfirmations = 15;
-        consensus.nMasternodeColleteralPaymentAmount = 50000;
+        consensus.nMasternodeColleteralPaymentAmount = 10000;
         consensus.nMasternodePayeeReward = 25;
         consensus.nInstantSendConfirmationsRequired = 6;
         consensus.nInstantSendKeepLock = 24;
@@ -197,7 +197,7 @@ public:
         nZhashN = ZN;
         nZhashK = ZK;
 
-        genesis = CreateGenesisBlock(1480961109, 2864352084, 0x1d00ffff, 1, 100 * COIN);
+        genesis = CreateGenesisBlock(1558105579, 2864352084, 0x1d00ffff, 1, 100 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x00000000fe3e3e93344a6b73888137397413eb11f601b4231b5196390d24d3b6"));
         assert(genesis.hashMerkleRoot == uint256S("0xe217ce769444458c180ca6a5944cbbc22828f377cfd0e1790158034299827ffc"));
@@ -402,7 +402,7 @@ public:
         nZhashN = ZN;
         nZhashK = ZK;
 
-        genesis = CreateGenesisBlock(1480961109, 2864352084, 0x1d00ffff, 1, 100 * COIN);
+        genesis = CreateGenesisBlock(1558105579, 2864352084, 0x1d00ffff, 1, 100 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x00000000fe3e3e93344a6b73888137397413eb11f601b4231b5196390d24d3b6"));
         assert(genesis.hashMerkleRoot == uint256S("0xe217ce769444458c180ca6a5944cbbc22828f377cfd0e1790158034299827ffc"));
@@ -582,7 +582,7 @@ public:
         nZhashN = ZN;
         nZhashK = ZK;
 
-        genesis = CreateGenesisBlock(1480961109, 2, 0x207fffff, 1, 100 * COIN);
+        genesis = CreateGenesisBlock(1558105579, 2, 0x207fffff, 1, 100 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x1ba3490ecf1653fbe7a53d1e0fb7e051c2a1c506d84f4dd3b01522544cd1fc6f"));
         assert(genesis.hashMerkleRoot == uint256S("0xe217ce769444458c180ca6a5944cbbc22828f377cfd0e1790158034299827ffc"));
