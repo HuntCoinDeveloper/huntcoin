@@ -207,31 +207,31 @@ public:
         // This is fine at runtime as we'll fall back to using them as a oneshot if they don't support the
         // service bits we want, but we should get them updated to support all service bits wanted by any
         // release ASAP to avoid it where possible.
-        vSeeds.emplace_back("134.255.221.7"); // Huntcoin base node
-        vSeeds.emplace_back("huntcoin.africa"); // HuntCoin base node II
-        vSeeds.emplace_back("explorer.huntcoin.africa"); // HuntCoin base node III
-        vSeeds.emplace_back("lameserver.de"); // HuntCoin Node by Astrali
-        vSeeds.emplace_back("pool.cryptopowered.club"); // HuntCoin Cryptopowered node
-        vSeeds.emplace_back("bit2pool.com"); // HuntCoin Bit2Pool node
+        vSeeds.emplace_back("160.119.100.89"); // Huntcoin base node
+        //vSeeds.emplace_back("huntcoin.africa"); // HuntCoin base node II
+        //vSeeds.emplace_back("explorer.huntcoin.africa"); // HuntCoin base node III
+        //vSeeds.emplace_back("lameserver.de"); // HuntCoin Node by Astrali
+        //vSeeds.emplace_back("pool.cryptopowered.club"); // HuntCoin Cryptopowered node
+        //vSeeds.emplace_back("bit2pool.com"); // HuntCoin Bit2Pool node
         // Hardfork Seednodes
-        vSeeds.emplace_back("185.206.144.200"); // HuntCoin Hardfork node: 01/18
-        vSeeds.emplace_back("185.206.145.201"); // HuntCoin Hardfork node: 02/18
-        vSeeds.emplace_back("185.206.146.200"); // HuntCoin Hardfork node: 03/18
-        vSeeds.emplace_back("185.206.147.203"); // HuntCoin Hardfork node: 04/18
-        vSeeds.emplace_back("185.205.209.67");  // HuntCoin Hardfork node: 05/18
-        vSeeds.emplace_back("185.206.147.202"); // HuntCoin Hardfork node: 06/18
-        vSeeds.emplace_back("185.205.209.137"); // HuntCoin Hardfork node: 07/18
-        vSeeds.emplace_back("185.203.119.194"); // HuntCoin Hardfork node: 08/18
-        vSeeds.emplace_back("185.203.119.195"); // HuntCoin Hardfork node: 09/18
-        vSeeds.emplace_back("185.206.144.201"); // HuntCoin Hardfork node: 10/18
-        vSeeds.emplace_back("185.141.62.86");   // HuntCoin Hardfork node: 11/18
-        vSeeds.emplace_back("185.141.62.87");   // HuntCoin Hardfork node: 12/18
-        vSeeds.emplace_back("185.141.62.88");   // HuntCoin Hardfork node: 13/18
-        vSeeds.emplace_back("185.141.62.89");   // HuntCoin Hardfork node: 14/18
-        vSeeds.emplace_back("185.141.62.90");   // HuntCoin Hardfork node: 15/18
-        vSeeds.emplace_back("185.141.62.91");   // HuntCoin Hardfork node: 16/18
-        vSeeds.emplace_back("185.141.62.92");   // HuntCoin Hardfork node: 17/18
-        vSeeds.emplace_back("185.203.118.117"); // HuntCoin Hardfork node: 18/18
+        //vSeeds.emplace_back("185.206.144.200"); // HuntCoin Hardfork node: 01/18
+        //vSeeds.emplace_back("185.206.145.201"); // HuntCoin Hardfork node: 02/18
+        //vSeeds.emplace_back("185.206.146.200"); // HuntCoin Hardfork node: 03/18
+        //vSeeds.emplace_back("185.206.147.203"); // HuntCoin Hardfork node: 04/18
+        //vSeeds.emplace_back("185.205.209.67");  // HuntCoin Hardfork node: 05/18
+        //vSeeds.emplace_back("185.206.147.202"); // HuntCoin Hardfork node: 06/18
+        //vSeeds.emplace_back("185.205.209.137"); // HuntCoin Hardfork node: 07/18
+        //vSeeds.emplace_back("185.203.119.194"); // HuntCoin Hardfork node: 08/18
+        //vSeeds.emplace_back("185.203.119.195"); // HuntCoin Hardfork node: 09/18
+        //vSeeds.emplace_back("185.206.144.201"); // HuntCoin Hardfork node: 10/18
+        //vSeeds.emplace_back("185.141.62.86");   // HuntCoin Hardfork node: 11/18
+        //vSeeds.emplace_back("185.141.62.87");   // HuntCoin Hardfork node: 12/18
+        //vSeeds.emplace_back("185.141.62.88");   // HuntCoin Hardfork node: 13/18
+        //vSeeds.emplace_back("185.141.62.89");   // HuntCoin Hardfork node: 14/18
+        //vSeeds.emplace_back("185.141.62.90");   // HuntCoin Hardfork node: 15/18
+        //vSeeds.emplace_back("185.141.62.91");   // HuntCoin Hardfork node: 16/18
+        //vSeeds.emplace_back("185.141.62.92");   // HuntCoin Hardfork node: 17/18
+        //vSeeds.emplace_back("185.203.118.117"); // HuntCoin Hardfork node: 18/18
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,38);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
@@ -278,263 +278,17 @@ public:
         
         // Founders reward script expects a vector of 4-of-6 multisig addresses
         vFoundersRewardAddress = {
-            "38yCbLtxZiWybYjJB8msaASL8a9DqSGH9e", /* main-index: 0*/
-            "3LCZiCbkiyAH1saEXEnMC6XFVanVX6gftc", /* main-index: 1*/
-            "3E99o64BavBxN855kFqbVcaiTmu3jBtnqp", /* main-index: 2*/
-            "34KAMoFSwzKppWBg3u3XFMg1b6z3Xza9X6", /* main-index: 3*/
-            "37Yy1xuVTWgPjUi6spagvkDqHZS6e3e6a6", /* main-index: 4*/
-            "35NRzPB3NebkDgWu2w8vPNtDxVUixWpWTN", /* main-index: 5*/
-            "3ARcDbReyavaETa42ZRQivARWp6Mh5jDSX", /* main-index: 6*/
-            "3PFZ1oudGLkWg7kkV9qgosseuYsrhJd6ou", /* main-index: 7*/
-            "34EBnTUYk3kzhwn6oNni1eyQ83vap4iVxZ", /* main-index: 8*/
-            "37hNzkCuYGiVxP2AuMEmrBWQem4NQVUcJD", /* main-index: 9*/
-            "35eZ5UFfdb5687GTdAK29hthEyzuXNcbcv", /* main-index: 10*/
-            "37bUB14wvftu2c5mhgQbDh55rTDrGZQo4s", /* main-index: 11*/
-            "38Xr5NCzbyJ1LJsouj2qNiuebyS4tNpwMJ", /* main-index: 12*/
-            "3LpGTXpTi6aTTNsUyP58JwTSMyVYN2WBAd", /* main-index: 13*/
-            "3NUuqPCcsPq66DQzD235pQGKTDyYg5zu93", /* main-index: 14*/
-            "3DbSjJiJrVHpWEkhtPGtrdL73KFZRxmxuY", /* main-index: 15*/
-            "33MnpZW33r5AUaQmxaTHpnV8KRVTTokC5p", /* main-index: 16*/
-            "3HpDAy9591ykTcswgNKzPEBttc2cbMicdu", /* main-index: 17*/
-            "3BmCBFZGwBNmEjL5hYW8ptQdU9pLKeQ8h3", /* main-index: 18*/
-            "3Gm2qwZ8d26er6iLqFD3MQpwwNcbxQDnqW", /* main-index: 19*/
-            "3LDQzQ5FguS8GiyDNgzSGz5oxHacoFYmTg", /* main-index: 20*/
-            "3QMu3phWfKuM3Y5qTPjrexKBCDp1mU71JP", /* main-index: 21*/
-            "35sHQwj5XRXMSqiiPhFipuifaKKUJSpbqS", /* main-index: 22*/
-            "3NXRgZLxLjfFuBhrMHyMrjbJ2U83bChY1K", /* main-index: 23*/
-            "3MjcgCvwtA2hkFKmVYhhfB3xvDASWpCPq4", /* main-index: 24*/
-            "3L6zcGQii1Agabk37GFRPzMF6n9L9SsubM", /* main-index: 25*/
-            "3QRa51mmERnT9voP9xq9sbpxmjAs1XWgqy", /* main-index: 26*/
-            "39RnxJpsjRqgMyVd4Rg1gu1KyJHcQVsxTW", /* main-index: 27*/
-            "373wRiUZ5DWCnGYp6Qf9hJU7K8LE5XT69h", /* main-index: 28*/
-            "39QNaNjyrs6Jx5wxyZyaF7trXqRzAqYsKq", /* main-index: 29*/
-            "3AdstaMFw2XEJCTQt8C5VE9dfDiLNs5TTC", /* main-index: 30*/
-            "33SKqqm2eQ3yZd51L5SSKVJwNaG72ZW2xv", /* main-index: 31*/
-            "3GMJ9wm8J7rHmAFkV4r7G3syr3ieK6ogZd", /* main-index: 32*/
-            "3JekMeXUX156Tzf2itjpNzvJAQAU2YGn4q", /* main-index: 33*/
-            "3EAkDi4uGhQML1XgjZQPPsVXHfGshSrfZc", /* main-index: 34*/
-            "33QXMVBT7ChcHAjNHSzG71BSgrmmBxo6sH", /* main-index: 35*/
-            "3DCmFMrw5PGAPcUbqbYoCKCpmBMyRvCpZA", /* main-index: 36*/
-            "32mFdQSLFrM4fkUeFi4qWU1aim8ZPL36FL", /* main-index: 37*/
-            "3FX9wE8aKQhHTMrWyqHEB7hKsGukEazvkW", /* main-index: 38*/
-            "38rqrKRmVwgbeiz2zx6RVpPQqb4Xskx7zA", /* main-index: 39*/
-            "3Mo2sPeDnfWTLRaNNom8Dcm9WMxRz3qYw3", /* main-index: 40*/
-            "3LfpQbQRjRsHozwriAwsRBtvH2wLRJVtN4", /* main-index: 41*/
-            "3Hq1SeTKqLdSLBNPo6JYBj4X7Ce7tAee9Q", /* main-index: 42*/
-            "36V9JMDw1UBzwvmpvctG5DzfB6QhfsEA5g", /* main-index: 43*/
-            "37Bf7wZju2JPvufDNDhoK64CjuCWhDkXoi", /* main-index: 44*/
-            "36yU1RMzDnn9RYDqtxBvuiysH2UzXMVRRG", /* main-index: 45*/
-            "34F9MmqFATfkHffTbh3hMze8itvpRZ1WHf", /* main-index: 46*/
-            "3J15bzgdCjEJ5AiaAu6bbeYTvVP631F5Sd", /* main-index: 47*/
-            "3NLZZ5aMd8ECQuKjyYBTtJT9XCavKYj4x2", /* main-index: 48*/
-            "38SDhMU2h1z72h7kf1JMVWMoRbTRMDf4qD", /* main-index: 49*/
-            "3Ft4BdrgT89yb4HU7mg4zdUtDsFJDrE2bg", /* main-index: 50*/
-            "3NUjF1nqsSKsAHfD61Bu5AyTepH4jaeny1", /* main-index: 51*/
-            "34Y8HjpExiR4snTM4pezn1s5MSiqyvWJwG", /* main-index: 52*/
-            "336xErmdsAG8fckmWQ8dhCGjvjzLSmvXQK", /* main-index: 53*/
-            "3LzwXBrDEUHaWU5ypz3MhKvwzUYopP3iML", /* main-index: 54*/
-            "3CFqWmqXc6C4k5HU7W4cQH5E8pGsXkPMXH", /* main-index: 55*/
-            "37irAKWm8wHRMxGCpo6VQHhaPV8d9CSyTV", /* main-index: 56*/
-            "33zVmA7kqNy5ZsywXDYRDFuxY3ZJ2Q9UTX", /* main-index: 57*/
-            "38FjYkPW6wpm5Vrw5pS8AQ9Jcbm16oT7ru", /* main-index: 58*/
-            "36G3vR74nV3dXBhxgEGuSarGVMCMojnVCf", /* main-index: 59*/
-            "3MKxQuvvCixyM5a27ERNTGEhUij88hscfe", /* main-index: 60*/
-            "3KSsWWKaK3XiN7aS6dfRw7W6Ef1KxxnZkr", /* main-index: 61*/
-            "3GVgdLd8XnWpEpGzfuiqkfcDfSEq6LHtzJ", /* main-index: 62*/
-            "3N3w8v82mCF84Wu45Z3zvJJ4EpvrJB71Uv", /* main-index: 63*/
-            "3D8gswKQTky51SZMDcmGjDohve8N9RH72B", /* main-index: 64*/
-            "3CtjcQrKQC5j66eUy2E5ymGAhtoRfMjmr5", /* main-index: 65*/
-            "3GYCnw2iTB1dWz4Z2Z7CGXg95owRHn82Pv", /* main-index: 66*/
-            "3F5SdCzkRqhJsv3AZP4xV64vunNbMbMUuG", /* main-index: 67*/
-            "3E7dHx6woKaGGXDCwodM8QVR7enYNMFyne", /* main-index: 68*/
-            "3MzPTBgAfURb2BsySjwyLBa5n2rtX74LCp", /* main-index: 69*/
-            "3CZQi1e25Tw6QZFcgy6qmcdBC8JPyyheJA", /* main-index: 70*/
-            "3LHWbo1XQsnRWbUGRLo7NMtXoLhAXUdQDM", /* main-index: 71*/
-            "38JMwNmtak2oPxMy8u665i7eRCRKYfLtwS", /* main-index: 72*/
-            "3NfVcpwGu4vKFTEEc6XtTSGGkXaZphwsiW", /* main-index: 73*/
-            "3PZhXT5afY4m8UzGhS6wuXgTsXHvGXAhEL", /* main-index: 74*/
-            "31nKyg493rhMLrZxcKrzizSZTV1qBs1VnQ", /* main-index: 75*/
-            "375HCkSJisQofpEneriuJDkbt97fd7oJVU", /* main-index: 76*/
-            "32trHnakrEDMp7xf91tMNPwB88L47GQ3Jg", /* main-index: 77*/
-            "3LzeWEYdVBafjHddMQbzFBTVZBjfVS926H", /* main-index: 78*/
-            "36veTRcKaBQuFmzYABWQoQq5XXsFkRgWaX", /* main-index: 79*/
-            "3PfrFds2bBjswYAWBztumZbVz8Y2gekgNu", /* main-index: 80*/
-            "33XAjHXXhQSGKScXNqmEyJsmDGC9hFFTek", /* main-index: 81*/
-            "3KEqMwV4zPcNREK2oMP6E9qKrrexKLd2Tp", /* main-index: 82*/
-            "3B32oQkvkeCNA219T6ttVig6HxudHkqqeC", /* main-index: 83*/
-            "37iH8TGH8pCQ4vUQ5t2whNZ22nhAv5bZac", /* main-index: 84*/
-            "35Z9pCN6R5x8SEgMuBxCya8VYpZbHQ7Ra4", /* main-index: 85*/
-            "3P1AGz15cQEj55cmE2kvhqaVUCCxR5LiAn", /* main-index: 86*/
-            "3Ff1b5PBx1nWcXJnXPqBeGLmZvnHfpN5Jp", /* main-index: 87*/
-            "32FBSE2RhWuGmASt5M1hsJHCCpTmQKnNsw", /* main-index: 88*/
-            "3GNp5VfjvzKEyF4bhEqtRDfng7LVkj8fMf", /* main-index: 89*/
-            "3DHuLMn7iXKUqYFSnMx8wambSN5nZLDy9F", /* main-index: 90*/
-            "3Kt2iYY2Ujst29pwer4wYskaRDhVQ7vEsj", /* main-index: 91*/
-            "3JfspqpmJvKa8jxv17RGuei3LgKAYZeQKm", /* main-index: 92*/
-            "3NTiXYwM29SN1sYuRTV1KbPhG7jxwNWdo8", /* main-index: 93*/
-            "3Pyn2vtC7ENYbQJCich9eixAXoLUPP9VVL", /* main-index: 94*/
-            "3LCVYJfakAWb7uVzDmh35HxZaZMEdGtqE7", /* main-index: 95*/
-            "3MkjEJpNs6raj5YyeZ5NjkmZZAnCSf5RUo", /* main-index: 96*/
-            "3QUfD1upYLwXNSbvbc2ZwQhpGooCpN67nw", /* main-index: 97*/
-            "3B5EWNUb8aTbztYn5VweMJjYh82EKiw3NN", /* main-index: 98*/
-            "3QkgSVDCFtGUKXqSHmJkvoJJTSGYPuKsiT", /* main-index: 99*/
-            "3NtpMQftrj5NFY49m42QR699ph7uXdYdKs", /* main-index: 100*/
-            "3P2FjKAq4P8wvFY64354wbjXyngfAkfcfE", /* main-index: 101*/
-            "38TtbsrtDyxCa16FbKDXSvPYsaPKaC54Zw", /* main-index: 102*/
-            "3BXBYeZsLdztGHJTLyyyAewriMSeM529GN", /* main-index: 103*/
-            "3R2UnNnYkfFCsSe4tfguwMgxZR7p76tef8", /* main-index: 104*/
-            "3CRxYmcyRgs54g6PRhrQPWnda6qPuhTVwW", /* main-index: 105*/
-            "3NqKS177B8yniKTdE3bnAZRiTE6QuWUrDq", /* main-index: 106*/
-            "3LD9T3zZsZAfHKosT6fHomhgqL1Rcmzetu", /* main-index: 107*/
-            "3Fcmd1Z9uwJa1hUs2H7PpPb8PcgvFG3Lwf", /* main-index: 108*/
-            "3MYmT97nVhCPyV1jK3rzEcwuzUdWE6j7pC", /* main-index: 109*/
-            "36Q6d3FCdcUvfri26cTmx6DomT1SGWMv7V", /* main-index: 110*/
-            "34fWxLeGy1rPYCP8EX2V84uTo99iv7PBf8", /* main-index: 111*/
-            "34gAdue4wjGU38j2NLtqrchPbtbRdGnnj8", /* main-index: 112*/
-            "3QnuyuFcfMjfWYMQkdcrNEmuupqBWE43A6", /* main-index: 113*/
-            "35xZdSqFbNxyFG5CH1UtHpxtZdJraATUac", /* main-index: 114*/
-            "327VsBYqw7nKn7bQe7vBDvAvkqGuPTBvRf", /* main-index: 115*/
-            "3Gz5JCEAdoRzLQ4x3Mki9VuFJ5iWgMvJqM", /* main-index: 116*/
-            "3MRKgkhjtLepNAmMdzVZoRY66KC9DQh5SR", /* main-index: 117*/
-            "3M8U8SMaANXgRsqHRw8D7PDYnxfjaPatu5", /* main-index: 118*/
-            "3CPkwFYp3Nv8G4fFmMpxjp7ZDUHvUNgVtR", /* main-index: 119*/
-            "38kCS1cEHGV7shQonScjA9REFE88Xk8Poq", /* main-index: 120*/
-            "3AdMio1L9GkFxNm25N7tzc9GL2a3akhLwg", /* main-index: 121*/
-            "3EZDNuhf9e4jT5txxrYwEivupvq26oZTVC", /* main-index: 122*/
-            "3PUnYwwDQqqbWduDk8RusM6UVMZfR7uydw", /* main-index: 123*/
-            "32LhJjEgUaLMCsr9awopBYpkb2buRLUNJA", /* main-index: 124*/
-            "3Q87bZLS8rGhdns5e7PU7in43gzCtdqqxp", /* main-index: 125*/
-            "3GkNnmj2uaCvJgXLfcByboHMzAAzuMug9j", /* main-index: 126*/
-            "3KghqCpYbvVuZnSMDYWJ2iTEemNMZLVk99", /* main-index: 127*/
-            "35yQVs2mxuGzwmDWkEmJnZbzui3gE97vd6", /* main-index: 128*/
-            "3C8fEzaQez9LbXTvkrnPyQhtv42tT1u6Jg", /* main-index: 129*/
-            "3KzGQ318dwDy4seHvERBaWzB4Mwe6rz4jM", /* main-index: 130*/
-            "36sYYKBT3hzbSMMDatr26iNTseiNx2NBA9", /* main-index: 131*/
-            "37UBBLqfZFEAYtTXBdb2Zmn3TVj4iXa4KG", /* main-index: 132*/
-            "3CEmppDduSBCupN5oGCsXr7qhWE74nmH3K", /* main-index: 133*/
-            "3K42gh3pUDtkCGSt1ZXmmEt4tu1xo19e7K", /* main-index: 134*/
-            "339pSdqFQegx7E7Z7CVtna1DQMPfc2bu6S", /* main-index: 135*/
-            "352xrPMNAHXqbS8K2Pt1yPvYm6y3NZHSpt", /* main-index: 136*/
-            "3QzcsuMSm8QNpNW4fRC1W5UsN5W4ZnGEsC", /* main-index: 137*/
-            "3QyJA8vS1oJVPEzPhbah1KpDBEtWEgkLdb", /* main-index: 138*/
-            "35Twiyhrer1w78wSt1hT2HwgqMXkr2STb5", /* main-index: 139*/
-            "3MX8G7CwTrZuzWpzC7CSdryA9tbSbKyg52", /* main-index: 140*/
-            "3AQ4GwPn8UVTix52XpNArGssctSZjYhFXQ", /* main-index: 141*/
-            "36NYWYzaETPF9qt6gEM8QW6bVzK4TT5duj", /* main-index: 142*/
-            "3Q8kDeGrnCRhxwPHvk6Wy2M2joScKqAAoM", /* main-index: 143*/
-            "3QrTVzA4MYZcvVABrZtWD71CdkkChZYyFn", /* main-index: 144*/
-            "3FgH71NP6ZkYjrKB8eEAZxEzidDxpekLPx", /* main-index: 145*/
-            "3McqZ9r4PBErSJgbhVPRhoHwg5sPmQErzV", /* main-index: 146*/
-            "33DQx8iB9RgvqS7ekXMWuaZjrC28RQTrTR", /* main-index: 147*/
-            "32A3GmN3FPgxXSnGv93aMrKTsH1ZUt6J1s", /* main-index: 148*/
-            "3DA61HhbJR1Kuuk2AA99ToKRecNG7ojqBf", /* main-index: 149*/
-            "3ECMvfpT3MREQPckbv61t9xCBRA5Y1xJdQ", /* main-index: 150*/
-            "36catUTZcgS23swgjh1AeDcDC7ancRJnm8", /* main-index: 151*/
-            "3EyxzsG66NkXKmUWs3n3WcbarwoShbvJ5r", /* main-index: 152*/
-            "3HcHkdhMM1AEMc79aWVw92YVMHwv5aLDsP", /* main-index: 153*/
-            "3P2XqLodgkvdgoXqKwa6Ge69hdFq92bVQ7", /* main-index: 154*/
-            "3EkgzCSmeUDtamedhgbVooHDyKhgj43QXW", /* main-index: 155*/
-            "3MvzDkWopJ3Vh5i7KiiZDwbowVJEa8NZrh", /* main-index: 156*/
-            "34BSQn3jZwUr8VK7bkkFGQxsw4Vv7tkgf3", /* main-index: 157*/
-            "3Htvtz2rFKRkAqabPgaiRyLbnajjegqWin", /* main-index: 158*/
-            "3CYxb4SzypvwzjtvuhbHibf1ZmZ6EYSjCx", /* main-index: 159*/
-            "3PxcP5rEKdH4tNPdN3UiJCuTPHZXW9MXij", /* main-index: 160*/
-            "3EsJDBYSZCnaB9v1hDeqPckqeKXy8QySRm", /* main-index: 161*/
-            "3D828EGfChcinqQeqbFb5TLSUwdnYo1dfX", /* main-index: 162*/
-            "3PxLuz6HdV88Lxn3HVyVnnjhC2xdmSKetx", /* main-index: 163*/
-            "3Ks8X1w9WHUW5JemRS4HLGZxQM9zRwwkXR", /* main-index: 164*/
-            "3JQtuE2YsGeEob7VJ4cQninbpnEKdSJSEV", /* main-index: 165*/
-            "3HnLB293NiLB9uKbSNm6UBgJ4fRJQ9EorZ", /* main-index: 166*/
-            "3J2xEh8uZvUFedXjPfAM7TsaH5CW3rTZyi", /* main-index: 167*/
-            "31s3vQS6rsaMvZVdw8vvrwdTDE2aTvaxRD", /* main-index: 168*/
-            "34hXfyWd7nxvZpoZL5oQ49D6f5gv2Mgmi5", /* main-index: 169*/
-            "3A2KjgCoRPQoRFGPFAYXALL41XV61qLgTZ", /* main-index: 170*/
-            "3Eec4xaDYzqscKn6yHYQcLqn1dQWFARJGD", /* main-index: 171*/
-            "34EQdEijpysNa2raQSWmWYkGuqC9HsyBPi", /* main-index: 172*/
-            "3BEtieHw9zTbgqQ4SWKY3NgLWKocJQin14", /* main-index: 173*/
-            "397LfRVUUv4bPg87bAicX2ZJNjmXAeTsaX", /* main-index: 174*/
-            "3CpVtxLuqWahpizQvoL5FagES87eQYMdv1", /* main-index: 175*/
-            "3MiWgep6PN9ER6m5Q9M2BF1ue2P8EWoDur", /* main-index: 176*/
-            "3QjaTkSjh9wpQeoJQDawuPnYmzBi2cdk8E", /* main-index: 177*/
-            "399efdC8i96ty7eSmGz9BY7LeLgqxaJVex", /* main-index: 178*/
-            "37TAUMisXVPRSfn5V4zVctMUfShXsN4hb1", /* main-index: 179*/
-            "3JUDpkvLQ5H4A9sHErsBZYAD1pqqenjcd3", /* main-index: 180*/
-            "3AAKNjncAgDzgdUopt8VSPtSW1pZgMG3bh", /* main-index: 181*/
-            "3M3GpeV1zdXrLKuHPkF5dd7hx2hCoPDHHm", /* main-index: 182*/
-            "3CjdThLEGY64ae8QSPdXkLdc6PcWmR4uyg", /* main-index: 183*/
-            "3Dq5Vpf8vHMyTTqjdvQ8QmdJ1xuDJCHxmH", /* main-index: 184*/
-            "39Vp9y8Zs6y3KGsQ1TYGnVpmvxnbtnExrh", /* main-index: 185*/
-            "3Eh3ZgdriS2VC7zhFxriwegHZFP5VfKvbf", /* main-index: 186*/
-            "37CdPV77gqAeRvhJ6g3A42tCjzRScvaDN6", /* main-index: 187*/
-            "38njzLR5e4DmxYdse7nuTNrvX7mB3S1i4D", /* main-index: 188*/
-            "3KsjXu34QqmecopuTpijUbjoAKUEfjKr3K", /* main-index: 189*/
-            "34kGxzuyqanj9JxySGb7P5CYQAsj5DM866", /* main-index: 190*/
-            "3QvkWcatgwx1xtW6gwkESv6cRzRuvgho29", /* main-index: 191*/
-            "3F28fn9QbPWUFZe54BPpLAeydWZZrTQSZV", /* main-index: 192*/
-            "38ywnbmBA8Zqiw57zNHbcZLZhHrYFe3sGE", /* main-index: 193*/
-            "3BoSPyyt64hmty3KXuTezfSFPqPdYkZZ5H", /* main-index: 194*/
-            "3LytkmUYQrA9kw9zUECQPN3YnQyCPZ8Zo4", /* main-index: 195*/
-            "3QdBFrQ98dCiVAwNnKiunqiJjQKdZscCbb", /* main-index: 196*/
-            "35zeh5YrRTv67g6Eb71wvbWLzRBTLtTTQJ", /* main-index: 197*/
-            "369wiY66VZvHeTmv2JSCnyNSgQQXxqFcDG", /* main-index: 198*/
-            "3J8CH2gJJ9KKQdBPwqcDaSKH6R7yHK1Wrc", /* main-index: 199*/
-            "381GBtX7CJktiY9XaXvwgP5FuJtbtmJHeS", /* main-index: 200*/
-            "39a3kTwQe6j3yTiC4obVBHsunNeYj2btBU", /* main-index: 201*/
-            "3G1EDWEo26qgbANigEHuHaVZLVsgAb14BV", /* main-index: 202*/
-            "3DSr5GZWrCyUUX2JFL4DTxd2wHGWfZQ9GD", /* main-index: 203*/
-            "3KLFgnN1uJ4DyYch6yX5rtjbiGrPJvW2cx", /* main-index: 204*/
-            "3QjrACUhn2KtHCSkcEFk1qSymMDB2YzpFc", /* main-index: 205*/
-            "3KE11DMprkJKVzktQtAnqGVaEJf49W2LrW", /* main-index: 206*/
-            "3P5nH2fqsiT1a6id2W5h3Ztd3gF2zPMjfh", /* main-index: 207*/
-            "3KAd9J9Fotju5BUKxgMNcAvTcWkNEU2THD", /* main-index: 208*/
-            "38JGPLA5QaKvT68iwsySrHhvgWo6hcU4wv", /* main-index: 209*/
-            "35euaC6WRJpGctAqNA8CY1VXGueysFX43o", /* main-index: 210*/
-            "3CVwgKuLJ759fEqEhT2vvRan2z6Kk44sZh", /* main-index: 211*/
-            "373qoQnWB2Czgw5uxhjstdTDg5XxJTB517", /* main-index: 212*/
-            "39PHUZosWU1dmoX3BLLknQMek39drr4H97", /* main-index: 213*/
-            "3MCFLUfeg3hU5D72LRwXTytyfyD7HgKDyV", /* main-index: 214*/
-            "3KJg3umjhB4PkQ7SpgpA595EENzR1f8nUg", /* main-index: 215*/
-            "3NUKYEAKVDPtRs4m9dzNsJWJv8UfnHoJ1c", /* main-index: 216*/
-            "3R1Fq1pcQ8cF3GsBDFfUQNeAA3F32R4nP8", /* main-index: 217*/
-            "3LaaRVv9pEuvahAFMh7GYxxzkTczTRovkd", /* main-index: 218*/
-            "3GUnM2CJtgFmJYhGmhcSwobpHEFgjG86sU", /* main-index: 219*/
-            "3BDwSefYRgJByDmFdpciSQMW2ssxLxfj3H", /* main-index: 220*/
-            "3E686878MUybFh41PyboqeUiPwzngpTEPM", /* main-index: 221*/
-            "3Et5zaNcFbeQnpqBzwkDaeiMRSDkuc9Gh8", /* main-index: 222*/
-            "3FnMhVsk9rk4EgZxsevURdwKdiYWA3Mmmw", /* main-index: 223*/
-            "3HFAturVtmQKe37nQdx7V8XhHpoioXbkCz", /* main-index: 224*/
-            "3PYHwsDfzFAUsiH62tCzxPKcwD6E2DuiMK", /* main-index: 225*/
-            "3BiPHWPCkdREchi3YqG7zULbDDRRMdAXVi", /* main-index: 226*/
-            "36ZvRygdAi7iDpBEzfFRSSxAMEFGmXwy3C", /* main-index: 227*/
-            "3LXRER8Jd9HVJxB2ozbbs1SFJsPLYsZ7tB", /* main-index: 228*/
-            "3F55HwRyhksHseNuJDJd4zaRQajw5N8912", /* main-index: 229*/
-            "36vvS9rjLnsocaNH3JMHzp1H4ioAgJdH66", /* main-index: 230*/
-            "34qSCUEvhSa9J9uzXN9TaiuRfSwGSAaPnH", /* main-index: 231*/
-            "366wHf5Fjo5NWR5jAYGJbPTiz829auez47", /* main-index: 232*/
-            "3Hzh8qRXvp7BzJZLWHp2kCxaThgBiitSxH", /* main-index: 233*/
-            "36xKdfiCwb4YD8XHgRMDPHuHaS5rDHquJ9", /* main-index: 234*/
-            "3PtXzAj8UJYfT9SVJWvBtDdoKozQ5V9Gzx", /* main-index: 235*/
-            "34TRXSmup6wV2SKpExd5jHwi548QCvtD34", /* main-index: 236*/
-            "3Lx1RBHZWZRbkTQQfhU2eoCUoRJUG2CTfu", /* main-index: 237*/
-            "37otJGC1jaGf5ZznuftnUWavMKYHuxStcy", /* main-index: 238*/
-            "3Hf2LU8JZVDLQy5KpXfjaHzBc2AYfZMgch", /* main-index: 239*/
-            "3MUteP9qMPvLxngqwoHihzzFtamt96eGKg", /* main-index: 240*/
-            "31m63dqrMTtmnZiUUtEymEwdoBHcvzSUWN", /* main-index: 241*/
-            "3FM18WCSECPxUS3zBRZttDxMJpmnAXo6YY", /* main-index: 242*/
-            "34oRKmhgepK9C1BYsbjw3ZaD9bX7SVUeXu", /* main-index: 243*/
-            "3HFTKbTFYBPBetdEriBsi8tsdHF5cMnWad", /* main-index: 244*/
-            "32rWU7EAdpa6jKtYoz3XTCX2fHe5mnR6q5", /* main-index: 245*/
-            "39Fenwocb7veTRhZhFMeBtMBoKnNSksM5V", /* main-index: 246*/
-            "3HZhkeTckS9xJCDnYQk5uWc5Hi3EMr7Kr3", /* main-index: 247*/
-            "3FtJmjpVBB3AwRgpV7khiT34aRs9Dxiodi", /* main-index: 248*/
-            "31ugxYKGQXsofqwnXaft2fZHJPyEWsnvh5", /* main-index: 249*/
-            "3PqNm37UuKExZn6XxmLUq6a6U1Bo4FzSuC", /* main-index: 250*/
-            "3LR2Yx15V4mj3nTCrYWCRudiwgGSMfVySP", /* main-index: 251*/
-            "37nuPE3JnPmF8bAAhwf5atX3xoHezhza3p", /* main-index: 252*/
-            "3NG5SU6FnjQQSdC8s6sWBaPUeBivEXBo3s", /* main-index: 253*/
-            "3MPZVFZ7JBsnKYQbXqNzVH7u3mVNLLpQVM", /* main-index: 254*/
-            "3Dt9zLTJTBoua9Bt667jdpYYgHeFBmVxUs", /* main-index: 255*/
-            "32CVTt3Fj8RBqfY8MwPS94UqALG4ncgS2E", /* main-index: 256*/
+            //"38yCbLtxZiWybYjJB8msaASL8a9DqSGH9e", /* main-index: 0*/
+            //"3LCZiCbkiyAH1saEXEnMC6XFVanVX6gftc", /* main-index: 1*/
+            //"3E99o64BavBxN855kFqbVcaiTmu3jBtnqp", /* main-index: 2*/
+            //"34KAMoFSwzKppWBg3u3XFMg1b6z3Xza9X6", /* main-index: 3*/
+            //"37Yy1xuVTWgPjUi6spagvkDqHZS6e3e6a6", /* main-index: 4*/
+            //"35NRzPB3NebkDgWu2w8vPNtDxVUixWpWTN", /* main-index: 5*/
+            //"3ARcDbReyavaETa42ZRQivARWp6Mh5jDSX", /* main-index: 6*/
+            //"3PFZ1oudGLkWg7kkV9qgosseuYsrhJd6ou", /* main-index: 7*/
+            //"34EBnTUYk3kzhwn6oNni1eyQ83vap4iVxZ", /* main-index: 8*/
+            //"37hNzkCuYGiVxP2AuMEmrBWQem4NQVUcJD", /* main-index: 9*/
+            //"35eZ5UFfdb5687GTdAK29hthEyzuXNcbcv", /* main-index: 10*/
         };
     }
 };
@@ -657,27 +411,27 @@ public:
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
 
-        vSeeds.emplace_back("134.255.221.7");
-        vSeeds.emplace_back("lameserver.de"); // HuntCoin Node by Astrali
+        vSeeds.emplace_back("160.119.100.89");
+        vSeeds.emplace_back("lameserver.de"); // HuntCoin Node
         // Hardfork Seednodes
-        vSeeds.emplace_back("185.206.144.200"); // HuntCoin Hardfork node: 01/18
-        vSeeds.emplace_back("185.206.145.201"); // HuntCoin Hardfork node: 02/18
-        vSeeds.emplace_back("185.206.146.200"); // HuntCoin Hardfork node: 03/18
-        vSeeds.emplace_back("185.206.147.203"); // HuntCoin Hardfork node: 04/18
-        vSeeds.emplace_back("185.205.209.67");  // HuntCoin Hardfork node: 05/18
-        vSeeds.emplace_back("185.206.147.202"); // HuntCoin Hardfork node: 06/18
-        vSeeds.emplace_back("185.205.209.137"); // HuntCoin Hardfork node: 07/18
-        vSeeds.emplace_back("185.203.119.194"); // HuntCoin Hardfork node: 08/18
-        vSeeds.emplace_back("185.203.119.195"); // HuntCoin Hardfork node: 09/18
-        vSeeds.emplace_back("185.206.144.201"); // HuntCoin Hardfork node: 10/18
-        vSeeds.emplace_back("185.141.62.86");   // HuntCoin Hardfork node: 11/18
-        vSeeds.emplace_back("185.141.62.87");   // HuntCoin Hardfork node: 12/18
-        vSeeds.emplace_back("185.141.62.88");   // HuntCoin Hardfork node: 13/18
-        vSeeds.emplace_back("185.141.62.89");   // HuntCoin Hardfork node: 14/18
-        vSeeds.emplace_back("185.141.62.90");   // HuntCoin Hardfork node: 15/18
-        vSeeds.emplace_back("185.141.62.91");   // HuntCoin Hardfork node: 16/18
-        vSeeds.emplace_back("185.141.62.92");   // HuntCoin Hardfork node: 17/18
-        vSeeds.emplace_back("185.203.118.117"); // HuntCoin Hardfork node: 18/18
+        //vSeeds.emplace_back("185.206.144.200"); // HuntCoin Hardfork node: 01/18
+        //vSeeds.emplace_back("185.206.145.201"); // HuntCoin Hardfork node: 02/18
+        //vSeeds.emplace_back("185.206.146.200"); // HuntCoin Hardfork node: 03/18
+        //vSeeds.emplace_back("185.206.147.203"); // HuntCoin Hardfork node: 04/18
+        //vSeeds.emplace_back("185.205.209.67");  // HuntCoin Hardfork node: 05/18
+        //vSeeds.emplace_back("185.206.147.202"); // HuntCoin Hardfork node: 06/18
+        //vSeeds.emplace_back("185.205.209.137"); // HuntCoin Hardfork node: 07/18
+        //vSeeds.emplace_back("185.203.119.194"); // HuntCoin Hardfork node: 08/18
+        //vSeeds.emplace_back("185.203.119.195"); // HuntCoin Hardfork node: 09/18
+        //vSeeds.emplace_back("185.206.144.201"); // HuntCoin Hardfork node: 10/18
+        //vSeeds.emplace_back("185.141.62.86");   // HuntCoin Hardfork node: 11/18
+        //vSeeds.emplace_back("185.141.62.87");   // HuntCoin Hardfork node: 12/18
+        //vSeeds.emplace_back("185.141.62.88");   // HuntCoin Hardfork node: 13/18
+        //vSeeds.emplace_back("185.141.62.89");   // HuntCoin Hardfork node: 14/18
+        //vSeeds.emplace_back("185.141.62.90");   // HuntCoin Hardfork node: 15/18
+        //vSeeds.emplace_back("185.141.62.91");   // HuntCoin Hardfork node: 16/18
+        //vSeeds.emplace_back("185.141.62.92");   // HuntCoin Hardfork node: 17/18
+        //vSeeds.emplace_back("185.203.118.117"); // HuntCoin Hardfork node: 18/18
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
@@ -717,263 +471,17 @@ public:
         };
         
         vFoundersRewardAddress = {
-            "2N6nSQHMMF3NQnFvxoogeDjpmENQjF9nog9", /* main-index: 0*/
-            "2N1CchGDNvDtPjKwyvm34L3gPhMzLNip4eA", /* main-index: 1*/
-            "2NDSp2itA9Xv9BZ9yFnFqDDRyCtKog7Ug1y", /* main-index: 2*/
-            "2Mv7i5QAKiaMNcCDTC2BGKsdB7h1XYRorAv", /* main-index: 3*/
-            "2N7na2VR3W8AdUcyYub7budhpAgQegj4Ebs", /* main-index: 4*/
-            "2Mt2cQk7siP82Vwymve4uyv2mNwdaKGCXsv", /* main-index: 5*/
-            "2NAu9pYUgFPZFCXqbSKDGiiqjG5X99RkiMh", /* main-index: 6*/
-            "2N4qQ8zhcCQzJuPnfUeiqx6ExnMFk5G9Aq3", /* main-index: 7*/
-            "2NFHSiw1Hrhihn5zX9cGPfr3bRJAqTN5DNo", /* main-index: 8*/
-            "2N9kiEtFxEkxec1DjUkG2tjzaUEATJ57ygm", /* main-index: 9*/
-            "2N3PkBx66qK6qi8L9PvPss9rWUiYJWtaELp", /* main-index: 10*/
-            "2MtcN9haxXiXqRwJRiWuP5QhV6tkSUA2Hwv", /* main-index: 11*/
-            "2N3hhbgGXHMDQm1Egmo3o3dt1PppcwfYAc3", /* main-index: 12*/
-            "2Mv4rrJ1Bo5vs4qovXCtyGP5CWwhGgZpsbL", /* main-index: 13*/
-            "2N4JyRxX9Cz74KTEtx1K8ZaaDCDq2T4Qz19", /* main-index: 14*/
-            "2MuvZ6bhLAb2pWoVC5Ap4gpYVuHaAVduPxn", /* main-index: 15*/
-            "2N9EXDmSQQ6BSyaNN3ecVDD793PqsYWoobs", /* main-index: 16*/
-            "2N4AeeQHSsvYjaVTLCmUrXpNH98kGVmizLr", /* main-index: 17*/
-            "2Mya39mqGJFDfgB4iSMrL79of9RduAEttpn", /* main-index: 18*/
-            "2MsW4Jaao3n1Wc9u6NdbDtmSBSeCSZzQzhx", /* main-index: 19*/
-            "2N71JnNDBydxigACT7TvzHcfwKQaW58C5YS", /* main-index: 20*/
-            "2N6JcvqA8hw5mm8THx81EJM266BnH1fho6G", /* main-index: 21*/
-            "2ND96srprgjCeCewJi6tDj9Mf4i3VsXiPqa", /* main-index: 22*/
-            "2Msj3KdY3RnGkWzLfq5dGGVKgDVjUePqF9S", /* main-index: 23*/
-            "2N71JKjPbV4Paufy3birWC51VZpqhA1tFi4", /* main-index: 24*/
-            "2N9yUwjE3CnBJUbaqy5nXs4zz6yxjjFHH9o", /* main-index: 25*/
-            "2N4hrw6RxCo2XM3d4CERH8WZmj3cnHNd2Ab", /* main-index: 26*/
-            "2NETQSHGkko5Gy3pddRSEPaZJE4vjhKHa2s", /* main-index: 27*/
-            "2NCyAmoxXjeN7Av28CVLyiBjvpuDFCmWvU1", /* main-index: 28*/
-            "2NFusZxcfv2V4cXNHZs4NWbCpYEn1JZNTAQ", /* main-index: 29*/
-            "2NBLBHFLXJaogwmd2ZnVNhWtmVuehrrb1C4", /* main-index: 30*/
-            "2Mz2hxWjiSzw1V4MZPHJnk6xY7mouAdzC4B", /* main-index: 31*/
-            "2My43kohYz8mnkQhuahoXX4S3LBuK6iqubN", /* main-index: 32*/
-            "2MziArrv6mVkfw2rNne4cCgq5Wx3kDR75F4", /* main-index: 33*/
-            "2NFyL3RgqATHvwHZMMcguMKqv38pvBoLZZp", /* main-index: 34*/
-            "2MuvwkwWueLHco6eny1tGPJbZDFaftdAMu9", /* main-index: 35*/
-            "2NGQRwYXtRWzpAyzRddkUjpSZwv6CugwS3v", /* main-index: 36*/
-            "2MzbDJcQwFuahgyn8uhDsrWgZQa2LX5afUz", /* main-index: 37*/
-            "2MwjC2sRdJBoGtLWpkMBMTve6Kzwcgup7iq", /* main-index: 38*/
-            "2NEFwdaqigmQo9eYR3RsJbHdTd9XHgYTGn7", /* main-index: 39*/
-            "2N8xhuE4ttwmQ3EBQexLn2dTMUn5F6g6mQp", /* main-index: 40*/
-            "2N9F1YR2N8qhgxRnbHWfSo5uE1Zav8baQJX", /* main-index: 41*/
-            "2N3X4STbQFHDGhbrcSXJ3FDcmL9C7Z8wKwx", /* main-index: 42*/
-            "2ND81xRBFzQhsBxti8czfEsMMDjGVhhecnH", /* main-index: 43*/
-            "2MwMnfsoPgJGcuWTnWXEFvmWdirSJjJ8uFk", /* main-index: 44*/
-            "2NFhZd963FfqAZjqEvnB3VTBinYns4Mj6L2", /* main-index: 45*/
-            "2N9MncS59rbmMVkK5V7u7CwffC2vkNdaBDg", /* main-index: 46*/
-            "2N8WprmmMvMFtbLG9Sga1Swg4VVsVSCARhs", /* main-index: 47*/
-            "2MvJBb8DzRy7EmEQFNfqrLsUeGxeBSuNWPi", /* main-index: 48*/
-            "2Mv8L9n3q5RySj4Z3WJfiHsSPp3Y91A99rb", /* main-index: 49*/
-            "2MsoeuyESW3LsQH6tPymencHS6DKDSoUBEm", /* main-index: 50*/
-            "2MxRBfTHdAoUJhJ5Yi2iM92PRz1vZBX6Jsg", /* main-index: 51*/
-            "2N8AysBVxBKY6pFbkHdMgJDsDvBEW33FKmu", /* main-index: 52*/
-            "2NAXCrwtX1BYZ12Yik2XLkww4pt1gijgYDg", /* main-index: 53*/
-            "2N87Zfk8tcw6dRydDQiWnU43yWijnrdJz3d", /* main-index: 54*/
-            "2Mu1UdV7mq1YC7tEVP8mNuAioBCgoBEQGPz", /* main-index: 55*/
-            "2MvaWuM5e7ieWrjQF8RfYNQDVi4LSbcREPs", /* main-index: 56*/
-            "2MtehGipvc79Hv8BcGNiCAFY3WZzM8EMpxs", /* main-index: 57*/
-            "2MsotzefamhAqwZZLd7XF2dLWRavesNHDBi", /* main-index: 58*/
-            "2NG2dzJCjdGjSGaWBvn7kfR5CsrDYMaCCcz", /* main-index: 59*/
-            "2N7KxJheSRJsE5F9eAG1pfYcVDGEShcYxwj", /* main-index: 60*/
-            "2N8TFnEFhLi8XzvVWu9VNu3wDJge8Du1Zzo", /* main-index: 61*/
-            "2MxKLNdZ4sEo5rfPAgnijC8TJPWZQwy8pVT", /* main-index: 62*/
-            "2MyMMx8b1QkaoZZoSouBpB2GyN8FC3VJJTU", /* main-index: 63*/
-            "2NGKuypUQbr3yN3Qg3HFBzLoCQGmh2CzLVe", /* main-index: 64*/
-            "2NEJYN4Gh9u6aUr7bj3bQkFs3oWJdwWJrP1", /* main-index: 65*/
-            "2NDBwizUHAxxVDg3EVfwEwccDSxLKy5NsYf", /* main-index: 66*/
-            "2NAzub1EwJ2SA2Qk2Qf3dZuXpFD4veyUMwG", /* main-index: 67*/
-            "2Mwq5KE6iy2vi6usaA4ThDoN2kDT72ix4FX", /* main-index: 68*/
-            "2MxvVUnwQERhC8MwdzJFAbAxDCHa1bmJHzd", /* main-index: 69*/
-            "2N3xMWDcweTYKKRJRr4yZEfCojespY7dAsB", /* main-index: 70*/
-            "2N8s5SHUw7wh9vHpDgKRfTndZvKyAXCD7E2", /* main-index: 71*/
-            "2N5GGm8EoNgSojQzjdnnhd9SisB6UiYkV9F", /* main-index: 72*/
-            "2Mw9HobqWZAwYmms3Q62LXam9nSHeWEGKgg", /* main-index: 73*/
-            "2NBP1d5FkhwSS1K2A3hfNUpkQt8hvTTCJp9", /* main-index: 74*/
-            "2N6m49LLVcexmdGbiiFFY3EmUgsSbSVnYZ1", /* main-index: 75*/
-            "2NA7CKF4ixnBb6Mh3SLuzNpRpkhebgHB5E7", /* main-index: 76*/
-            "2Mw9Pc8gA6AAv4YPDEUq21qvZJhMnTbpXoX", /* main-index: 77*/
-            "2N6TV46jwMTCxPMxzaZy64LFZouEXX85bbh", /* main-index: 78*/
-            "2N4vUqRCu36ffuE6RL67s2yWcYmCY32tr5G", /* main-index: 79*/
-            "2N1dD9RBXzADmPvJ1K9hXPrQcNXqryRY8Ce", /* main-index: 80*/
-            "2N4LUCym4RE6p46GZjCbpMZFDLkjMLDcvn5", /* main-index: 81*/
-            "2Mta7893Leh8PW5opag6AyG9pgfDZS78qFA", /* main-index: 82*/
-            "2N4kXPRQHeUNGBbeSUbLoCLUcxwDWtfkpuW", /* main-index: 83*/
-            "2MubArQ9Vp9GUJzqgDadvoAG54SdE51josh", /* main-index: 84*/
-            "2NEouGwU1gFTg4Pp7uYSgnMu5Q7FQQXJncq", /* main-index: 85*/
-            "2N5pdWbhs6RFGXYCZEqGc9mZ1K5oYd8eCAT", /* main-index: 86*/
-            "2NBzEYiBiu271pJGxY9KFLVHVp8TDDbreCe", /* main-index: 87*/
-            "2Mss4zWJzRC5pBTASCTtL82165tcUiWJmWw", /* main-index: 88*/
-            "2N4DtELXQXFFwbVYmRvQ8cU3CDSEiwF2YVA", /* main-index: 89*/
-            "2N6tbupRn6z9UftwHkemd3zqP4AT5SwCuG8", /* main-index: 90*/
-            "2NEBpB8aUEy5KspeActFheWrgR2SYhTn3WX", /* main-index: 91*/
-            "2MwxtfkZrbHrYNNpVJW1h77upo8SxtYtKeA", /* main-index: 92*/
-            "2N26z9SAuQwgEtDqN45rrB86wtCRDc7FyEw", /* main-index: 93*/
-            "2NAqZkyp2LLAqok2vYeByoABkyFvxUam7aJ", /* main-index: 94*/
-            "2N8QkMbi7gifS8pXBv5rnENbtsq1Ux8aGxc", /* main-index: 95*/
-            "2MwjErwGsMJTcg3pksx7RQRrZqdJQttaaUi", /* main-index: 96*/
-            "2MtmpK62qWzFVXgqqNSPMMRyow8rr3ifrVW", /* main-index: 97*/
-            "2N7zutg27jJGRbDgjV9ZFBEp6rJpBfdpD8u", /* main-index: 98*/
-            "2N8bTNbVhofoHnYWFcd4zs9YdKgTu2MfVe1", /* main-index: 99*/
-            "2Mxhe9tkfub8eX63Fo3UyH5JGmLnu3UJmd4", /* main-index: 100*/
-            "2NCRGcCftCSyFd7ynmCC3T5AHRse2LWtGZw", /* main-index: 101*/
-            "2Mu12d4HbUYBVwZjv5acFF8fN7jSTPEe1tL", /* main-index: 102*/
-            "2N1BAwnQidR7aeapXDknHEmYMzHvYyTrcSR", /* main-index: 103*/
-            "2NE1kakMYo2EZqmRk2uJC3hU5qZBTz7q82n", /* main-index: 104*/
-            "2MwV3KrpbppJXPW19zEMC9HGDkK48wARYSq", /* main-index: 105*/
-            "2Mxc4v4rniNS94scqFy3dDNJrQFiKapbij2", /* main-index: 106*/
-            "2MxuP8YR9sVRmX8X3xGr3g55CLjWKeQ9rgn", /* main-index: 107*/
-            "2Mumja3gVGJKWJjssjT6w5mWGtTEQKPrq9p", /* main-index: 108*/
-            "2N9D8JudCF77eufrkWE5zgjJzgRtXgED4Nj", /* main-index: 109*/
-            "2Mxqxfu2Zsj48MFd8c6P7gan3XjrPYDWsqt", /* main-index: 110*/
-            "2MxmrWijmkZFPekyhgcKiduwX5sGHCYkaw5", /* main-index: 111*/
-            "2Mtymm4vTTQPHbLtupna15p4j77XebCzeJF", /* main-index: 112*/
-            "2N25jhMQUuVVzQqYxzfov4p6vexqHapwkFD", /* main-index: 113*/
-            "2NCdVFgmtCg8U4bnX8GLKFoz5SnY3nbZ28F", /* main-index: 114*/
-            "2N5x3iEVKXUye1a38WRbjZFDoQyLNzuoFTv", /* main-index: 115*/
-            "2N8BZKfm8H2QwDrzqiEx384TDNstdh3zXjP", /* main-index: 116*/
-            "2MxDrmeqoxw8ArBf91m5SQ6FzGbrZBLcFft", /* main-index: 117*/
-            "2NBms9yukti7ZyBz6RjZDu5tjHDmBt8pS6D", /* main-index: 118*/
-            "2MwNxRAaQrW3kev2w3yezoo5ENN4khF5LV7", /* main-index: 119*/
-            "2NBiXixRefva8EaDnarijKhsphqZ64jszWu", /* main-index: 120*/
-            "2N87cwpgipBPGD7T5SDHJHDbZiUZz2Z1UcK", /* main-index: 121*/
-            "2N6EVXUS9WzJfEUnjsNhT6ohXDrYGhJ4mJx", /* main-index: 122*/
-            "2N4fDaHLXXpD1MCjCnzGykf4xNzRsQHgkoz", /* main-index: 123*/
-            "2N8YbBDxv3PTAkREia2Daca6zoN8bSSX5Kf", /* main-index: 124*/
-            "2N7YscmMjDZErEDKg6K3eXM7h7aqkB4ATcw", /* main-index: 125*/
-            "2ND1SeRZBqF3Dx2vDVrLj8KbZvBSYy2G9q6", /* main-index: 126*/
-            "2MyRMcE4r31KJkeGXUSq9iJoLqawgHCMDZD", /* main-index: 127*/
-            "2N5LRNsB2v5P4Bs8MVjDuUYoBCtAXCPDcb3", /* main-index: 128*/
-            "2N7oSHXVcSu1QsYJRsjeyTrMWivRCftxyjt", /* main-index: 129*/
-            "2ND4hBc7fLhsd7PZBpSJCxr3ZyBwAY1YG57", /* main-index: 130*/
-            "2N6h7hkJ5fE5isxEixzPqwqxoXibWaAkX9K", /* main-index: 131*/
-            "2N8H6YfMRjpkQ5MNV1WG7sAtQne3sRNdd3z", /* main-index: 132*/
-            "2N6Ji3pJ4qsqWLJttNfnJMkpNb5eoXnbW2w", /* main-index: 133*/
-            "2MymYj4zAzd8rRftcza8GyYm6VTdynu5YVs", /* main-index: 134*/
-            "2NFG44JVfLPeCgSYgKanHoqkrsX6m39TRtx", /* main-index: 135*/
-            "2Mt4XDN9Ws2xyhGPLy2F5USitbjgS5soFy1", /* main-index: 136*/
-            "2NAyNpaL5GkHx6aipY5ATpDTHbgbjFv9kLG", /* main-index: 137*/
-            "2MxncYnzvUuKPDCYnTPhV3RzrhgBKpmpLTr", /* main-index: 138*/
-            "2NDWVGBq8f8T5uLKJs7RWZHcisEV4iWAPkm", /* main-index: 139*/
-            "2NG1CMjDTzJf3mkdEhDn26u2X5carEciKzu", /* main-index: 140*/
-            "2N3aYnqAVThUxf9rShRTxS7xV9e9GNz73BC", /* main-index: 141*/
-            "2NERLnkU8W6jkqW171nF4uoKDMN3b6G2qp5", /* main-index: 142*/
-            "2N1apozdVbELkvRaHPKf7U6q41FQDmLyG83", /* main-index: 143*/
-            "2MxafzJqXxcUhaQvH4TZVZww6DhqbVc2W5S", /* main-index: 144*/
-            "2N33Erz5113EtufxLPG1WWzWwhywx1F47jK", /* main-index: 145*/
-            "2MwFV1eXJmVX5gVfnAYYQ4TQGnvyJ5f4WRf", /* main-index: 146*/
-            "2N65pwhweYwnnowaRWgJHFjUf3sYj7138gL", /* main-index: 147*/
-            "2MyjBQKSXJs62omG5NK2dmT6w9VAMJyxaAR", /* main-index: 148*/
-            "2N9Zmx3hHvBP9aRJChJPMXD8prTbwm1xC21", /* main-index: 149*/
-            "2MweygRuPp3XDpFGQKgLARee9bNeC9aGFmA", /* main-index: 150*/
-            "2N5qoa9xULV7b3f9HhCA5CCGWATj1bwM3FM", /* main-index: 151*/
-            "2Mvdh1bCsNvCkDmUp7cob8dwa2gXRmU6Uwn", /* main-index: 152*/
-            "2MzPUMykkiQThZgRc19on1CUpPLZbXagwkG", /* main-index: 153*/
-            "2N7cZGgqML6hYeGKAtp9zKJzM52Kz8fy6ZQ", /* main-index: 154*/
-            "2NCyKSsmRrrmCqFA9nqTLx3KvwRGAWTYPHT", /* main-index: 155*/
-            "2Mvr2ps6punKtaLGEDEBMcsVQCVMF5kEntL", /* main-index: 156*/
-            "2NFfVY9fvNfoHoPTA4cB2RTagpkvDpziH1y", /* main-index: 157*/
-            "2Mtu5veCSWjFDEu82ZfcBrVGzZg8FVGNpzc", /* main-index: 158*/
-            "2N1jni2NyYZGdA6F5C1asDzf2y7GQdV1SqF", /* main-index: 159*/
-            "2N8MVnYyocfGQu4Ygo6b5LZdzPV1ZBjxyLX", /* main-index: 160*/
-            "2NBBjCwq3Es4sDDYA3DYmHT47YQrJAFJ9nS", /* main-index: 161*/
-            "2Myz9MQVU1HiXuYWaSiThEQhnNoJ6237JEp", /* main-index: 162*/
-            "2Mw2tur9GAuhSpNsDJAkFrrht5DfFSFnfjo", /* main-index: 163*/
-            "2N9Sn9Nfqnkxa8nqySVT25fsjUy4oXBaSf1", /* main-index: 164*/
-            "2NFNRj5ZR7PeLvvBZi5nPCep5XdV7WphPaG", /* main-index: 165*/
-            "2MwUUuVEhYM65VLmuQgk9PUUbC1dDCepMdM", /* main-index: 166*/
-            "2N3u5ashpqhMLKcC3G3RzQ4VZAEGPPPr7Hv", /* main-index: 167*/
-            "2MxhNaFSgJ2tKWNDq9x8rJz5jbawgEKjYqc", /* main-index: 168*/
-            "2N1UiMFH3KVwJFVfKNUQzrJ29Qp9Kvui33g", /* main-index: 169*/
-            "2NFhLLY6jUmwV9suhToKkbJTXy1y5z7nPAH", /* main-index: 170*/
-            "2Mtm3GjgMGV2MHFyCDrHA9doX6sys4vfw6T", /* main-index: 171*/
-            "2NBdWTbUZXmGz8aV5jXfyJaDd3xHzAk9QqB", /* main-index: 172*/
-            "2N7JW79mEf953zBJ2G2W8orHEJ5Be4pXQUH", /* main-index: 173*/
-            "2N7yzub9apLs4RWe8zdJLrEDmBmHXrxUYTD", /* main-index: 174*/
-            "2N5tcU4c4hNFwVnLna4uT47JcxQfxERJftF", /* main-index: 175*/
-            "2N17FeDBUaRTD6iJ5Ucoh2JL7xrsJgBnQhn", /* main-index: 176*/
-            "2N6BL4KSgdpQC7s1cfwmqF5mmhBwkhAfgDR", /* main-index: 177*/
-            "2MyCuzDkbMTpGaEpy4zq2A8Cy5aqTtUoUq3", /* main-index: 178*/
-            "2N1e1YZYmSAMfTQGA7CsvBN8wRnCRESQuLm", /* main-index: 179*/
-            "2N72iVkXyxSw3x9JDgWy8piFLbTHupFj5R1", /* main-index: 180*/
-            "2Mvv9Qa4oaZxCB4yMMD3x1fCuiRL9LCxLsy", /* main-index: 181*/
-            "2N4u74etrgAfxSNMSAZ8DotUZfZcRuoq6Ao", /* main-index: 182*/
-            "2N3miCyotEG5GGhKB3eeZH5qT6So1Xebepy", /* main-index: 183*/
-            "2MuVNNVy3oDksYo7hJkvYASXNwZDfdgCk6S", /* main-index: 184*/
-            "2NBRxXiMXXyeDRakfqMywTipDHC3UsNnXhv", /* main-index: 185*/
-            "2N2PbdzNn4Xzs1LU7SqjWVzeP3AuA2sn3fQ", /* main-index: 186*/
-            "2Mz5qo1MkM8vGc5HtREj2R2VvNm85Mk6TBm", /* main-index: 187*/
-            "2N3YwTYSWK44kUtdEV1FgmiZqCypUoLkyNx", /* main-index: 188*/
-            "2NG3ftN5s3dKMEqirieYYprZaPVvy6NuFLL", /* main-index: 189*/
-            "2N5Q1iapoSak9gkG3KXA4UMVmxHeJ3gugXt", /* main-index: 190*/
-            "2MtkXMS5fEBVGF8SNRH65NmzVmMHBxpe2Fk", /* main-index: 191*/
-            "2N4CHJ7SgPW6k3Q1Yv6HbpGWavMmn5uzF6P", /* main-index: 192*/
-            "2N6EgUVoVcqMUpzJMHhicvp9sbeQEN69paU", /* main-index: 193*/
-            "2Mv6tCCR6mA4NQbP8cv1U9ChzV75y9VoNjF", /* main-index: 194*/
-            "2NDLGY1C1dZcUzAr41mUDz85sK4Ly1zZ63X", /* main-index: 195*/
-            "2Mw7g6REaRSqa9yTHgqwBftxdjxaUrpmQra", /* main-index: 196*/
-            "2MuDTmYSNuFQUPBLCo2yFWQ2vfk5cmdMS6S", /* main-index: 197*/
-            "2N1GMWngyCfLUsnCzQxAAD44unDWHDAEyNu", /* main-index: 198*/
-            "2N1SfRVtvCxPtbmbviM5a6TJ8VPJYaW7TDC", /* main-index: 199*/
-            "2NCUs7QvCAYpYU9spCMF4XxTH4vBmxK5id7", /* main-index: 200*/
-            "2NDpCiQBrfzejrM1CA35GHX1hMQ1tUdq29Q", /* main-index: 201*/
-            "2NFMzmJVJdncuaAvGrLvnPQzGyR3dg1UVNA", /* main-index: 202*/
-            "2N5JEwCiqutyL1WXPXJ88Hbuujan12smo93", /* main-index: 203*/
-            "2NCJ7uuSF7xatVZxzYLcsBhUUyTsotNkgCx", /* main-index: 204*/
-            "2N4HohhPS9xvuvV3joSAC9fkHXTq9W75j1p", /* main-index: 205*/
-            "2MxxPJgk4YfCaDemW9dLFqs93CJWDKCVdGJ", /* main-index: 206*/
-            "2NFPNxfW68xyP5GMkbm94eCZfVV7q8auiPX", /* main-index: 207*/
-            "2NBUgBRfCSr8FJQ9VbLDbCreo1iNqxQ4h4U", /* main-index: 208*/
-            "2N3DitNFNXKDK5QbGmsRhCf8Ha9bWPtkLux", /* main-index: 209*/
-            "2NGWZcgrVndeQ1dwdVML3qqArJQo9Jb5oUb", /* main-index: 210*/
-            "2N3h9dmCZqggK2ooTU9kLeZS339uMqtpEiH", /* main-index: 211*/
-            "2NBCczriyCcTcPwuYx8Ni3pFcz3mwTPXC1Q", /* main-index: 212*/
-            "2ND6MQC1WEPyDBNF9MPc9irCsq8nSKHSfCS", /* main-index: 213*/
-            "2MtdKTkFn89yWGraWCV8YyeXdmY6vPHLci8", /* main-index: 214*/
-            "2MywEsinmmMTJ2MBrBsX6x1h6Hk2vmYT2E6", /* main-index: 215*/
-            "2N9aBGLVeuqWzhw4RTqbDEZLqgYZSCCoPAC", /* main-index: 216*/
-            "2NFg2c78dyFtM3CKgJgv5kyWsbFkKKh57KD", /* main-index: 217*/
-            "2MyrghShUhvShpj5d8vjcB39onR8vx8wNgA", /* main-index: 218*/
-            "2Muo36GM2vMe5mifSKfs4PXz584erm4YTu1", /* main-index: 219*/
-            "2N3TiZHFZoJnHUzHFpFNFe32dmaSdBh62QY", /* main-index: 220*/
-            "2N9BVqzoE3RET1wdUXQ57CqnCbiFFLYtqYQ", /* main-index: 221*/
-            "2MyaA5pywScDy6NZvwQHKYWn2butMNyJXzq", /* main-index: 222*/
-            "2N5jUvGau9wy1uPPakXJzHh3yAMCPUmRENs", /* main-index: 223*/
-            "2N7mcNuPD2DVGXctgmvmxY34YQGiVKs73iH", /* main-index: 224*/
-            "2NDgTBHcHMutVjh51wV45g5izxDkrgmq5Ee", /* main-index: 225*/
-            "2N2YkuUzvNs68KtjtSFUYTD3uEkmnYRR9wM", /* main-index: 226*/
-            "2NEDguV2tj7cptMsWZKkGD2tDgqM42QWXHp", /* main-index: 227*/
-            "2NCNx4U7Tpq6qwYweJnSjYm6cD6kv2p7gyc", /* main-index: 228*/
-            "2N8PSgw6SHvDcpXG6xwBorNQi9AwWUvTmT7", /* main-index: 229*/
-            "2MxS3sP2DjCSMoho6aKb3e2fU5yhKUePMhY", /* main-index: 230*/
-            "2N8wyU29TZXeB8xDhNvFqicdEcWyQJZYyvG", /* main-index: 231*/
-            "2Mztd4SShShdKWzMopK5FeWKzxTkXseX4dC", /* main-index: 232*/
-            "2N3YhYfNKzFNVGkx8sV9WkVF6ZfHobjzu3z", /* main-index: 233*/
-            "2N2KHzTZR8FhSBs8JWdg5XNdkv9DK5WQk6x", /* main-index: 234*/
-            "2N98i6wh4AWouUVTYMKuaZL8rNzKyvemm36", /* main-index: 235*/
-            "2NG2GPUs4kzSo59v1CCZMvLzYnigKMDSSLF", /* main-index: 236*/
-            "2N5rQJBXomEXYVCu7viiTGvk9GWJ1qKgQVa", /* main-index: 237*/
-            "2N494WSn1rwuE9didpR4acGYRWVwU5Bwk1N", /* main-index: 238*/
-            "2N1eoZCLDUqUzgBup9LzVKir8fQneWfx1Mn", /* main-index: 239*/
-            "2Mv9jZorqrLVu1wQHTNjmjrf65awTcTdcei", /* main-index: 240*/
-            "2NFgjKPtZqnUrPw4qthDUVrPoSqNXQCYhMt", /* main-index: 241*/
-            "2N25kgKoYtdSMPDQcgqGzesTszUEnKuBCAf", /* main-index: 242*/
-            "2N7eEwaQpSRnduH3zFk5yC25seAQ13pgzu5", /* main-index: 243*/
-            "2N8PKx7FCyiMV5fejNSkjNNnyJN2wJbAD4b", /* main-index: 244*/
-            "2NAK9oCZUM1NoYorTjdtKu6VU9E3f9ED2Xx", /* main-index: 245*/
-            "2N7MtfpCK1MCrBmGKnHoVGWjDP7u7pTtqbi", /* main-index: 246*/
-            "2Mxf5sq1JkL6z88TfX5Vo2NqqnW9pbyG1eG", /* main-index: 247*/
-            "2N41iG9aDDwLk4KZMgMgX9xTQNNsjq1nggj", /* main-index: 248*/
-            "2MzqfjtZ8snHnmAYGKanLtwrKmeypHZEqBM", /* main-index: 249*/
-            "2NAishB8D6WDCmo58sQtih38obGk3bearqu", /* main-index: 250*/
-            "2Mx6ETXMgYbi77oaCkTC2EuZfgyN5pySZa9", /* main-index: 251*/
-            "2NA3C4x66BidXsi3FgR565jDSQFgHeHyc11", /* main-index: 252*/
-            "2NCoNsXZCeVhCfLhBDmFftJ7uHTakjv8Nxj", /* main-index: 253*/
-            "2N4rnQxeqxUtRt4f6PMLZuheHZnMaEtYd8V", /* main-index: 254*/
-            "2NBhiyi6mohK8F63nRWczfoPRWSC97YDDzH", /* main-index: 255*/
-            "2MtTFJ2zSR1bLQWz9qt2JKjzGriVUFKvNDr", /* main-index: 256*/
+            //"2N6nSQHMMF3NQnFvxoogeDjpmENQjF9nog9", /* main-index: 0*/
+            //"2N1CchGDNvDtPjKwyvm34L3gPhMzLNip4eA", /* main-index: 1*/
+            //"2NDSp2itA9Xv9BZ9yFnFqDDRyCtKog7Ug1y", /* main-index: 2*/
+            //"2Mv7i5QAKiaMNcCDTC2BGKsdB7h1XYRorAv", /* main-index: 3*/
+            //"2N7na2VR3W8AdUcyYub7budhpAgQegj4Ebs", /* main-index: 4*/
+            //"2Mt2cQk7siP82Vwymve4uyv2mNwdaKGCXsv", /* main-index: 5*/
+            //"2NAu9pYUgFPZFCXqbSKDGiiqjG5X99RkiMh", /* main-index: 6*/
+            //"2N4qQ8zhcCQzJuPnfUeiqx6ExnMFk5G9Aq3", /* main-index: 7*/
+            //"2NFHSiw1Hrhihn5zX9cGPfr3bRJAqTN5DNo", /* main-index: 8*/
+            //"2N9kiEtFxEkxec1DjUkG2tjzaUEATJ57ygm", /* main-index: 9*/
+            //"2N3PkBx66qK6qi8L9PvPss9rWUiYJWtaELp", /* main-index: 10*/
         };
 
     }
